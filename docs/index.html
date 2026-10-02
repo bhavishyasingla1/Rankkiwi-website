@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docs — Rank Kiwi Extension Documentation</title>
+    <meta name="description" content="Rank Kiwi features, supported platforms, sorting, exporting, and how to use the extension." />
+    <link rel="canonical" href="https://rankkiwi.com/docs/" />
+    <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
+    <meta name="theme-color" content="#172410" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://rankkiwi.com/docs/" />
+    <meta property="og:title" content="Docs — Rank Kiwi Documentation" />
+    <meta property="og:description" content="Rank Kiwi features, supported platforms, sorting, exporting, and how to use the extension." />
+    <meta property="og:image" content="https://rankkiwi.com/assets/rankkiwi-icon.png" />
+    <meta property="og:site_name" content="Rank Kiwi" />
+
+    <!-- Twitter / X Metadata -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Docs — Rank Kiwi Documentation" />
+    <meta name="twitter:description" content="Rank Kiwi features, supported platforms, sorting, exporting, and how to use the extension." />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/rankkiwi-icon.png" />
+
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Schema.org Documentation Article -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Rank Kiwi Documentation",
+        "description": "Rank Kiwi features, supported platforms, sorting, exporting, and how to use the extension.",
+        "url": "https://rankkiwi.com/docs/",
+        "author": {
+          "@type": "Organization",
+          "name": "Rank Kiwi"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Rank Kiwi",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://rankkiwi.com/assets/rankkiwi-icon.png"
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#docs-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="wrap nav">
+        <a class="brand" href="/" aria-label="Rank Kiwi home">
+          <img src="/assets/rankkiwi-icon.png" alt="Rank Kiwi logo" class="brand-logo" width="28" height="28" />
+          <span>Rank Kiwi</span>
+        </a>
+
+        <div class="nav-links" id="nav-links" data-nav-links>
+          <a href="/#how-it-works">How it works</a>
+          <a href="/#features">Features</a>
+          <a href="/#outlier-score">Outlier Score</a>
+          <a href="/docs/" class="active" style="color: var(--ink); font-weight: 700;">Docs</a>
+          <a href="/#pricing">Pricing</a>
+          <a class="button button-small" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="button button-small" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="docs-wrapper wrap">
+      <div class="docs-header-bar">
+        <p class="eyebrow">DOCUMENTATION</p>
+        <h1>Docs</h1>
+        <p>Rank Kiwi features, supported platforms, sorting, exporting, and how to use the extension.</p>
+      </div>
+
+      <div class="docs-container">
+        <!-- Sticky Sidebar Navigation -->
+        <aside class="docs-sidebar" aria-label="Documentation navigation">
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Getting Started</div>
+            <ul class="docs-nav-list">
+              <li><a href="#introduction" class="docs-nav-link">Introduction</a></li>
+              <li><a href="#your-first-analysis" class="docs-nav-link">Your first analysis</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Platforms</div>
+            <ul class="docs-nav-list">
+              <li><a href="#instagram" class="docs-nav-link">Instagram</a></li>
+              <li><a href="#instagram-reels" class="docs-nav-link">Instagram Reels</a></li>
+              <li><a href="#instagram-posts-carousels" class="docs-nav-link">Instagram Posts &amp; Carousels</a></li>
+              <li><a href="#youtube" class="docs-nav-link">YouTube</a></li>
+              <li><a href="#youtube-videos" class="docs-nav-link">YouTube Videos</a></li>
+              <li><a href="#youtube-shorts" class="docs-nav-link">YouTube Shorts</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Sorting</div>
+            <ul class="docs-nav-list">
+              <li><a href="#sorting-views" class="docs-nav-link">Views</a></li>
+              <li><a href="#sorting-likes" class="docs-nav-link">Likes</a></li>
+              <li><a href="#sorting-comments" class="docs-nav-link">Comments</a></li>
+              <li><a href="#sorting-outlier-score" class="docs-nav-link">Outlier Score</a></li>
+              <li><a href="#sorting-oldest" class="docs-nav-link">Oldest</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Filtering</div>
+            <ul class="docs-nav-list">
+              <li><a href="#filtering-content-type" class="docs-nav-link">Content type</a></li>
+              <li><a href="#performance-filters" class="docs-nav-link">Performance filters</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Exporting</div>
+            <ul class="docs-nav-list">
+              <li><a href="#export-copy-csv" class="docs-nav-link">Copy as CSV</a></li>
+              <li><a href="#export-csv" class="docs-nav-link">Export CSV</a></li>
+              <li><a href="#export-json" class="docs-nav-link">Export JSON</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Downloads</div>
+            <ul class="docs-nav-list">
+              <li><a href="#downloads-reels" class="docs-nav-link">Instagram Reel downloads</a></li>
+              <li><a href="#downloads-thumbnails" class="docs-nav-link">YouTube thumbnail downloads</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Content Details</div>
+            <ul class="docs-nav-list">
+              <li><a href="#content-captions" class="docs-nav-link">Captions</a></li>
+              <li><a href="#content-metrics" class="docs-nav-link">Metrics</a></li>
+              <li><a href="#content-types" class="docs-nav-link">Content types</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Privacy</div>
+            <ul class="docs-nav-list">
+              <li><a href="#privacy-handling" class="docs-nav-link">How Rank Kiwi handles data</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">FAQ</div>
+            <ul class="docs-nav-list">
+              <li><a href="#faq-docs" class="docs-nav-link">Common questions</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Documentation Content -->
+        <div class="docs-content" id="docs-content">
+
+          <!-- GETTING STARTED -->
+          <article class="docs-article" id="introduction">
+            <p class="eyebrow">GETTING STARTED</p>
+            <h2>Introduction</h2>
+            <p class="docs-lead">Rank Kiwi is a browser extension for researching creator content performance on Instagram and YouTube.</p>
+            <h3>Overview</h3>
+            <p>Rank Kiwi calculates performance benchmarks and Outlier Scores for creator posts directly within your browser. It helps marketers, creators, and researchers find viral formats without manual scraping or data spreadsheets.</p>
+            <h3>Core Principles</h3>
+            <ul>
+              <li><strong>Client-Side:</strong> All analyses execute locally in the browser environment.</li>
+              <li><strong>Zero Authentication:</strong> No Rank Kiwi account or login credentials required.</li>
+              <li><strong>No Database Storage:</strong> Analyzed creator content is never persisted on external servers.</li>
+            </ul>
+          </article>
+
+          <article class="docs-article" id="your-first-analysis">
+            <p class="eyebrow">GETTING STARTED</p>
+            <h2>Your first analysis</h2>
+            <p class="docs-lead">Run an analysis on any supported Instagram profile or YouTube channel in three steps.</p>
+            <h3>Execution Steps</h3>
+            <ol>
+              <li><strong>Open a creator profile:</strong> Navigate to any public Instagram profile (e.g., <code>instagram.com/creator</code>) or YouTube channel in Google Chrome.</li>
+              <li><strong>Open the Rank Kiwi panel:</strong> Click the Rank Kiwi extension icon or sidebar panel.</li>
+              <li><strong>Select sample size and analyze:</strong> Choose how many items to analyze (25, 50, 100, or Custom) and click <strong>Analyze</strong>.</li>
+            </ol>
+            <div class="docs-callout">
+              <p><strong>Tip:</strong> For Instagram Reels, navigate directly to the creator's <code>/reels/</code> tab for maximum metric fidelity.</p>
+            </div>
+          </article>
+
+          <!-- PLATFORMS -->
+          <article class="docs-article" id="instagram">
+            <p class="eyebrow">PLATFORMS</p>
+            <h2>Instagram</h2>
+            <p class="docs-lead">Rank Kiwi supports creator research across public Instagram creator and business profiles.</p>
+            <h3>Supported Surfaces</h3>
+            <ul>
+              <li>Profile Main Grid (Reels, Feed Posts, Multi-image Carousels).</li>
+              <li>Reels Tab (Dedicated short-form video feed).</li>
+            </ul>
+            <h3>Supported Metrics</h3>
+            <p>Views (plays), likes, comments, caption text, publication dates, and computed Outlier Scores.</p>
+            <h3>Limitations</h3>
+            <p>Private accounts and content requiring restricted login permissions cannot be analyzed.</p>
+          </article>
+
+          <article class="docs-article" id="instagram-reels">
+            <p class="eyebrow">PLATFORMS</p>
+            <h2>Instagram Reels</h2>
+            <p class="docs-lead">Rank Kiwi analyzes creator Reels and displays available performance metrics.</p>
+            <h3>Supported Pages</h3>
+            <p>Creator profile Reels tabs (<code>instagram.com/[username]/reels/</code>) and main profile grids.</p>
+            <h3>Metrics</h3>
+            <ul>
+              <li><strong>Play Counts / Views:</strong> Total recorded views.</li>
+              <li><strong>Engagement:</strong> Like counts and total comments.</li>
+              <li><strong>Outlier Score:</strong> Relative multiplier against median Reel performance.</li>
+              <li><strong>Metadata:</strong> Caption, post date, and direct URL.</li>
+            </ul>
+            <h3>How Analysis Works</h3>
+            <p>Rank Kiwi reads the visible DOM elements, parses structured metric strings, normalizes numeric values, and calculates median benchmarks.</p>
+            <h3>How Sorting Works</h3>
+            <p>Posts can be ordered descending by Outlier Score, Views, Likes, Comments, or chronological order.</p>
+            <h3>Limitations</h3>
+            <p>Metrics reflect publicly visible page data at the moment of inspection.</p>
+          </article>
+
+          <article class="docs-article" id="instagram-posts-carousels">
+            <p class="eyebrow">PLATFORMS</p>
+            <h2>Instagram Posts &amp; Carousels</h2>
+            <p class="docs-lead">Analyze single-image posts and multi-slide carousels on creator profiles.</p>
+            <h3>Supported Pages</h3>
+            <p>Creator main profile grid (<code>instagram.com/[username]/</code>).</p>
+            <h3>Metrics</h3>
+            <ul>
+              <li>Likes and comments.</li>
+              <li>Outlier Score calculated against typical post engagement.</li>
+              <li>Full caption text and slide counts where available.</li>
+            </ul>
+            <h3>Limitations</h3>
+            <p>Instagram does not expose view counts on static image posts; Outlier Score on static posts is computed from engagement metrics.</p>
+          </article>
+
+          <article class="docs-article" id="youtube">
+            <p class="eyebrow">PLATFORMS</p>
+            <h2>YouTube</h2>
+            <p class="docs-lead">Rank Kiwi supports channel-level performance research across YouTube Videos and Shorts.</p>
+            <h3>Supported Surfaces</h3>
+            <ul>
+              <li>Channel Videos tab (<code>youtube.com/@channel/videos</code>).</li>
+              <li>Channel Shorts tab (<code>youtube.com/@channel/shorts</code>).</li>
+            </ul>
+            <h3>Supported Metrics</h3>
+            <p>View count, publication date, title, duration, likes, comments, and Outlier Score.</p>
+          </article>
+
+          <article class="docs-article" id="youtube-videos">
+            <p class="eyebrow">PLATFORMS</p>
+            <h2>YouTube Videos</h2>
+            <p class="docs-lead">Analyze long-form video uploads on creator YouTube channels.</p>
+            <h3>Supported Pages</h3>
+            <p>Channel Videos tab (<code>youtube.com/@[handle]/videos</code>).</p>
+            <h3>Metrics</h3>
+            <ul>
+              <li>Total lifetime view counts.</li>
+              <li>Relative upload age and publish timestamps.</li>
+              <li>Outlier Score against channel median long-form views.</li>
+            </ul>
+            <h3>How Analysis Works</h3>
+            <p>Rank Kiwi parses channel metadata, converts formatted view strings (e.g. "1.2M views") into discrete integers, and calculates distributional benchmarks.</p>
+          </article>
+
+          <article class="docs-article" id="youtube-shorts">
+            <p class="eyebrow">PLATFORMS</p>
+            <h2>YouTube Shorts</h2>
+            <p class="docs-lead">Analyze vertical short-form video performance on creator YouTube channels.</p>
+            <h3>Supported Pages</h3>
+            <p>Channel Shorts tab (<code>youtube.com/@[handle]/shorts</code>).</p>
+            <h3>Metrics</h3>
+            <ul>
+              <li>Short view counts.</li>
+              <li>Title and direct link.</li>
+              <li>Outlier Score comparing Shorts specifically to the creator's other Shorts.</li>
+            </ul>
+            <h3>Limitations</h3>
+            <p>Shorts benchmarks are calculated separately from long-form video uploads to maintain baseline statistical validity.</p>
+          </article>
+
+          <!-- SORTING -->
+          <article class="docs-article" id="sorting-views">
+            <p class="eyebrow">SORTING</p>
+            <h2>Views</h2>
+            <p class="docs-lead">Order analyzed content descending by highest total recorded views.</p>
+            <h3>Usage</h3>
+            <p>Select <strong>Views</strong> from the Sort dropdown to locate the most-watched content regardless of publication date or baseline follower size.</p>
+          </article>
+
+          <article class="docs-article" id="sorting-likes">
+            <p class="eyebrow">SORTING</p>
+            <h2>Likes</h2>
+            <p class="docs-lead">Order analyzed content descending by total likes.</p>
+            <h3>Usage</h3>
+            <p>Useful for evaluating direct audience appreciation and resonance across image and video formats.</p>
+          </article>
+
+          <article class="docs-article" id="sorting-comments">
+            <p class="eyebrow">SORTING</p>
+            <h2>Comments</h2>
+            <p class="docs-lead">Order analyzed content descending by total comment counts.</p>
+            <h3>Usage</h3>
+            <p>Identifies high-discussion posts, controversial topics, and community-engaging prompts.</p>
+          </article>
+
+          <article class="docs-article" id="sorting-outlier-score">
+            <p class="eyebrow">SORTING</p>
+            <h2>Outlier Score</h2>
+            <p class="docs-lead">Order content by statistical outperformance relative to the creator's typical baseline.</p>
+            <h3>Formula Concept</h3>
+            <p>Outlier Score divides a post's metric by the creator's median metric across the analyzed sample.</p>
+            <table class="docs-table">
+              <thead>
+                <tr>
+                  <th>Score Multiplier</th>
+                  <th>Classification</th>
+                  <th>Interpretation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.0×</td>
+                  <td>Typical</td>
+                  <td>Matches the creator's expected performance baseline.</td>
+                </tr>
+                <tr>
+                  <td>3.2×</td>
+                  <td>Strong</td>
+                  <td>Delivered more than triple the creator's normal engagement.</td>
+                </tr>
+                <tr>
+                  <td>5.8×+</td>
+                  <td>Outlier</td>
+                  <td>Exceptional performance; indicates breakout algorithm distribution.</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="docs-article" id="sorting-oldest">
+            <p class="eyebrow">SORTING</p>
+            <h2>Oldest</h2>
+            <p class="docs-lead">Order analyzed content chronologically from oldest to newest.</p>
+            <h3>Usage</h3>
+            <p>Helpful for tracking a creator's evolution, content style transitions, and historical performance changes over time.</p>
+          </article>
+
+          <!-- FILTERING -->
+          <article class="docs-article" id="filtering-content-type">
+            <p class="eyebrow">FILTERING</p>
+            <h2>Content type</h2>
+            <p class="docs-lead">Filter displayed results by specific media formats.</p>
+            <h3>Supported Filters</h3>
+            <ul>
+              <li><strong>Instagram:</strong> All, Reels only, Static Posts only, Carousels only.</li>
+              <li><strong>YouTube:</strong> All, Long-form Videos only, Shorts only.</li>
+            </ul>
+          </article>
+
+          <article class="docs-article" id="performance-filters">
+            <p class="eyebrow">FILTERING</p>
+            <h2>Performance filters</h2>
+            <p class="docs-lead">Isolate posts that exceed specific minimum performance thresholds.</p>
+            <h3>Filter Criteria</h3>
+            <ul>
+              <li>Minimum Outlier Score threshold (e.g., &ge; 2.0×).</li>
+              <li>Minimum view count threshold.</li>
+              <li>Minimum like or comment count threshold.</li>
+            </ul>
+          </article>
+
+          <!-- EXPORTING -->
+          <article class="docs-article" id="export-copy-csv">
+            <p class="eyebrow">EXPORTING</p>
+            <h2>Copy as CSV</h2>
+            <p class="docs-lead">Copy analyzed results formatted as comma-separated values directly to your clipboard.</p>
+            <h3>Action</h3>
+            <p>Click <strong>Copy</strong> in the top action bar to place formatted CSV text into the system clipboard, ready to paste into Google Sheets, Excel, or Notion.</p>
+          </article>
+
+          <article class="docs-article" id="export-csv">
+            <p class="eyebrow">EXPORTING</p>
+            <h2>Export CSV</h2>
+            <p class="docs-lead">Download a structured .csv spreadsheet file containing all analyzed records.</p>
+            <h3>Included Columns</h3>
+            <p>Post URL, Content Type, Date, Views, Likes, Comments, Outlier Score, and Caption text.</p>
+          </article>
+
+          <article class="docs-article" id="export-json">
+            <p class="eyebrow">EXPORTING</p>
+            <h2>Export JSON</h2>
+            <p class="docs-lead">Download raw structured .json data for programmatic pipelines and automated workflows.</p>
+            <h3>Format</h3>
+            <p>An array of JSON objects with typed keys: <code>url</code>, <code>type</code>, <code>date</code>, <code>views</code>, <code>likes</code>, <code>comments</code>, <code>outlierScore</code>, and <code>caption</code>.</p>
+          </article>
+
+          <!-- DOWNLOADS -->
+          <article class="docs-article" id="downloads-reels">
+            <p class="eyebrow">DOWNLOADS</p>
+            <h2>Instagram Reel downloads</h2>
+            <p class="docs-lead">Directly download public creator Reel video files for offline reference.</p>
+            <h3>How It Works</h3>
+            <p>Open the Content Details modal for any analyzed Reel and click <strong>Download Reel</strong> to save the video file locally through your browser.</p>
+          </article>
+
+          <article class="docs-article" id="downloads-thumbnails">
+            <p class="eyebrow">DOWNLOADS</p>
+            <h2>YouTube thumbnail downloads</h2>
+            <p class="docs-lead">Save high-resolution YouTube video thumbnail imagery.</p>
+            <h3>How It Works</h3>
+            <p>From the video detail view, select <strong>Download Thumbnail</strong> to retrieve the maximum resolution thumbnail image asset.</p>
+          </article>
+
+          <!-- CONTENT DETAILS -->
+          <article class="docs-article" id="content-captions">
+            <p class="eyebrow">CONTENT DETAILS</p>
+            <h2>Captions</h2>
+            <p class="docs-lead">Inspect complete creator post caption text, hashtags, and mentions.</p>
+            <h3>Features</h3>
+            <p>Full-text display without character truncation, allowing you to study copywriting hooks, calls to action, and keyword strategies.</p>
+          </article>
+
+          <article class="docs-article" id="content-metrics">
+            <p class="eyebrow">CONTENT DETAILS</p>
+            <h2>Metrics</h2>
+            <p class="docs-lead">Side-by-side performance cards displaying views, likes, comments, and Outlier Score.</p>
+            <h3>Details</h3>
+            <p>Metrics are clearly labeled and presented in numerical cards alongside the content preview and publication timestamp.</p>
+          </article>
+
+          <article class="docs-article" id="content-types">
+            <p class="eyebrow">CONTENT DETAILS</p>
+            <h2>Content types</h2>
+            <p class="docs-lead">Badges identifying the media format of each analyzed post.</p>
+            <h3>Supported Badges</h3>
+            <p><code>Reel</code>, <code>Post</code>, <code>Carousel</code>, <code>Video</code>, and <code>Short</code>.</p>
+          </article>
+
+          <!-- PRIVACY -->
+          <article class="docs-article" id="privacy-handling">
+            <p class="eyebrow">PRIVACY</p>
+            <h2>How Rank Kiwi handles data</h2>
+            <p class="docs-lead">Rank Kiwi is built with a client-first, privacy-by-design architecture.</p>
+            <h3>Architecture Principles</h3>
+            <ul>
+              <li><strong>Local Processing:</strong> Analysis algorithms execute inside the browser sandbox on your machine.</li>
+              <li><strong>No Creator Content Database:</strong> Rank Kiwi does not upload or maintain a server-side repository of posts you analyze.</li>
+              <li><strong>No Authentication Tokens:</strong> Rank Kiwi never accesses or transmits your Instagram or YouTube account credentials.</li>
+            </ul>
+            <p>Read the complete <a href="/privacy/" style="color: var(--green); text-decoration: underline;">Privacy Policy</a> for full disclosures.</p>
+          </article>
+
+          <!-- FAQ -->
+          <article class="docs-article" id="faq-docs">
+            <p class="eyebrow">FAQ</p>
+            <h2>Common questions</h2>
+            <p class="docs-lead">Answers to frequent technical and product questions.</p>
+            <h3>Does Rank Kiwi require API keys?</h3>
+            <p>No. Rank Kiwi inspects visible page information directly in your browser without requiring personal API keys.</p>
+            <h3>Can I analyze private profiles?</h3>
+            <p>No. Rank Kiwi only operates on publicly accessible profile grids and channels.</p>
+            <h3>Is there a limit on how many posts I can analyze?</h3>
+            <p>Rank Kiwi allows analyzing 25, 50, 100, or a custom number of posts based on how much content is loaded on the page.</p>
+          </article>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="/" aria-label="Rank Kiwi home">
+            <img src="/assets/rankkiwi-icon.png" alt="Rank Kiwi logo" class="brand-logo" width="28" height="28" />
+            <span>Rank Kiwi</span>
+          </a>
+          <p>Creator research for Instagram and YouTube.</p>
+        </div>
+        <div>
+          <b>Product</b>
+          <a href="/#how-it-works">How it works</a>
+          <a href="/#features">Features</a>
+          <a href="/#outlier-score">Outlier Score</a>
+          <a href="/docs/">Docs</a>
+          <a href="/#pricing">Pricing</a>
+        </div>
+        <div>
+          <b>Legal</b>
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+        </div>
+        <div>
+          <b>Email</b>
+          <a href="mailto:support@hibrushed.com">support@hibrushed.com</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>© 2026 Rank Kiwi</p>
+        <p>Rank Kiwi is an independent third-party extension and is not affiliated with Google, YouTube, Meta, or Instagram.</p>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

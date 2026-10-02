@@ -3,82 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Rank Kiwi</title>
     <meta name="description" content="Rank Kiwi Privacy Policy — how Rank Kiwi processes information when you use the extension." />
     <link rel="canonical" href="https://rankkiwi.com/privacy/" />
-    <title>Privacy Policy — Rank Kiwi</title>
+    <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
+    <meta name="theme-color" content="#172410" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://rankkiwi.com/privacy/" />
+    <meta property="og:title" content="Privacy Policy — Rank Kiwi" />
+    <meta property="og:description" content="Rank Kiwi Privacy Policy — how Rank Kiwi processes information when you use the extension." />
+    <meta property="og:image" content="https://rankkiwi.com/assets/rankkiwi-icon.png" />
+    <meta property="og:site_name" content="Rank Kiwi" />
+
+    <!-- Twitter / X Metadata -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Privacy Policy — Rank Kiwi" />
+    <meta name="twitter:description" content="Rank Kiwi Privacy Policy — how Rank Kiwi processes information when you use the extension." />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/rankkiwi-icon.png" />
+
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#legal-main">Skip to content</a>
+
     <header class="site-header" data-header>
-      <nav class="nav wrap" aria-label="Main navigation">
+      <div class="wrap nav">
         <a class="brand" href="/" aria-label="Rank Kiwi home">
-          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <img src="/assets/rankkiwi-icon.png" alt="Rank Kiwi logo" class="brand-logo" width="28" height="28" />
           <span>Rank Kiwi</span>
         </a>
+
         <div class="nav-links" id="nav-links" data-nav-links>
-          <a href="/">Home</a>
-          <a href="/support/">Support</a>
+          <a href="/#how-it-works">How it works</a>
+          <a href="/#features">Features</a>
+          <a href="/#outlier-score">Outlier Score</a>
+          <a href="/docs/">Docs</a>
+          <a href="/#pricing">Pricing</a>
+          <a class="button button-small" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
-      </nav>
+
+        <div class="nav-right">
+          <a class="button button-small" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
     </header>
-    <main class="legal-page wrap">
-      <p class="eyebrow">Legal</p>
+
+    <main class="legal-page wrap" id="legal-main">
+      <p class="eyebrow">LEGAL</p>
       <h1>Privacy Policy</h1>
       <p class="legal-lead">How Rank Kiwi processes information when you use the extension.</p>
       <p class="updated">Last updated: October 2, 2026</p>
+
       <div class="legal-content">
         <section>
           <h2>Overview</h2>
-          <p>Rank Kiwi is a Chrome extension for researching creator content on Instagram and YouTube. This policy explains the information involved when you choose to use its features.</p>
+          <p>Rank Kiwi is a Google Chrome browser extension designed for researching creator content on Instagram and YouTube. This policy plainly explains what information is involved when you use the extension.</p>
         </section>
+
         <section>
-          <h2>Information processed during analysis</h2>
-          <p>When you request an analysis, Rank Kiwi processes the content and performance information available on the supported page — such as content titles or captions, URLs, views, likes, comments, and related creator-content information required for the feature you selected.</p>
+          <h2>Information processed</h2>
+          <p>When you explicitly trigger an analysis, Rank Kiwi processes publicly available creator information displayed on the active webpage. This includes post titles, captions, publication dates, view counts, like counts, comment counts, and media URLs necessary to compute performance metrics and Outlier Scores.</p>
         </section>
+
         <section>
-          <h2>How information is used</h2>
-          <p>This information is used to provide the requested analysis, sorting, filtering, copying, export, and download features. Rank Kiwi processes only the information needed to provide the analysis you requested.</p>
+          <h2>How it is used</h2>
+          <p>This information is used strictly to display analysis, perform sorting, apply filters, and enable exporting or downloading at your request. Rank Kiwi does not use this information for advertising or user tracking.</p>
         </section>
+
         <section>
           <h2>Browser-based processing</h2>
-          <p>Rank Kiwi performs analysis in your browser when you explicitly use the extension. It does not require a separate Rank Kiwi account and does not maintain a server-side database of your analyzed content.</p>
+          <p>All analysis runs directly in your local browser sandbox. Rank Kiwi does not require a separate Rank Kiwi user account and does not maintain a server-side database of your analyzed content.</p>
         </section>
+
         <section>
           <h2>Data sharing</h2>
-          <p>Rank Kiwi does not sell your analyzed content. We do not share it for advertising or data-broker purposes.</p>
+          <p>Rank Kiwi does not sell, rent, or monetize your analyzed creator content or research activity. No analyzed data is transferred to third-party data brokers or marketing networks.</p>
         </section>
+
         <section>
           <h2>Data retention</h2>
-          <p>Rank Kiwi does not maintain a server-side database of your analyzed content, so it does not retain a server-side history of what you analyze. Information you copy, export, or download is handled by you and the applications you choose.</p>
+          <p>Because Rank Kiwi operates locally and does not operate a central content database, it does not retain a server-side history of your research. Any research exported as CSV or JSON is saved directly to your local file system under your control.</p>
         </section>
+
         <section>
-          <h2>Browser sessions and authentication</h2>
-          <p>Rank Kiwi does not create a separate Rank Kiwi account. If you are signed in to Instagram or YouTube in your browser, those services handle your session under their own terms and privacy policies.</p>
+          <h2>Authentication/session handling</h2>
+          <p>Rank Kiwi operates independently of your private credentials. It never accesses, intercepts, or transmits your Instagram or YouTube passwords, login tokens, or authentication cookies.</p>
         </section>
+
         <section>
           <h2>Third-party platforms</h2>
-          <p>Rank Kiwi operates on supported third-party websites. Their collection and processing of information are governed by their own policies. Rank Kiwi is an independent third-party extension and is not affiliated with Google, YouTube, Meta, or Instagram.</p>
+          <p>Rank Kiwi functions on supported pages of Instagram and YouTube. Your use of those platforms is subject to their respective terms of service and privacy policies. Rank Kiwi is an independent extension and is not affiliated with Google, YouTube, Meta, or Instagram.</p>
         </section>
+
         <section>
           <h2>Security</h2>
-          <p>We aim to keep the extension and its distribution secure. As with any browser extension or website, no method of transmission or storage can be guaranteed completely secure.</p>
+          <p>We build Rank Kiwi to adhere to modern browser extension security guidelines, using minimal browser permissions and avoiding external script injections.</p>
         </section>
-        <section>
-          <h2>Changes to this policy</h2>
-          <p>We may update this policy if Rank Kiwi changes. The current version will be posted on this page with a revised date.</p>
-        </section>
+
         <section>
           <h2>Contact</h2>
-          <p>For privacy questions, please contact us through the <a href="/support/">Rank Kiwi support page</a>.</p>
+          <p>If you have any questions regarding this Privacy Policy or Rank Kiwi data practices, please email us directly at <a href="mailto:support@hibrushed.com">support@hibrushed.com</a> or visit our <a href="/support/">Support</a> page.</p>
         </section>
       </div>
     </main>
+
     <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="/" aria-label="Rank Kiwi home">
+            <img src="/assets/rankkiwi-icon.png" alt="Rank Kiwi logo" class="brand-logo" width="28" height="28" />
+            <span>Rank Kiwi</span>
+          </a>
+          <p>Creator research for Instagram and YouTube.</p>
+        </div>
+        <div>
+          <b>Product</b>
+          <a href="/#how-it-works">How it works</a>
+          <a href="/#features">Features</a>
+          <a href="/#outlier-score">Outlier Score</a>
+          <a href="/docs/">Docs</a>
+          <a href="/#pricing">Pricing</a>
+        </div>
+        <div>
+          <b>Legal</b>
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+        </div>
+        <div>
+          <b>Email</b>
+          <a href="mailto:support@hibrushed.com">support@hibrushed.com</a>
+        </div>
+      </div>
       <div class="wrap footer-bottom">
         <p>© 2026 Rank Kiwi</p>
-        <p><a href="/terms/">Terms</a> · <a href="/support/">Support</a></p>
+        <p>Rank Kiwi is an independent third-party extension and is not affiliated with Google, YouTube, Meta, or Instagram.</p>
       </div>
     </footer>
+
     <script src="/script.js"></script>
   </body>
 </html>

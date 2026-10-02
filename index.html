@@ -3,19 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Research Instagram and YouTube creators, find top-performing content, and sort posts by views, likes, comments, and Outlier Score." />
-    <meta name="theme-color" content="#466B2A" />
+    <title>Rank Kiwi — Instagram &amp; YouTube Creator Research</title>
+    <meta name="description" content="Research Instagram and YouTube creators, find top-performing content, and discover outliers with Rank Kiwi." />
     <link rel="canonical" href="https://rankkiwi.com/" />
+    <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
+    <meta name="theme-color" content="#172410" />
+
+    <!-- Open Graph Metadata -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rankkiwi.com/" />
     <meta property="og:title" content="Rank Kiwi — Instagram &amp; YouTube Creator Research" />
-    <meta property="og:description" content="Find the Instagram Reels, posts, YouTube videos, and Shorts worth studying." />
+    <meta property="og:description" content="Research Instagram and YouTube creators, find top-performing content, and discover outliers with Rank Kiwi." />
+    <meta property="og:image" content="https://rankkiwi.com/assets/rankkiwi-icon.png" />
     <meta property="og:site_name" content="Rank Kiwi" />
+
+    <!-- Twitter / X Metadata -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Rank Kiwi — Instagram &amp; YouTube Creator Research" />
-    <meta name="twitter:description" content="Find the Instagram Reels, posts, YouTube videos, and Shorts worth studying." />
-    <title>Rank Kiwi — Instagram &amp; YouTube Creator Research</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="twitter:description" content="Research Instagram and YouTube creators, find top-performing content, and discover outliers with Rank Kiwi." />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/rankkiwi-icon.png" />
+
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -23,224 +33,301 @@
         "name": "Rank Kiwi",
         "applicationCategory": "BrowserApplication",
         "operatingSystem": "Google Chrome",
-        "description": "A Chrome extension for researching creator content on Instagram and YouTube.",
+        "description": "Research Instagram and YouTube creators, find top-performing content, and discover outliers with Rank Kiwi.",
         "url": "https://rankkiwi.com/",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        "image": "https://rankkiwi.com/assets/rankkiwi-icon.png",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
       }
     </script>
-    <style>:target,#how-it-works,#features,#outlier-score,#privacy,#free{scroll-margin-top:120px}</style>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- 1. HEADER -->
     <header class="site-header" data-header>
-      <nav class="nav wrap" aria-label="Main navigation">
+      <div class="wrap nav">
         <a class="brand" href="/" aria-label="Rank Kiwi home">
-          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <img src="/assets/rankkiwi-icon.png" alt="Rank Kiwi logo" class="brand-logo" width="28" height="28" />
           <span>Rank Kiwi</span>
         </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-menu-toggle>
-          <span class="sr-only">Open navigation</span><span></span><span></span>
-        </button>
+
         <div class="nav-links" id="nav-links" data-nav-links>
           <a href="#how-it-works">How it works</a>
           <a href="#features">Features</a>
           <a href="#outlier-score">Outlier Score</a>
-          <a href="/privacy/">Privacy</a>
-          <a class="nav-free" href="#free">Free</a>
+          <a href="/docs/">Docs</a>
+          <a href="#pricing">Pricing</a>
           <a class="button button-small" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
-      </nav>
+
+        <div class="nav-right">
+          <a class="button button-small" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
     </header>
 
     <main id="main">
+      <!-- 2. HERO -->
       <section class="hero wrap">
         <div class="hero-copy reveal">
           <p class="eyebrow"><span class="status-dot"></span> INSTAGRAM &amp; YOUTUBE CREATOR RESEARCH</p>
-          <h1>Find top-performing content on Instagram and YouTube.</h1>
-          <p class="hero-text">Research creator profiles, sort content by views, likes, comments, and Outlier Score, and find the posts worth studying.</p>
+          <h1>Find the top-performing content on Instagram and YouTube.</h1>
+          <p class="hero-text">Research creator profiles, sort their content by performance, and find the posts worth studying.</p>
           <div class="hero-actions">
-            <a class="button" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome <span>— It's Free</span></a>
+            <a class="button" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome <span>— It’s Free</span></a>
             <a class="text-button" href="#how-it-works">See how it works <b aria-hidden="true">↓</b></a>
           </div>
-          <ul class="trust-list" aria-label="Rank Kiwi benefits">
-            <li>100% free</li>
-            <li>No account required</li>
-            <li>Runs in your browser</li>
+          <ul class="trust-list" aria-label="Key features">
+            <li>100% Free</li>
+            <li>No Account Required</li>
+            <li>Runs in Your Browser</li>
           </ul>
         </div>
-        <div class="hero-media reveal" data-delay="120">
-          <video
-            class="hero-video"
-            src="hero.mp4"
-            autoplay
-            loop
-            muted
-            playsinline
-            aria-label="Rank Kiwi product demo"
-          ></video>
+
+        <!-- 3. HERO PRODUCT SCREENSHOT / VIDEO -->
+        <div class="hero-media-wrap reveal" data-delay="100">
+          <div class="product-visual-stage">
+            <div class="media-frame">
+              <div class="browser-chrome">
+                <span></span><span></span><span></span>
+                <b>Rank Kiwi — Creator Research Extension</b>
+              </div>
+              <video
+                class="hero-video"
+                src="/hero.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                aria-label="Rank Kiwi product demonstration video"
+              ></video>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="value-strip" id="free">
-        <div class="wrap reveal"><p><strong>Free to use.</strong> No subscription. No separate Rank Kiwi account.</p></div>
-      </section>
-
+      <!-- 4. HOW IT WORKS -->
       <section class="section how-section wrap" id="how-it-works">
-        <div class="section-intro reveal"><p class="eyebrow">HOW IT WORKS</p><h2>Research creators without the scrolling.</h2><p>Open a creator, run an analysis, and sort the content by performance.</p></div>
+        <div class="section-intro reveal">
+          <p class="eyebrow">HOW IT WORKS</p>
+          <h2>Research creator content in three steps.</h2>
+        </div>
         <div class="steps-layout">
           <ol class="steps reveal" id="workflow-steps">
-            <li class="step active" data-step="1"><span>01</span><div><h3>Open a creator</h3><p>Open an Instagram creator profile or YouTube channel.</p></div></li>
-            <li class="step" data-step="2"><span>02</span><div><h3>Analyze the content</h3><p>Choose the supported content surface and how many posts to analyze.</p></div></li>
-            <li class="step" data-step="3"><span>03</span><div><h3>Find what performs</h3><p>Sort by views, likes, comments, or Outlier Score.</p></div></li>
+            <li class="step active" data-step="1">
+              <span>01</span>
+              <div>
+                <h3>Open a creator</h3>
+                <p>Instagram or YouTube.</p>
+              </div>
+            </li>
+            <li class="step" data-step="2">
+              <span>02</span>
+              <div>
+                <h3>Analyze</h3>
+                <p>Choose what to inspect.</p>
+              </div>
+            </li>
+            <li class="step" data-step="3">
+              <span>03</span>
+              <div>
+                <h3>Find the outliers</h3>
+                <p>Sort by performance.</p>
+              </div>
+            </li>
           </ol>
-          <div class="screenshot-container reveal" data-delay="120">
-            <div class="media-frame media-frame-warm" id="workflow-carousel">
-              <div class="browser-chrome"><span></span><span></span><span></span><b>instagram.com/emma.scrapes</b></div>
+          <div class="screenshot-container reveal" data-delay="100">
+            <div class="media-frame" id="workflow-carousel">
+              <div class="browser-chrome">
+                <span></span><span></span><span></span>
+                <b>instagram.com/emma.scrapes</b>
+              </div>
               <div class="carousel-container">
-                <img src="1.png" alt="Step 1: Open a creator on Instagram or YouTube" class="carousel-image active" data-step="1">
-                <img src="2.png" alt="Step 2: Analyze the content" class="carousel-image" data-step="2">
-                <img src="3.png" alt="Step 3: Find what performs" class="carousel-image" data-step="3">
+                <img src="/1.png" alt="Open a creator profile on Instagram or YouTube" class="carousel-image active" data-step="1" />
+                <img src="/2.png" alt="Analyze visible creator content" class="carousel-image" data-step="2" />
+                <img src="/3.png" alt="Sort content by performance and Outlier Score" class="carousel-image" data-step="3" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section platform-section" aria-labelledby="platform-heading">
-        <div class="wrap">
-          <div class="section-intro centered reveal">
-            <p class="eyebrow">PLATFORMS</p>
-            <h2 id="platform-heading">Research Instagram and YouTube creators.</h2>
-            <p>See the content performing best on the platforms your audience already uses.</p>
-          </div>
-          <div class="platform-grid">
-            <article class="platform-card reveal">
-              <div class="platform-symbol instagram" aria-hidden="true">
-                <img src="Instagram_logo_2016.svg.webp" alt="" width="42" height="42">
-              </div>
-              <p class="card-label">Instagram</p>
-              <h3>Analyze Instagram Reels, posts, and carousels.</h3>
-              <p>See available views, likes, comments, captions, and Outlier Score for creator content.</p>
-              <ul>
-                <li>Views</li>
-                <li>Likes</li>
-                <li>Comments</li>
-                <li>Captions</li>
-                <li>Outlier Score</li>
-              </ul>
-            </article>
-            <article class="platform-card reveal" data-delay="90">
-              <div class="platform-symbol youtube" aria-hidden="true">
-                <img src="Red-YouTube-logo.png" alt="" width="42" height="42">
-              </div>
-              <p class="card-label">YouTube</p>
-              <h3>Analyze YouTube videos and Shorts.</h3>
-              <p>See available views, likes, comments, and Outlier Score for creator videos and Shorts.</p>
-              <ul>
-                <li>Views</li>
-                <li>Likes</li>
-                <li>Comments</li>
-                <li>Outlier Score</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section outlier-section wrap" id="outlier-score">
-        <div class="outlier-copy reveal">
-          <p class="eyebrow">OUTLIER SCORE</p>
-          <h2>Find the posts that performed far above normal.</h2>
-          <p>Outlier Score compares a post with the creator's typical performance. A higher score means the content performed substantially above that creator's usual baseline.</p>
-          <p class="muted small">Illustrative examples only.</p>
-        </div>
-        <div class="score-card reveal" data-delay="110">
-          <p class="card-label">Performance multiplier</p>
-          <div class="score-row">
-            <b>1.0×</b>
-            <span style="width:20%"></span>
-            <p><strong>Typical</strong><small>Close to a creator's usual range</small></p>
-          </div>
-          <div class="score-row strong">
-            <b>3.2×</b>
-            <span style="width:55%"></span>
-            <p><strong>Strong</strong><small>Clearly outperformed the usual</small></p>
-          </div>
-          <div class="score-row outlier">
-            <b>5.8×</b>
-            <span style="width:100%"></span>
-            <p><strong>Outlier</strong><small>Worth studying closely</small></p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section showcase-section" aria-labelledby="showcase-heading">
-        <div class="wrap showcase-layout">
-          <div class="media-frame media-frame-dark reveal" data-screenshot-slot="showcase" role="img" aria-label="Rank Kiwi details screenshot placeholder">
-            <div class="browser-chrome"><span></span><span></span><span></span><b>Rank Kiwi details</b></div>
-            <div class="shot-empty"><span class="shot-icon">⌁</span><strong>Detailed content analysis</strong><small>Use this slot for Reel, Carousel, Video, Short, sorting, export, or metrics views.</small></div>
-          </div>
-          <div class="showcase-copy reveal" data-delay="100">
-            <p class="eyebrow">CONTENT DETAILS</p>
-            <h2>See the numbers and caption together.</h2>
-            <p>Open any result to see its performance metrics, caption, content type, and other available details in one view.</p>
-            <a class="text-button" href="#features">Explore the features <b aria-hidden="true">→</b></a>
-          </div>
-        </div>
-      </section>
-
+      <!-- 5. FEATURES (MUST COME BEFORE PLATFORMS) -->
       <section class="section wrap" id="features">
-        <div class="section-intro reveal"><p class="eyebrow">FEATURES</p><h2>Everything you need to research creator content.</h2></div>
+        <div class="section-intro reveal">
+          <p class="eyebrow">FEATURES</p>
+          <h2>Everything you need to research creator content.</h2>
+        </div>
         <div class="feature-grid">
           <article class="feature-card reveal">
             <b>01</b>
             <h3>Analyze creator content</h3>
-            <p>Analyze Instagram and YouTube creator content directly from supported pages.</p>
+            <p>Analyze Instagram Reels, posts, carousels, YouTube videos and Shorts.</p>
           </article>
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-delay="80">
             <b>02</b>
-            <h3>See performance metrics</h3>
-            <p>View available views, likes, comments, captions, and Outlier Score.</p>
+            <h3>See performance</h3>
+            <p>Views, likes, comments, captions and Outlier Score.</p>
           </article>
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-delay="160">
             <b>03</b>
             <h3>Find outliers</h3>
-            <p>Sort content by Outlier Score and identify posts that performed far above the creator's usual baseline.</p>
+            <p>See which posts performed far above the creator’s usual baseline.</p>
           </article>
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-delay="240">
             <b>04</b>
-            <h3>Export your research</h3>
-            <p>Copy results or export them as CSV or JSON.</p>
+            <h3>Export research</h3>
+            <p>Copy results or export CSV and JSON.</p>
           </article>
         </div>
       </section>
 
-      <section class="privacy-section" id="privacy">
-        <div class="wrap privacy-layout">
-          <div class="reveal">
-            <p class="eyebrow">PRIVACY, PLAINLY STATED</p>
-            <h2>Your analysis runs in your browser.</h2>
-            <p>Rank Kiwi does not require a separate account or maintain a server-side database of your analyzed content. Your requested analysis is processed in the browser.</p>
-            <a class="text-button" href="/privacy/">Read the Privacy Policy <b aria-hidden="true">→</b></a>
+      <!-- 6. CHROME WEB STORE SHOWCASE / MAIN PRODUCT SHOWCASE -->
+      <section class="section showcase-cws-section wrap" id="showcase">
+        <div class="showcase-cws-layout">
+          <div class="showcase-cws-copy reveal">
+            <p class="eyebrow">CHROME EXTENSION</p>
+            <h2>Find the top 1% of content worth studying.</h2>
+            <p class="showcase-lead">Sort Instagram and YouTube content by performance and find the outliers fast.</p>
+            <div class="section-actions">
+              <a class="button" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome <span>— It’s Free</span></a>
+            </div>
           </div>
-          <div class="privacy-points reveal" data-delay="100">
-            <article>
-              <b>NO ACCOUNT</b>
-              <p>No separate Rank Kiwi account required.</p>
+          <div class="showcase-cws-media reveal" data-delay="100">
+            <div class="screenshot-container">
+              <div class="media-frame">
+                <div class="browser-chrome">
+                  <span></span><span></span><span></span>
+                  <b>Viral Outlier Posts — Rank Kiwi</b>
+                </div>
+                <img src="/3.png" alt="Rank Kiwi Viral Outlier Posts analysis and export" class="shot-image" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. PLATFORMS (ONLY AFTER FEATURES) -->
+      <section class="section platform-section" id="platforms">
+        <div class="wrap">
+          <div class="section-intro centered reveal">
+            <p class="eyebrow">PLATFORMS</p>
+            <h2>Built for Instagram and YouTube.</h2>
+          </div>
+          <div class="platform-grid">
+            <article class="platform-card reveal">
+              <div class="platform-icon" aria-hidden="true">
+                <img src="/Instagram_logo_2016.svg.webp" alt="Instagram" width="40" height="40" />
+              </div>
+              <h3>Instagram</h3>
+              <p>Analyze Reels, posts and carousels.</p>
             </article>
-            <article>
-              <b>NO SERVER-SIDE DATABASE</b>
-              <p>Rank Kiwi does not maintain a server-side database of analyzed content.</p>
-            </article>
-            <article>
-              <b>CLIENT-SIDE</b>
-              <p>Your requested analysis runs in your browser.</p>
+            <article class="platform-card reveal" data-delay="90">
+              <div class="platform-icon" aria-hidden="true">
+                <img src="/Red-YouTube-logo.png" alt="YouTube" width="46" height="32" />
+              </div>
+              <h3>YouTube</h3>
+              <p>Analyze videos and Shorts.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section faq-section wrap" aria-labelledby="faq-heading">
+      <!-- 8. OUTLIER SCORE -->
+      <section class="section outlier-section wrap" id="outlier-score">
+        <div class="outlier-copy reveal">
+          <p class="eyebrow">OUTLIER SCORE</p>
+          <h2>Find the posts that outperform the usual.</h2>
+          <p>Outlier Score compares a post with the creator’s typical performance.</p>
+        </div>
+        <div class="score-card reveal" data-delay="100">
+          <div class="score-row">
+            <b>1.0×</b>
+            <div class="score-bar"><span style="width: 25%"></span></div>
+            <p><strong>Typical</strong></p>
+          </div>
+          <div class="score-row strong">
+            <b>3.2×</b>
+            <div class="score-bar"><span style="width: 60%"></span></div>
+            <p><strong>Strong</strong></p>
+          </div>
+          <div class="score-row outlier">
+            <b>5.8×</b>
+            <div class="score-bar"><span style="width: 100%"></span></div>
+            <p><strong>Outlier</strong></p>
+          </div>
+          <p class="score-note">Illustrative examples only.</p>
+        </div>
+      </section>
+
+      <!-- 9. CONTENT DETAILS / SCREENSHOT SHOWCASE -->
+      <section class="section content-details-section wrap" id="content-details">
+        <div class="content-details-layout">
+          <div class="content-details-media reveal">
+            <div class="screenshot-container">
+              <div class="media-frame">
+                <div class="browser-chrome">
+                  <span></span><span></span><span></span>
+                  <b>Rank Kiwi — Content Details</b>
+                </div>
+                <img src="/2.png" alt="Rank Kiwi content details modal showing performance metrics and caption" class="shot-image" loading="lazy" />
+              </div>
+            </div>
+          </div>
+          <div class="content-details-copy reveal" data-delay="100">
+            <p class="eyebrow">CONTENT DETAILS</p>
+            <h2>See the metrics and caption together.</h2>
+            <p>Open a result to see its performance, caption, and content details in one view.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. PRICING / FREE -->
+      <section class="section pricing-section wrap" id="pricing">
+        <div class="pricing-card reveal">
+          <h2>Free to use.</h2>
+          <p>Rank Kiwi is free to install and use.</p>
+          <a class="button" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome <span>— It’s Free</span></a>
+        </div>
+      </section>
+
+      <!-- 11. PRIVACY -->
+      <section class="section privacy-section wrap" id="privacy">
+        <div class="privacy-intro reveal">
+          <p class="eyebrow">PRIVACY</p>
+          <h2>Your analysis runs in your browser.</h2>
+          <p class="privacy-sub">No separate account. No server-side database of your analyzed content.</p>
+        </div>
+        <div class="privacy-grid reveal" data-delay="90">
+          <article class="privacy-card">
+            <h3>NO ACCOUNT</h3>
+            <p>No Rank Kiwi account required.</p>
+          </article>
+          <article class="privacy-card">
+            <h3>CLIENT-SIDE</h3>
+            <p>Your requested analysis runs in the browser.</p>
+          </article>
+          <article class="privacy-card">
+            <h3>NO SERVER-SIDE DATABASE</h3>
+            <p>Analyzed content is not maintained in a Rank Kiwi server-side database.</p>
+          </article>
+        </div>
+        <div class="privacy-action reveal">
+          <a class="text-button" href="/privacy/">Read Privacy Policy <b aria-hidden="true">→</b></a>
+        </div>
+      </section>
+
+      <!-- 12. FAQ -->
+      <section class="section faq-section wrap" id="faq" aria-labelledby="faq-heading">
         <div class="faq-intro reveal">
           <p class="eyebrow">FAQ</p>
           <h2 id="faq-heading">Questions, answered.</h2>
@@ -251,73 +338,71 @@
             <p>Rank Kiwi is a Chrome extension for researching creator content on Instagram and YouTube. It lets you sort content by performance and find the posts worth studying.</p>
           </details>
           <details>
-            <summary>How does Rank Kiwi analyze Instagram creators?<span>+</span></summary>
-            <p>Open a supported Instagram creator profile, run an analysis, and Rank Kiwi shows Reels, posts, and carousels with views, likes, comments, captions, and Outlier Score.</p>
-          </details>
-          <details>
-            <summary>How does Rank Kiwi analyze YouTube creators?<span>+</span></summary>
-            <p>Navigate to a supported YouTube channel, run an analysis, and Rank Kiwi shows videos and Shorts with view counts, likes, comments, and Outlier Score.</p>
-          </details>
-          <details>
-            <summary>What is Outlier Score?<span>+</span></summary>
-            <p>Outlier Score compares a post against that creator's typical performance. A score of 5× means the post reached roughly five times the creator's usual result.</p>
+            <summary>How does Rank Kiwi work?<span>+</span></summary>
+            <p>Open an Instagram profile or YouTube channel in your browser and run an analysis. Rank Kiwi inspects visible post metrics directly on your screen and calculates Outlier Scores.</p>
           </details>
           <details>
             <summary>Is Rank Kiwi free?<span>+</span></summary>
-            <p>Yes. Rank Kiwi is free to install and use. There is no subscription or paywall.</p>
+            <p>Yes. Rank Kiwi is completely free to install and use. There are no subscriptions, tiers, or paywalls.</p>
           </details>
           <details>
-            <summary>Do I need a Rank Kiwi account?<span>+</span></summary>
-            <p>No. Rank Kiwi does not require a separate account.</p>
+            <summary>Do I need an account?<span>+</span></summary>
+            <p>No. Rank Kiwi does not require creating an account or logging into any service.</p>
           </details>
           <details>
             <summary>Which Instagram content can I analyze?<span>+</span></summary>
-            <p>Rank Kiwi supports Instagram Reels, posts, and carousels on supported creator profile pages.</p>
+            <p>You can analyze Instagram Reels, standard posts, and multi-slide carousels on supported creator profile pages.</p>
           </details>
           <details>
             <summary>Which YouTube content can I analyze?<span>+</span></summary>
-            <p>Rank Kiwi supports YouTube videos and Shorts on supported channel pages.</p>
+            <p>You can analyze long-form YouTube videos and YouTube Shorts on supported channel pages.</p>
           </details>
           <details>
-            <summary>Does Rank Kiwi store my analyzed data?<span>+</span></summary>
-            <p>Rank Kiwi does not maintain a server-side database of your analyzed content. Analysis is processed in your browser when you use the extension.</p>
+            <summary>What is Outlier Score?<span>+</span></summary>
+            <p>Outlier Score compares an individual post's metrics to the creator's median baseline. A 3.2× score means the post reached roughly triple the creator's typical result.</p>
+          </details>
+          <details>
+            <summary>Does Rank Kiwi store my analyzed content?<span>+</span></summary>
+            <p>No. Analysis runs locally in your browser. Rank Kiwi does not maintain a server-side database of your analyzed creator content.</p>
           </details>
           <details>
             <summary>Can I export my research?<span>+</span></summary>
-            <p>Yes. You can copy results or export them as CSV or JSON.</p>
+            <p>Yes. You can copy the data directly to your clipboard or export it as clean CSV or JSON files.</p>
           </details>
         </div>
       </section>
 
+      <!-- 13. FINAL CTA -->
       <section class="final-cta wrap reveal">
-        <div class="brand-mark large" aria-hidden="true"><i></i><i></i><i></i></div>
+        <img src="/assets/rankkiwi-icon.png" alt="Rank Kiwi logo" class="brand-logo large" width="44" height="44" />
         <p class="eyebrow">RANK KIWI IS FREE</p>
         <h2>Find better content to study.</h2>
         <p>Research Instagram and YouTube creators without manually scrolling through hundreds of posts.</p>
         <div class="hero-actions">
-          <a class="button" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome <span>— It's Free</span></a>
+          <a class="button" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome <span>— It’s Free</span></a>
           <a class="button button-quiet" href="#how-it-works">See how it works</a>
         </div>
         <small>No account required.</small>
       </section>
     </main>
 
+    <!-- 14. FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
-        <div>
-          <a class="brand" href="/">
-            <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="footer-brand-col">
+          <a class="brand" href="/" aria-label="Rank Kiwi home">
+            <img src="/assets/rankkiwi-icon.png" alt="Rank Kiwi logo" class="brand-logo" width="28" height="28" />
             <span>Rank Kiwi</span>
           </a>
           <p>Creator research for Instagram and YouTube.</p>
-          <a class="button button-small button-quiet" data-chrome-link href="#" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
         <div>
           <b>Product</b>
           <a href="#how-it-works">How it works</a>
           <a href="#features">Features</a>
           <a href="#outlier-score">Outlier Score</a>
-          <a data-chrome-link href="#" target="_blank" rel="noopener">Chrome Web Store</a>
+          <a href="/docs/">Docs</a>
+          <a href="#pricing">Pricing</a>
         </div>
         <div>
           <b>Legal</b>
@@ -325,8 +410,8 @@
           <a href="/terms/">Terms</a>
         </div>
         <div>
-          <b>Support</b>
-          <a href="/support/">Support</a>
+          <b>Email</b>
+          <a href="mailto:support@hibrushed.com">support@hibrushed.com</a>
         </div>
       </div>
       <div class="wrap footer-bottom">
@@ -334,6 +419,7 @@
         <p>Rank Kiwi is an independent third-party extension and is not affiliated with Google, YouTube, Meta, or Instagram.</p>
       </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="/script.js"></script>
   </body>
 </html>
