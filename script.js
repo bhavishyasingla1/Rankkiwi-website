@@ -15,7 +15,7 @@ document.querySelectorAll('[data-chrome-link]').forEach((link) => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     });
-    link.setAttribute('aria-label', 'Chrome Web Store link will be active upon release');
+    link.setAttribute('aria-label', 'Rank Kiwi is coming soon to the Chrome Web Store');
   }
 });
 
