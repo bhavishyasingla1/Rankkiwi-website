@@ -103,7 +103,7 @@ function startWorkflowRotation() {
   carouselTimer = setInterval(() => {
     const next = currentStep >= 3 ? 1 : currentStep + 1;
     setWorkflowStep(next);
-  }, 2600);
+  }, 3200);
 }
 
 if (workflowSteps.length > 0 && carouselImages.length > 0) {
@@ -114,6 +114,17 @@ if (workflowSteps.length > 0 && carouselImages.length > 0) {
       startWorkflowRotation();
     });
   });
+
+  const stepsLayout = document.querySelector('.steps-layout');
+  if (stepsLayout) {
+    stepsLayout.addEventListener('mouseenter', () => {
+      if (carouselTimer) clearInterval(carouselTimer);
+    });
+    stepsLayout.addEventListener('mouseleave', () => {
+      startWorkflowRotation();
+    });
+  }
+
   startWorkflowRotation();
 }
 
