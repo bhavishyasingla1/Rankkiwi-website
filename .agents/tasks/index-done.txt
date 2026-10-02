@@ -1,0 +1,122 @@
+INDEX.HTML REFINEMENT - VERIFICATION REPORT
+============================================
+
+Task: Apply targeted refinements to index.html for Rank Kiwi website
+
+BRAND NAME CHANGES:
+✓ All instances of "RankKiwi" (no space) changed to "Rank Kiwi" (with space)
+✓ Total replacements: ~15 instances across:
+  - Header brand link and text
+  - All aria-labels
+  - Hero section trust list
+  - Value strip
+  - Privacy section content
+  - FAQ section questions and answers
+  - Final CTA section
+  - Footer brand and copyright
+  - Third-party disclaimer
+
+SEO META UPDATES:
+✓ Title changed to: "Rank Kiwi — Instagram & YouTube Creator Research"
+✓ Meta description updated with SEO-focused copy
+✓ Open Graph tags updated
+✓ Twitter card tags updated
+✓ JSON-LD schema updated with "Rank Kiwi"
+
+HEADER NAVIGATION:
+✓ Added "Outlier Score" link to navigation
+✓ Changed Privacy link to /privacy/
+✓ All navigation anchors verified:
+  - #how-it-works → exists
+  - #features → exists
+  - #outlier-score → exists (newly added)
+  - /privacy/ → external link
+  - #free → exists
+✓ Scroll-margin-top CSS added for all anchor sections
+
+HERO SECTION:
+✓ Eyebrow updated: "Creator research for Instagram & YouTube"
+✓ Hero text expanded with SEO-focused copy about sorting content and finding posts
+✓ Primary CTA button text updated: "It's Free" (capitalized)
+✓ Trust list aria-label updated to "Rank Kiwi benefits"
+
+PLATFORM SECTION:
+✓ Heading changed to: "Creator research for Instagram and YouTube."
+✓ Subheading: "Two platforms. All the performance data you need."
+✓ Instagram card completely rewritten with proper SVG logo (gradient icon)
+✓ YouTube card completely rewritten with proper SVG logo (red play button)
+✓ Both cards now list specific metrics (Views, Likes, Comments, etc.)
+
+OUTLIER SCORE SECTION:
+✓ Added id="outlier-score" to section
+✓ Eyebrow: "Outlier Score"
+✓ Heading: "See which posts performed far above a creator's usual performance."
+✓ Expanded explanation of performance multiplier concept
+✓ Card label: "Performance multiplier"
+✓ Added width styles to score row spans for visual bars
+✓ Updated example labels: "Typical performance", "Strong performance", "Outlier"
+✓ Added disclaimer: "Illustrative examples only. Not actual platform results."
+
+SHOWCASE / CLOSER LOOK:
+✓ Eyebrow: "Closer Look"
+✓ Updated copy to focus on metrics and context
+✓ Updated browser chrome title to "Rank Kiwi details"
+
+FEATURES SECTION:
+✓ Reduced from 8 feature cards to 4 core features:
+  01. Analyze creator content
+  02. See the numbers that matter
+  03. Find the outliers
+  04. Export your research
+✓ Each card has expanded, clearer descriptions
+
+PRIVACY SECTION:
+✓ Updated all three privacy points:
+  - NO ACCOUNT (Rank Kiwi references updated)
+  - NO SERVER-SIDE DATABASE (new label, Rank Kiwi references)
+  - CLIENT-SIDE ANALYSIS (new label)
+✓ All "RankKiwi" changed to "Rank Kiwi"
+
+FAQ SECTION:
+✓ Replaced all 10 FAQ items with new set:
+  - What is Rank Kiwi?
+  - How does Rank Kiwi analyze Instagram creators?
+  - How does Rank Kiwi analyze YouTube creators?
+  - What is Outlier Score?
+  - Is Rank Kiwi free?
+  - Do I need a Rank Kiwi account?
+  - Which Instagram content can I analyze?
+  - Which YouTube content can I analyze?
+  - Does Rank Kiwi store my analyzed data?
+  - Can I export my research?
+✓ All "RankKiwi" changed to "Rank Kiwi"
+✓ FAQ intro updated: "what Rank Kiwi does"
+
+FINAL CTA SECTION:
+✓ Eyebrow: "Rank Kiwi is free"
+✓ Updated heading: "Find better content to study."
+✓ Updated supporting copy with SEO focus
+✓ Button text: "It's Free" (capitalized)
+
+FOOTER:
+✓ Brand text: "Rank Kiwi"
+✓ Added "Outlier Score" link to Product column
+✓ Copyright: "© 2026 Rank Kiwi"
+✓ Third-party disclaimer: "Rank Kiwi is an independent..."
+
+TECHNICAL CHANGES:
+✓ Added scroll-margin-top CSS for smooth anchor navigation
+✓ All section IDs verified for navigation anchors
+✓ Video reference to hero.mp4 preserved
+✓ All existing CSS classes preserved
+✓ All data attributes preserved
+✓ Responsive structure intact
+
+FINAL VERIFICATION:
+✓ No instances of "RankKiwi" (no space) remain in user-visible text
+✓ Domain rankkiwi.com unchanged
+✓ File structure and layout preserved
+✓ All animations and reveal delays intact
+
+ISSUES ENCOUNTERED:
+None. All changes applied successfully.

@@ -1,0 +1,35 @@
+TARGETED CSS POLISH — COMPLETED
+
+Changes applied to styles.css:
+
+1. SCROLL MARGIN
+   Added scroll-margin-top: 116px to all anchor target sections (#how-it-works, #features, #outlier-score, #privacy, #free)
+   This prevents content from hiding behind the sticky header when navigating via anchor links
+
+2. PLATFORM ICON CONTAINERS
+   Updated .platform-symbol rule:
+   - Changed width/height from 42px to 46px
+   - Set background to transparent (was colored background)
+   - Added overflow: hidden
+   - Removed font-size and font-weight (no longer needed for text-based icons)
+   
+   Updated .instagram and .youtube rules:
+   - Set background to transparent (removed colored backgrounds)
+   - Removed color declarations (icons are now SVG)
+
+3. OUTLIER SCORE BAR WIDTHS
+   Updated .score-row>span rule:
+   - Added transition: width .3s ease
+   - Allows smooth animation when bar widths change
+   - Does not override inline width styles
+
+4. FEATURE GRID
+   Verified .feature-grid already set to repeat(4,1fr)
+   - Shows 4 cards in one row on desktop as intended
+   - No change needed
+
+5. SHOWCASE SECTION
+   Verified .showcase-section background: #16260d (dark green)
+   - Already correct, no change needed
+
+All changes were targeted refinements. No restructuring or rebuilding was performed.

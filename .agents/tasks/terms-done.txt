@@ -1,0 +1,12 @@
+Brand name fix completed for terms/index.html
+
+All instances of "RankKiwi" (no space) have been updated to "Rank Kiwi" (with space):
+
+✓ <title> tag: "Terms of Service — Rank Kiwi"
+✓ <meta name="description">: "Rank Kiwi Terms of Service."
+✓ Header navigation brand <span>: "Rank Kiwi"
+✓ All paragraph text throughout the document
+✓ Footer copyright: "© 2026 Rank Kiwi"
+
+The domain "rankkiwi.com" remained unchanged as required.
+No other content, structure, or legal language was modified.
