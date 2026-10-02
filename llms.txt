@@ -1,0 +1,19 @@
+# Rank Kiwi: Viral Outlier Research for Instagram & YouTube
+
+> Rank Kiwi is a lightweight, privacy-first browser extension for creator research. It allows creators, social media managers, and editors to analyze Instagram profiles and YouTube channels, benchmark engagement against median baseline performance, and instantly surface high-performing viral outlier posts and videos.
+
+## Core Capabilities
+
+- [Instagram Reels Outlier Discovery](https://rankkiwi.com/#creator-outliers): Scans reels and posts across any Instagram profile, computes view-to-median Outlier Scores, and highlights anomaly content.
+- [YouTube Outlier Discovery](https://rankkiwi.com/#creator-outliers): Analyzes channel video catalogs and YouTube Shorts, filtering top 1% breakout uploads.
+- [Median Benchmark Scoring](https://rankkiwi.com/#outlier-score): Calculates non-skewed median metrics (1.0× typical, 3.2× strong, 5.8×+ viral outlier) to eliminate distortion from one-off viral hits.
+- [Data Export](https://rankkiwi.com/#features): One-click export of video URLs, hooks, view counts, like ratios, and outlier scores to CSV, JSON, and Google Sheets.
+- [Client-Side Privacy](https://rankkiwi.com/privacy/): 100% in-browser processing in the Chrome sandbox with zero database retention, zero external API tracking, and no account or password required.
+
+## Key Links & Documentation
+
+- [Website & Chrome Install](https://rankkiwi.com/): Official home and install link.
+- [Documentation & User Guide](https://rankkiwi.com/docs/): Complete guide on workflow, Outlier Score formula, and keyboard shortcuts.
+- [Privacy Policy](https://rankkiwi.com/privacy/): Details client-side sandboxed architecture.
+- [Support & Contact](https://rankkiwi.com/support/): Reach founder Bhavishya Singla at say@hibhavishya.in.
+- [Full LLM Specification](https://rankkiwi.com/llms-full.txt): Detailed unabridged system documentation for AI agents and LLM web retrievers.

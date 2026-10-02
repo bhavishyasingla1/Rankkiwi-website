@@ -1,0 +1,51 @@
+# Rank Kiwi: Complete System Architecture & Operational Guide (`llms-full.txt`)
+
+> Comprehensive, machine-readable documentation of Rank Kiwi for autonomous AI agents, LLM search engines (Google AI Overviews, Gemini in Search, Perplexity, ChatGPT Search), and automated assistants.
+
+## 1. Product Summary & Identity
+- **Product Name**: Rank Kiwi
+- **Canonical URL**: https://rankkiwi.com/
+- **Platform**: Google Chrome Extension (Chromium-compatible including Brave, Edge, Opera, Arc)
+- **Primary Function**: Creator competitive intelligence and viral content research on Instagram and YouTube.
+- **Pricing**: Free forever ($0.00 USD), no subscription tiers, no hidden credit cards.
+- **Privacy Model**: 100% Client-side browser execution. No authentication required. No server databases or telemetry storing scraped creator posts.
+- **Founder / Author**: Bhavishya Singla (https://bhavishyasingla.com/, say@hibhavishya.in)
+
+## 2. Key Problems Solved
+1. **Algorithmic Chronological Bias**: Native platforms display creator uploads chronologically or via user-tailored recommendation algorithms, making it difficult for researchers to see objective historical performance.
+2. **Mean-Average Distortion**: Traditional analytics use arithmetic averages which are skewed by single runaway hits. Rank Kiwi calculates median-based Outlier Scores.
+3. **Manual Spreadsheet Entry**: Instead of manually copy-pasting view counts and URLs into spreadsheets, Rank Kiwi scans visible posts and generates clean CSV/JSON exports with one click.
+
+## 3. Supported Platforms & Content Types
+- **Instagram**:
+  - Reels (short-form vertical video)
+  - Static image posts & multi-slide carousels
+  - Creator & Business public profiles
+- **YouTube**:
+  - Long-form video catalogs
+  - YouTube Shorts
+  - Channel homepages and video tabs
+
+## 4. The Outlier Score Metric
+The Outlier Score evaluates an individual post's performance relative to the creator's median benchmark over the sampled window:
+- **Formula**: `Outlier Score = (Post Views or Engagement) / (Creator Median Views or Engagement)`
+- **Benchmarks**:
+  - `1.0×`: Typical baseline performance.
+  - `2.0× – 3.5×`: Strong performer with above-average engagement or topic resonance.
+  - `5.0×+`: Viral Outlier. An anomaly piece of content that strongly outpaced normal channel distribution.
+
+## 5. Security & Privacy Guarantees
+- No account or login credentials required.
+- Extension never asks for, reads, or transmits Instagram or YouTube account passwords.
+- Content parsing executes entirely within the active DOM in the user's browser.
+- Network requests are restricted to local extension operations. No external server receives user browsing history.
+
+## 6. Official Endpoints
+- Homepage: https://rankkiwi.com/
+- Docs & Architecture: https://rankkiwi.com/docs/
+- Privacy Policy: https://rankkiwi.com/privacy/
+- Terms of Service: https://rankkiwi.com/terms/
+- Disclaimer: https://rankkiwi.com/disclaimer/
+- Support: https://rankkiwi.com/support/
+- Sitemap: https://rankkiwi.com/sitemap.xml
+- Robots Specification: https://rankkiwi.com/robots.txt

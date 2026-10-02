@@ -66,15 +66,25 @@ if ('IntersectionObserver' in window && revealItems.length > 0) {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
 
+// Ensure Hero Video Autoplays
+const heroVideo = document.querySelector('.hero-video');
+if (heroVideo) {
+  heroVideo.muted = true;
+  const playPromise = heroVideo.play();
+  if (playPromise !== undefined) {
+    playPromise.catch(() => {
+      const playOnTouch = () => {
+        heroVideo.play().catch(() => {});
+      };
+      window.addEventListener('click', playOnTouch, { once: true });
+      window.addEventListener('touchstart', playOnTouch, { once: true });
+    });
+  }
+}
+
 // Workflow Carousel in How It Works section
 const workflowSteps = document.querySelectorAll('#workflow-steps .step');
 const carouselImages = document.querySelectorAll('.carousel-image');
-const carouselTitleElem = document.getElementById('carousel-title');
-const carouselTitles = {
-  1: 'instagram.com / Open Profile — Rank Kiwi',
-  2: 'Collecting Posts... 12/25 — Rank Kiwi',
-  3: 'Viral Outlier Posts — Rank Kiwi'
-};
 let currentStep = 1;
 let carouselTimer = null;
 
@@ -86,9 +96,6 @@ function setWorkflowStep(stepNum) {
   carouselImages.forEach((img) => {
     img.classList.toggle('active', parseInt(img.dataset.step, 10) === stepNum);
   });
-  if (carouselTitleElem && carouselTitles[stepNum]) {
-    carouselTitleElem.textContent = carouselTitles[stepNum];
-  }
 }
 
 function startWorkflowRotation() {
@@ -96,7 +103,7 @@ function startWorkflowRotation() {
   carouselTimer = setInterval(() => {
     const next = currentStep >= 3 ? 1 : currentStep + 1;
     setWorkflowStep(next);
-  }, 2400);
+  }, 2600);
 }
 
 if (workflowSteps.length > 0 && carouselImages.length > 0) {
