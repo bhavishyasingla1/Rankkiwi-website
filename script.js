@@ -1,8 +1,9 @@
 /* Set this once when the published Chrome Web Store URL is available. */
 const CHROME_STORE_URL = '[CHROME WEB STORE URL PLACEHOLDER]';
+const SUPPORT_EMAIL = 'support@hibrushed.com';
 
 /*
- * Drop final RankKiwi screenshots here. Each key matches a data-screenshot-slot
+ * Drop final Rank Kiwi screenshots here. Each key matches a data-screenshot-slot
  * in index.html, so assets can be replaced without changing the page layout.
  */
 const PRODUCT_SCREENSHOTS = {
@@ -18,7 +19,7 @@ Object.entries(PRODUCT_SCREENSHOTS).forEach(([slot, image]) => {
   const preview = document.createElement('img');
   preview.className = 'shot-image';
   preview.src = image.src;
-  preview.alt = image.alt || 'RankKiwi product screenshot';
+  preview.alt = image.alt || 'Rank Kiwi product screenshot';
   preview.loading = image.loading || 'lazy';
   frame.querySelector('.shot-empty')?.replaceWith(preview);
 });
