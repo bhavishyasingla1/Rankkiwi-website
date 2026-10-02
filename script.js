@@ -1,7 +1,7 @@
 /* Rank Kiwi Interactive Script */
 
 const CHROME_STORE_URL = '[CHROME WEB STORE URL PLACEHOLDER]';
-const SUPPORT_EMAIL = 'support@hibrushed.com';
+const SUPPORT_EMAIL = 'say@hibhavishya.in';
 
 // Chrome Web Store links handler
 document.querySelectorAll('[data-chrome-link]').forEach((link) => {
@@ -69,6 +69,12 @@ if ('IntersectionObserver' in window && revealItems.length > 0) {
 // Workflow Carousel in How It Works section
 const workflowSteps = document.querySelectorAll('#workflow-steps .step');
 const carouselImages = document.querySelectorAll('.carousel-image');
+const carouselTitleElem = document.getElementById('carousel-title');
+const carouselTitles = {
+  1: 'instagram.com / Open Profile — Rank Kiwi',
+  2: 'Collecting Posts... 12/25 — Rank Kiwi',
+  3: 'Viral Outlier Posts — Rank Kiwi'
+};
 let currentStep = 1;
 let carouselTimer = null;
 
@@ -80,6 +86,9 @@ function setWorkflowStep(stepNum) {
   carouselImages.forEach((img) => {
     img.classList.toggle('active', parseInt(img.dataset.step, 10) === stepNum);
   });
+  if (carouselTitleElem && carouselTitles[stepNum]) {
+    carouselTitleElem.textContent = carouselTitles[stepNum];
+  }
 }
 
 function startWorkflowRotation() {
