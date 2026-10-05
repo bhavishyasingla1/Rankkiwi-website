@@ -18,7 +18,6 @@ Screenshot *.png
 # Source/build files not needed in production
 src
 scripts
-docs
 
 # Large raw images (keep only optimized webp/smaller assets)
 1.png
