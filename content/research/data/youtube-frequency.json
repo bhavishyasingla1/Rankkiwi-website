@@ -1,0 +1,46 @@
+{
+  "datasetId": "youtube-upload-frequency-vidiq",
+  "title": "YouTube Upload Frequency & Growth Correlation Study",
+  "publisher": "vidIQ",
+  "sourceTitle": "How Often Should You Upload to YouTube (Data Study)",
+  "sourceUrl": "https://vidiq.com/blog/post/how-often-should-you-upload-to-youtube/",
+  "datasetPeriod": "April 2025 – March 2026",
+  "sampleSize": 10210278,
+  "sampleDescription": "10,210,278 YouTube channels with at least 1,000 subscribers tracking uploads between April 2025 and March 2026",
+  "tiers": [
+    {
+      "uploadsPerMonth": "<1",
+      "medianMonthlyViewGrowthPercent": 0.53,
+      "medianMonthlySubscriberGrowthPercent": 0.00
+    },
+    {
+      "uploadsPerMonth": "1–3",
+      "medianMonthlyViewGrowthPercent": 0.89,
+      "medianMonthlySubscriberGrowthPercent": 0.10
+    },
+    {
+      "uploadsPerMonth": "4–7",
+      "medianMonthlyViewGrowthPercent": 1.32,
+      "medianMonthlySubscriberGrowthPercent": 0.39
+    },
+    {
+      "uploadsPerMonth": "8–11",
+      "medianMonthlyViewGrowthPercent": 1.70,
+      "medianMonthlySubscriberGrowthPercent": 0.63
+    },
+    {
+      "uploadsPerMonth": "12+",
+      "medianMonthlyViewGrowthPercent": 2.18,
+      "medianMonthlySubscriberGrowthPercent": 0.91
+    }
+  ],
+  "rankKiwiCalculations": {
+    "highestVsLowestViewGrowthMultiple": 4.11,
+    "highestVs1to3ViewGrowthMultiple": 2.45
+  },
+  "limitations": [
+    "Association does not equal causation: creators uploading 12+ times/month often possess higher production budgets, full-time staff, and established workflow momentum",
+    "Restricted to channels with >= 1,000 subscribers",
+    "Does not account for video length or production complexity differences (Shorts vs 40-minute documentaries)"
+  ]
+}

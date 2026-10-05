@@ -1,6 +1,24 @@
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2V6BK8R00"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-Y2V6BK8R00");
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "yt23g8xi6k");
+    </script>
     <!-- Character Encoding & Viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,7 +70,7 @@
       [
         {
           "@context": "https://schema.org",
-          "@type": "WebApplication",
+          "@type": ["SoftwareApplication", "WebApplication"],
           "name": "Rank Kiwi",
           "url": "https://rankkiwi.com/",
           "description": "Free Chrome extension to research creator profiles, track engagement metrics, and discover viral outlier content on Instagram and YouTube.",
@@ -215,18 +233,18 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- HEADER -->
+                <!-- SITE HEADER -->
     <header class="site-header" data-header>
       <div class="wrap nav">
         <a class="brand" href="/" aria-label="Rank Kiwi home">
-          <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="26" height="26" fetchpriority="high" />
+          <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" fetchpriority="high" />
           <span>Rank Kiwi</span>
         </a>
 
         <div class="nav-links" id="nav-links" data-nav-links>
-          <a href="#how-it-works">How it works</a>
-          <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
+          <a href="/#how-it-works">How it works</a>
+          <a href="/#features">Features</a>
+          <a href="/research/">Research</a>
           <a href="/docs/">Docs</a>
           <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
@@ -246,11 +264,11 @@
       <!-- HERO -->
       <section class="hero wrap">
         <div class="hero-copy">
-          <h1>Get more views on Instagram &amp; YouTube</h1>
-          <p class="hero-text">Research creator profiles and find viral outliers in seconds with median performance scoring.</p>
+          <h1>Stop guessing. Find what works.</h1>
+          <p class="hero-text">Discover the Reels, Shorts, and videos that outperform the rest &mdash; all in a few clicks.</p>
           <div class="hero-actions">
-            <a class="button" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
-            <a class="text-button" href="#how-it-works">See how it works <b aria-hidden="true">↓</b></a>
+            <a class="button" data-chrome-link data-cta-name="add_to_chrome_hero" data-cta-position="hero" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+            <a class="text-button" data-cta-name="see_how_it_works" data-cta-position="hero" href="#how-it-works">See how it works <b aria-hidden="true">↓</b></a>
           </div>
         </div>
 
@@ -291,26 +309,35 @@
         </div>
         <div class="steps-layout">
           <ol class="steps reveal" id="workflow-steps">
-            <li class="step active" data-step="1">
+            <li class="step active" data-step="1" role="button" tabindex="0" aria-label="Step 1: Open any creator profile on Instagram or YouTube">
               <div class="step-header">
                 <span class="step-num">01</span>
                 <h3>Open any creator</h3>
               </div>
               <p>Instagram profile or YouTube channel.</p>
+              <div class="step-progress-track" aria-hidden="true">
+                <div class="step-progress-bar"></div>
+              </div>
             </li>
-            <li class="step" data-step="2">
+            <li class="step" data-step="2" role="button" tabindex="0" aria-label="Step 2: Scan visible creator content in seconds">
               <div class="step-header">
                 <span class="step-num">02</span>
                 <h3>Scan visible posts</h3>
               </div>
               <p>Collect reels, posts, and videos.</p>
+              <div class="step-progress-track" aria-hidden="true">
+                <div class="step-progress-bar"></div>
+              </div>
             </li>
-            <li class="step" data-step="3">
+            <li class="step" data-step="3" role="button" tabindex="0" aria-label="Step 3: Sort by outliers and export winning hooks">
               <div class="step-header">
                 <span class="step-num">03</span>
                 <h3>Sort by outliers</h3>
               </div>
               <p>Export winning hooks to spreadsheet.</p>
+              <div class="step-progress-track" aria-hidden="true">
+                <div class="step-progress-bar"></div>
+              </div>
             </li>
           </ol>
           <div class="screenshot-container reveal" data-delay="80">
@@ -318,6 +345,11 @@
               <img src="/assets/shots/step1-open-profile.webp" alt="Open an Instagram or YouTube creator profile" class="carousel-image active" data-step="1" width="1280" height="832" loading="eager" decoding="async" />
               <img src="/assets/shots/step2-collecting.webp" alt="Scan visible creator content" class="carousel-image" data-step="2" width="1280" height="832" loading="lazy" decoding="async" />
               <img src="/assets/shots/step3-outliers-grid.webp" alt="Sort creator content by Outlier Score" class="carousel-image" data-step="3" width="1280" height="832" loading="lazy" decoding="async" />
+            </div>
+            <div class="carousel-dots-nav" role="tablist" aria-label="Workflow carousel navigation">
+              <button class="carousel-dot-btn active" data-step="1" role="tab" aria-selected="true" aria-label="View step 1"></button>
+              <button class="carousel-dot-btn" data-step="2" role="tab" aria-selected="false" aria-label="View step 2"></button>
+              <button class="carousel-dot-btn" data-step="3" role="tab" aria-selected="false" aria-label="View step 3"></button>
             </div>
           </div>
         </div>
@@ -400,7 +432,8 @@
         <div class="outlier-copy reveal">
           <p class="eyebrow">OUTLIER SCORE</p>
           <h2>Spot what outperforms.</h2>
-          <p>Compares posts against the creator's median benchmark.</p>
+          <p>Outlier Score benchmarks posts against each creator's median views. A 3.2× score means the content earned more than triple typical results.</p>
+          <p style="margin-top: 8px; font-size: 13px; color: var(--muted);">Creator-relative. Medians prevent viral spikes from skewing baselines.</p>
         </div>
         <div class="score-card reveal" data-delay="80">
           <div class="score-row">
@@ -450,7 +483,7 @@
             <span class="amount">$0</span>
             <span class="period">/ forever</span>
           </div>
-          <a class="button" style="width: 100%; justify-content: center;" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+          <a class="button" style="width: 100%; justify-content: center;" data-chrome-link data-cta-name="add_to_chrome_pricing" data-cta-position="pricing" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
           <ul class="pricing-features">
             <li>
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
@@ -492,9 +525,63 @@
             <h3>NO DATABASE</h3>
             <p>Analyzed creator content is never stored on servers.</p>
           </article>
-        </div>
-        <div class="privacy-action reveal">
+              <div class="privacy-action reveal">
           <a class="text-button" href="/privacy/">Read Privacy Policy <b aria-hidden="true">→</b></a>
+        </div>
+      </section>
+
+      <!-- FROM RANK KIWI RESEARCH -->
+      <section class="section wrap reveal">
+        <div class="card-highlight" style="display: flex; justify-content: space-between; align-items: center; gap: 28px; flex-wrap: wrap;">
+          <div style="max-width: 640px;">
+            <p class="eyebrow" style="margin-bottom: 6px; color: var(--brand-accent);"><span class="status-dot"></span> FROM RANK KIWI RESEARCH</p>
+            <h2 style="color: #ffffff; margin-bottom: 8px;">One Video Doesn't Tell You How Good a Creator Is</h2>
+            <p style="font-size: 14px; color: #c2d6c0; line-height: 1.5; margin-bottom: 0;">
+              In 448k channels analyzed, median best-of-10 uploads earned <strong style="color: var(--brand-accent);">10.82× initial views</strong>. Stop judging creators by a single post.
+            </p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+            <a href="/research/one-video-is-not-a-channel/" class="button button-small" style="background: var(--brand-accent); color: var(--brand-primary); border: none; font-weight: 700;">Read Study</a>
+            <a href="/research/" class="button button-small button-quiet" style="color: var(--brand-accent); border-color: rgba(203, 249, 144, 0.3); background: transparent;">Research Hub &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPARISONS & TOOL DIRECTORY -->
+      <section class="section wrap reveal">
+        <div class="section-intro centered" style="max-width: 680px; margin: 0 auto 32px auto;">
+          <p class="eyebrow" style="justify-content: center;"><span class="status-dot"></span> TOOL GUIDES &amp; COMPARISONS</p>
+          <h2>Compare &amp; Choose the Right Tool</h2>
+          <p class="hero-text" style="margin: 0 auto;">Unbiased side-by-side comparisons, alternatives, and software guides to help you pick the best workflow.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+          <a href="/compare/" class="card-default card-interactive" style="display: block; text-decoration: none;">
+            <span class="card-tag">Side-by-Side</span>
+            <h3 style="margin-bottom: 8px;">Tool Comparisons</h3>
+            <p style="font-size: 13.5px; color: var(--muted); line-height: 1.5; margin-bottom: 16px;">
+              Honest trade-offs vs Sort Feed, Socialinsider, Metricool, Viewstats, and YouTube Studio.
+            </p>
+            <span style="font-size: 13px; font-weight: 700; color: var(--kiwi-dark);">Explore 5 Comparisons &rarr;</span>
+          </a>
+
+          <a href="/alternatives/" class="card-default card-interactive" style="display: block; text-decoration: none;">
+            <span class="card-tag">Directory</span>
+            <h3 style="margin-bottom: 8px;">Alternatives Hub</h3>
+            <p style="font-size: 13.5px; color: var(--muted); line-height: 1.5; margin-bottom: 16px;">
+              Evaluate replacements for heavy dashboards and single-platform extensions with verified features.
+            </p>
+            <span style="font-size: 13px; font-weight: 700; color: var(--kiwi-dark);">Browse Alternatives &rarr;</span>
+          </a>
+
+          <a href="/best/" class="card-default card-interactive" style="display: block; text-decoration: none;">
+            <span class="card-tag">Curated Lists</span>
+            <h3 style="margin-bottom: 8px;">Best Software Guides</h3>
+            <p style="font-size: 13.5px; color: var(--muted); line-height: 1.5; margin-bottom: 16px;">
+              In-depth reviews of the top Instagram and YouTube analytics, content research, and competitor tools.
+            </p>
+            <span style="font-size: 13px; font-weight: 700; color: var(--kiwi-dark);">View 8 Best-of Guides &rarr;</span>
+          </a>
         </div>
       </section>
 
@@ -543,27 +630,25 @@
 
       <!-- FINAL CTA -->
       <section class="final-cta wrap reveal">
-        <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo large" width="48" height="48" loading="lazy" decoding="async" />
-        <p class="eyebrow">START FINDING OUTLIERS</p>
+        <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo large" width="60" height="60" loading="lazy" decoding="async" />
         <h2>Free to install. Works in seconds.</h2>
-        <p>Research Instagram and YouTube creators without scrolling through hundreds of posts.</p>
         <div class="hero-actions">
-          <a class="button" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
-          <a class="button button-quiet" href="#how-it-works">See how it works</a>
+          <a class="button" data-chrome-link data-cta-name="add_to_chrome_final" data-cta-position="final" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+          <a class="button button-quiet" data-cta-name="see_how_it_works_final" data-cta-position="final" href="#how-it-works">See how it works</a>
         </div>
         <small>No account required.</small>
       </section>
     </main>
 
-    <!-- FOOTER -->
+                <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
           <a class="brand" href="/" aria-label="Rank Kiwi home">
-            <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="28" height="28" loading="lazy" decoding="async" />
+            <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" loading="lazy" decoding="async" />
             <span>Rank Kiwi</span>
           </a>
-          <p>Research creator profiles and find viral outliers on Instagram &amp; YouTube.</p>
+          <p>Research creator profiles and spot viral outlier content on Instagram and YouTube.</p>
           <div class="footer-socials">
             <a class="social-icon-link" href="https://www.instagram.com/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="Instagram">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
@@ -579,28 +664,46 @@
             </a>
           </div>
         </div>
+
         <div>
           <b>Product</b>
-          <a href="#how-it-works">How it works</a>
-          <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
-          <a href="/docs/">Docs</a>
+          <a href="/">Home</a>
+          <a href="/instagram-analytics/">Instagram Analytics</a>
+          <a href="/youtube-analytics/">YouTube Analytics</a>
+          <a href="/outlier-score/">Outlier Score</a>
+          <a href="/creator-content-research/">Creator Research</a>
         </div>
+
         <div>
-          <b>Legal</b>
+          <b>Learn &amp; Docs</b>
+          <a href="/docs/">Documentation</a>
+          <a href="/docs/getting-started/">Getting Started</a>
+          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
+          <a href="/docs/troubleshooting/">Troubleshooting</a>
+          <a href="/docs/exports/">Exports Guide</a>
+        </div>
+
+        <div>
+          <b>Research &amp; Compare</b>
+          <a href="/research/">Research Hub</a>
+          <a href="/research/methodology/">Methodology</a>
+          <a href="/compare/">Tool Comparisons</a>
+          <a href="/alternatives/">Alternatives Hub</a>
+          <a href="/best/">Best Software Guides</a>
+        </div>
+
+        <div>
+          <b>Legal &amp; Support</b>
+          <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
           <a href="/disclaimer/">Disclaimer</a>
-        </div>
-        <div>
-          <b>Contact</b>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
-          <a href="/support/">Help &amp; Support</a>
         </div>
       </div>
       <div class="wrap footer-bottom">
-        <p>© 2026 Rank Kiwi. Not affiliated with Meta, Instagram, Google, or YouTube.</p>
-        <p>Made with <span class="footer-heart">❤️</span> by <a class="author-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener">Bhavishya Singla</a></p>
+        <p>&copy; 2026 Rank Kiwi. Not affiliated with Meta, Instagram, Google, or YouTube.</p>
+        <p>Made with <span class="footer-heart">&#10084;&#65039;</span> by <a class="author-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener">Bhavishya Singla</a></p>
       </div>
     </footer>
 

@@ -1,0 +1,231 @@
+{
+  "lastGlobalReview": "2026-10-05",
+  "disclaimer": "Pricing and features are verified from official competitor documentation as of October 5, 2026. Competitor offerings and pricing may change.",
+  "competitors": [
+    {
+      "name": "Sort Feed",
+      "slug": "sort-feed",
+      "category": "Browser-based Creator Research Extension",
+      "relationship": "Direct Alternative",
+      "officialUrl": "https://sortfeed.com",
+      "pricingUrl": "https://sortfeed.com/pricing",
+      "docsUrl": "https://sortfeed.com/docs",
+      "checkedDate": "2026-10-05",
+      "platforms": ["Instagram", "TikTok", "Facebook", "YouTube"],
+      "pricing": {
+        "freeTier": "Latest 25 posts or 1 week of content, all sorts (including Outlier Score), exports, downloads",
+        "paidPlanName": "Pro",
+        "monthlyPrice": "$15/month",
+        "yearlyPrice": "$10/month (billed annually at $120/year)",
+        "paidFeatures": "Up to 1,000 posts / full channel history, custom counts & date ranges, 500 minutes transcription/month"
+      },
+      "features": {
+        "instagram": "Yes",
+        "youtube": "Yes",
+        "tiktok": "Yes",
+        "facebook": "Yes",
+        "outlierScore": "Yes (median-based on recent posts)",
+        "sortingAndFiltering": "Yes (views, likes, comments, engagement, date)",
+        "csvJsonExport": "Yes",
+        "contentDownloads": "Yes (video/image downloads)",
+        "transcription": "Yes (Pro feature, 500 min/mo)",
+        "historicalDepth": "Free: 25 posts; Pro: Up to 1,000 posts",
+        "accountRequired": "Free: No account; Pro: Sort Feed account",
+        "executionModel": "Client-side browser extension (transcription uses external server)"
+      },
+      "strengths": [
+        "Broader multi-platform coverage including TikTok and Facebook alongside Instagram and YouTube",
+        "Deep historical batch analysis (up to 1,000 posts on Pro)",
+        "Built-in audio transcription (500 minutes/month on Pro)",
+        "Custom date range filtering"
+      ],
+      "limitations": [
+        "Free tier is restricted to 25 posts or 1 week of visible content",
+        "Deeper historical scanning and transcription require a paid subscription ($10–$15/mo)",
+        "Transcription sends audio to an external cloud transcription service"
+      ],
+      "bestFor": "Creators, agencies, and researchers who need TikTok and Facebook research in addition to Instagram/YouTube, require deeper batches (&gt;25 posts), or need audio transcription.",
+      "notBestFor": "Creators looking for 100% free, unlimited outlier analysis strictly focused on Instagram and YouTube."
+    },
+    {
+      "name": "Socialinsider",
+      "slug": "socialinsider",
+      "category": "Social Media Analytics & Competitive Benchmarking Platform",
+      "relationship": "Broader Analytics Platform",
+      "officialUrl": "https://www.socialinsider.io",
+      "pricingUrl": "https://www.socialinsider.io/pricing",
+      "docsUrl": "https://www.socialinsider.io/blog/",
+      "checkedDate": "2026-10-05",
+      "platforms": ["Instagram", "YouTube", "TikTok", "Facebook", "LinkedIn", "X (Twitter)"],
+      "pricing": {
+        "freeTier": "14-day free trial only (no permanent free tier)",
+        "paidPlanName": "Adapt, Optimize, Predict",
+        "monthlyPrice": "$99/mo (Adapt), $149/mo (Optimize), $249/mo (Predict)",
+        "yearlyPrice": "$82/mo (Adapt), $124/mo (Optimize), $199/mo (Predict, billed annually)",
+        "paidFeatures": "Competitor benchmarking, automated PDF reporting, multi-year historical data, sentiment analysis"
+      },
+      "features": {
+        "instagram": "Yes",
+        "youtube": "Yes",
+        "tiktok": "Yes",
+        "facebook": "Yes",
+        "outlierScore": "No dedicated post-level Outlier Score multiplier (uses average benchmark ratios)",
+        "sortingAndFiltering": "Yes (within dashboard view)",
+        "csvJsonExport": "Yes (CSV, Excel, PDF reports)",
+        "contentDownloads": "Limited",
+        "transcription": "No",
+        "historicalDepth": "Multi-year historical analytics database",
+        "accountRequired": "Yes (Socialinsider dashboard account & profile tracking setup)",
+        "executionModel": "Cloud-based dashboard querying cached platform APIs"
+      },
+      "strengths": [
+        "Comprehensive multi-brand tracking across 6 major networks",
+        "Automated white-label PDF/Excel reports for agencies and clients",
+        "Long-term multi-year historical trend tracking",
+        "Cross-industry benchmark indices"
+      ],
+      "limitations": [
+        "High subscription cost starting at $82–$99/month with no permanent free tier",
+        "Requires creating a dashboard account, configuring brands, and waiting for data ingestion",
+        "Lacks immediate in-browser content-level outlier multipliers when browsing creator feeds"
+      ],
+      "bestFor": "Enterprise marketing teams and agencies needing automated monthly client reports, cross-network competitor benchmarking, and long-term historical brand tracking.",
+      "notBestFor": "Individual creators and video editors who just want quick, free, on-page outlier discovery while browsing creator feeds."
+    },
+    {
+      "name": "Metricool",
+      "slug": "metricool",
+      "category": "All-in-One Social Media Management & Publishing Suite",
+      "relationship": "Social Management Suite",
+      "officialUrl": "https://metricool.com",
+      "pricingUrl": "https://metricool.com/pricing/",
+      "docsUrl": "https://metricool.com/help/",
+      "checkedDate": "2026-10-05",
+      "platforms": ["Instagram", "YouTube", "TikTok", "Facebook", "LinkedIn", "Pinterest", "Twitch", "Google Business"],
+      "pricing": {
+        "freeTier": "Permanent free tier (1 brand, 20 scheduled posts/month, analysis of up to 5 competitor profiles)",
+        "paidPlanName": "Starter, Advanced, Custom",
+        "monthlyPrice": "$22/mo (Starter), $54/mo (Advanced)",
+        "yearlyPrice": "$18/mo (Starter), $45/mo (Advanced, billed annually)",
+        "paidFeatures": "Unlimited post scheduling, team roles, up to 50 competitors, automated reporting, ad management"
+      },
+      "features": {
+        "instagram": "Yes",
+        "youtube": "Yes",
+        "tiktok": "Yes",
+        "facebook": "Yes",
+        "outlierScore": "No (standard metric ranking without creator-relative median multipliers)",
+        "sortingAndFiltering": "Yes (in scheduling and analytics tabs)",
+        "csvJsonExport": "Yes",
+        "contentDownloads": "No",
+        "transcription": "No",
+        "historicalDepth": "Free: 3 months; Paid: Unlimited historical data",
+        "accountRequired": "Yes (Metricool account and connected social accounts)",
+        "executionModel": "Cloud dashboard with browser/mobile apps"
+      },
+      "strengths": [
+        "Complete publishing workflow: visual content calendar, automated multi-platform scheduling, and auto-publishing",
+        "Unified social inbox for comments and direct messages",
+        "Ad campaign management across Meta and Google",
+        "Generous free tier for solo social media managers"
+      ],
+      "limitations": [
+        "Free tier limits competitor tracking to 5 profiles total",
+        "Competitor research requires manual account addition in the dashboard rather than instant on-page browsing",
+        "Does not compute creator-relative Outlier Scores for specific video hooks"
+      ],
+      "bestFor": "Social media managers and creators who need an affordable, all-in-one publishing calendar, scheduler, and cross-channel management platform.",
+      "notBestFor": "Creators looking for dedicated, rapid competitor content research to reverse-engineer viral hooks across dozens of creators."
+    },
+    {
+      "name": "Viewstats",
+      "slug": "viewstats",
+      "category": "Dedicated YouTube Intelligence & Creator Analytics Platform",
+      "relationship": "YouTube-Focused Intelligence",
+      "officialUrl": "https://www.viewstats.com",
+      "pricingUrl": "https://www.viewstats.com/pricing",
+      "docsUrl": "https://www.viewstats.com/about",
+      "checkedDate": "2026-10-05",
+      "platforms": ["YouTube (Long-form and Shorts)"],
+      "pricing": {
+        "freeTier": "Free search, channel overview, basic outlier detection, milestone projections",
+        "paidPlanName": "Pro & Business",
+        "monthlyPrice": "$49/mo (Pro, or promotional tiers around $20/mo)",
+        "yearlyPrice": "Discounted annual billing available; Business starting at $249/mo",
+        "paidFeatures": "Full historical outlier search, thumbnail comparison search, channel alerts, custom collections, API access"
+      },
+      "features": {
+        "instagram": "No",
+        "youtube": "Yes (deep historical index)",
+        "tiktok": "No",
+        "facebook": "No",
+        "outlierScore": "Yes (Viewstats Outlier score based on channel historical benchmarks)",
+        "sortingAndFiltering": "Yes (extensive YouTube sorting)",
+        "csvJsonExport": "Yes (Pro/Business)",
+        "contentDownloads": "Thumbnail downloads",
+        "transcription": "No",
+        "historicalDepth": "Multi-year YouTube global database",
+        "accountRequired": "Free: Optional; Pro: Viewstats account",
+        "executionModel": "Web dashboard database plus companion Chrome extension"
+      },
+      "strengths": [
+        "Unmatched YouTube-specific depth with massive historical channel index",
+        "Specialized thumbnail search and visual title/thumbnail comparison",
+        "Proactive channel alerts and custom tracking collections",
+        "A/B test detection and subscriber milestone analytics"
+      ],
+      "limitations": [
+        "Strictly limited to YouTube—zero support for Instagram Reels, Carousels, or posts",
+        "Advanced outlier search, collections, and alerts require a paid Pro/Business subscription ($49–$249/mo)",
+        "Heavier dashboard interface compared to a lightweight, on-page extension"
+      ],
+      "bestFor": "Dedicated YouTubers, thumbnail designers, and video production teams who exclusively produce YouTube content and need deep historical channel analytics.",
+      "notBestFor": "Creators, agencies, or short-form editors who create content for both Instagram and YouTube and want a single unified research tool."
+    },
+    {
+      "name": "YouTube Studio",
+      "slug": "youtube-studio",
+      "category": "Native First-Party Platform Analytics",
+      "relationship": "First-Party Owned Analytics",
+      "officialUrl": "https://studio.youtube.com",
+      "pricingUrl": "https://studio.youtube.com",
+      "docsUrl": "https://support.google.com/youtube/topic/9257498",
+      "checkedDate": "2026-10-05",
+      "platforms": ["YouTube (Owned Channels Only)"],
+      "pricing": {
+        "freeTier": "100% Free native tool for all YouTube channel owners and managers",
+        "paidPlanName": "None (free native feature of Google/YouTube)",
+        "monthlyPrice": "$0",
+        "yearlyPrice": "$0",
+        "paidFeatures": "All features included for authenticated channel owners"
+      },
+      "features": {
+        "instagram": "No",
+        "youtube": "Yes (Owned channels only)",
+        "tiktok": "No",
+        "facebook": "No",
+        "outlierScore": "No Outlier Score multiplier (shows ranking by views, e.g., '1 of 10' for latest upload)",
+        "sortingAndFiltering": "Yes (within channel Content tab)",
+        "csvJsonExport": "Yes (via Advanced Analytics mode)",
+        "contentDownloads": "Yes (own video files can be downloaded)",
+        "transcription": "Yes (automatic captions & subtitle editor for own videos)",
+        "historicalDepth": "Lifetime channel history",
+        "accountRequired": "Yes (Google account with channel owner or manager permissions)",
+        "executionModel": "First-party Google web dashboard and mobile app"
+      },
+      "strengths": [
+        "Direct access to private, ground-truth metrics: exact revenue, RPM/CPM, audience retention curves, and real-time views",
+        "Detailed traffic source breakdown (YouTube Search, Suggested, Browse Features, External)",
+        "Channel management capabilities: thumbnail uploading, title editing, monetization toggles, comment moderation",
+        "100% free with no usage limits or premium tiers"
+      ],
+      "limitations": [
+        "Cannot be used for competitor research: provides zero private metrics for other creators' channels",
+        "Lacks creator-relative Outlier Scores across full video catalogs",
+        "Does not support Instagram or any non-YouTube platform"
+      ],
+      "bestFor": "Every YouTube creator analyzing their own channel's private performance, audience retention drop-offs, and revenue.",
+      "notBestFor": "Competitor research, niche exploration, or analyzing channels and creators that you do not personally own or manage."
+    }
+  ]
+}

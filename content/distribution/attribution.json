@@ -1,0 +1,52 @@
+{
+  "$schema": "https://rankkiwi.com/schemas/distribution-attribution-v1.json",
+  "version": "1.0.0",
+  "description": "Standardized UTM Architecture and External Campaign Attribution Model for Rank Kiwi Distribution.",
+  "rules": [
+    "NEVER use UTM parameters on internal website links (corrupts session attribution in analytics).",
+    "ALWAYS use lowercase alphanumeric characters and underscores for UTM parameter values.",
+    "Route traffic to specific intent-matched landing pages, not the generic homepage, whenever possible.",
+    "Do not attach sensitive or personally identifiable information in URLs."
+  ],
+  "utmStructure": {
+    "utm_source": {
+      "allowed": ["linkedin", "x", "instagram", "youtube", "newsletter", "reddit", "producthunt", "creator_outreach"],
+      "description": "The external platform or distribution channel where the asset was published."
+    },
+    "utm_medium": {
+      "allowed": ["social", "newsletter", "community", "video", "referral", "editorial"],
+      "description": "The high-level distribution format or medium."
+    },
+    "utm_campaign": {
+      "pattern": "[franchise_or_pillar]_[topic_slug] (e.g. 'data_drop_vidiq_ratio', 'tool_breakdown_socialinsider')",
+      "description": "The specific content asset or recurring franchise."
+    },
+    "utm_content": {
+      "optional": true,
+      "pattern": "[variant_or_format] (e.g. 'chart_card', 'hook_a', 'first_comment')",
+      "description": "Differentiates between creative variants, thread positions, or specific visual assets."
+    }
+  },
+  "urlBuilderExamples": [
+    {
+      "channel": "LinkedIn Data Drop",
+      "destination": "https://rankkiwi.com/research/one-video-is-not-a-channel/",
+      "taggedUrl": "https://rankkiwi.com/research/one-video-is-not-a-channel/?utm_source=linkedin&utm_medium=social&utm_campaign=data_drop_vidiq_ratio&utm_content=chart_card"
+    },
+    {
+      "channel": "X Thread on Free Tools",
+      "destination": "https://rankkiwi.com/best-free-content-research-tools/",
+      "taggedUrl": "https://rankkiwi.com/best-free-content-research-tools/?utm_source=x&utm_medium=social&utm_campaign=curated_free_stack_2026&utm_content=thread_final"
+    },
+    {
+      "channel": "YouTube Short on Outlier Score",
+      "destination": "https://rankkiwi.com/outlier-score/",
+      "taggedUrl": "https://rankkiwi.com/outlier-score/?utm_source=youtube&utm_medium=video&utm_campaign=30s_research_outlier_math&utm_content=desc_link"
+    },
+    {
+      "channel": "Weekly Newsletter Digest",
+      "destination": "https://rankkiwi.com/research/instagram-reels-vs-carousels/",
+      "taggedUrl": "https://rankkiwi.com/research/instagram-reels-vs-carousels/?utm_source=newsletter&utm_medium=newsletter&utm_campaign=weekly_drop_reels_carousels&utm_content=read_study"
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2V6BK8R00"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-Y2V6BK8R00");
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "yt23g8xi6k");
+    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Export Data & Media Downloads — Rank Kiwi Documentation</title>
+  <meta name="description" content="Learn how to export Rank Kiwi creator research into CSV, JSON, and Clipboard formats, download Instagram Reels, and save high-resolution YouTube thumbnails.">
+  <link rel="canonical" href="https://rankkiwi.com/docs/exports/">
+  
+  <meta property="og:title" content="Export Data & Media Downloads — Rank Kiwi Documentation">
+  <meta property="og:description" content="Guide to exporting analyzed creator metrics to spreadsheets, JSON data pipelines, downloading Reels, and saving YouTube thumbnails.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://rankkiwi.com/docs/exports/">
+  <meta property="og:image" content="https://rankkiwi.com/assets/og-image.png">
+
+  <!-- Twitter / X Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Export Data & Media Downloads — Rank Kiwi Documentation">
+  <meta name="twitter:description" content="Guide to exporting analyzed creator metrics to spreadsheets, JSON data pipelines, downloading Reels, and saving YouTube thumbnails.">
+  <meta name="twitter:image" content="https://rankkiwi.com/assets/og-image.png">
+
+  <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
+  <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.min.css" />
+
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Export Data & Media Downloads in Rank Kiwi",
+      "description": "How to export creator research data into CSV, JSON, and clipboard formats, and download original media safely.",
+      "url": "https://rankkiwi.com/docs/exports/",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Rank Kiwi",
+        "url": "https://rankkiwi.com/"
+      },
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-10-05"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://rankkiwi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Docs",
+          "item": "https://rankkiwi.com/docs/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Export & Downloads",
+          "item": "https://rankkiwi.com/docs/exports/"
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+              <!-- SITE HEADER -->
+    <header class="site-header" data-header>
+      <div class="wrap nav">
+        <a class="brand" href="/" aria-label="Rank Kiwi home">
+          <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" fetchpriority="high" />
+          <span>Rank Kiwi</span>
+        </a>
+
+        <div class="nav-links" id="nav-links" data-nav-links>
+          <a href="/#how-it-works">How it works</a>
+          <a href="/#features">Features</a>
+          <a href="/research/">Research</a>
+          <a href="/docs/">Docs</a>
+          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="docs-wrapper wrap">
+      <div class="docs-header-bar">
+        <p class="eyebrow"><span class="status-dot"></span> EXPORT &amp; MEDIA DOWNLOADS</p>
+        <h1>Export &amp; Media Downloads</h1>
+        <p>Keep your research organized with clean, zero-friction export actions to CSV, JSON, and clipboard, plus media downloads.</p>
+      </div>
+
+      <div class="docs-container">
+        <!-- Sidebar Navigation -->
+        <aside class="docs-sidebar" aria-label="Documentation navigation">
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Getting Started</div>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/getting-started/" class="docs-nav-link">Installation &amp; Setup</a></li>
+              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your First Analysis</a></li>
+              <li><a href="/docs/getting-started/#workspace" class="docs-nav-link">Workspace Tour</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Platform Guides</div>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Research</a></li>
+              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Research</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Understanding Results</div>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score &amp; Median</a></li>
+              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; Filters</a></li>
+              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research Workflow</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Exports &amp; Help</div>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/exports/" class="docs-nav-link active" aria-current="page">CSV &amp; JSON Export</a></li>
+              <li><a href="/docs/troubleshooting/" class="docs-nav-link">Troubleshooting Hub</a></li>
+              <li><a href="/support/" class="docs-nav-link">Support &amp; Community</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="docs-content" id="docs-content">
+      
+
+      <div class="answer-first-callout">
+        <strong>Take your research anywhere:</strong> Rank Kiwi allows you to export entire analyzed datasets to standard <strong>CSV</strong> spreadsheets, developer-friendly <strong>JSON</strong> schemas, or instant <strong>Clipboard</strong> pastes. You can also download original MP4 video streams of Instagram Reels and high-resolution thumbnail images from YouTube videos directly to your local downloads folder.
+      </div>
+
+      <div class="table-of-contents">
+        <h4>Table of Contents</h4>
+        <ul>
+          <li><a href="#overview">Export Options Overview</a></li>
+          <li><a href="#csv">CSV Export (Spreadsheets)</a></li>
+          <li><a href="#json">JSON Export (Structured Data)</a></li>
+          <li><a href="#clipboard">Clipboard Export (Quick Paste)</a></li>
+          <li><a href="#reels-download">Downloading Instagram Reels</a></li>
+          <li><a href="#thumbnails-download">Downloading YouTube Thumbnails</a></li>
+          <li><a href="#ethical-guidelines">Fair Use & Responsible Usage</a></li>
+        </ul>
+      </div>
+
+      <section id="overview" class="docs-section">
+        <h2>Export Options Overview</h2>
+        <p>All export actions are accessible directly from the <strong>Rank Kiwi header toolbar</strong> once your analysis finishes collecting posts:</p>
+
+        <div class="comparison-grid">
+          <div class="info-card">
+            <h3>📊 CSV File (.csv)</h3>
+            <p>Best for Google Sheets, Microsoft Excel, Apple Numbers, and Airtable. Formatted with standard comma separation and quoted text strings.</p>
+          </div>
+          <div class="info-card">
+            <h3>📦 JSON File (.json)</h3>
+            <p>Best for automation pipelines, Python data notebooks, LLM prompt inputs, and internal research databases. Preserves raw nested objects.</p>
+          </div>
+          <div class="info-card">
+            <h3>📋 Clipboard Copy</h3>
+            <p>Best for instant pasting directly into Notion tables, Google Docs briefs, or Slack channels without downloading files.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="csv" class="docs-section">
+        <h2>CSV Export (Spreadsheets)</h2>
+        <p>
+          Clicking <strong>Export CSV</strong> in the Rank Kiwi workspace compiles all currently filtered posts into a UTF-8 encoded <code>.csv</code> file and automatically initiates a browser download named <code>rankkiwi-[creator]-[platform]-[timestamp].csv</code>.
+        </p>
+
+        <h3>Exported Columns Reference</h3>
+        <p>Every row in the CSV corresponds to one analyzed post or video. The exported fields include:</p>
+
+        <div class="table-responsive">
+          <table class="reference-table">
+            <thead>
+              <tr>
+                <th scope="col">Column Header</th>
+                <th scope="col">Data Type</th>
+                <th scope="col">Description</th>
+                <th scope="col">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>rank</code></td>
+                <td>Integer</td>
+                <td>Current position in the workspace based on your chosen sort order</td>
+                <td><code>1</code></td>
+              </tr>
+              <tr>
+                <td><code>title_or_caption</code></td>
+                <td>String (Quoted)</td>
+                <td>Full caption text or video title with escaped linebreaks</td>
+                <td><code>"5 mistakes you are making with hooks..."</code></td>
+              </tr>
+              <tr>
+                <td><code>url</code></td>
+                <td>URL String</td>
+                <td>Permanent link to the specific post, Reel, or video</td>
+                <td><code>https://instagram.com/reel/C8xyz...</code></td>
+              </tr>
+              <tr>
+                <td><code>views</code></td>
+                <td>Integer</td>
+                <td>Total public views or plays recorded at the time of scan</td>
+                <td><code>482100</code></td>
+              </tr>
+              <tr>
+                <td><code>likes</code></td>
+                <td>Integer</td>
+                <td>Public like count (empty or 0 if hidden by creator)</td>
+                <td><code>31200</code></td>
+              </tr>
+              <tr>
+                <td><code>comments</code></td>
+                <td>Integer</td>
+                <td>Public comment count recorded from the interface</td>
+                <td><code>840</code></td>
+              </tr>
+              <tr>
+                <td><code>outlier_score</code></td>
+                <td>Float</td>
+                <td>Multiplier relative to creator's median views in sample</td>
+                <td><code>4.82</code></td>
+              </tr>
+              <tr>
+                <td><code>engagement_rate</code></td>
+                <td>Percentage</td>
+                <td>Combined engagements divided by views (where available)</td>
+                <td><code>6.65%</code></td>
+              </tr>
+              <tr>
+                <td><code>posted_date</code></td>
+                <td>ISO-8601 Date</td>
+                <td>Date of original publication (YYYY-MM-DD)</td>
+                <td><code>2026-02-14</code></td>
+              </tr>
+              <tr>
+                <td><code>content_type</code></td>
+                <td>String</td>
+                <td>Content taxonomy: <code>reel</code>, <code>video</code>, <code>short</code></td>
+                <td><code>reel</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout-tip">
+          <strong>Tip for Google Sheets:</strong> To open your CSV in Google Sheets, go to <strong>File &gt; Import &gt; Upload</strong>. Select the CSV, and choose <em>"Detect automatically"</em> for separator type. The numeric view counts and Outlier Scores will format as native numbers ready for charting.
+        </div>
+      </section>
+
+      <section id="json" class="docs-section">
+        <h2>JSON Export (Structured Data)</h2>
+        <p>
+          Selecting <strong>Export JSON</strong> produces a clean JSON document containing analysis metadata alongside the item list. This format is ideal for feeding creator data directly into AI assistants (Claude, ChatGPT) to perform qualitative hook analysis.
+        </p>
+
+        <h3>Example JSON Payload Schema</h3>
+        <pre class="code-block"><code>{
+  "generator": "Rank Kiwi 1.0",
+  "exportedAt": "2026-10-05T13:45:00Z",
+  "creator": {
+    "handle": "@hubermanlab",
+    "platform": "instagram",
+    "sampleCount": 50,
+    "medianViews": 142000
+  },
+  "items": [
+    {
+      "id": "C8xyz9812",
+      "url": "https://www.instagram.com/reel/C8xyz9812/",
+      "contentType": "reel",
+      "publishedDate": "2026-02-14",
+      "views": 684440,
+      "likes": 42100,
+      "comments": 1280,
+      "outlierScore": 4.82,
+      "caption": "The scientific mechanism behind morning sunlight exposure..."
+    }
+  ]
+}</code></pre>
+      </section>
+
+      <section id="clipboard" class="docs-section">
+        <h2>Clipboard Export (Quick Paste)</h2>
+        <p>
+          Don't need a file on your hard drive? Click <strong>Copy to Clipboard</strong>. Rank Kiwi writes a formatted, tab-delimited table directly into your operating system clipboard.
+        </p>
+        <p>You can immediately press <kbd>Cmd</kbd> + <kbd>V</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>V</kbd> (Windows) in:</p>
+        <ul>
+          <li><strong>Notion:</strong> Creates an instant multi-column Database with properties already set.</li>
+          <li><strong>Google Sheets & Excel:</strong> Automatically parses into cells across rows and columns without an import dialog.</li>
+          <li><strong>Airtable:</strong> Pastes directly into an existing Grid view.</li>
+        </ul>
+      </section>
+
+      <section id="reels-download" class="docs-section">
+        <h2>Downloading Instagram Reels</h2>
+        <p>
+          When you click on any Reel in your analyzed grid to open its <strong>Post Detail Inspector</strong>, you will see a <strong>Download Reel (MP4)</strong> button.
+        </p>
+
+        <h3>How it works</h3>
+        <ol>
+          <li>Rank Kiwi identifies the publicly accessible video element currently embedded in your browser tab's active session.</li>
+          <li>It streams the high-definition MP4 asset directly from the platform CDN using native Chrome download APIs.</li>
+          <li>The file is saved to your default Chrome Downloads folder as <code>[handle]-reel-[shortcode].mp4</code>.</li>
+        </ol>
+
+        <div class="callout callout-warning">
+          <strong>Troubleshooting Downloads:</strong> If clicking download opens a video player in a new browser tab instead of saving the file, right-click the video and choose <em>"Save Video As..."</em>. This happens when Chrome settings are configured to play media in-browser rather than download automatically.
+        </div>
+      </section>
+
+      <section id="thumbnails-download" class="docs-section">
+        <h2>Downloading YouTube Thumbnails</h2>
+        <p>
+          For YouTube video and Shorts research, thumbnails are 50% of the hook equation. Rank Kiwi allows you to save creator thumbnails at maximum available resolution.
+        </p>
+
+        <h3>Resolution Hierarchy</h3>
+        <p>YouTube generates thumbnails in multiple sizes. Rank Kiwi's download action uses an automatic fallback sequence:</p>
+        <ol>
+          <li><strong>maxresdefault.jpg (1920×1080):</strong> The highest available production resolution uploaded by the creator.</li>
+          <li><strong>sddefault.jpg (640×480):</strong> High-standard fallback if the creator uploaded an older or smaller asset.</li>
+          <li><strong>hqdefault.jpg (480×360):</strong> Standard thumbnail fallback ensuring downloads never fail.</li>
+        </ol>
+        <p>To download, open any YouTube video card in the inspector modal and click <strong>Download HD Thumbnail</strong>.</p>
+      </section>
+
+      <section id="ethical-guidelines" class="docs-section">
+        <h2>Fair Use & Responsible Usage</h2>
+        <p>
+          Rank Kiwi is built strictly for research, benchmarking, editorial analysis, and educational swipe files.
+        </p>
+        <div class="callout callout-important">
+          <strong>Legal & Ethical Responsibility:</strong>
+          <ul>
+            <li><strong>Respect Copyright:</strong> Downloading a Reel or thumbnail for private analytical study, pacing breakdown, or hook deconstruction is standard research practice under fair use doctrine.</li>
+            <li><strong>Never Re-upload:</strong> Never repost, republish, or commercialize another creator's intellectual property without explicit permission.</li>
+            <li><strong>Attribute Inventions:</strong> When inspired by an outlier's narrative structure, bring your original perspective, voice, and research to your audience.</li>
+          </ul>
+        </div>
+      </section>
+
+      <nav class="docs-pagination" aria-label="Documentation navigation">
+        <a href="/docs/workflows/content-research/" class="docs-page-nav docs-page-prev">
+          <span>Previous</span>
+          <b>&larr; Content Research Blueprint</b>
+        </a>
+        <a href="/docs/troubleshooting/" class="docs-page-nav docs-page-next">
+          <span>Next</span>
+          <b>Troubleshooting Hub &rarr;</b>
+        </a>
+      </nav>
+        </div>
+      </div>
+    </main>
+
+              <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="/" aria-label="Rank Kiwi home">
+            <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" loading="lazy" decoding="async" />
+            <span>Rank Kiwi</span>
+          </a>
+          <p>Research creator profiles and spot viral outlier content on Instagram and YouTube.</p>
+          <div class="footer-socials">
+            <a class="social-icon-link" href="https://www.instagram.com/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://www.linkedin.com/in/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://www.youtube.com/@bhavishyasingla1" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener" aria-label="Bhavishya Singla Website">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <b>Product</b>
+          <a href="/">Home</a>
+          <a href="/instagram-analytics/">Instagram Analytics</a>
+          <a href="/youtube-analytics/">YouTube Analytics</a>
+          <a href="/outlier-score/">Outlier Score</a>
+          <a href="/creator-content-research/">Creator Research</a>
+        </div>
+
+        <div>
+          <b>Learn &amp; Docs</b>
+          <a href="/docs/">Documentation</a>
+          <a href="/docs/getting-started/">Getting Started</a>
+          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
+          <a href="/docs/troubleshooting/">Troubleshooting</a>
+          <a href="/docs/exports/">Exports Guide</a>
+        </div>
+
+        <div>
+          <b>Research &amp; Compare</b>
+          <a href="/research/">Research Hub</a>
+          <a href="/research/methodology/">Methodology</a>
+          <a href="/compare/">Tool Comparisons</a>
+          <a href="/alternatives/">Alternatives Hub</a>
+          <a href="/best/">Best Software Guides</a>
+        </div>
+
+        <div>
+          <b>Legal &amp; Support</b>
+          <a href="/support/">Help &amp; Support</a>
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>&copy; 2026 Rank Kiwi. Not affiliated with Meta, Instagram, Google, or YouTube.</p>
+        <p>Made with <span class="footer-heart">&#10084;&#65039;</span> by <a class="author-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener">Bhavishya Singla</a></p>
+      </div>
+    </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>

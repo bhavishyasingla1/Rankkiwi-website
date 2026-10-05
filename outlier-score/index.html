@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2V6BK8R00"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-Y2V6BK8R00");
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "yt23g8xi6k");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outlier Score Explained: Creator-Relative Content Benchmarking — Rank Kiwi</title>
+    <meta name="description" content="Learn why raw views mislead and how Rank Kiwi calculates median-based Outlier Scores to identify true viral breakout content on Instagram and YouTube." />
+    <link rel="canonical" href="https://rankkiwi.com/outlier-score/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <meta name="author" content="Bhavishya Singla" />
+    <meta name="date" content="2026-10-05" scheme="YYYY-MM-DD" />
+    <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
+    <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
+    <meta name="theme-color" content="#cbf990" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rankkiwi.com/outlier-score/" />
+    <meta property="og:title" content="Outlier Score Explained: Creator-Relative Content Benchmarking — Rank Kiwi" />
+    <meta property="og:description" content="Learn why raw views mislead and how Rank Kiwi calculates median-based Outlier Scores to identify true viral breakout content on Instagram and YouTube." />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta property="og:site_name" content="Rank Kiwi" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Outlier Score Explained: Creator-Relative Content Benchmarking — Rank Kiwi" />
+    <meta name="twitter:description" content="Learn why raw views mislead and how Rank Kiwi calculates median-based Outlier Scores to identify true viral breakout content on Instagram and YouTube." />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.min.css" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "name": "Rank Kiwi Outlier Score Benchmarking",
+          "url": "https://rankkiwi.com/outlier-score/",
+          "description": "Educational guide and browser extension feature that calculates creator-relative median performance multipliers to find content outliers on Instagram and YouTube.",
+          "applicationCategory": "SocialNetworkingApplication, DeveloperApplication",
+          "operatingSystem": "Google Chrome, Chromium",
+          "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Rank Kiwi",
+            "url": "https://rankkiwi.com/"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rankkiwi.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Outlier Score",
+              "item": "https://rankkiwi.com/outlier-score/"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is an Outlier Score?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "An Outlier Score measures how strongly an individual post or video performed relative to that creator's typical median performance in the sampled library. A 5.0× score means the post earned 5 times the creator's median view count."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does Rank Kiwi use median instead of average (mean)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Arithmetic averages are heavily distorted by extreme runaway hits. For example, if a creator has five posts with 10K views and one post with 1,000,000 views, the average view count jumps to 175K, making normal posts look like failures. The median remains at 10K, accurately representing typical reach."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does an Outlier Score change when I change the sample size?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. If you analyze 25 posts versus 100 posts, the baseline median views reflect that specific historical window. A recent 25-post scan reflects current momentum, while a 100-post scan provides longer-term historical stability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does a high Outlier Score guarantee that a topic will work for me?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. An Outlier Score identifies an empirical creative anomaly for that specific creator. It proves that the topic, hook, or packaging resonated strongly with their audience, serving as a hypothesis for your own original content experiments."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is considered a 'viral' Outlier Score?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Scores between 1.0× and 2.0× represent typical expected distribution. Scores between 3.0× and 5.0× indicate strong creative resonance. Scores of 5.0× and above represent major breakout outliers that broke past the creator's existing audience bubble."
+              }
+            }
+          ]
+        }
+      ]
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+                <!-- SITE HEADER -->
+    <header class="site-header" data-header>
+      <div class="wrap nav">
+        <a class="brand" href="/" aria-label="Rank Kiwi home">
+          <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" fetchpriority="high" />
+          <span>Rank Kiwi</span>
+        </a>
+
+        <div class="nav-links" id="nav-links" data-nav-links>
+          <a href="/#how-it-works">How it works</a>
+          <a href="/#features">Features</a>
+          <a href="/research/">Research</a>
+          <a href="/docs/">Docs</a>
+          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="content-page">
+      <!-- HERO SECTION -->
+      <section class="pillar-hero wrap">
+        <div class="pillar-hero-grid">
+          <div class="pillar-hero-content">
+            <p class="eyebrow"><span class="status-dot"></span> PERFORMANCE BENCHMARKING</p>
+            <h1>Why raw views mislead &mdash; and how Outlier Score measures true performance.</h1>
+            <p class="hero-lead">
+              Social platforms judge content by total view count. But 100,000 views means something completely different depending on who published it. Rank Kiwi's Outlier Score isolates true creative breakthroughs from audience inertia.
+            </p>
+            <div class="pillar-hero-actions">
+              <a data-chrome-link data-cta-name="add_to_chrome_outlier" data-cta-position="hero" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" class="button" target="_blank" rel="noopener">
+                Add to Chrome &mdash; Free
+              </a>
+              <a href="/docs/understanding/outlier-score/" class="button button-quiet">
+                Mathematical Docs &rarr;
+              </a>
+            </div>
+            <div class="pillar-trust-strip">
+              <span class="pillar-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Median-based formula
+              </span>
+              <span class="pillar-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Creator-relative baseline
+              </span>
+              <span class="pillar-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Zero follower bias
+              </span>
+            </div>
+          </div>
+
+          <!-- HERO VISUAL STAGE: OUTLIER SCORE SIMULATOR -->
+          <div class="pillar-hero-stage">
+            <div class="pillar-visual-card pillar-visual-dark">
+              <div class="pvc-header">
+                <div class="pvc-dots">
+                  <span class="pvc-dot"></span>
+                  <span class="pvc-dot"></span>
+                  <span class="pvc-dot"></span>
+                </div>
+                <span class="pvc-tag">Median Baseline: 18.4K Views</span>
+              </div>
+              <div class="pvc-body">
+                <div class="score-sim-row">
+                  <div class="sim-info">
+                    <span class="sim-title">Daily morning routine breakdown</span>
+                    <span class="sim-views">19,200 views &bull; Reels</span>
+                  </div>
+                  <span class="sim-badge typical">1.0&times; Typical</span>
+                </div>
+
+                <div class="score-sim-row">
+                  <div class="sim-info">
+                    <span class="sim-title">3 hook patterns that retain viewers</span>
+                    <span class="sim-views">58,800 views &bull; Reels</span>
+                  </div>
+                  <span class="sim-badge strong">3.2&times; Strong</span>
+                </div>
+
+                <div class="score-sim-row highlight">
+                  <div class="sim-info">
+                    <span class="sim-title">The 1-second hook that doubled watch time</span>
+                    <span class="sim-views">136,200 views &bull; Viral Hit</span>
+                  </div>
+                  <span class="sim-badge viral">7.4&times; Viral Outlier</span>
+                </div>
+
+                <div style="padding-top: 10px; margin-top: 4px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #a4cca6;">
+                  <span>Outlier Score Formula</span>
+                  <strong style="color: #cbf990; font-family: var(--font-mono);">136,200 &divide; 18,400 = 7.4&times;</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ANSWER FIRST QUICK ANSWER -->
+      <section class="wrap">
+        <div class="pillar-answer-box">
+          <div class="pillar-answer-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            What is an Outlier Score?
+          </div>
+          <p class="pillar-answer-text">
+            An <strong>Outlier Score</strong> is a mathematical multiplier showing how strongly a specific post or video performed compared with that creator's typical (median) performance in the analyzed sample. For example, if a creator typically receives 40,000 views per Reel, and one Reel reaches 280,000 views, its Outlier Score is <strong>7.0&times;</strong>. It tells you immediately whether a post broke through algorithmic boundaries because of exceptional packaging, or whether it simply collected baseline views from an existing follower base.
+          </p>
+        </div>
+      </section>
+
+      <!-- THE CORE PROBLEM: WHY RAW VIEWS ARE NOT ENOUGH -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>The Problem: Why Raw Views Are Not Enough</h2>
+          <p>
+            When researching what content works on Instagram and YouTube, evaluating posts by absolute view numbers creates major analytical errors.
+          </p>
+        </div>
+
+        <div class="pillar-card-grid">
+          <div class="pillar-card">
+            <div class="pillar-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            </div>
+            <span class="pvc-tag" style="align-self: flex-start;">Example A: Large Authority</span>
+            <h3>Established Creator (2M Followers)</h3>
+            <div style="background: var(--wash); border: 1px solid var(--line); padding: 12px 14px; border-radius: 8px; font-family: var(--font-mono); font-size: 13px; color: var(--ink);">
+              Typical Reel: 150,000 views<br />
+              Analyzed Reel: 180,000 views<br />
+              Outlier Score: <strong>1.2&times; (Normal)</strong>
+            </div>
+            <p>
+              Although 180,000 views is large in absolute terms, it represents baseline audience reach. Studying this post will not reveal exceptional viral mechanics.
+            </p>
+          </div>
+
+          <div class="pillar-card" style="border-color: #d2f2b2;">
+            <div class="pillar-card-icon" style="background: #f2faea; color: #01370b;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <span class="pvc-tag" style="background: #cbf990; color: #01370b; align-self: flex-start;">Example B: Emerging Creator</span>
+            <h3>Breakout Creator (15K Followers)</h3>
+            <div style="background: #f2faea; border: 1px solid #d2f2b2; padding: 12px 14px; border-radius: 8px; font-family: var(--font-mono); font-size: 13px; color: #01370b;">
+              Typical Reel: 6,000 views<br />
+              Analyzed Reel: 120,000 views<br />
+              Outlier Score: <strong>20.0&times; (Viral Outlier)</strong>
+            </div>
+            <p>
+              While 120,000 is fewer views than Creator A, this post outperformed its account baseline by 2,000%. The packaging and hook broke completely past the follower bubble.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- THE FORMULA & WHY MEDIAN BEATS MEAN -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>The Mathematical Formula &amp; Why Median Matters</h2>
+          <p>
+            Why Rank Kiwi uses non-parametric median baselines instead of arithmetic averages.
+          </p>
+        </div>
+
+        <div class="pillar-card" style="margin-bottom: 24px;">
+          <h3>The Outlier Score Formula</h3>
+          <div style="background: var(--kiwi-dark); color: var(--kiwi-green); padding: 18px 22px; border-radius: 10px; font-family: var(--font-mono); font-size: clamp(14px, 2vw, 17px); line-height: 1.5; margin: 10px 0;">
+            Outlier Score = Post Views &divide; Creator Median Views (in Sample)
+          </div>
+          <p>
+            Where <em>Post Views</em> is the public play count recorded at scan time, and <em>Creator Median Views</em> is the exact midpoint value when all sampled posts are sorted from lowest to highest.
+          </p>
+        </div>
+
+        <!-- STATISTICAL PROOF: WHY MEDIAN -->
+        <div class="pillar-card">
+          <h3>Why Median Beats Mean: A Statistical Example</h3>
+          <p style="margin-bottom: 12px;">
+            Consider a creator who published 6 Reels with the following view counts:
+          </p>
+
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px;">
+            <span style="background: var(--wash); border: 1px solid var(--line); padding: 6px 12px; border-radius: 6px; font-family: var(--font-mono); font-size: 13px;">10,000</span>
+            <span style="background: var(--wash); border: 1px solid var(--line); padding: 6px 12px; border-radius: 6px; font-family: var(--font-mono); font-size: 13px;">12,000</span>
+            <span style="background: var(--wash); border: 1px solid var(--line); padding: 6px 12px; border-radius: 6px; font-family: var(--font-mono); font-size: 13px;">14,000</span>
+            <span style="background: var(--wash); border: 1px solid var(--line); padding: 6px 12px; border-radius: 6px; font-family: var(--font-mono); font-size: 13px;">15,000</span>
+            <span style="background: var(--wash); border: 1px solid var(--line); padding: 6px 12px; border-radius: 6px; font-family: var(--font-mono); font-size: 13px;">16,000</span>
+            <span style="background: #cbf990; color: #01370b; font-weight: 700; padding: 6px 12px; border-radius: 6px; font-family: var(--font-mono); font-size: 13px;">500,000 (Hit)</span>
+          </div>
+
+          <div class="pillar-card-grid">
+            <div style="background: #fef2f2; border: 1px solid #fecaca; padding: 18px 20px; border-radius: var(--radius-md);">
+              <strong style="color: #991b1b; font-size: 14px; display: block; margin-bottom: 6px;">&cross; Arithmetic Mean (Average): 94,500 views</strong>
+              <p style="color: #7f1d1d; font-size: 13px; line-height: 1.5; margin: 0;">
+                Because of the single 500K hit, the average jumps to 94,500. Now, five out of the six posts appear to be "failures," even though they represent the creator's true typical performance.
+              </p>
+            </div>
+
+            <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 18px 20px; border-radius: var(--radius-md);">
+              <strong style="color: #166534; font-size: 14px; display: block; margin-bottom: 6px;">&check; Median (Rank Kiwi): 14,500 views</strong>
+              <p style="color: #14532d; font-size: 13px; line-height: 1.5; margin: 0;">
+                The median ignores runaway distortion and accurately identifies 14,500 as the typical baseline. The 500K post is correctly calculated as a massive <strong>34.5&times; Outlier</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCORE INTERPRETATION TIER SCALE -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>How to Interpret Outlier Scores</h2>
+          <p>
+            A practical guide to evaluating multiplier tiers in your research.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div class="score-sim-row" style="padding: 14px 18px;">
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <span class="sim-badge typical">0.1&times; &ndash; 0.9&times;</span>
+              <strong style="color: var(--ink); font-size: 14px;">Underperforming Baseline</strong>
+            </div>
+            <p style="color: var(--muted); font-size: 13px; margin: 0; max-width: 520px;">
+              Content that failed to reach the creator's typical core audience. Useful to study for weak hooks or slow pacing.
+            </p>
+          </div>
+
+          <div class="score-sim-row" style="padding: 14px 18px;">
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <span class="sim-badge typical">1.0&times; &ndash; 1.9&times;</span>
+              <strong style="color: var(--ink); font-size: 14px;">Typical Expected Distribution</strong>
+            </div>
+            <p style="color: var(--muted); font-size: 13px; margin: 0; max-width: 520px;">
+              Standard expected distribution within the creator's existing subscriber or follower base.
+            </p>
+          </div>
+
+          <div class="score-sim-row" style="padding: 14px 18px;">
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <span class="sim-badge strong">2.0&times; &ndash; 4.9&times;</span>
+              <strong style="color: var(--ink); font-size: 14px;">Strong Creative Performer</strong>
+            </div>
+            <p style="color: var(--muted); font-size: 13px; margin: 0; max-width: 520px;">
+              Significant topic resonance. The post crossed over outside the immediate core follower group.
+            </p>
+          </div>
+
+          <div class="score-sim-row highlight" style="padding: 14px 18px;">
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <span class="sim-badge viral">5.0&times; &ndash; 9.9&times;</span>
+              <strong style="color: var(--ink); font-size: 14px;">Major Viral Outlier</strong>
+            </div>
+            <p style="color: var(--muted); font-size: 13px; margin: 0; max-width: 520px;">
+              Major algorithmic breakout. This format or packaging should be saved directly to your swipe file.
+            </p>
+          </div>
+
+          <div class="score-sim-row highlight" style="padding: 14px 18px; border-color: #86efac;">
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <span class="sim-badge viral" style="background: #01370b; color: #cbf990;">10.0&times;+</span>
+              <strong style="color: var(--ink); font-size: 14px;">Exceptional Anomaly</strong>
+            </div>
+            <p style="color: var(--muted); font-size: 13px; margin: 0; max-width: 520px;">
+              Breakaway reach. The content generated broad platform-wide distribution far beyond normal channel scope.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW TO USE OUTLIER SCORE IN RESEARCH -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>How to Use Outlier Scores in Content Strategy</h2>
+          <p>
+            A 6-step framework to turn numerical scores into winning content ideas.
+          </p>
+        </div>
+
+        <div class="pillar-card-grid">
+          <div class="pillar-card">
+            <span class="pvc-tag" style="background: #cbf990; color: #01370b; align-self: flex-start;">Step 01</span>
+            <h3>Find Outliers</h3>
+            <p>Run an analysis on 50 to 100 creator posts. Sort by Outlier Score and isolate uploads with multipliers &gt; 3.0&times;.</p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pvc-tag" style="background: #cbf990; color: #01370b; align-self: flex-start;">Step 02</span>
+            <h3>Deconstruct Hooks</h3>
+            <p>Inspect the first 3 seconds of the outlier. What curiosity gap was opened? What text hook was placed on screen?</p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pvc-tag" style="background: #cbf990; color: #01370b; align-self: flex-start;">Step 03</span>
+            <h3>Compare to Baseline</h3>
+            <p>Examine the creator's 1.0&times; median posts. How did the outlier differ in pacing, editing rhythm, or framing?</p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pvc-tag" style="background: #cbf990; color: #01370b; align-self: flex-start;">Step 04</span>
+            <h3>Identify Patterns</h3>
+            <p>Analyze 3 to 5 creators in your niche. Did multiple creators experience outliers around the same underlying theme?</p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pvc-tag" style="background: #cbf990; color: #01370b; align-self: flex-start;">Step 05</span>
+            <h3>Form Hypotheses</h3>
+            <p>Draft an editorial premise: <em>"Contrasting a common mistake with a counter-intuitive fix produces 3&times; higher retention."</em></p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pvc-tag" style="background: #cbf990; color: #01370b; align-self: flex-start;">Step 06</span>
+            <h3>Test &amp; Benchmark</h3>
+            <p>Publish your own original take on the framework. Measure your post's performance against your own median baseline.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about the Outlier Score metric.</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div class="pillar-card">
+            <h3>What is an Outlier Score?</h3>
+            <p>
+              An Outlier Score measures how strongly an individual post or video performed relative to that creator's typical median performance in the sampled library. A 5.0&times; score means the post earned 5 times the creator's median view count.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <h3>Why does Rank Kiwi use median instead of average (mean)?</h3>
+            <p>
+              Arithmetic averages are heavily distorted by extreme runaway hits. If a creator has five posts with 10K views and one post with 1,000,000 views, the average jumps to 175K, making normal posts look like failures. The median remains at 10K, accurately representing typical reach.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <h3>Does an Outlier Score change when I change the sample size?</h3>
+            <p>
+              Yes. If you analyze 25 posts versus 100 posts, the baseline median views reflect that specific historical window. A recent 25-post scan reflects current momentum, while a 100-post scan provides longer-term historical stability.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <h3>Does a high Outlier Score guarantee that a topic will work for me?</h3>
+            <p>
+              No. An Outlier Score identifies an empirical creative anomaly for that specific creator. It proves that the topic, hook, or packaging resonated strongly with their audience, serving as a hypothesis for your own original content experiments.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <h3>What is considered a "viral" Outlier Score?</h3>
+            <p>
+              Scores between 1.0&times; and 2.0&times; represent typical expected distribution. Scores between 3.0&times; and 5.0&times; indicate strong creative resonance. Scores of 5.0&times; and above represent major breakout outliers that broke past the creator's existing audience bubble.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section class="wrap" style="padding-bottom: 64px;">
+        <div class="cta-box" style="background: var(--kiwi-dark); color: #ffffff; padding: 48px 32px; border-radius: 16px; text-align: center;">
+          <h2 style="color: #ffffff; margin-bottom: 12px;">
+            Find the true outliers in your niche today.
+          </h2>
+          <p style="color: var(--kiwi-green); font-size: 1.05rem; max-width: 580px; margin: 0 auto 28px auto; line-height: 1.6;">
+            Install Rank Kiwi in 10 seconds. Open any Instagram creator or YouTube channel to benchmark content against median performance.
+          </p>
+          <a data-chrome-link data-cta-name="add_to_chrome_outlier_footer" data-cta-position="final" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" class="button" target="_blank" rel="noopener" style="font-size: 1.05rem; padding: 14px 32px;">
+            Add to Chrome &mdash; Free
+          </a>
+        </div>
+    </main>
+
+                <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="/" aria-label="Rank Kiwi home">
+            <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" loading="lazy" decoding="async" />
+            <span>Rank Kiwi</span>
+          </a>
+          <p>Research creator profiles and spot viral outlier content on Instagram and YouTube.</p>
+          <div class="footer-socials">
+            <a class="social-icon-link" href="https://www.instagram.com/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://www.linkedin.com/in/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://www.youtube.com/@bhavishyasingla1" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener" aria-label="Bhavishya Singla Website">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <b>Product</b>
+          <a href="/">Home</a>
+          <a href="/instagram-analytics/">Instagram Analytics</a>
+          <a href="/youtube-analytics/">YouTube Analytics</a>
+          <a href="/outlier-score/">Outlier Score</a>
+          <a href="/creator-content-research/">Creator Research</a>
+        </div>
+
+        <div>
+          <b>Learn &amp; Docs</b>
+          <a href="/docs/">Documentation</a>
+          <a href="/docs/getting-started/">Getting Started</a>
+          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
+          <a href="/docs/troubleshooting/">Troubleshooting</a>
+          <a href="/docs/exports/">Exports Guide</a>
+        </div>
+
+        <div>
+          <b>Research &amp; Compare</b>
+          <a href="/research/">Research Hub</a>
+          <a href="/research/methodology/">Methodology</a>
+          <a href="/compare/">Tool Comparisons</a>
+          <a href="/alternatives/">Alternatives Hub</a>
+          <a href="/best/">Best Software Guides</a>
+        </div>
+
+        <div>
+          <b>Legal &amp; Support</b>
+          <a href="/support/">Help &amp; Support</a>
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>&copy; 2026 Rank Kiwi. Not affiliated with Meta, Instagram, Google, or YouTube.</p>
+        <p>Made with <span class="footer-heart">&#10084;&#65039;</span> by <a class="author-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener">Bhavishya Singla</a></p>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

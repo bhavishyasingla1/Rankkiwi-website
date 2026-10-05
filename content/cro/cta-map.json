@@ -1,0 +1,159 @@
+{
+  "$schema": "https://rankkiwi.com/schemas/cro-cta-map-v1.json",
+  "version": "1.0.0",
+  "description": "Centralized mapping of intent-matched CTAs and benefit-first copy per page type and position.",
+  "defaultCTA": {
+    "primary": "Add to Chrome — Free",
+    "secondary": "See how it works",
+    "subtext": "Free forever • No account required • 100% private"
+  },
+  "pageConversionMap": {
+    "homepage": {
+      "pageSlug": "",
+      "intent": "Understand product capability -> verify privacy -> test workflow -> install",
+      "hero": {
+        "primary": "Add to Chrome",
+        "secondary": "See how it works",
+        "benefitCopy": "Research creator profiles on Instagram and YouTube, benchmark posts against typical performance, and study the outliers that broke out."
+      },
+      "midPage": {
+        "primary": "Add to Chrome",
+        "label": "Free forever with zero data collection"
+      },
+      "final": {
+        "primary": "Add to Chrome",
+        "secondary": "See how it works",
+        "headline": "Free to install. Works in seconds.",
+        "benefitCopy": "No account required."
+      }
+    },
+    "instagramAnalytics": {
+      "pageSlug": "instagram-analytics",
+      "intent": "Audit Instagram Reels & profiles -> find viral outliers -> export hook data",
+      "hero": {
+        "primary": "Research Instagram Outliers",
+        "secondary": "See Outlier Score Formula",
+        "benefitCopy": "Benchmark Instagram Reels and posts against typical creator performance to uncover what genuinely broke out."
+      },
+      "midPage": {
+        "primary": "Try Instagram Analysis Free",
+        "label": "Instant in-browser scanning for public profiles"
+      },
+      "final": {
+        "primary": "Start Researching Instagram Outliers",
+        "secondary": "Read Instagram Docs",
+        "headline": "Stop scrolling Instagram chronologically.",
+        "benefitCopy": "Rank any public creator's Reels by performance multiplier and export winning hooks in seconds."
+      }
+    },
+    "youtubeAnalytics": {
+      "pageSlug": "youtube-analytics",
+      "intent": "Analyze YouTube channels & Shorts -> isolate breakout videos -> compare to channel median",
+      "hero": {
+        "primary": "Research YouTube Outliers",
+        "secondary": "Explore YouTube Research",
+        "benefitCopy": "Find the YouTube videos that actually outperformed a channel's normal views, not just the ones with high subscriber counts."
+      },
+      "midPage": {
+        "primary": "Analyze YouTube Channels Free",
+        "label": "Works on both long-form videos and YouTube Shorts"
+      },
+      "final": {
+        "primary": "Start Researching YouTube Videos",
+        "secondary": "Read YouTube Docs",
+        "headline": "Analyze any YouTube channel catalog in seconds.",
+        "benefitCopy": "Isolate high-performing video concepts and export complete catalog metrics to Google Sheets."
+      }
+    },
+    "outlierScore": {
+      "pageSlug": "outlier-score",
+      "intent": "Understand Outlier Score methodology -> verify statistical validity -> use in workflow",
+      "hero": {
+        "primary": "Try Rank Kiwi Free",
+        "secondary": "Explore Research Studies",
+        "benefitCopy": "Why creator-relative median benchmarks reveal genuine breakout content while raw view counts mislead."
+      },
+      "final": {
+        "primary": "Calculate Outlier Scores in Chrome",
+        "secondary": "Read Sorting & Filtering Guide",
+        "headline": "See Outlier Score in action on live profiles.",
+        "benefitCopy": "Install Rank Kiwi and benchmark creator content directly inside Instagram and YouTube."
+      }
+    },
+    "comparisons": {
+      "pageSlug": "compare",
+      "intent": "Resolve tool uncertainty -> evaluate trade-offs -> try free in-browser alternative",
+      "hero": {
+        "primary": "Try Rank Kiwi Free",
+        "secondary": "Browse All Comparisons",
+        "benefitCopy": "Compare creator research tools by workflow, pricing, platform coverage, and data transparency."
+      },
+      "final": {
+        "primary": "Try Rank Kiwi for Fast In-Browser Research",
+        "secondary": "See All 5 Tool Comparisons",
+        "headline": "No subscription required. Ready in seconds.",
+        "benefitCopy": "Try the lightweight browser extension designed specifically for creator outlier research."
+      }
+    },
+    "alternatives": {
+      "pageSlug": "alternatives",
+      "intent": "Evaluate alternatives to expensive or missing tools -> find best fit for workflow",
+      "hero": {
+        "primary": "Explore Rank Kiwi Free",
+        "secondary": "Compare Features",
+        "benefitCopy": "Explore specialized alternatives for Instagram and YouTube content research, competitive benchmarking, and workflow exports."
+      },
+      "final": {
+        "primary": "Start Researching with Rank Kiwi",
+        "secondary": "Browse All Alternatives",
+        "headline": "Fast, local, zero-friction creator research.",
+        "benefitCopy": "Export winning hooks and study breakout videos directly on Instagram and YouTube."
+      }
+    },
+    "bestOf": {
+      "pageSlug": "best",
+      "intent": "Category evaluation -> editorial decision making -> select tool for specific need",
+      "hero": {
+        "primary": "Try Rank Kiwi Free",
+        "secondary": "Explore Best-of Guides",
+        "benefitCopy": "Unbiased editorial evaluation of creator analytics, competitive benchmarking, and content research software."
+      },
+      "final": {
+        "primary": "Try Rank Kiwi for Outlier Discovery",
+        "secondary": "View Best Tools Directory",
+        "headline": "Find the best tool for your exact research workflow.",
+        "benefitCopy": "Rank Kiwi provides the fastest in-browser outlier detection and CSV export for Instagram and YouTube."
+      }
+    },
+    "research": {
+      "pageSlug": "research",
+      "intent": "Educational authority -> learn from quantitative data -> adopt outlier research methodology",
+      "hero": {
+        "primary": "Explore Research Studies",
+        "secondary": "Read Editorial Methodology",
+        "benefitCopy": "Original, quantitative research on creator performance distributions, upload cadences, and content outlier patterns."
+      },
+      "final": {
+        "primary": "Apply Research with Rank Kiwi",
+        "secondary": "Visit Research Hub",
+        "headline": "Turn empirical research into your daily creative workflow.",
+        "benefitCopy": "Rank Kiwi calculates the median benchmark and outlier multipliers analyzed in our studies directly on creator profiles."
+      }
+    },
+    "docs": {
+      "pageSlug": "docs",
+      "intent": "Solve implementation obstacle -> discover feature capabilities -> activate product",
+      "hero": {
+        "primary": "Add Rank Kiwi to Chrome",
+        "secondary": "Search Docs",
+        "benefitCopy": "Documentation, quickstarts, and step-by-step guides for Instagram and YouTube creator research."
+      },
+      "final": {
+        "primary": "Start Using Rank Kiwi",
+        "secondary": "Open Troubleshooting Hub",
+        "headline": "Ready to run your first creator analysis?",
+        "benefitCopy": "Install the extension free from the Chrome Web Store and follow the two-minute quickstart."
+      }
+    }
+  }
+}

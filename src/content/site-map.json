@@ -1,0 +1,1357 @@
+[
+  {
+    "slug": "/",
+    "pageType": "home",
+    "title": "Rank Kiwi: Creator Research & Viral Outlier Analysis for Instagram & YouTube",
+    "description": "Free Chrome extension to research creator profiles, benchmark engagement metrics against median performance, and discover breakout outlier content on Instagram and YouTube.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/docs/",
+    "pageType": "docs",
+    "title": "Rank Kiwi Documentation: User Manual, Scoring & Platform Guide",
+    "description": "Complete documentation for the Rank Kiwi extension: supported platforms, metric calculation, Outlier Scores, sorting, filtering, and data export.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/docs/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Docs",
+        "url": "/docs/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/support/",
+    "pageType": "support",
+    "title": "Support & Community: Rank Kiwi",
+    "description": "Get direct support, report issues, and connect with founder Bhavishya Singla for the Rank Kiwi creator research extension.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/support/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Support",
+        "url": "/support/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/privacy/",
+    "pageType": "legal",
+    "title": "Privacy Policy: Rank Kiwi",
+    "description": "Rank Kiwi Privacy Policy: Details our client-side local browser execution, zero external credentials storage, and commitment to creator privacy.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/privacy/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Privacy Policy",
+        "url": "/privacy/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/terms/",
+    "pageType": "legal",
+    "title": "Terms of Service: Rank Kiwi",
+    "description": "Rank Kiwi Terms of Service: The terms governing use of the Rank Kiwi Chrome extension and website.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/terms/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Terms of Service",
+        "url": "/terms/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/disclaimer/",
+    "pageType": "legal",
+    "title": "Disclaimer: Rank Kiwi",
+    "description": "Rank Kiwi Disclaimer: Disclosures regarding independent tool status, trademark ownership, and non-affiliation with Meta or Google.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/disclaimer/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Disclaimer",
+        "url": "/disclaimer/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/404.html",
+    "pageType": "system",
+    "title": "Page Not Found (404) - Rank Kiwi",
+    "description": "The requested page was not found on Rank Kiwi.",
+    "indexable": false,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/404.html",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "404",
+        "url": "/404.html"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Back to Homepage",
+      "url": "/",
+      "target": "_self"
+    }
+  },
+  {
+    "slug": "/instagram-analytics/",
+    "pageType": "product",
+    "title": "Instagram Creator Research & Reels Analytics Extension — Rank Kiwi",
+    "description": "Analyze Instagram creator profiles, rank Reels by view-to-median Outlier Score, isolate viral hooks, and export structured metrics in seconds with Rank Kiwi.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/instagram-analytics/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Instagram Analytics",
+        "url": "/instagram-analytics/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome — It's Free",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/youtube-analytics/",
+    "pageType": "product",
+    "title": "YouTube Channel & Shorts Outlier Analytics Extension — Rank Kiwi",
+    "description": "Analyze YouTube channels, benchmark long-form videos and Shorts against median channel views, discover viral anomalies, and download HD thumbnails.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/youtube-analytics/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "YouTube Analytics",
+        "url": "/youtube-analytics/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome — It's Free",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/outlier-score/",
+    "pageType": "product",
+    "title": "Outlier Score Explained: Creator-Relative Content Benchmarking — Rank Kiwi",
+    "description": "Learn why raw views mislead and how Rank Kiwi calculates median-based Outlier Scores to identify true viral breakout content on Instagram and YouTube.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/outlier-score/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Outlier Score",
+        "url": "/outlier-score/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome — It's Free",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/creator-content-research/",
+    "pageType": "product",
+    "title": "Creator Content Research Framework: Study Winning Outliers — Rank Kiwi",
+    "description": "Stop scrolling and start researching. The 8-step framework to analyze top creators across Instagram and YouTube, deconstruct viral hooks, and ethically adapt winning formats.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/creator-content-research/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Creator Research",
+        "url": "/creator-content-research/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome — It's Free",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/how-it-works/",
+    "pageType": "product",
+    "title": "How Rank Kiwi Works: 3-Step Creator Content Research",
+    "description": "Step-by-step workflow: Choose a creator, analyze visible content, sort by Outlier Score, study top performers, and export data.",
+    "indexable": true,
+    "status": "planned",
+    "canonical": "https://rankkiwi.com/how-it-works/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "How It Works",
+        "url": "/how-it-works/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/docs/getting-started/",
+    "pageType": "docs",
+    "title": "Getting Started with Rank Kiwi: Quickstart Guide & Workspace Tour",
+    "description": "Install the extension, pin it, and run your first Instagram or YouTube creator analysis in under two minutes.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/docs/getting-started/",
+    "parent": "/docs/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Docs",
+        "url": "/docs/"
+      },
+      {
+        "name": "Getting Started",
+        "url": "/docs/getting-started/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/docs/getting-started/your-first-analysis/",
+    "pageType": "docs",
+    "title": "Your First Creator Analysis: 9-Step Beginner Walkthrough - Rank Kiwi",
+    "description": "Master the end-to-end Rank Kiwi workflow from opening a creator library to exporting top viral outliers.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/docs/getting-started/your-first-analysis/",
+    "parent": "/docs/getting-started/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Docs",
+        "url": "/docs/"
+      },
+      {
+        "name": "Getting Started",
+        "url": "/docs/getting-started/"
+      },
+      {
+        "name": "First Analysis",
+        "url": "/docs/getting-started/your-first-analysis/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/docs/instagram/",
+    "pageType": "docs",
+    "title": "Instagram Creator & Reels Research Guide — Rank Kiwi Documentation",
+    "description": "Learn how Rank Kiwi discovers Instagram Reels, benchmarks views, calculates engagement, and handles public metrics.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/docs/instagram/",
+    "parent": "/docs/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Docs",
+        "url": "/docs/"
+      },
+      {
+        "name": "Instagram",
+        "url": "/docs/instagram/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/docs/youtube/",
+    "pageType": "docs",
+    "title": "YouTube Channel & Shorts Research Guide — Rank Kiwi Documentation",
+    "description": "Learn how Rank Kiwi analyzes YouTube channels, long-form videos, and Shorts, calculates median views, and downloads thumbnails.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/docs/youtube/",
+    "parent": "/docs/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Docs",
+        "url": "/docs/"
+      },
+      {
+        "name": "YouTube",
+        "url": "/docs/youtube/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/docs/understanding/outlier-score/",
+    "pageType": "docs",
+    "title": "Understanding Outlier Score: Mathematical Formula & Median Baselines — Rank Kiwi",
+    "description": "Deep dive into Rank Kiwi Outlier Score calculation, creator-relative median baselines, sample sizes, and practical interpretation.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/docs/understanding/outlier-score/",
+    "parent": "/docs/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Docs",
+        "url": "/docs/"
+      },
+      {
+        "name": "Outlier Score",
+        "url": "/docs/understanding/outlier-score/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/docs/understanding/sorting-filtering/",
+    "pageType": "docs",
+    "title": "Sorting & Filtering Creator Content — Rank Kiwi Documentation",
+    "description": "Master Rank Kiwi sorting dimensions and multi-attribute filters to isolate viral formats and engagement champions.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/docs/understanding/sorting-filtering/",
+    "parent": "/docs/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Docs",
+        "url": "/docs/"
+      },
+      {
+        "name": "Sorting & Filtering",
+        "url": "/docs/understanding/sorting-filtering/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/docs/workflows/content-research/",
+    "pageType": "docs",
+    "title": "Creator Content Research Blueprint: From Discovery to Hook Deconstruction",
+    "description": "The proven 6-step workflow to analyze top creators, isolate viral hooks, and ethically apply winning formats to your editorial calendar.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/docs/workflows/content-research/",
+    "parent": "/docs/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Docs",
+        "url": "/docs/"
+      },
+      {
+        "name": "Content Research",
+        "url": "/docs/workflows/content-research/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/docs/exports/",
+    "pageType": "docs",
+    "title": "Export Data & Media Downloads — Rank Kiwi Documentation",
+    "description": "Learn how to export Rank Kiwi creator research into CSV, JSON, and Clipboard formats, download Instagram Reels, and save high-resolution YouTube thumbnails.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/docs/exports/",
+    "parent": "/docs/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Docs",
+        "url": "/docs/"
+      },
+      {
+        "name": "Exports",
+        "url": "/docs/exports/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/docs/troubleshooting/",
+    "pageType": "docs",
+    "title": "Troubleshooting Hub & Self-Service Diagnostics — Rank Kiwi Documentation",
+    "description": "Diagnose and resolve any Rank Kiwi extension issue without waiting for support. Step-by-step solutions for detection, collection, metrics, and downloads.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/docs/troubleshooting/",
+    "parent": "/docs/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Docs",
+        "url": "/docs/"
+      },
+      {
+        "name": "Troubleshooting",
+        "url": "/docs/troubleshooting/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Contact Support",
+      "url": "/support/",
+      "target": "_self"
+    }
+  },
+  {
+    "slug": "/research/",
+    "pageType": "research",
+    "title": "Rank Kiwi Research: Original Creator & Content Performance Analysis",
+    "description": "Data-driven research into creator performance benchmarks, content distributions, format comparisons, and viral outlier patterns on Instagram and YouTube.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/research/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Research",
+        "url": "/research/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/research/methodology/",
+    "pageType": "research",
+    "title": "Research Methodology & Editorial Standards — Rank Kiwi",
+    "description": "Discover the data transparency standards, mathematical rules, and editorial principles governing Rank Kiwi creator and content performance research.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/research/methodology/",
+    "parent": "/research/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Research",
+        "url": "/research/"
+      },
+      {
+        "name": "Methodology",
+        "url": "/research/methodology/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/research/instagram-reels-vs-carousels/",
+    "pageType": "research",
+    "title": "Instagram Reels vs Carousels: Which Actually Performs Better? — Rank Kiwi Research",
+    "description": "Analysis of Buffer's 4M+ Instagram post dataset reveals why Reels win on reach (+36%) while Carousels dominate engagement (+12%). Which format fits your goals?",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/research/instagram-reels-vs-carousels/",
+    "parent": "/research/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Research",
+        "url": "/research/"
+      },
+      {
+        "name": "Reels vs Carousels",
+        "url": "/research/instagram-reels-vs-carousels/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/research/instagram-views-by-account-size/",
+    "pageType": "research",
+    "title": "How Instagram Views Change as Accounts Get Bigger — Rank Kiwi Research",
+    "description": "Socialinsider benchmark data across 5 follower tiers reveals how average views scale for carousels, Reels, and images—and why creator-relative baselines matter.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/research/instagram-views-by-account-size/",
+    "parent": "/research/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Research",
+        "url": "/research/"
+      },
+      {
+        "name": "Views by Account Size",
+        "url": "/research/instagram-views-by-account-size/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/research/one-video-is-not-a-channel/",
+    "pageType": "research",
+    "title": "One Video Doesn't Tell You How Good a Creator Is — Rank Kiwi Research",
+    "description": "In vidIQ's study of 448,413 YouTube channels, the median best-of-10 long-form video earned 10.82× the views of the first upload. Why single-video analysis fails.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/research/one-video-is-not-a-channel/",
+    "parent": "/research/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Research",
+        "url": "/research/"
+      },
+      {
+        "name": "One Video Is Not a Channel",
+        "url": "/research/one-video-is-not-a-channel/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/research/youtube-upload-frequency/",
+    "pageType": "research",
+    "title": "How Often Should You Upload on YouTube? — Rank Kiwi Research",
+    "description": "Analysis of 10,210,278 YouTube channels reveals a 4.11× view growth spread between upload tiers. Why cadence is a growth variable—not an algorithmic hack.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/research/youtube-upload-frequency/",
+    "parent": "/research/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Research",
+        "url": "/research/"
+      },
+      {
+        "name": "Upload Frequency",
+        "url": "/research/youtube-upload-frequency/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/research/youtube-channel-size/",
+    "pageType": "research",
+    "title": "How Rare Is a Big YouTube Channel? (61M Channels Analyzed) — Rank Kiwi",
+    "description": "In vidIQ's 61.2M channel census, only 0.13% reached 1M subscribers (roughly 1 in 770). See exact subscriber distribution milestones and creator benchmarks.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/research/youtube-channel-size/",
+    "parent": "/research/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Research",
+        "url": "/research/"
+      },
+      {
+        "name": "Channel Size Rarity",
+        "url": "/research/youtube-channel-size/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/compare/",
+    "pageType": "comparison",
+    "title": "Compare Creator Research & Analytics Tools — Rank Kiwi",
+    "description": "Compare Rank Kiwi with Sort Feed, Socialinsider, Metricool, Viewstats, and YouTube Studio. Honest editorial comparisons of creator research and analytics tools.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/compare/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Compare",
+        "url": "/compare/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/compare/rank-kiwi-vs-sort-feed/",
+    "pageType": "comparison",
+    "title": "Rank Kiwi vs Sort Feed: Which Creator Research Tool Is Better? — Rank Kiwi",
+    "description": "Comparing Rank Kiwi and Sort Feed for creator content research across Instagram, YouTube, and other platforms. Workflow differences, Outlier Score, and pricing.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/compare/rank-kiwi-vs-sort-feed/",
+    "parent": "/compare/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Compare",
+        "url": "/compare/"
+      },
+      {
+        "name": "Rank Kiwi vs Sort Feed",
+        "url": "/compare/rank-kiwi-vs-sort-feed/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Try Rank Kiwi Free",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/compare/rank-kiwi-vs-socialinsider/",
+    "pageType": "comparison",
+    "title": "Rank Kiwi vs Socialinsider: Creator Research vs Social Analytics Suite — Rank Kiwi",
+    "description": "Compare Rank Kiwi and Socialinsider. Understand the difference between lightweight creator content research and enterprise multi-channel social benchmarking suites.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/compare/rank-kiwi-vs-socialinsider/",
+    "parent": "/compare/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Compare",
+        "url": "/compare/"
+      },
+      {
+        "name": "Rank Kiwi vs Socialinsider",
+        "url": "/compare/rank-kiwi-vs-socialinsider/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add Rank Kiwi to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/compare/rank-kiwi-vs-metricool/",
+    "pageType": "comparison",
+    "title": "Rank Kiwi vs Metricool: Creator Research vs Social Media Management — Rank Kiwi",
+    "description": "Compare Rank Kiwi and Metricool. Understand why on-page creator research and all-in-one social scheduling and management serve completely different jobs.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/compare/rank-kiwi-vs-metricool/",
+    "parent": "/compare/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Compare",
+        "url": "/compare/"
+      },
+      {
+        "name": "Rank Kiwi vs Metricool",
+        "url": "/compare/rank-kiwi-vs-metricool/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add Rank Kiwi to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/compare/rank-kiwi-vs-viewstats/",
+    "pageType": "comparison",
+    "title": "Rank Kiwi vs Viewstats: Multi-Platform Research vs YouTube Intelligence — Rank Kiwi",
+    "description": "Compare Rank Kiwi and Viewstats. Understand the trade-offs between lightweight cross-platform (Instagram & YouTube) creator research and deep YouTube-only intelligence.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/compare/rank-kiwi-vs-viewstats/",
+    "parent": "/compare/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Compare",
+        "url": "/compare/"
+      },
+      {
+        "name": "Rank Kiwi vs Viewstats",
+        "url": "/compare/rank-kiwi-vs-viewstats/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Try Rank Kiwi Free",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/compare/rank-kiwi-vs-youtube-studio/",
+    "pageType": "comparison",
+    "title": "Rank Kiwi vs YouTube Studio: Competitor Research vs First-Party Analytics — Rank Kiwi",
+    "description": "Why do you need Rank Kiwi if YouTube Studio has built-in analytics? Understand the clear difference between private first-party metrics and public competitor research.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/compare/rank-kiwi-vs-youtube-studio/",
+    "parent": "/compare/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Compare",
+        "url": "/compare/"
+      },
+      {
+        "name": "Rank Kiwi vs YouTube Studio",
+        "url": "/compare/rank-kiwi-vs-youtube-studio/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Research Another Creator with Rank Kiwi",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/alternatives/",
+    "pageType": "alternative",
+    "title": "Best Social Media & Content Research Tool Alternatives | Rank Kiwi",
+    "description": "Explore alternatives to social media analytics and content research tools. Compare options for Instagram research, YouTube research, competitor analysis, outlier discovery, and content intelligence.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/alternatives/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Alternatives",
+        "url": "/alternatives/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/alternatives/sort-feed/",
+    "pageType": "alternative",
+    "title": "Best Sort Feed Alternatives for Content Research — Rank Kiwi",
+    "description": "Looking for Sort Feed alternatives? Explore the best tools for creator research, Outlier Scores, feed sorting, and video hook discovery across Instagram and YouTube.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/alternatives/sort-feed/",
+    "parent": "/alternatives/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Alternatives",
+        "url": "/alternatives/"
+      },
+      {
+        "name": "Sort Feed Alternatives",
+        "url": "/alternatives/sort-feed/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/alternatives/socialinsider/",
+    "pageType": "alternative",
+    "title": "Best Socialinsider Alternatives for Social Analytics & Research — Rank Kiwi",
+    "description": "Looking for Socialinsider alternatives? Compare options for creator content research, affordable social media management, and competitive benchmarking tools.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/alternatives/socialinsider/",
+    "parent": "/alternatives/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Alternatives",
+        "url": "/alternatives/"
+      },
+      {
+        "name": "Socialinsider Alternatives",
+        "url": "/alternatives/socialinsider/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/alternatives/metricool/",
+    "pageType": "alternative",
+    "title": "Best Metricool Alternatives for Content Research & Management — Rank Kiwi",
+    "description": "Looking for Metricool alternatives? Compare tools for competitor content research, Outlier Scores, visual post scheduling, and social media analytics.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/alternatives/metricool/",
+    "parent": "/alternatives/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Alternatives",
+        "url": "/alternatives/"
+      },
+      {
+        "name": "Metricool Alternatives",
+        "url": "/alternatives/metricool/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/alternatives/viewstats/",
+    "pageType": "alternative",
+    "title": "Best Viewstats Alternatives for YouTube & Creator Research — Rank Kiwi",
+    "description": "Looking for Viewstats alternatives? Compare tools for YouTube creator research, cross-platform Instagram & YouTube analysis, Outlier Scores, and channel SEO.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/alternatives/viewstats/",
+    "parent": "/alternatives/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Alternatives",
+        "url": "/alternatives/"
+      },
+      {
+        "name": "Viewstats Alternatives",
+        "url": "/alternatives/viewstats/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/alternatives/youtube-studio/",
+    "pageType": "alternative",
+    "title": "Best YouTube Studio Alternatives for Competitor & Creator Research — Rank Kiwi",
+    "description": "Looking for YouTube Studio alternatives for competitor research? Discover why YouTube Studio cannot analyze rivals and explore the best tools for public creator research.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/alternatives/youtube-studio/",
+    "parent": "/alternatives/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Alternatives",
+        "url": "/alternatives/"
+      },
+      {
+        "name": "YouTube Studio Alternatives",
+        "url": "/alternatives/youtube-studio/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/best/",
+    "pageType": "best-of",
+    "title": "Best Social Media & Content Research Tools | Rank Kiwi",
+    "description": "Explore the best tools for Instagram analytics, YouTube research, competitor analysis, content discovery, outlier research, and social media intelligence.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/best/",
+    "parent": "/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Best Tools",
+        "url": "/best/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/best-instagram-analytics-tools/",
+    "pageType": "best-of",
+    "title": "Best Instagram Analytics Tools for Creators & Brands (2026)",
+    "description": "Compare the best Instagram analytics tools. Evaluate Instagram Insights, Socialinsider, Metricool, and Rank Kiwi across own analytics, benchmarking, and research.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/best-instagram-analytics-tools/",
+    "parent": "/best/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Best Tools",
+        "url": "/best/"
+      },
+      {
+        "name": "Best Instagram Analytics Tools",
+        "url": "/best-instagram-analytics-tools/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/best-instagram-content-research-tools/",
+    "pageType": "best-of",
+    "title": "Best Instagram Content Research Tools (2026 Guide)",
+    "description": "Discover the best Instagram content research tools for finding high-performing Reels, creator outliers, top formats, and viral hooks across public profiles.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/best-instagram-content-research-tools/",
+    "parent": "/best/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Best Tools",
+        "url": "/best/"
+      },
+      {
+        "name": "Best Instagram Content Research Tools",
+        "url": "/best-instagram-content-research-tools/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/best-youtube-analytics-tools/",
+    "pageType": "best-of",
+    "title": "Best YouTube Analytics Tools: Channel & Competitor Tracking (2026)",
+    "description": "Compare the best YouTube analytics tools. Understand the differences between YouTube Studio, Viewstats, vidIQ, Rank Kiwi, and Social Blade for channel growth.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/best-youtube-analytics-tools/",
+    "parent": "/best/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Best Tools",
+        "url": "/best/"
+      },
+      {
+        "name": "Best YouTube Analytics Tools",
+        "url": "/best-youtube-analytics-tools/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/best-youtube-content-research-tools/",
+    "pageType": "best-of",
+    "title": "Best YouTube Content Research Tools for Finding Winning Videos (2026)",
+    "description": "Explore top YouTube content research tools. Compare Viewstats, Rank Kiwi, vidIQ, and TubeBuddy for finding breakout videos, thumbnail ideas, and outliers.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/best-youtube-content-research-tools/",
+    "parent": "/best/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Best Tools",
+        "url": "/best/"
+      },
+      {
+        "name": "Best YouTube Content Research Tools",
+        "url": "/best-youtube-content-research-tools/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/best-social-media-competitor-analysis-tools/",
+    "pageType": "best-of",
+    "title": "Best Social Media Competitor Analysis Tools (2026 Review)",
+    "description": "Compare top social media competitor analysis tools. Evaluate Socialinsider, Metricool, Sprout Social, BuzzSumo, and Rank Kiwi across benchmarking and research.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/best-social-media-competitor-analysis-tools/",
+    "parent": "/best/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Best Tools",
+        "url": "/best/"
+      },
+      {
+        "name": "Best Social Media Competitor Analysis Tools",
+        "url": "/best-social-media-competitor-analysis-tools/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/best-high-performing-content-research-tools/",
+    "pageType": "best-of",
+    "title": "Best Tools for Finding High-Performing Social Media Content (2026)",
+    "description": "Learn how to find high-performing social media content and viral outliers. Compare Rank Kiwi, Viewstats, Sort Feed, and BuzzSumo for creator research.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/best-high-performing-content-research-tools/",
+    "parent": "/best/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Best Tools",
+        "url": "/best/"
+      },
+      {
+        "name": "Best High-Performing Content Research Tools",
+        "url": "/best-high-performing-content-research-tools/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/best-content-research-tools-for-creators/",
+    "pageType": "best-of",
+    "title": "Best Content Research Tools for Creators & Video Editors (2026)",
+    "description": "Discover the best content research tools for creators. Find tools for video ideas, studying competitor hooks, keyword optimization, and content planning.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/best-content-research-tools-for-creators/",
+    "parent": "/best/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Best Tools",
+        "url": "/best/"
+      },
+      {
+        "name": "Best Content Research Tools for Creators",
+        "url": "/best-content-research-tools-for-creators/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  },
+  {
+    "slug": "/best-free-content-research-tools/",
+    "pageType": "best-of",
+    "title": "Best Free Content Research Tools for Instagram & YouTube (2026)",
+    "description": "Explore the best free content research tools. Understand the differences between 100% free software, limited free tiers, and temporary free trials.",
+    "indexable": true,
+    "status": "active",
+    "canonical": "https://rankkiwi.com/best-free-content-research-tools/",
+    "parent": "/best/",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "Best Tools",
+        "url": "/best/"
+      },
+      {
+        "name": "Best Free Content Research Tools",
+        "url": "/best-free-content-research-tools/"
+      }
+    ],
+    "primaryCTA": {
+      "label": "Add to Chrome",
+      "url": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
+      "target": "_blank"
+    }
+  }
+]

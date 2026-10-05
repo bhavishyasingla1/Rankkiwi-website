@@ -1,0 +1,30 @@
+{
+  "datasetId": "instagram-format-buffer",
+  "title": "Instagram Reels vs Carousels Reach & Engagement Benchmark",
+  "publisher": "Buffer",
+  "sourceTitle": "Data Shows Instagram Reels are Best For Reach — But Not Engagement",
+  "sourceUrl": "https://buffer.com/resources/instagram-reels-vs-carousels/",
+  "datasetPeriod": "January 2022 – October 2024",
+  "sampleSize": 4000000,
+  "sampleDescription": "More than 4 million public Instagram posts published between January 2022 and October 2024",
+  "metrics": {
+    "reach": {
+      "reelsVsCarouselsPercent": 36,
+      "reelsVsImagesPercent": 125
+    },
+    "engagement": {
+      "carouselsVsReelsPercent": 12,
+      "carouselsVsImagesPercent": 114
+    }
+  },
+  "rankKiwiCalculations": {
+    "reelsReachMultiplierVsImages": 2.25,
+    "carouselsEngagementMultiplierVsImages": 2.14,
+    "coreTakeaway": "Format superiority depends on objective: Reels maximize top-of-funnel reach (+36%), while Carousels maximize engagement depth (+12%)."
+  },
+  "limitations": [
+    "Dataset relies on Buffer's user base of brands, creators, and agencies",
+    "Reach and engagement metrics are aggregated cross-niche averages",
+    "Private accounts and non-Buffer scheduled posts excluded"
+  ]
+}

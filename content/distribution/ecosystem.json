@@ -1,0 +1,181 @@
+{
+  "$schema": "https://rankkiwi.com/schemas/distribution-ecosystem-v1.json",
+  "version": "1.0.0",
+  "lastUpdated": "2026-10-05",
+  "description": "Continuous Distribution & Content Operating System for Rank Kiwi Website and Growth Flywheel.",
+  "principles": {
+    "websiteIsSourceOfTruth": "The website is the canonical home for substantial information, methodologies, datasets, and conversions. External channels are distribution engines, not endpoints.",
+    "everyAssetHasAJob": "No content is published merely to sustain a posting cadence. Assets must acquire search traffic, establish topical authority, explain product capabilities, or drive qualified discovery.",
+    "nativeContentFirst": "Every platform post provides immediate standalone value. Never use lazy link drops like 'New post published, click here'.",
+    "traceableClaims": "Every statistic, dataset, and factual finding must trace directly to a verified source, methodology, or aggregated data drop. No fabricated claims or vanity fluff.",
+    "audienceOverVanity": "Prioritize qualified engagement and downstream product intent over raw impressions or meaningless follower counts."
+  },
+  "flywheel": {
+    "stages": [
+      { "step": 1, "name": "Product & Research Insight", "description": "Identify counterintuitive patterns, creator benchmarks, or workflow gaps from product telemetry, research datasets, or user questions." },
+      { "step": 2, "name": "Flagship Website Asset", "description": "Publish definitive research article, methodology guide, comparison shootout, or documentation walkthrough on rankkiwi.com." },
+      { "step": 3, "name": "Atomized Distribution", "description": "Repurpose core findings into native LinkedIn insights, X threads, Instagram carousels, YouTube breakdowns, and newsletter sections." },
+      { "step": 4, "name": "Community & Earned Discovery", "description": "Engage in relevant discussions, earn backlinks, and answer creator/marketer queries with evidence-backed methodology." },
+      { "step": 5, "name": "Qualified Website Visit", "description": "Visitors land on intent-matched, high-context pages (e.g. /outlier-score/, /research/*, /compare/*)." },
+      { "step": 6, "name": "Product Conversion & Activation", "description": "Visitor installs free Chrome extension and runs first in-browser creator analysis." },
+      { "step": 7, "name": "Feedback & New Insights", "description": "User questions, search console patterns, and new platform updates fuel the next generation of content." }
+    ]
+  },
+  "contentPillars": [
+    {
+      "id": "pillar_content_research",
+      "name": "Content Research & Competitive Discovery",
+      "description": "Systematic frameworks for researching creator catalogs, studying competitive hooks, and discovering what genuinely works.",
+      "targetAudience": ["Creators", "Social Media Managers", "Content Strategists", "Agencies"]
+    },
+    {
+      "id": "pillar_outlier_content",
+      "name": "Outlier Content & Benchmarking Methodology",
+      "description": "Why raw view counts mislead, why creator-relative medians matter, and how to identify breakout anomaly posts.",
+      "targetAudience": ["Growth Marketers", "Data Analysts", "Content Creators", "Researchers"]
+    },
+    {
+      "id": "pillar_instagram",
+      "name": "Instagram Reels & Profile Research",
+      "description": "Reels performance distributions, account-size dynamics, carousel vs video formats, and public profile workflows.",
+      "targetAudience": ["Instagram Creators", "Short-Form Video Strategists", "Influencer Agencies"]
+    },
+    {
+      "id": "pillar_youtube",
+      "name": "YouTube Videos, Shorts & Channel Catalogs",
+      "description": "Channel median view baselines, Shorts vs long-form dynamics, high-resolution thumbnail extraction, and catalog audits.",
+      "targetAudience": ["YouTubers", "Video Producers", "Channel Managers"]
+    },
+    {
+      "id": "pillar_creator_education",
+      "name": "Creator & Marketer Workflow Education",
+      "description": "Actionable workflows for turning research into content hooks, spreadsheet databases, and editorial calendars.",
+      "targetAudience": ["Full-Time Creators", "Freelance Marketers", "Agency Teams"]
+    },
+    {
+      "id": "pillar_product_education",
+      "name": "Rank Kiwi Product Education & Walkthroughs",
+      "description": "Step-by-step demonstrations showing how Rank Kiwi replaces friction-heavy manual research with 10-second in-browser sorting.",
+      "targetAudience": ["Active Users", "Evaluators", "Extension Searchers"]
+    },
+    {
+      "id": "pillar_original_research",
+      "name": "Original Research & Data Studies",
+      "description": "First-party empirical studies, public dataset analyses (e.g. vidIQ 448k channels, Kaggle 10k Reels), and statistical benchmarks.",
+      "targetAudience": ["Industry Publications", "Journalists", "Newsletter Curators", "Economists"]
+    },
+    {
+      "id": "pillar_building_rank_kiwi",
+      "name": "Building Rank Kiwi (Transparent Engineering)",
+      "description": "Selective behind-the-scenes insights into client-side browser extension architecture, privacy sandboxing, and performance tuning.",
+      "targetAudience": ["Developers", "Product Builders", "Privacy Advocates"]
+    }
+  ],
+  "contentMix": {
+    "education": 35,
+    "research": 25,
+    "product": 20,
+    "opinionAndInsight": 10,
+    "communityDiscussion": 5,
+    "directPromotion": 5
+  },
+  "contentHierarchy": {
+    "level1_flagship": {
+      "definition": "High-effort, definitive assets published canonically on the website.",
+      "examples": ["Original research papers", "Comprehensive pillar guides", "Definitive Outlier Score methodology", "Cluster comparison hubs"]
+    },
+    "level2_supporting": {
+      "definition": "Structured educational or tactical assets expanding specific aspects of flagship assets.",
+      "examples": ["Head-to-head comparison pages", "Alternatives guides", "Best-of category roundups", "Documentation troubleshooting guides"]
+    },
+    "level3_distribution": {
+      "definition": "Native, atomized derivative assets published on distributed social and community channels.",
+      "examples": ["LinkedIn data posts", "X breakdown threads", "Instagram educational carousels", "YouTube Shorts & workflow videos", "Newsletter editions"]
+    },
+    "level4_conversation": {
+      "definition": "Lightweight, direct audience interactions and answers in public forums.",
+      "examples": ["Reddit/community methodology replies", "Comments on industry debates", "Support FAQ updates", "Q&A clarifications"]
+    }
+  },
+  "channels": {
+    "website_seo": {
+      "role": "Primary owned home, long-term organic search discovery engine, and conversion center.",
+      "tier": "Tier 1 (Owned)",
+      "primaryMetrics": ["Organic landing sessions", "Average engagement time", "Outbound webstore_click rate", "Backlinks earned"],
+      "guidelines": "Maintain pristine technical SEO, semantic HTML, structured data, and zero intrusive popups."
+    },
+    "linkedin": {
+      "role": "Professional discovery and distribution for creator economy insights, research charts, and agency workflows.",
+      "tier": "Tier 1 (Distributed)",
+      "primaryMetrics": ["Qualified engagement", "Profile link clicks", "High-intent website referral traffic", "Inbound agency inquiries"],
+      "nativeFormat": "Punchy hypothesis -> Data proof point -> Visual chart/card -> Actionable implication -> Contextual link in bio or comments."
+    },
+    "x_twitter": {
+      "role": "Fast-paced research observations, breakdown threads, product update notes, and creator discussions.",
+      "tier": "Tier 1 (Distributed)",
+      "primaryMetrics": ["Thread impressions", "Retweets/Quotes with commentary", "Referral sessions", "Direct creator conversations"],
+      "nativeFormat": "Provocative data hook -> 3-5 tweet analytical breakdown with chart -> Link to full methodology."
+    },
+    "instagram": {
+      "role": "Visual proof and education for Instagram creators, Reels strategists, and short-form video editors.",
+      "tier": "Tier 2 (Distributed)",
+      "primaryMetrics": ["Post saves", "Post shares", "Profile visits", "Downstream webstore visits"],
+      "nativeFormat": "Multi-slide visual carousels breaking down real creator case studies and 30-second workflow Reels."
+    },
+    "youtube": {
+      "role": "Deep-dive tutorials, research study breakdowns, tool comparisons, and workflow demonstrations.",
+      "tier": "Tier 1 (Distributed)",
+      "primaryMetrics": ["Watch time", "Audience retention", "Description link clicks to /youtube-analytics/ and /docs/"],
+      "nativeFormat": "1-3 minute focused tutorials and 15-45 second YouTube Shorts demonstrating outlier discovery."
+    },
+    "newsletter": {
+      "role": "Direct-to-inbox research digest and weekly data drops for active creators, marketers, and power users.",
+      "tier": "Tier 2 (Owned)",
+      "primaryMetrics": ["Open rate (>40%)", "Click-to-open rate (>15%)", "Website article click-throughs", "Unsubscribe rate (<0.3%)"],
+      "nativeFormat": "1 Surprising finding -> Why it matters -> Practical workflow -> Rank Kiwi tip -> Canonical link."
+    },
+    "communities_reddit": {
+      "role": "Authentic participation, methodology clarification, and helpful answers in relevant creator subreddits.",
+      "tier": "Tier 2 (Earned / Borrowed)",
+      "primaryMetrics": ["Upvotes", "Helpful discussion replies", "Brand keyword search lift", "Organic brand sentiment"],
+      "antiPatterns": "Zero unsolicited link dropping, zero astroturfing, zero fake accounts. Disclose Rank Kiwi creator identity when relevant."
+    }
+  },
+  "franchises": [
+    {
+      "id": "franchise_research",
+      "name": "Rank Kiwi Research",
+      "format": "Flagship quantitative studies analyzing large public datasets with reproducible statistical rigor.",
+      "cadence": "Monthly / Bi-monthly",
+      "canonicalLocation": "/research/"
+    },
+    {
+      "id": "franchise_data_drop",
+      "name": "Data Drop",
+      "format": "Single-insight bite-sized data finding paired with a clean branded visualization or table.",
+      "cadence": "Weekly",
+      "canonicalLocation": "/research/ and Socials"
+    },
+    {
+      "id": "franchise_outlier_breakdown",
+      "name": "Outlier Breakdown",
+      "format": "Case study analyzing why a specific public creator's post achieved a 3x-10x Outlier Score multiplier.",
+      "cadence": "Bi-weekly",
+      "canonicalLocation": "/docs/workflows/ and Socials"
+    },
+    {
+      "id": "franchise_tool_breakdown",
+      "name": "Tool Breakdown",
+      "format": "Honest, objective comparison of when to use Rank Kiwi vs legacy enterprise platforms or platform-native analytics.",
+      "cadence": "Bi-weekly",
+      "canonicalLocation": "/compare/ and /best/"
+    },
+    {
+      "id": "franchise_30_second_research",
+      "name": "30-Second Research",
+      "format": "Rapid screen-recorded video demonstration executing a complete competitor or outlier audit using the Chrome extension.",
+      "cadence": "Weekly",
+      "canonicalLocation": "YouTube Shorts, Instagram Reels, X"
+    }
+  ]
+}

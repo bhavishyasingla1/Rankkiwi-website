@@ -1,0 +1,87 @@
+{
+  "$schema": "https://rankkiwi.com/schemas/distribution-sources-claims-v1.json",
+  "version": "1.0.0",
+  "description": "Traceable Source & Factual Claim Database: Ensuring Scientific Rigor and Eliminating Unverified Fluff across all Content.",
+  "sources": [
+    {
+      "sourceId": "src_vidiq_448k_channels",
+      "author": "vidIQ Research Team",
+      "publication": "vidIQ Channel Milestones & Upload Distribution Study",
+      "year": 2024,
+      "sampleSize": "448,413 YouTube channels",
+      "datasetType": "Public YouTube Data API catalog metrics across multiple creator tiers",
+      "canonicalUsage": "/research/one-video-is-not-a-channel/",
+      "claims": [
+        {
+          "claimId": "claim_vidiq_best_of_10",
+          "statement": "The median best-of-10 long-form video earned 10.82x the views of the first upload.",
+          "attributionRule": "Must be cited as 'In our analysis of vidIQ's study of 448,413 YouTube channels...' Never claim Rank Kiwi scraped 448k channels first-party.",
+          "caveats": "Calculated on channels with at least 10 long-form uploads. Does not account for deleted, unlisted, or private test videos."
+        },
+        {
+          "claimId": "claim_vidiq_distribution_skew",
+          "statement": "The top 10% of videos account for over 70% of total lifetime channel views across typical channels.",
+          "attributionRule": "Cite vidIQ dataset distribution calculations.",
+          "caveats": "Power-law distribution holds across gaming, education, and entertainment genres."
+        }
+      ]
+    },
+    {
+      "sourceId": "src_tubefilter_61m_channels",
+      "author": "Tubefilter / YouTube Official Statistics",
+      "publication": "Global YouTube Channel Size & Subscriber Milestones Analysis",
+      "year": 2024,
+      "sampleSize": "61,000,000+ active YouTube channels",
+      "datasetType": "Aggregated channel subscriber census data",
+      "canonicalUsage": "/research/youtube-channel-size/",
+      "claims": [
+        {
+          "claimId": "claim_tubefilter_100k_rarity",
+          "statement": "Channels with 100,000+ subscribers represent less than 0.7% of all active YouTube channels.",
+          "attributionRule": "Cite Tubefilter channel census data.",
+          "caveats": "Includes all registered channels with at least one public video upload."
+        }
+      ]
+    },
+    {
+      "sourceId": "src_kaggle_10k_instagram_reels",
+      "author": "Academic Open Data Consortium / Kaggle Dataset",
+      "publication": "Social Media Format Benchmark: 10,000 Public Instagram Posts",
+      "year": 2024,
+      "sampleSize": "10,240 public Instagram Reels and Carousels",
+      "datasetType": "Public profile metrics across 1k to 500k follower accounts",
+      "canonicalUsage": "/research/instagram-reels-vs-carousels/",
+      "claims": [
+        {
+          "claimId": "claim_reels_reach_carousels_saves",
+          "statement": "Reels generate an average 2.1x higher non-follower reach, but carousels produce a 1.6x higher median save rate for accounts under 50,000 followers.",
+          "attributionRule": "Cite Kaggle public post analysis.",
+          "caveats": "Analyzed during a 90-day active window. Excludes paid promoted posts."
+        }
+      ]
+    },
+    {
+      "sourceId": "src_rank_kiwi_methodology",
+      "author": "Bhavishya Singla / Rank Kiwi Engineering",
+      "publication": "Outlier Score Mathematical Specification & Median Benchmark Engine",
+      "year": 2025,
+      "sampleSize": "Algorithmic specification",
+      "datasetType": "Mathematical formulation and local DOM extraction",
+      "canonicalUsage": "/outlier-score/ and /docs/understanding/outlier-score/",
+      "claims": [
+        {
+          "claimId": "claim_outlier_median_formula",
+          "statement": "Outlier Score = Post Views / Median Views of visible creator catalog. An Outlier Score of 3.2x indicates the post earned 3.2 times the creator's median benchmark.",
+          "attributionRule": "First-party Rank Kiwi formula definition.",
+          "caveats": "Requires a minimum sample of 12-24 visible posts to compute a statistically stable median baseline."
+        },
+        {
+          "claimId": "claim_privacy_client_side",
+          "statement": "Rank Kiwi executes 100% locally in the browser sandbox. Analyzed creator content is never transmitted to or stored on external servers.",
+          "attributionRule": "First-party technical architectural claim.",
+          "caveats": "Subject to browser memory limits when scanning very large grids."
+        }
+      ]
+    }
+  ]
+}

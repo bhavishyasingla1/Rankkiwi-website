@@ -1,0 +1,197 @@
+{
+  "$schema": "https://rankkiwi.com/schemas/distribution-repurposing-matrix-v1.json",
+  "version": "1.0.0",
+  "description": "Master Content Repurposing Matrix: Atomizing Flagship Website Assets into Distributed Channel Formats.",
+  "matrix": [
+    {
+      "sourceSlug": "research/one-video-is-not-a-channel",
+      "canonicalUrl": "https://rankkiwi.com/research/one-video-is-not-a-channel/",
+      "title": "One Video Doesn't Tell You How Good a Creator Is",
+      "pillar": "pillar_original_research",
+      "flagshipFinding": "In vidIQ's dataset of 448,413 YouTube channels, the median best-of-10 video earned 10.82x the views of the channel's first upload. Single posts are outliers, not channel averages.",
+      "repurposingAngles": {
+        "linkedIn": {
+          "hook": "Why evaluating a creator by their most viral video is a massive marketing mistake (backed by 448k channels).",
+          "format": "Analytical post with 10.82x distribution ratio chart",
+          "cta": "Read the full research study on rankkiwi.com"
+        },
+        "x_twitter": {
+          "hook": "We analyzed 448,413 YouTube channels. The median creator's best video gets 10.82x their initial upload. Here is why 'average views' lie in creator research 🧵👇",
+          "format": "5-tweet data breakdown thread",
+          "cta": "Explore complete methodology in tweet 5"
+        },
+        "instagram": {
+          "hook": "Never judge a creator by 1 post.",
+          "format": "6-slide carousel comparing first upload vs best upload view distributions",
+          "cta": "Link in bio to Rank Kiwi Research"
+        },
+        "youtube": {
+          "hook": "The 10.8x Rule: What 448k YouTube Channels Teach Us About Outliers",
+          "format": "2-minute whiteboard video explaining baseline medians vs single-video breakout spikes",
+          "cta": "Description link to research article"
+        },
+        "newsletter": {
+          "subject": "Data Drop: The 10.82x Outlier Multiplier",
+          "format": "Opening finding + chart + why creator researchers should benchmark against median",
+          "cta": "Full study link"
+        },
+        "community": {
+          "angle": "Helpful comment in r/NewTubers and r/PartneredYoutube explaining why variance between your worst and best video is statistically normal.",
+          "format": "Evidence-backed methodology explanation without promotional hype"
+        }
+      }
+    },
+    {
+      "sourceSlug": "research/instagram-reels-vs-carousels",
+      "canonicalUrl": "https://rankkiwi.com/research/instagram-reels-vs-carousels/",
+      "title": "Instagram Reels vs Carousels: What the Data Shows",
+      "pillar": "pillar_instagram",
+      "flagshipFinding": "Reels generate superior top-of-funnel non-follower reach, but carousels consistently produce higher median save and comment rates for accounts under 50k followers.",
+      "repurposingAngles": {
+        "linkedIn": {
+          "hook": "Reels get reach. Carousels get clients. What analyzing 10k Instagram posts reveals about format strategy.",
+          "format": "Format matrix comparison card + strategic takeaways for B2B & agencies",
+          "cta": "Inspect raw benchmark distributions on rankkiwi.com"
+        },
+        "x_twitter": {
+          "hook": "Everyone tells creators to only post Reels. But the data says carousels crush Reels in save rate for 80% of accounts. Here's the breakdown:",
+          "format": "4-tweet thread with side-by-side metric charts",
+          "cta": "Methodology link in final tweet"
+        },
+        "instagram": {
+          "hook": "Reels vs Carousels: Which format actually wins in 2026?",
+          "format": "Swipeable carousel breaking down reach multiplier vs save rate multiplier",
+          "cta": "Save this guide & read the full study at rankkiwi.com"
+        },
+        "youtube": {
+          "hook": "Stop Posting Only Reels (What Instagram Data Actually Shows)",
+          "format": "30-second YouTube Short showing side-by-side metric comparison",
+          "cta": "Pinned comment linking to research article"
+        },
+        "newsletter": {
+          "subject": "Reels vs Carousels: The Reach-Engagement Paradox",
+          "format": "Data Drop of the week + action plan for mixing formats",
+          "cta": "Read study"
+        },
+        "community": {
+          "angle": "Discussion reply in r/InstagramMarketing on format allocation based on creator account size tiers.",
+          "format": "Data-grounded advice citing specific median differences"
+        }
+      }
+    },
+    {
+      "sourceSlug": "outlier-score",
+      "canonicalUrl": "https://rankkiwi.com/outlier-score/",
+      "title": "Outlier Score: Creator-Relative Performance Benchmarking",
+      "pillar": "pillar_outlier_content",
+      "flagshipFinding": "A post with 50,000 views is a massive failure for a 10M creator, but a 10x viral breakout for a 1,000 follower creator. Creator-relative median baselines reveal true creative anomalies.",
+      "repurposingAngles": {
+        "linkedIn": {
+          "hook": "Why 'view count' is the most deceptive metric in social media marketing.",
+          "format": "Before/After mathematical demonstration of average skew vs median baseline",
+          "cta": "Explore the Outlier Score calculator on rankkiwi.com"
+        },
+        "x_twitter": {
+          "hook": "100k views on YouTube means nothing without context. Here is why creator-relative Outlier Score beats raw views every single time: 🧵",
+          "format": "Visual breakdown thread comparing 2 creators with identical raw view counts",
+          "cta": "Try Outlier Score formula on live profiles"
+        },
+        "instagram": {
+          "hook": "Why 10,000 views is sometimes better than 1,000,000 views.",
+          "format": "Carousel explaining typical median vs outlier multiplier (1.0x vs 3.2x vs 5.8x)",
+          "cta": "Link in bio to Outlier Score guide"
+        },
+        "youtube": {
+          "hook": "How Outlier Score Works (In 45 Seconds)",
+          "format": "Short-form video demonstrating live calculation on an Instagram profile",
+          "cta": "Link to /outlier-score/"
+        },
+        "newsletter": {
+          "subject": "The Math Behind Finding Viral Content",
+          "format": "Educational deep dive on median baselines and anomaly detection",
+          "cta": "Documentation link"
+        },
+        "community": {
+          "angle": "Answering creators asking 'how do I know if my video performed well?' by introducing creator-relative medians over platform averages.",
+          "format": "Educational methodology breakdown"
+        }
+      }
+    },
+    {
+      "sourceSlug": "compare/rank-kiwi-vs-socialinsider",
+      "canonicalUrl": "https://rankkiwi.com/compare/rank-kiwi-vs-socialinsider/",
+      "title": "Rank Kiwi vs Socialinsider: Two Different Research Philosophies",
+      "pillar": "pillar_product_education",
+      "flagshipFinding": "Socialinsider costs $82–$249/mo for enterprise cross-brand reporting decks. Rank Kiwi is a 100% free, client-side browser extension built for rapid in-browser outlier discovery without logging in.",
+      "repurposingAngles": {
+        "linkedIn": {
+          "hook": "Do you actually need a $200/mo social analytics tool, or just an in-browser feed sorter? Here is how to choose.",
+          "format": "Objective buyer guide: when Socialinsider wins (client decks) vs when Rank Kiwi wins (rapid content ideation)",
+          "cta": "Read the complete comparison on rankkiwi.com"
+        },
+        "x_twitter": {
+          "hook": "Most creators don't need a $2,000/year enterprise dashboard to research competitor content. Here is an honest breakdown of enterprise suites vs lightweight extensions: 👇",
+          "format": "Feature & pricing shootout comparison table",
+          "cta": "Full comparison matrix link"
+        },
+        "instagram": {
+          "hook": "$0 vs $200/month: How to choose your social research stack.",
+          "format": "Carousel comparing enterprise agency workflow vs creator ideation workflow",
+          "cta": "Check the full comparison guide"
+        },
+        "youtube": {
+          "hook": "Rank Kiwi vs Enterprise Social Tools (Which One Do You Actually Need?)",
+          "format": "2-minute tool showdown highlighting workflow differences",
+          "cta": "Comparison link in description"
+        },
+        "newsletter": {
+          "subject": "Tool Breakdown: Heavy Dashboards vs In-Browser Speed",
+          "format": "Honest trade-off analysis of modern analytics stacks",
+          "cta": "Comparison page link"
+        },
+        "community": {
+          "angle": "Replying to agency marketers debating social analytics tooling costs.",
+          "format": "Objective recommendation respecting enterprise vs creator use cases"
+        }
+      }
+    },
+    {
+      "sourceSlug": "best-free-content-research-tools",
+      "canonicalUrl": "https://rankkiwi.com/best-free-content-research-tools/",
+      "title": "Best Free Content Research Tools for Creators",
+      "pillar": "pillar_content_research",
+      "flagshipFinding": "You don't need an expensive subscription stack to find winning content: Google Trends, YouTube Studio, Instagram Insights, AnswerThePublic, and Rank Kiwi create a zero-dollar workflow.",
+      "repurposingAngles": {
+        "linkedIn": {
+          "hook": "The $0 Content Research Stack for 2026: 5 free tools that outperform expensive enterprise bloat.",
+          "format": "Curated workflow stack breakdown with exact use-case matching",
+          "cta": "Read full directory at rankkiwi.com"
+        },
+        "x_twitter": {
+          "hook": "Stop paying $99/mo for creator research tools. Here are 5 free tools that give you 90% of the value for $0 forever: 🧵",
+          "format": "High-utility curation thread with screenshots",
+          "cta": "Full editorial guide link in final tweet"
+        },
+        "instagram": {
+          "hook": "5 Free Content Research Tools you should use in 2026.",
+          "format": "Carousel featuring 1 tool per slide with specific workflow purpose",
+          "cta": "Save post & visit /best/ on rankkiwi.com"
+        },
+        "youtube": {
+          "hook": "Build a $0 Creator Research Stack in 60 Seconds",
+          "format": "Fast-paced YouTube Short walking through the 5 tools",
+          "cta": "Best-of page link in description"
+        },
+        "newsletter": {
+          "subject": "Curated: The $0 Content Research Toolkit",
+          "format": "Tool of the week breakdown with practical workflow guide",
+          "cta": "Read the guide"
+        },
+        "community": {
+          "angle": "Value-packed resource comment in r/ContentCreation answering requests for free research tools.",
+          "format": "Transparent tool roundup with honest pros/cons"
+        }
+      }
+    }
+  ]
+}

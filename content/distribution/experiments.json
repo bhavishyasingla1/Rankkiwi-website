@@ -1,0 +1,67 @@
+{
+  "$schema": "https://rankkiwi.com/schemas/distribution-experiments-v1.json",
+  "version": "1.0.0",
+  "description": "Continuous Distribution Experimentation Framework: Testing Hooks, Formats, CTAs, and Repurposing Angles across External Channels.",
+  "experiments": [
+    {
+      "id": "exp_dist_01",
+      "name": "LinkedIn Hook Style: Contrarian Question vs Direct Data Claim",
+      "hypothesis": "Opening with a bold, counterintuitive data point ('Analyzing 448k channels showed median best video is 10.82x first upload') will generate 40% higher outbound referral clicks than a general question ('How do you evaluate creator performance?').",
+      "channel": "linkedin",
+      "asset": "/research/one-video-is-not-a-channel/",
+      "variable": "Post Opening Hook",
+      "primaryMetric": "outbound_click_rate",
+      "secondaryMetric": "comments_count",
+      "status": "running",
+      "startDate": "2026-10-06",
+      "result": "Pending collection",
+      "learning": "Pending initial observation",
+      "decision": "iterate"
+    },
+    {
+      "id": "exp_dist_02",
+      "name": "X Thread Link Placement: Tweet 1 vs Final Tweet vs Auto-Plug",
+      "hypothesis": "Placing the canonical research link in the final tweet of a 5-tweet analytical breakdown will preserve thread reach by 3x compared to linking in Tweet 1, resulting in higher net referral traffic.",
+      "channel": "x_twitter",
+      "asset": "/research/instagram-reels-vs-carousels/",
+      "variable": "Link Placement",
+      "primaryMetric": "thread_impressions",
+      "secondaryMetric": "referral_sessions",
+      "status": "planned",
+      "startDate": "2026-10-13",
+      "result": null,
+      "learning": null,
+      "decision": "iterate"
+    },
+    {
+      "id": "exp_dist_03",
+      "name": "YouTube Shorts CTA: Direct Extension Name vs Visual Workflow Tease",
+      "hypothesis": "Ending a 30-second research short by demonstrating the live CSV export button generates higher install intent than verbally pitching the extension by name.",
+      "channel": "youtube",
+      "asset": "/docs/exports/",
+      "variable": "Video Outro CTA",
+      "primaryMetric": "webstore_clicks_from_video",
+      "secondaryMetric": "video_completion_rate",
+      "status": "planned",
+      "startDate": "2026-10-20",
+      "result": null,
+      "learning": null,
+      "decision": "iterate"
+    },
+    {
+      "id": "exp_dist_04",
+      "name": "Newsletter Framing: Standalone Tactical Guide vs Editorial Synthesis",
+      "hypothesis": "Formatting the weekly newsletter as a dedicated 'Data Drop' with 1 chart and 1 actionable workflow will produce a 25% higher click-to-open rate than a multi-link link digest.",
+      "channel": "newsletter",
+      "asset": "/research/youtube-channel-size/",
+      "variable": "Newsletter Layout Structure",
+      "primaryMetric": "click_to_open_rate",
+      "secondaryMetric": "unsubscribe_rate",
+      "status": "planned",
+      "startDate": "2026-10-27",
+      "result": null,
+      "learning": null,
+      "decision": "iterate"
+    }
+  ]
+}

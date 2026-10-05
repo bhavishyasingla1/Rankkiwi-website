@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2V6BK8R00"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-Y2V6BK8R00");
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "yt23g8xi6k");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding Outlier Score: Creator-Relative Median Benchmarking - Rank Kiwi</title>
+    <meta name="description" content="Learn how Rank Kiwi's Outlier Score works: mathematical formula, why the median baseline prevents distortion, and how to spot breakout anomaly content." />
+    <link rel="canonical" href="https://rankkiwi.com/docs/understanding/outlier-score/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="Bhavishya Singla" />
+    <meta name="date" content="2026-10-05" scheme="YYYY-MM-DD" />
+    <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
+    <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
+    <meta name="theme-color" content="#cbf990" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://rankkiwi.com/docs/understanding/outlier-score/" />
+    <meta property="og:title" content="Understanding Outlier Score: Creator-Relative Median Benchmarking - Rank Kiwi" />
+    <meta property="og:description" content="Learn how Rank Kiwi's Outlier Score works: mathematical formula, why the median baseline prevents distortion, and how to spot breakout anomaly content." />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta property="og:site_name" content="Rank Kiwi" />
+
+    <!-- Twitter / X Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Understanding Outlier Score: Creator-Relative Median Benchmarking - Rank Kiwi" />
+    <meta name="twitter:description" content="Learn how Rank Kiwi's Outlier Score works: mathematical formula, why the median baseline prevents distortion, and how to spot breakout anomaly content." />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="/styles.min.css" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "TechArticle",
+          "headline": "Understanding Outlier Score: Creator-Relative Median Benchmarking",
+          "description": "Learn how Rank Kiwi's Outlier Score works: mathematical formula, why the median baseline prevents distortion, and how to spot breakout anomaly content.",
+          "url": "https://rankkiwi.com/docs/understanding/outlier-score/",
+          "author": {
+            "@type": "Person",
+            "name": "Bhavishya Singla",
+            "url": "https://bhavishyasingla.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Rank Kiwi",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://rankkiwi.com/assets/rankkiwi-icon.png"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rankkiwi.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Docs",
+              "item": "https://rankkiwi.com/docs/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Understanding Results",
+              "item": "https://rankkiwi.com/docs/understanding/outlier-score/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Outlier Score",
+              "item": "https://rankkiwi.com/docs/understanding/outlier-score/"
+            }
+          ]
+        }
+      ]
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#docs-content">Skip to content</a>
+
+                <!-- SITE HEADER -->
+    <header class="site-header" data-header>
+      <div class="wrap nav">
+        <a class="brand" href="/" aria-label="Rank Kiwi home">
+          <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" fetchpriority="high" />
+          <span>Rank Kiwi</span>
+        </a>
+
+        <div class="nav-links" id="nav-links" data-nav-links>
+          <a href="/#how-it-works">How it works</a>
+          <a href="/#features">Features</a>
+          <a href="/research/">Research</a>
+          <a href="/docs/">Docs</a>
+          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="docs-wrapper wrap">
+      
+
+      <div class="docs-header-bar">
+        <p class="eyebrow"><span class="status-dot"></span> CORE CONCEPT</p>
+        <h1>Understanding the Outlier Score</h1>
+        <p>A comprehensive explanation of creator-relative median performance benchmarking, mathematical principles, and interpretation rules.</p>
+      </div>
+
+      <div class="docs-container">
+        <!-- Sidebar Navigation -->
+        <aside class="docs-sidebar" aria-label="Documentation navigation">
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Outlier Score Topics</div>
+            <ul class="docs-nav-list">
+              <li><a href="#quick-answer" class="docs-nav-link active">Simple Answer</a></li>
+              <li><a href="#creator-relative" class="docs-nav-link">Creator-Relative Principle</a></li>
+              <li><a href="#why-median" class="docs-nav-link">Why Median Beats Average</a></li>
+              <li><a href="#formula" class="docs-nav-link">Mathematical Formula</a></li>
+              <li><a href="#tiers" class="docs-nav-link">Score Interpretation Tiers</a></li>
+              <li><a href="#sample-dependency" class="docs-nav-link">Sample Size Sensitivity</a></li>
+              <li><a href="#what-it-does-not-mean" class="docs-nav-link">What It Does NOT Mean</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Related Documentation</div>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; Filtering</a></li>
+              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research Workflow</a></li>
+              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Manual</a></li>
+              <li><a href="/docs/troubleshooting/#missing-metrics" class="docs-nav-link">Metrics Troubleshooting</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="docs-content" id="docs-content">
+          <article class="docs-article" id="quick-answer">
+            <h2>The Quick Answer</h2>
+            <p class="docs-lead">Rank Kiwi's Outlier Score reveals how strongly a specific post performed compared with that creator's typical baseline in the analyzed sample.</p>
+            <p>If a creator typically earns 20,000 views on a Reel and one specific video garners 100,000 views, that video receives an Outlier Score of <strong>5.0×</strong>. It earned five times that creator's typical performance.</p>
+          </article>
+
+          <article class="docs-article" id="creator-relative">
+            <h2>The Creator-Relative Principle</h2>
+            <p class="docs-lead">Why raw view counts fail when researching content formats across different accounts.</p>
+            <p>Consider two creators in the same fitness niche:</p>
+            <ul>
+              <li><strong>Creator A (1,500,000 followers):</strong> Typical Reel gets 200,000 views. A post with 100,000 views is an <em>underperformer</em> for them (0.5×).</li>
+              <li><strong>Creator B (25,000 followers):</strong> Typical Reel gets 5,000 views. A post with 100,000 views is a massive <em>20.0× breakout outlier</em>.</li>
+            </ul>
+            <p>Comparing raw views alone would suggest both posts are identical. Relative scoring reveals that Creator B found an extraordinary hook or framing that spread far beyond their follower baseline.</p>
+          </article>
+
+          <article class="docs-article" id="why-median">
+            <h2>Why Median Beats Average (Mean)</h2>
+            <p class="docs-lead">Statistical averages are easily corrupted by extreme spikes; the median reflects true typical performance.</p>
+            <p>Social media views follow a severe power-law distribution. Suppose you analyze 5 posts from a creator with the following view counts:</p>
+            <div class="code-block">
+              <code>Sample Views: [ 10,000 | 12,000 | 14,000 | 16,000 | 500,000 ]</code>
+            </div>
+            <ul>
+              <li><strong>Average (Mean):</strong> 110,400 views. Notice that 4 out of 5 posts performed far below this average! Using the mean would artificially make normal posts look like failures.</li>
+              <li><strong>Median (Middle Value):</strong> <strong>14,000 views</strong>. The median captures what the creator actually experiences on a typical Tuesday afternoon.</li>
+            </ul>
+            <p>By comparing the 500,000-view video against the 14,000 median, Rank Kiwi computes a true Outlier Score of ~35.7× without distorting the remaining catalog.</p>
+          </article>
+
+          <article class="docs-article" id="formula">
+            <h2>The Mathematical Formula</h2>
+            <p class="docs-lead">Rank Kiwi executes the following calculation locally in your browser sandbox:</p>
+            <div class="code-block">
+              <code>Outlier Score = Post Views / Creator Median Views</code>
+            </div>
+            <p>Where:</p>
+            <ul>
+              <li><strong>Post Views:</strong> The public view or play count extracted for the individual content item.</li>
+              <li><strong>Creator Median Views:</strong> The exact numerical median calculated across all items in the current sample batch.</li>
+            </ul>
+          </article>
+
+          <article class="docs-article" id="tiers">
+            <h2>Score Interpretation Tiers</h2>
+            <p class="docs-lead">Use these practical benchmark tiers when filtering results:</p>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Score Tier</th>
+                    <th>Multiplier Range</th>
+                    <th>Meaning</th>
+                    <th>Research Takeaway</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Below Baseline</strong></td>
+                    <td>0.1× – 0.8×</td>
+                    <td>Performed below creator typical median</td>
+                    <td>Standard community update or narrow topic</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Typical</strong></td>
+                    <td>0.9× – 1.4×</td>
+                    <td>Standard expected performance</td>
+                    <td>Creator's baseline distribution to existing core audience</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Strong</strong></td>
+                    <td>1.5× – 3.5×</td>
+                    <td>Solid performer; reached non-followers</td>
+                    <td>Compelling hook, strong retention, good topic appeal</td>
+                  </tr>
+                  <tr>
+                    <td><strong>High Outlier</strong></td>
+                    <td>3.6× – 6.0×</td>
+                    <td>Exceptional breakout performance</td>
+                    <td>High algorithmic velocity; examine first 3 seconds closely</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Super Outlier</strong></td>
+                    <td>6.1× – 20.0×+</td>
+                    <td>Statistical anomaly</td>
+                    <td>Massive cross-niche resonance; study concept and pacing</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="docs-article" id="sample-dependency">
+            <h2>Sample Size Sensitivity</h2>
+            <p class="docs-lead">Why analyzing 25 posts versus 100 posts can slightly adjust the computed score.</p>
+            <p>Because the Outlier Score is calculated against the median of the <em>analyzed sample</em>, selecting 25 recent posts reflects the creator's recent 30-day baseline, while selecting 100 posts reflects their annual baseline.</p>
+            <p>If a creator recently gained 500,000 followers, their 25-post baseline will be higher than their 100-post baseline. Both calculations are mathematically correct within their respective sample scopes.</p>
+          </article>
+
+          <article class="docs-article" id="what-it-does-not-mean">
+            <h2>What Outlier Score Does NOT Mean</h2>
+            <p class="docs-lead">To maintain analytical integrity, keep these critical boundaries in mind:</p>
+            <ul>
+              <li><strong>Not an Algorithm Guarantee:</strong> A 10× score does not prove the algorithm will promote that topic again or that copying it guarantees views.</li>
+              <li><strong>Not an Objective Quality Score:</strong> An outlier indicates distribution reach, not necessarily production budget or artistic merit. Controversial or polarizing content can generate outlier views.</li>
+              <li><strong>Not Cross-Creator Comparable:</strong> A 3× post from a 5,000-follower creator is not "the same" as a 3× post from an international brand. Scores evaluate a creator against themselves.</li>
+            </ul>
+
+            <div class="docs-pagination">
+              <div class="docs-page-nav">
+                <span>Previous</span>
+                <b><a href="/docs/getting-started/your-first-analysis/">Your First Analysis Walkthrough</a></b>
+              </div>
+              <div class="docs-page-nav docs-page-next">
+                <span>Next Guide</span>
+                <b><a href="/docs/understanding/sorting-filtering/">Sorting &amp; Filtering Guide →</a></b>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+                <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="/" aria-label="Rank Kiwi home">
+            <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" loading="lazy" decoding="async" />
+            <span>Rank Kiwi</span>
+          </a>
+          <p>Research creator profiles and spot viral outlier content on Instagram and YouTube.</p>
+          <div class="footer-socials">
+            <a class="social-icon-link" href="https://www.instagram.com/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://www.linkedin.com/in/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://www.youtube.com/@bhavishyasingla1" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener" aria-label="Bhavishya Singla Website">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <b>Product</b>
+          <a href="/">Home</a>
+          <a href="/instagram-analytics/">Instagram Analytics</a>
+          <a href="/youtube-analytics/">YouTube Analytics</a>
+          <a href="/outlier-score/">Outlier Score</a>
+          <a href="/creator-content-research/">Creator Research</a>
+        </div>
+
+        <div>
+          <b>Learn &amp; Docs</b>
+          <a href="/docs/">Documentation</a>
+          <a href="/docs/getting-started/">Getting Started</a>
+          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
+          <a href="/docs/troubleshooting/">Troubleshooting</a>
+          <a href="/docs/exports/">Exports Guide</a>
+        </div>
+
+        <div>
+          <b>Research &amp; Compare</b>
+          <a href="/research/">Research Hub</a>
+          <a href="/research/methodology/">Methodology</a>
+          <a href="/compare/">Tool Comparisons</a>
+          <a href="/alternatives/">Alternatives Hub</a>
+          <a href="/best/">Best Software Guides</a>
+        </div>
+
+        <div>
+          <b>Legal &amp; Support</b>
+          <a href="/support/">Help &amp; Support</a>
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>&copy; 2026 Rank Kiwi. Not affiliated with Meta, Instagram, Google, or YouTube.</p>
+        <p>Made with <span class="footer-heart">&#10084;&#65039;</span> by <a class="author-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener">Bhavishya Singla</a></p>
+      </div>
+    </footer>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>

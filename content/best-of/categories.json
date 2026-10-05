@@ -1,0 +1,107 @@
+{
+  "hub": {
+    "slug": "/best/",
+    "title": "Best Social Media & Content Research Tools | Rank Kiwi",
+    "metaDescription": "Explore the best tools for Instagram analytics, YouTube research, competitor analysis, content discovery, outlier research, and social media intelligence.",
+    "h1": "The Best Tools for Social Media & Content Research",
+    "lead": "Different tools solve fundamentally different problems. We evaluate creator platforms across first-party analytics, competitor benchmarking, social scheduling, and content outlier research so you can pick the right tool for your specific workflow."
+  },
+  "pages": [
+    {
+      "slug": "best-instagram-analytics-tools",
+      "url": "/best-instagram-analytics-tools/",
+      "title": "Best Instagram Analytics Tools for Creators & Brands (2026)",
+      "metaDescription": "Compare the best Instagram analytics tools. Evaluate Instagram Insights, Socialinsider, Metricool, and Rank Kiwi across own analytics, benchmarking, and research.",
+      "h1": "Best Instagram Analytics Tools: From First-Party Insights to Competitor Research",
+      "thesis": "The best Instagram analytics tool depends entirely on whether you need first-party account performance, cross-account competitor benchmarking, or content-level outlier research.",
+      "tools": ["instagram-insights", "socialinsider", "metricool", "rank-kiwi", "sprout-social"],
+      "winnerOverall": "instagram-insights",
+      "winnerOverallReason": "Best for first-party account telemetry, retention, and audience demographics (100% free)",
+      "rankKiwiRole": "Best for public content research and creator-relative outlier detection on Reels and posts"
+    },
+    {
+      "slug": "best-instagram-content-research-tools",
+      "url": "/best-instagram-content-research-tools/",
+      "title": "Best Instagram Content Research Tools (2026 Guide)",
+      "metaDescription": "Discover the best Instagram content research tools for finding high-performing Reels, creator outliers, top formats, and viral hooks across public profiles.",
+      "h1": "Best Instagram Content Research Tools for Finding High-Performing Reels & Outliers",
+      "thesis": "Content research is fundamentally about studying what works across published posts and Reels, not merely reading your own account's performance dashboard.",
+      "tools": ["rank-kiwi", "sort-feed", "socialinsider", "metricool"],
+      "winnerOverall": "rank-kiwi",
+      "winnerOverallReason": "Best dedicated tool for finding creator-relative outlier Reels and sorting public profiles without paywalls",
+      "rankKiwiRole": "Category winner for public Instagram content discovery, outlier scoring, and zero-friction research"
+    },
+    {
+      "slug": "best-youtube-analytics-tools",
+      "url": "/best-youtube-analytics-tools/",
+      "title": "Best YouTube Analytics Tools: Channel & Competitor Tracking (2026)",
+      "metaDescription": "Compare the best YouTube analytics tools. Understand the differences between YouTube Studio, Viewstats, vidIQ, Rank Kiwi, and Social Blade for channel growth.",
+      "h1": "Best YouTube Analytics Tools: First-Party Channel Data vs. Competitor Intelligence",
+      "thesis": "The right YouTube analytics tool depends on whether you are analyzing your own channel's private audience retention or researching competitor catalogs.",
+      "tools": ["youtube-studio", "viewstats", "vidiq", "rank-kiwi", "social-blade"],
+      "winnerOverall": "youtube-studio",
+      "winnerOverallReason": "Irreplaceable ground truth for owned channel retention curves, CTR, search traffic attribution, and revenue",
+      "rankKiwiRole": "Best for in-browser competitor video sorting, Shorts outlier detection, and rapid CSV/JSON data export"
+    },
+    {
+      "slug": "best-youtube-content-research-tools",
+      "url": "/best-youtube-content-research-tools/",
+      "title": "Best YouTube Content Research Tools for Finding Winning Videos (2026)",
+      "metaDescription": "Explore top YouTube content research tools. Compare Viewstats, Rank Kiwi, vidIQ, and TubeBuddy for finding breakout videos, thumbnail ideas, and outliers.",
+      "h1": "Best YouTube Content Research Tools for Finding Breakout Videos & Outliers",
+      "thesis": "YouTube content research focuses on reverse-engineering successful formats, outlier hooks, and packaging, rather than merely tracking channel KPIs.",
+      "tools": ["viewstats", "rank-kiwi", "vidiq", "socialinsider"],
+      "winnerOverall": "viewstats",
+      "winnerOverallReason": "Best overall platform for multi-year historical YouTube databases, visual thumbnail search, and A/B test tracking",
+      "rankKiwiRole": "Best lightweight in-browser tool for on-page creator catalog sorting, Shorts outlier scoring, and exports"
+    },
+    {
+      "slug": "best-social-media-competitor-analysis-tools",
+      "url": "/best-social-media-competitor-analysis-tools/",
+      "title": "Best Social Media Competitor Analysis Tools (2026 Review)",
+      "metaDescription": "Compare top social media competitor analysis tools. Evaluate Socialinsider, Metricool, Sprout Social, BuzzSumo, and Rank Kiwi across benchmarking and research.",
+      "h1": "Best Social Media Competitor Analysis Tools: Benchmarking to Content Intelligence",
+      "thesis": "Social media competitive intelligence spans a wide spectrum, from deep public content research to enterprise cross-network benchmarking and listening.",
+      "tools": ["socialinsider", "metricool", "sprout-social", "buzzsumo", "rank-kiwi"],
+      "winnerOverall": "socialinsider",
+      "winnerOverallReason": "Best dedicated solution for multi-profile brand benchmarking, industry standards, and automated client PDF/PPT reports",
+      "rankKiwiRole": "Best lightweight tool for analyzing competitor post-by-post performance and finding viral outlier hooks"
+    },
+    {
+      "slug": "best-high-performing-content-research-tools",
+      "url": "/best-high-performing-content-research-tools/",
+      "title": "Best Tools for Finding High-Performing Social Media Content (2026)",
+      "metaDescription": "Learn how to find high-performing social media content and viral outliers. Compare Rank Kiwi, Viewstats, Sort Feed, and BuzzSumo for creator research.",
+      "h1": "Best Tools for Finding High-Performing Social Media Content & Viral Outliers",
+      "thesis": "Raw view counts are not enough; actionable research requires creator-relative baselines to distinguish true format innovation from pure audience size.",
+      "tools": ["rank-kiwi", "viewstats", "sort-feed", "buzzsumo"],
+      "winnerOverall": "rank-kiwi",
+      "winnerOverallReason": "Best specialized tool for creator-relative median outlier scoring across Instagram Reels and YouTube videos",
+      "rankKiwiRole": "Category leader in normalized Outlier Score calculations and client-side research workflows"
+    },
+    {
+      "slug": "best-content-research-tools-for-creators",
+      "url": "/best-content-research-tools-for-creators/",
+      "title": "Best Content Research Tools for Creators & Video Editors (2026)",
+      "metaDescription": "Discover the best content research tools for creators. Find tools for video ideas, studying competitor hooks, keyword optimization, and content planning.",
+      "h1": "Best Content Research Tools for Creators: From Idea Generation to Video Hooks",
+      "thesis": "Creators require practical, fast research workflows that turn published social content into actionable editing hooks, formats, and editorial decisions.",
+      "tools": ["rank-kiwi", "vidiq", "viewstats", "metricool", "buffer"],
+      "winnerOverall": "rank-kiwi",
+      "winnerOverallReason": "Best focused creator tool for reverse-engineering viral hooks and discovering outliers without complex setups",
+      "rankKiwiRole": "Top choice for creators and video editors studying high-performing formats on Instagram and YouTube"
+    },
+    {
+      "slug": "best-free-content-research-tools",
+      "url": "/best-free-content-research-tools/",
+      "title": "Best Free Content Research Tools for Instagram & YouTube (2026)",
+      "metaDescription": "Explore the best free content research tools. Understand the differences between 100% free software, limited free tiers, and temporary free trials.",
+      "h1": "Best Free Content Research Tools: Genuinely Free vs. Freemium Tiers",
+      "thesis": "Free access differs sharply across digital tools: understand the difference between 100% free software, limited free tiers, and temporary trials.",
+      "tools": ["rank-kiwi", "youtube-studio", "instagram-insights", "metricool", "social-blade", "buffer"],
+      "winnerOverall": "rank-kiwi",
+      "winnerOverallReason": "Best genuinely free public research tool with zero paywalled post limits, no card required, and total client-side privacy",
+      "rankKiwiRole": "Top recommendation for creators seeking completely free, privacy-first Instagram and YouTube outlier research"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "datasetId": "instagram-views-socialinsider",
+  "title": "Instagram Views Per Content Format by Account Size",
+  "publisher": "Socialinsider",
+  "sourceTitle": "Instagram Views Per Content Format Benchmark",
+  "sourceUrl": "https://www.socialinsider.io/blog/instagram-reels-analytics/",
+  "datasetPeriod": "2023 – 2024",
+  "sampleDescription": "Aggregated cross-industry analysis of business and creator accounts segmented by follower tiers",
+  "tiers": [
+    {
+      "tier": "1K–5K",
+      "carouselAvgViews": 527,
+      "reelsAvgViews": 470,
+      "imageAvgViews": 253
+    },
+    {
+      "tier": "5K–10K",
+      "carouselAvgViews": 1050,
+      "reelsAvgViews": 750,
+      "imageAvgViews": 660
+    },
+    {
+      "tier": "10K–50K",
+      "carouselAvgViews": 2470,
+      "reelsAvgViews": 2340,
+      "imageAvgViews": 1470
+    },
+    {
+      "tier": "50K–100K",
+      "carouselAvgViews": 7950,
+      "reelsAvgViews": 5840,
+      "imageAvgViews": 4855
+    },
+    {
+      "tier": "100K–1M",
+      "carouselAvgViews": 23760,
+      "reelsAvgViews": 16325,
+      "imageAvgViews": 17150
+    }
+  ],
+  "rankKiwiCalculations": {
+    "carouselVsImage1k5k": 2.08,
+    "carouselVsImage100k1m": 1.39,
+    "reels100k1mVs1k5k": 34.73
+  },
+  "limitations": [
+    "Metrics represent arithmetic averages (means) across tiers, which may be influenced by top-end accounts in each bracket",
+    "Sample focuses on accounts connected to Socialinsider's benchmarking index",
+    "Does not account for differences in posting frequency or niche saturation"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "$schema": "https://rankkiwi.com/schemas/distribution-templates-v1.json",
+  "version": "1.0.0",
+  "description": "Standardized Native Content Templates, Franchises, Visual Guidelines, and Distribution Checklists.",
+  "templates": {
+    "dataDrop": {
+      "name": "Rank Kiwi Data Drop",
+      "purpose": "Recurring series for distributing single-insight empirical findings with maximum credibility.",
+      "structure": [
+        "1. THE FINDING: One provocative, counterintuitive statement grounded in data.",
+        "2. THE DATASET: Exact sample size, platform, and timeline analyzed.",
+        "3. THE NUMBER: The precise statistical multiplier or median benchmark (e.g. 10.82x, 70%, 1.6x).",
+        "4. WHY IT MATTERS: The strategic error creators/marketers make without this insight.",
+        "5. ACTIONABLE WORKFLOW: What the researcher should do differently tomorrow.",
+        "6. SOURCE & METHODOLOGY: Full attribution and canonical website URL link."
+      ],
+      "example": {
+        "finding": "Judging a YouTube creator by their most popular upload leads to broken creative assumptions.",
+        "dataset": "448,413 YouTube channels (vidIQ study data).",
+        "number": "10.82x multiplier between initial upload and best-of-10 long-form video.",
+        "whyItMatters": "Single viral hits represent extreme statistical variance, not the channel's baseline capacity.",
+        "actionableWorkflow": "Sort catalogs by median-relative Outlier Score instead of raw view count.",
+        "source": "Full methodology: https://rankkiwi.com/research/one-video-is-not-a-channel/"
+      }
+    },
+    "linkedInInsight": {
+      "name": "LinkedIn Professional Insight",
+      "characterTarget": "900 - 1,400 characters",
+      "structure": [
+        "Hook (Line 1-2): A contrarian observation regarding creator analytics or social research.",
+        "Context (Line 3-4): The status quo mistake (e.g., relying on raw views or vanity impressions).",
+        "The Data/Evidence: 2-3 bullet points presenting the quantitative finding.",
+        "Strategic Takeaway: How marketing teams, agencies, or creators should adjust their workflow.",
+        "Call to Conversation: A thoughtful, open-ended question inviting practitioner perspectives.",
+        "Attribution: Canonical link placed naturally in the first comment or bottom of post."
+      ]
+    },
+    "xThread": {
+      "name": "X / Twitter Analytical Thread",
+      "length": "4 - 7 tweets",
+      "structure": [
+        "Tweet 1 (Hook): The counterintuitive finding + visual chart + 'Here is what the data actually shows 🧵'",
+        "Tweet 2 (The Flaw): Why conventional wisdom or raw metrics fail.",
+        "Tweet 3 (The Data): Clean breakdown of the numbers, distributions, and sample size.",
+        "Tweet 4 (The Mechanism): The mathematical or algorithmic reason for the anomaly.",
+        "Tweet 5 (The Action): The 3-step practical research workflow to apply it.",
+        "Tweet 6 (The Source): Canonical link to full study on rankkiwi.com + invitation to discuss."
+      ]
+    },
+    "instagramCarousel": {
+      "name": "Instagram Educational Carousel",
+      "slides": 6,
+      "slideStructure": [
+        "Slide 1 (Cover): Bold visual hook + curiosity gap + Rank Kiwi badge.",
+        "Slide 2 (The Problem): What creators do wrong (e.g. infinite scrolling, guessing hooks).",
+        "Slide 3 (The Data Insight): Chart / graphic contrasting typical vs outlier content.",
+        "Slide 4 (The Math / Formula): Simple visual breakdown of creator-relative benchmarking.",
+        "Slide 5 (The 3-Step Fix): Step 1: Scan, Step 2: Sort by Outlier Score, Step 3: Export hooks.",
+        "Slide 6 (Summary & CTA): 'Save this post for your next research session' + link in bio to rankkiwi.com."
+      ]
+    },
+    "youtubeShort": {
+      "name": "YouTube Short / Reel Script (30-45s)",
+      "structure": [
+        "0-3s (Visual & Verbal Hook): 'Stop sorting YouTube videos by most viewed. Here is why...'",
+        "3-12s (Demonstration of Problem): Screen capture showing how mega-channels distort averages.",
+        "12-25s (The Solution): Opening Rank Kiwi extension -> One-click sort by Outlier Score -> Pointing out the 4.8x outlier.",
+        "25-35s (The Lesson): 'That video outperformed the channel's typical view baseline by nearly 5x. Study that thumbnail and title.'",
+        "35-42s (CTA): 'Rank Kiwi is completely free on the Chrome Web Store. Link in description.'"
+      ]
+    },
+    "communityResponse": {
+      "name": "Authentic Community Response (Reddit / Forums)",
+      "rules": [
+        "Rule 1: Answer the poster's exact question comprehensively within the comment.",
+        "Rule 2: Never use marketing hype, affiliate links, or promotional superlatives.",
+        "Rule 3: Disclose affiliation transparently: '(Full disclosure: I built Rank Kiwi, a free tool for this)'.",
+        "Rule 4: Only include a link if the post asks for tooling recommendations or if the link is a relevant research methodology paper."
+      ]
+    }
+  },
+  "visualSystem": {
+    "brandPalette": {
+      "primaryAccent": "#CBF990 (Kiwi Lime)",
+      "darkForest": "#01370B (Deep Forest Green)",
+      "backgroundDark": "#0B150C (Dark Surface)",
+      "textLight": "#FFFFFF (Pure White)",
+      "textMuted": "#8FA38D (Subdued Sage)"
+    },
+    "typography": {
+      "primary": "Inter (Weights: 400, 600, 700, 800)",
+      "monospace": "JetBrains Mono (Weights: 500, 700 for metrics, multipliers, and Outlier Scores)"
+    },
+    "templates": {
+      "chartStyle": "Dark background (#0B150C), crisp forest grid lines (#18291A), vibrant lime data curves (#CBF990), with clear source citation in bottom-left corner.",
+      "metricCard": "Subtle border (1px solid #233825), rounded corners (12px), bold monospace score (e.g. 3.2x), creator benchmark comparison bar."
+    }
+  },
+  "publicationChecklist": {
+    "accuracy": [
+      "Are all numerical claims verified against sources-claims.json?",
+      "Is the underlying sample size and methodology clearly stated?",
+      "Are platform caveats included rather than stripped for hype?"
+    ],
+    "brand": [
+      "Is the brand voice curious, direct, and evidence-grounded?",
+      "Are exaggerated claims like '10x your growth' or fake virality promises eliminated?",
+      "Are visual elements aligned with Rank Kiwi lime/forest design system?"
+    ],
+    "websiteAndTracking": [
+      "Does the post provide native value even if the reader never clicks?",
+      "Does the destination link route to a specific, intent-matched page rather than generic homepage?",
+      "Are standard UTM parameters applied correctly without bloat?"
+    ]
+  },
+  "repurposingChecklist": [
+    "What is the single most counterintuitive data point in this flagship asset?",
+    "What visual chart or comparison table can be extracted directly?",
+    "What specific mistake does this asset prove people are making?",
+    "What 30-second workflow demonstration can be recorded from this insight?",
+    "Which creator subreddits or communities are actively discussing this specific question?"
+  ]
+}

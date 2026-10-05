@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2V6BK8R00"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-Y2V6BK8R00");
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "yt23g8xi6k");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Creator Research &amp; Reels Analytics Extension — Rank Kiwi</title>
+    <meta name="description" content="Analyze Instagram creator profiles, rank Reels by view-to-median Outlier Score, isolate viral hooks, and export structured metrics in seconds with Rank Kiwi." />
+    <link rel="canonical" href="https://rankkiwi.com/instagram-analytics/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <meta name="author" content="Bhavishya Singla" />
+    <meta name="date" content="2026-10-05" scheme="YYYY-MM-DD" />
+    <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
+    <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
+    <meta name="theme-color" content="#cbf990" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rankkiwi.com/instagram-analytics/" />
+    <meta property="og:title" content="Instagram Creator Research &amp; Reels Analytics Extension — Rank Kiwi" />
+    <meta property="og:description" content="Analyze Instagram creator profiles, rank Reels by view-to-median Outlier Score, isolate viral hooks, and export structured metrics in seconds with Rank Kiwi." />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta property="og:site_name" content="Rank Kiwi" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Instagram Creator Research &amp; Reels Analytics Extension — Rank Kiwi" />
+    <meta name="twitter:description" content="Analyze Instagram creator profiles, rank Reels by view-to-median Outlier Score, isolate viral hooks, and export structured metrics in seconds with Rank Kiwi." />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="/styles.min.css" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "name": "Rank Kiwi Instagram Creator Analytics",
+          "url": "https://rankkiwi.com/instagram-analytics/",
+          "description": "Free Chrome extension to analyze Instagram creator profiles, benchmark Reels view metrics against median performance, and find breakout viral outliers.",
+          "applicationCategory": "SocialNetworkingApplication, DeveloperApplication",
+          "operatingSystem": "Google Chrome, Chromium",
+          "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Rank Kiwi",
+            "url": "https://rankkiwi.com/"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rankkiwi.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Instagram Analytics",
+              "item": "https://rankkiwi.com/instagram-analytics/"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What Instagram content can Rank Kiwi analyze?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Rank Kiwi analyzes publicly accessible Instagram Reels and profile grid posts. It calculates creator-relative Outlier Scores specifically on Reels where view and play counts are publicly published."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need to log into Rank Kiwi with my Instagram password?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Never. Rank Kiwi requires zero login credentials, passwords, or authentication tokens. It executes locally in your browser sandbox, analyzing only the publicly visible HTML elements already rendered in your active tab."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can Rank Kiwi analyze private Instagram profiles?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Rank Kiwi respects platform privacy settings and cannot access private, invite-only, or age-gated profiles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between sorting by Views and Outlier Score?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sorting by Views shows absolute reach, which often reflects historical follower accumulation. Sorting by Outlier Score divides each post's views by the creator's median benchmark, surfacing the creative concepts that genuinely broke out regardless of follower count."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I export my Instagram research to a spreadsheet?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rank Kiwi supports one-click exports to CSV, structured JSON payloads, and direct clipboard copying for immediate pasting into Google Sheets, Notion databases, or Microsoft Excel."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does studying viral outliers guarantee my posts will go viral?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Rank Kiwi is a research and benchmarking tool, not an algorithmic prediction engine. It helps you identify which hooks, pacing structures, and formats resonated unusually well so you can ethically test similar editorial frameworks."
+              }
+            }
+          ]
+        }
+      ]
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+                <!-- SITE HEADER -->
+    <header class="site-header" data-header>
+      <div class="wrap nav">
+        <a class="brand" href="/" aria-label="Rank Kiwi home">
+          <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" fetchpriority="high" />
+          <span>Rank Kiwi</span>
+        </a>
+
+        <div class="nav-links" id="nav-links" data-nav-links>
+          <a href="/#how-it-works">How it works</a>
+          <a href="/#features">Features</a>
+          <a href="/research/">Research</a>
+          <a href="/docs/">Docs</a>
+          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="content-page">
+      <!-- HERO SECTION -->
+      <section class="pillar-hero wrap">
+        <div class="pillar-hero-grid">
+          <div class="pillar-hero-content">
+            <p class="eyebrow"><span class="status-dot"></span> INSTAGRAM CREATOR RESEARCH EXTENSION</p>
+            <h1>Research Instagram creators without scrolling through hundreds of posts.</h1>
+            <p class="hero-lead">
+              Rank Kiwi analyzes any public creator's Instagram Reels, calculates their median performance baseline, and instantly ranks posts by Outlier Score so you can study the hooks that actually outperformed the algorithm.
+            </p>
+            <div class="pillar-hero-actions">
+              <a data-chrome-link data-cta-name="research_instagram_hero" data-cta-position="hero" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" class="button" target="_blank" rel="noopener">
+                Add to Chrome &mdash; It's Free
+              </a>
+              <a href="/docs/instagram/" data-cta-name="read_instagram_docs" data-cta-position="hero" class="button button-quiet">
+                Read Documentation &rarr;
+              </a>
+            </div>
+            <div class="pillar-trust-strip">
+              <span class="pillar-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                100% Client-Side
+              </span>
+              <span class="pillar-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                No Instagram Login
+              </span>
+              <span class="pillar-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Median Baseline Math
+              </span>
+            </div>
+          </div>
+
+          <!-- HERO VISUAL STAGE: REELS OUTLIER SCANNER -->
+          <div class="pillar-hero-stage">
+            <div class="pillar-visual-card pillar-visual-dark">
+              <div class="pvc-header">
+                <div class="pvc-dots">
+                  <span class="pvc-dot"></span>
+                  <span class="pvc-dot"></span>
+                  <span class="pvc-dot"></span>
+                </div>
+                <span class="pvc-tag">Instagram Reels Scanner &bull; @creator</span>
+              </div>
+              <div class="pvc-body">
+                <div class="score-sim-row">
+                  <div class="sim-info">
+                    <span class="sim-title">Desk setup aesthetic tips &amp; cable routing</span>
+                    <span class="sim-views">24,100 views &bull; 482 likes</span>
+                  </div>
+                  <span class="sim-badge typical">1.0&times; Typical</span>
+                </div>
+
+                <div class="score-sim-row">
+                  <div class="sim-info">
+                    <span class="sim-title">The lighting trick that stops the scroll</span>
+                    <span class="sim-views">78,500 views &bull; 2,410 likes</span>
+                  </div>
+                  <span class="sim-badge strong">3.2&times; Strong</span>
+                </div>
+
+                <div class="score-sim-row highlight">
+                  <div class="sim-info">
+                    <span class="sim-title">The 3-second camera move for Reels</span>
+                    <span class="sim-views">194,800 views &bull; 8,920 likes</span>
+                  </div>
+                  <span class="sim-badge viral">7.9&times; Viral Outlier</span>
+                </div>
+
+                <div style="padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #a4cca6;">
+                  <span>Baseline: 24,500 Median Views</span>
+                  <strong style="color: #cbf990; font-family: var(--font-mono);">CSV / JSON &bull; MP4 Download</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ANSWER FIRST CALLOUT -->
+      <section class="wrap">
+        <div class="pillar-answer-box">
+          <div class="pillar-answer-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            What is Rank Kiwi's Instagram Analysis?
+          </div>
+          <p class="pillar-answer-text">
+            Rank Kiwi is a lightweight browser extension that scans a creator's public Instagram library (25, 50, or 100 posts). Instead of showing you an endless reverse-chronological feed, it calculates the creator's true median view count and generates a relative <strong>Outlier Score</strong> (e.g. 5.4&times; typical views) for every Reel. You immediately see which topics, hooks, and formats broke through audience fatigue without manually recording a single spreadsheet cell.
+          </p>
+        </div>
+      </section>
+
+      <!-- WHY RESEARCH CREATORS -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>Why analyze another creator's content?</h2>
+          <p>
+            Native Instagram feeds are optimized to keep you consuming entertainment, not conducting strategic research. When studying niche leaders or competitors, standard scrolling creates blind spots.
+          </p>
+        </div>
+
+        <div class="pillar-card-grid">
+          <div class="pillar-card">
+            <div class="pillar-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <h3>Isolate Proven Formats</h3>
+            <p>
+              Identify the exact narrative angles, on-screen text hooks, and editing rhythms that generated 3&times; to 10&times; more reach than the creator's standard uploads.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
+            </div>
+            <h3>Eliminate Follower Bias</h3>
+            <p>
+              A 100,000-view Reel on an account with 2 million followers is normal baseline reach. The same 100,000 views on a creator with 15,000 followers is a massive viral anomaly. Rank Kiwi benchmarks relatively.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/><polyline points="8 12 12 16 16 12"/><line x1="12" y1="8" x2="12" y2="16"/></svg>
+            </div>
+            <h3>Build Swipe Files in Seconds</h3>
+            <p>
+              Export full video URLs, verified play counts, captions, and outlier multipliers directly to CSV or paste seamlessly into your team's Notion editorial database.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- VISUAL WORKFLOW -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>How Rank Kiwi Instagram Analysis Works</h2>
+          <p>
+            From creator profile to ranked outlier dataset in under 30 seconds.
+          </p>
+        </div>
+
+        <div class="pillar-workflow">
+          <!-- STEP 1 -->
+          <div class="pillar-workflow-step">
+            <div>
+              <span class="pillar-step-badge">Step 1 &bull; Navigate to Creator Reels</span>
+              <h3>Open any public profile</h3>
+              <p>
+                Navigate to <code>instagram.com/[creator]/reels/</code> in Google Chrome. Rank Kiwi automatically detects the creator handle and displays an in-page floating research controller.
+              </p>
+              <ul>
+                <li>Works on creator &amp; business accounts</li>
+                <li>Zero account login or permissions requested</li>
+              </ul>
+            </div>
+            <div class="annotated-shot-wrap">
+              <span class="shot-badge">Rank Kiwi Active</span>
+              <img src="/assets/shots/step1-open-profile.webp" alt="Rank Kiwi detecting an Instagram creator profile" class="annotated-shot-img" width="1280" height="800" loading="lazy" />
+              <p class="shot-caption">Rank Kiwi detects the active creator profile and prompts for sample depth.</p>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="pillar-workflow-step">
+            <div>
+              <span class="pillar-step-badge">Step 2 &bull; Choose Sample &amp; Collect</span>
+              <h3>Extract clean public metrics</h3>
+              <p>
+                Choose an analysis depth of 25, 50, or 100 posts. Rank Kiwi rapidly scans visible DOM elements, extracting view counts, likes, comments, and captions while computing the creator's true non-skewed median.
+              </p>
+              <div class="pillar-answer-box" style="margin-bottom: 0; padding: 12px 16px;">
+                <strong style="color: var(--kiwi-dark); font-size: 13px;">Safe Collection:</strong>
+                <span style="font-size: 13px; color: var(--muted);"> Includes an instant Stop control allowing you to freeze and inspect partial samples at any time.</span>
+              </div>
+            </div>
+            <div class="annotated-shot-wrap">
+              <span class="shot-badge">Live Scanning</span>
+              <img src="/assets/shots/step2-collecting.webp" alt="Rank Kiwi collecting Instagram Reels metrics" class="annotated-shot-img" width="1280" height="800" loading="lazy" />
+              <p class="shot-caption">Real-time progress counter displaying collected items and median calculations.</p>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="pillar-workflow-step">
+            <div>
+              <span class="pillar-step-badge">Step 3 &bull; Sort &amp; Study Outliers</span>
+              <h3>Surface breakout content immediately</h3>
+              <p>
+                Sort by Outlier Score. Posts with performance multiples of 3.0&times;, 5.0&times;, or 10.0&times; are automatically highlighted. Click any card to inspect full hook copy, play duration, engagement rates, or download the original MP4 video.
+              </p>
+              <div style="display: flex; gap: 12px; margin-top: 14px;">
+                <a href="/docs/understanding/outlier-score/" class="button button-small">Learn Outlier Math</a>
+                <a href="/docs/exports/" class="button button-small button-quiet">Export Options</a>
+              </div>
+            </div>
+            <div class="annotated-shot-wrap">
+              <span class="shot-badge">Ranked Outliers Grid</span>
+              <img src="/assets/shots/step3-outliers-grid.webp" alt="Rank Kiwi displaying Instagram viral outliers sorted by score" class="annotated-shot-img" width="1280" height="800" loading="lazy" />
+              <p class="shot-caption">Ranked grid displaying green Outlier Score multiplier pills and view comparisons.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT YOU CAN ANALYZE TABLE -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>Supported Instagram Content &amp; Metrics</h2>
+          <p>
+            Rank Kiwi only reads verified data publicly exposed in Instagram's active interface. We never fabricate missing numbers.
+          </p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="reference-table" style="width: 100%; border-collapse: collapse; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.05); border: 1px solid var(--border);">
+            <thead>
+              <tr style="background: var(--wash); border-bottom: 2px solid var(--line); text-align: left;">
+                <th style="padding: 14px 18px;">Content Type</th>
+                <th style="padding: 14px 18px;">Supported Surface</th>
+                <th style="padding: 14px 18px;">Available Metrics</th>
+                <th style="padding: 14px 18px;">Outlier Score Support</th>
+                <th style="padding: 14px 18px;">Export Options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--line);">
+                <td style="padding: 14px 18px;"><strong>Instagram Reels</strong></td>
+                <td style="padding: 14px 18px;"><code>/reels/</code> tab</td>
+                <td style="padding: 14px 18px;">Views/Plays, Likes, Comments, Date, Caption, URL</td>
+                <td style="padding: 14px 18px;"><span class="pill" style="background: var(--brand-soft); color: var(--kiwi-dark); font-weight: 750; padding: 3px 10px; border-radius: 999px; font-size: 0.8rem;">Full (View-based)</span></td>
+                <td style="padding: 14px 18px;">CSV, JSON, Clipboard, MP4 Video</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--line);">
+                <td style="padding: 14px 18px;"><strong>Grid Videos</strong></td>
+                <td style="padding: 14px 18px;">Main profile grid</td>
+                <td style="padding: 14px 18px;">Views, Likes, Comments, Date, Caption</td>
+                <td style="padding: 14px 18px;"><span class="pill" style="background: var(--brand-soft); color: var(--kiwi-dark); font-weight: 750; padding: 3px 10px; border-radius: 999px; font-size: 0.8rem;">Full</span></td>
+                <td style="padding: 14px 18px;">CSV, JSON, Clipboard</td>
+              </tr>
+              <tr>
+                <td style="padding: 14px 18px;"><strong>Carousels &amp; Photos</strong></td>
+                <td style="padding: 14px 18px;">Main profile grid</td>
+                <td style="padding: 14px 18px;">Likes, Comments, Date, Caption, URL</td>
+                <td style="padding: 14px 18px;"><span style="color: var(--caption); font-size: 0.85rem;">Partial (Likes-based)</span></td>
+                <td style="padding: 14px 18px;">CSV, JSON, Clipboard</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TRANSPARENT LIMITATIONS -->
+      <section class="pillar-section wrap">
+        <div class="callout callout-warning" style="background: #ffffff; border-left: 4px solid #b45309; padding: 24px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border: 1px solid var(--border); border-left-width: 4px; border-left-color: #b45309;">
+          <h3 style="margin-top: 0; color: #9a3412;">Transparent Platform Limitations</h3>
+          <p style="color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">
+            Rank Kiwi is an ethical, client-side research tool that reads publicly rendered DOM elements. It is not an unofficial API wrapper:
+          </p>
+          <ul style="color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin: 0 0 16px 20px;">
+            <li><strong>Hidden Metrics:</strong> If a creator toggles <em>"Hide like and view counts"</em> on an individual post, Instagram omits those numbers from public HTML. Rank Kiwi displays these as <code>Hidden</code> rather than guessing.</li>
+            <li><strong>Private Profiles:</strong> Rank Kiwi cannot scan private, blocked, or age-restricted accounts.</li>
+            <li><strong>Single Post Permalinks:</strong> You cannot calculate an Outlier Score on a standalone post permalink because establishing a median baseline requires a creator library sample.</li>
+          </ul>
+          <p style="margin: 0; font-size: 0.9rem;">
+            Read more in our comprehensive <a href="/docs/instagram/#limitations">Instagram Technical Limitations Guide &rarr;</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about analyzing Instagram creator content with Rank Kiwi.</p>
+        </div>
+
+        <div class="pillar-faq-grid">
+          <div class="pillar-faq-card">
+            <h3>What Instagram content can Rank Kiwi analyze?</h3>
+            <p>
+              Rank Kiwi is optimized for creator profile pages, specifically the <code>/reels/</code> tab. On Reels, Instagram publishes public view counts, making it possible to calculate non-skewed median baselines and Outlier Scores.
+            </p>
+          </div>
+
+          <div class="pillar-faq-card">
+            <h3>Do I need to log into Rank Kiwi with my Instagram password?</h3>
+            <p>
+              Never. Rank Kiwi does not require your password, personal account credentials, or cookies. It runs locally inside Google Chrome's secure client sandbox, reading only the content publicly visible on your active tab.
+            </p>
+          </div>
+
+          <div class="pillar-faq-card">
+            <h3>Can Rank Kiwi analyze private Instagram profiles?</h3>
+            <p>
+              No. Rank Kiwi respects platform privacy settings and cannot access private, invite-only, or age-gated profiles.
+            </p>
+          </div>
+
+          <div class="pillar-faq-card">
+            <h3>What is the difference between sorting by Views and Outlier Score?</h3>
+            <p>
+              Sorting by Views shows raw popularity, which often reflects account age and follower volume. Sorting by Outlier Score divides each post's views by the creator's median benchmark, surfacing the creative concepts that genuinely broke out regardless of channel size.
+            </p>
+          </div>
+
+          <div class="pillar-faq-card">
+            <h3>Can I export my Instagram research to a spreadsheet?</h3>
+            <p>
+              Yes. Rank Kiwi supports one-click exports to CSV, structured JSON payloads, and direct clipboard copying for immediate pasting into Google Sheets, Notion databases, or Microsoft Excel.
+            </p>
+          </div>
+
+          <div class="pillar-faq-card">
+            <h3>Does studying viral outliers guarantee my posts will go viral?</h3>
+            <p>
+              No. Rank Kiwi is a research and benchmarking tool, not an algorithmic prediction engine. It helps you identify which hooks, pacing structures, and formats resonated unusually well so you can ethically test similar editorial frameworks.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RELATED TOPICS CLUSTER -->
+      <section class="wrap" style="margin-bottom: 48px;">
+        <div class="related-box" style="background: var(--wash); padding: 28px 32px; border-radius: 14px; border: 1px solid var(--border);">
+          <h3 style="margin-top: 0; font-size: 16px; font-weight: 750;">Explore Related Creator Research Guides</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 14px;">
+            <a href="/outlier-score/" style="color: var(--kiwi-dark); text-decoration: none; font-weight: 600; font-size: 14px;">
+              &rarr; Outlier Score Explained
+            </a>
+            <a href="/creator-content-research/" style="color: var(--kiwi-dark); text-decoration: none; font-weight: 600; font-size: 14px;">
+              &rarr; Creator Content Research Framework
+            </a>
+            <a href="/youtube-analytics/" style="color: var(--kiwi-dark); text-decoration: none; font-weight: 600; font-size: 14px;">
+              &rarr; YouTube Channel &amp; Shorts Analytics
+            </a>
+            <a href="/docs/instagram/" style="color: var(--kiwi-dark); text-decoration: none; font-weight: 600; font-size: 14px;">
+              &rarr; Full Instagram Documentation
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section class="wrap" style="margin-bottom: 72px;">
+        <div class="cta-box" style="background: #01370b; color: #ffffff; padding: 48px 36px; border-radius: 16px; text-align: center; border: 1px solid rgba(203, 249, 144, 0.25); box-shadow: 0 16px 36px -10px rgba(1, 55, 11, 0.2);">
+          <h2 style="color: #ffffff; margin-top: 0; font-size: clamp(22px, 2.5vw, 30px);">
+            Ready to stop scrolling and start researching?
+          </h2>
+          <p style="color: #cbf990; font-size: 15.5px; max-width: 600px; margin: 0 auto 28px auto; line-height: 1.6;">
+            Install Rank Kiwi in 10 seconds. Open any Instagram creator profile and uncover their highest-performing Reels immediately.
+          </p>
+          <a data-chrome-link data-cta-name="research_instagram_final" data-cta-position="final" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" class="button" target="_blank" rel="noopener" style="font-size: 1.05rem; padding: 14px 32px;">
+            Add to Chrome &mdash; It's Free
+          </a>
+        </div>
+      </section>
+    </main>
+
+                <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="/" aria-label="Rank Kiwi home">
+            <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" loading="lazy" decoding="async" />
+            <span>Rank Kiwi</span>
+          </a>
+          <p>Research creator profiles and spot viral outlier content on Instagram and YouTube.</p>
+          <div class="footer-socials">
+            <a class="social-icon-link" href="https://www.instagram.com/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://www.linkedin.com/in/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://www.youtube.com/@bhavishyasingla1" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener" aria-label="Bhavishya Singla Website">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <b>Product</b>
+          <a href="/">Home</a>
+          <a href="/instagram-analytics/">Instagram Analytics</a>
+          <a href="/youtube-analytics/">YouTube Analytics</a>
+          <a href="/outlier-score/">Outlier Score</a>
+          <a href="/creator-content-research/">Creator Research</a>
+        </div>
+
+        <div>
+          <b>Learn &amp; Docs</b>
+          <a href="/docs/">Documentation</a>
+          <a href="/docs/getting-started/">Getting Started</a>
+          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
+          <a href="/docs/troubleshooting/">Troubleshooting</a>
+          <a href="/docs/exports/">Exports Guide</a>
+        </div>
+
+        <div>
+          <b>Research &amp; Compare</b>
+          <a href="/research/">Research Hub</a>
+          <a href="/research/methodology/">Methodology</a>
+          <a href="/compare/">Tool Comparisons</a>
+          <a href="/alternatives/">Alternatives Hub</a>
+          <a href="/best/">Best Software Guides</a>
+        </div>
+
+        <div>
+          <b>Legal &amp; Support</b>
+          <a href="/support/">Help &amp; Support</a>
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>&copy; 2026 Rank Kiwi. Not affiliated with Meta, Instagram, Google, or YouTube.</p>
+        <p>Made with <span class="footer-heart">&#10084;&#65039;</span> by <a class="author-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener">Bhavishya Singla</a></p>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+{
+  "$schema": "https://rankkiwi.com/schemas/cro-objections-v1.json",
+  "version": "1.0.0",
+  "description": "Page-specific objection map, required evidence, and placement strategy for the Rank Kiwi website.",
+  "objections": [
+    {
+      "pageType": "homepage",
+      "objection": "What is Rank Kiwi?",
+      "response": "Rank Kiwi is a free Chrome extension that benchmarks public Instagram Reels and YouTube videos against creator typical performance to reveal viral outliers.",
+      "evidenceType": "Product video + 3-step workflow carousel + UI screenshots",
+      "placement": "Hero & How it Works section",
+      "status": "addressed"
+    },
+    {
+      "pageType": "homepage",
+      "objection": "Is Rank Kiwi free or a trial?",
+      "response": "100% free forever ($0/mo). No credit card, no subscription, no hidden tiers.",
+      "evidenceType": "Transparent Pricing Card with feature checklist",
+      "placement": "Pricing section & final CTA microcopy",
+      "status": "addressed"
+    },
+    {
+      "pageType": "homepage",
+      "objection": "Do I need to give you my social media login or password?",
+      "response": "Never. Rank Kiwi requires no account and never asks for passwords. It only inspects public DOM elements rendered in your active browser session.",
+      "evidenceType": "Privacy Architecture Grid & Privacy Policy link",
+      "placement": "Privacy section (#privacy)",
+      "status": "addressed"
+    },
+    {
+      "pageType": "instagramAnalytics",
+      "objection": "Does it actually work on Instagram Reels without breaking?",
+      "response": "Yes, Rank Kiwi works on creator profile grids and the dedicated Reels tab, extracting public views, likes, comments, and captions in real-time.",
+      "evidenceType": "Authentic UI screenshots of Instagram Reels grid with Outlier Score badges",
+      "placement": "Above-the-fold hero & workflow breakdown",
+      "status": "addressed"
+    },
+    {
+      "pageType": "instagramAnalytics",
+      "objection": "Can I export findings to Google Sheets or Excel?",
+      "response": "Yes, with one click you can export full post tables (dates, view counts, outlier multipliers, captions, and links) to CSV, JSON, or direct clipboard copy.",
+      "evidenceType": "Export feature card & link to /docs/exports/",
+      "placement": "Export feature section",
+      "status": "addressed"
+    },
+    {
+      "pageType": "youtubeAnalytics",
+      "objection": "Does it work on YouTube Shorts as well as long-form videos?",
+      "response": "Yes. Rank Kiwi natively parses both long-form channel uploads and the dedicated /shorts tab, calculating separate median baselines.",
+      "evidenceType": "Surface comparison table and YouTube UI screenshot",
+      "placement": "Platform capability section",
+      "status": "addressed"
+    },
+    {
+      "pageType": "outlierScore",
+      "objection": "How is Outlier Score calculated, and why not use averages?",
+      "response": "Average view count is heavily skewed by a single mega-hit post. Rank Kiwi uses the creator's median benchmark: Outlier Score = Post Views / Median Views. A 3.2× score means the post earned more than triple typical performance.",
+      "evidenceType": "Mathematical breakdown, worked creator examples, and visual distribution diagram",
+      "placement": "Core explanation section & /docs/understanding/outlier-score/",
+      "status": "addressed"
+    },
+    {
+      "pageType": "comparisons",
+      "objection": "Why choose Rank Kiwi over big tools like Socialinsider or Metricool?",
+      "response": "Rank Kiwi isn't built for enterprise client reporting ($99–$200+/mo). It is built for fast, lightweight creator content research directly in the browser with zero login friction and zero cost.",
+      "evidenceType": "Objective feature comparison tables, pricing comparisons, and 'When to choose which' guidelines",
+      "placement": "Comparison matrix and verdict section",
+      "status": "addressed"
+    },
+    {
+      "pageType": "alternatives",
+      "objection": "Is this actually a replacement for my current workflow tool?",
+      "response": "Transparently shows what Rank Kiwi replaces (in-browser feed sorting, outlier scoring, quick CSV exports) and what it doesn't (multi-account scheduling, paid ad tracking).",
+      "evidenceType": "Use-case fit matrix and transparent trade-offs",
+      "placement": "Evaluation sections on /alternatives/*",
+      "status": "addressed"
+    },
+    {
+      "pageType": "bestOf",
+      "objection": "Is this just an affiliate listicle ranking the highest paying tool #1?",
+      "response": "Rank Kiwi accepts no affiliate commissions or sponsored rankings. First-place recommendations are awarded strictly on genuine merit (e.g. YouTube Studio for owned channel retention).",
+      "evidenceType": "Editorial methodology disclosure, evaluation criteria table, and transparent trade-offs",
+      "placement": "Methodology banner & editorial standards block",
+      "status": "addressed"
+    },
+    {
+      "pageType": "research",
+      "objection": "Is this research marketing fluff or real empirical data?",
+      "response": "All research studies are based on peer-reviewed methodology, public datasets (e.g. vidIQ 448k channel dataset, Kaggle 10k Instagram dataset), and cite clear sample sizes, medians, and confidence intervals.",
+      "evidenceType": "Interactive methodology links, data tables, distribution histograms, and reproducible research notes",
+      "placement": "Research study body & /research/methodology/",
+      "status": "addressed"
+    },
+    {
+      "pageType": "docs",
+      "objection": "What if the extension doesn't appear or stops working?",
+      "response": "The complete Troubleshooting Hub provides a diagnostic decision tree and actionable fixes for common issues (surface mismatches, browser updates, infinite scrolling pauses).",
+      "evidenceType": "Interactive diagnostic decision tree + 5 dedicated troubleshooting guides",
+      "placement": "/docs/troubleshooting/",
+      "status": "addressed"
+    }
+  ]
+}

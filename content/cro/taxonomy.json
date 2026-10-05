@@ -1,0 +1,117 @@
+{
+  "$schema": "https://rankkiwi.com/schemas/cro-taxonomy-v1.json",
+  "version": "1.0.0",
+  "lastUpdated": "2026-10-05",
+  "description": "Continuous CRO Event Taxonomy, Conversion Funnel, and Telemetry Specification for the Rank Kiwi Marketing Website.",
+  "goals": {
+    "primary": {
+      "name": "webstore_click",
+      "description": "User clicks an installation or Chrome Web Store outbound CTA to visit the extension listing with direct install intent.",
+      "isOutbound": true,
+      "deepestMeasurableAction": true,
+      "attributionBoundary": "Outbound intent measured on-site; actual installation requires Chrome Web Store client telemetry."
+    },
+    "secondary": [
+      {
+        "name": "docs_click",
+        "description": "User navigates into product documentation, quickstarts, or troubleshooting workflows, indicating high activation interest."
+      },
+      {
+        "name": "outlier_score_view",
+        "description": "User visits the Outlier Score methodology guide to understand how creator benchmarking and anomaly detection works."
+      },
+      {
+        "name": "exports_view",
+        "description": "User navigates to export and CSV/JSON documentation to evaluate workflow fit with spreadsheets or client reporting."
+      },
+      {
+        "name": "comparison_view",
+        "description": "User views an in-depth head-to-head comparison page to evaluate Rank Kiwi vs alternative tools."
+      },
+      {
+        "name": "alternatives_view",
+        "description": "User views an alternatives guide exploring competitor tools and Rank Kiwi's role."
+      },
+      {
+        "name": "best_of_view",
+        "description": "User reads a category evaluation or best-of guide to choose tools for a specific social research workflow."
+      }
+    ],
+    "micro": [
+      {
+        "name": "faq_expand",
+        "description": "User toggles open an FAQ accordion question to resolve an objection or question."
+      },
+      {
+        "name": "workflow_step_click",
+        "description": "User clicks through the 3-step interactive product workflow carousel (Profile -> Scan -> Sort)."
+      },
+      {
+        "name": "scroll_depth",
+        "description": "User reaches 25%, 50%, 75%, or 100% of document scroll depth on long-form content pages."
+      },
+      {
+        "name": "citation_copy",
+        "description": "User copies an academic or research citation snippet or code block."
+      },
+      {
+        "name": "social_click",
+        "description": "User clicks outbound link to developer profile, GitHub, YouTube, or LinkedIn."
+      },
+      {
+        "name": "navigation_click",
+        "description": "User clicks header, mobile menu, or footer navigational links."
+      }
+    ]
+  },
+  "dimensions": {
+    "event": "Event name matching the defined taxonomy (e.g., 'webstore_click', 'website_cta_click')",
+    "page_type": "Categorical page role ('homepage', 'product_instagram', 'product_youtube', 'product_outlier_score', 'product_research', 'comparison_hub', 'comparison_detail', 'alternatives_hub', 'alternatives_detail', 'best_of_hub', 'best_of_detail', 'research_hub', 'research_article', 'docs_hub', 'docs_article', 'support', 'legal', 'error_404')",
+    "page_slug": "Normalized URL slug or path without leading/trailing slashes (e.g. 'instagram-analytics', 'compare/rank-kiwi-vs-sort-feed')",
+    "cta_name": "Semantic CTA identity (e.g. 'add_to_chrome', 'research_instagram', 'research_youtube', 'see_how_it_works', 'read_study', 'visit_docs')",
+    "cta_position": "Viewport and structural placement ('hero', 'nav', 'header', 'pricing', 'contextual', 'final', 'docs', 'footer')",
+    "device_type": "Viewport form factor determined client-side ('mobile' <768px, 'tablet' 768-1024px, 'desktop' >1024px)",
+    "experiment_id": "Optional identifier for active A/B test (e.g. 'exp_hp_hero_cta_v1')",
+    "variant_id": "Assigned experiment variant ('control' | 'treatment')",
+    "href": "Destination URL of the clicked element",
+    "text": "Sanitized inner text of the interaction element",
+    "timestamp": "ISO-8601 UTC timestamp of the client interaction"
+  },
+  "funnel": [
+    {
+      "stage": 1,
+      "name": "Organic / Referral / Direct Landing",
+      "measurement": "Page view recorded with referrer, campaign UTMs, and landing page slug."
+    },
+    {
+      "stage": 2,
+      "name": "Content Engagement",
+      "measurement": "Scroll depth milestone (25%, 50%), carousel interaction, or time on page > 15s."
+    },
+    {
+      "stage": 3,
+      "name": "Product Understanding",
+      "measurement": "Deep scroll (75%), workflow carousel completion, FAQ accordion expansion, or methodology exploration."
+    },
+    {
+      "stage": 4,
+      "name": "CTA Interaction",
+      "measurement": "Interaction with primary or secondary CTA ('website_cta_click')."
+    },
+    {
+      "stage": 5,
+      "name": "Chrome Web Store Visit (Outbound Intent)",
+      "measurement": "Deepest on-site conversion: click to Chrome Web Store with extension ID ('webstore_click')."
+    },
+    {
+      "stage": 6,
+      "name": "Extension Installation (External)",
+      "measurement": "External action on Chrome Web Store listing (measured via developer dashboard / extension install event)."
+    },
+    {
+      "stage": 7,
+      "name": "Product Activation (Product-Level)",
+      "measurement": "First creator analysis run locally in extension on Instagram Reels or YouTube channel catalog."
+    }
+  ]
+}

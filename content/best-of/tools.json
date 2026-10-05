@@ -1,0 +1,342 @@
+{
+  "lastVerified": "October 5, 2026",
+  "tools": {
+    "rank-kiwi": {
+      "slug": "rank-kiwi",
+      "name": "Rank Kiwi",
+      "category": "In-Browser Content & Outlier Research",
+      "platforms": ["Instagram", "YouTube"],
+      "bestFor": "Public content research and creator-relative outlier discovery",
+      "badge": "Best for Content Outlier Discovery",
+      "description": "Rank Kiwi is a lightweight, privacy-first browser extension designed for content research and outlier discovery on Instagram and YouTube. It calculates non-skewed median performance baselines directly in the browser, highlighting breakout Reels, Shorts, and long-form videos with one-click exports.",
+      "keyCapabilities": [
+        "Normalized Outlier Score (views/engagement relative to creator median)",
+        "On-page sorting across Reels, Instagram posts, YouTube videos, and Shorts",
+        "Multi-attribute metric filtering (views, likes, comments, date ranges)",
+        "One-click export of video URLs, hooks, captions, and metrics to CSV and JSON",
+        "100% client-side privacy with zero account registration or remote cloud logging"
+      ],
+      "mainLimitation": "Does not schedule or auto-publish social media posts, and cannot access private owned-channel metrics like search traffic attribution, retention drop-off graphs, or YouTube revenue.",
+      "pricing": {
+        "summary": "100% Free forever ($0.00 USD) with unrestricted post analysis on public profiles.",
+        "model": "Completely Free",
+        "startingPrice": "$0",
+        "checkedAt": "October 5, 2026",
+        "sourceUrl": "https://rankkiwi.com"
+      },
+      "bestSuitedTo": "Creators, video editors, and social strategists who want to discover viral hooks and outlier formats without paying monthly subscription fees.",
+      "officialUrl": "https://rankkiwi.com",
+      "internalLinks": {
+        "product": "/instagram-analytics/",
+        "outlier": "/outlier-score/",
+        "research": "/creator-content-research/"
+      }
+    },
+    "instagram-insights": {
+      "slug": "instagram-insights",
+      "name": "Instagram Insights (Meta)",
+      "category": "Native First-Party Account Analytics",
+      "platforms": ["Instagram"],
+      "bestFor": "First-party audience demographics and account reach",
+      "badge": "Best for Own-Account Demographics",
+      "description": "Instagram Insights is the built-in analytics dashboard provided by Meta for Professional (Creator and Business) accounts. It provides first-party performance telemetry, follower activity patterns, and exact reach counts.",
+      "keyCapabilities": [
+        "Verified audience demographic breakdowns (age, gender, top cities, top countries)",
+        "Profile activity metrics (profile visits, link taps, external website clicks)",
+        "Accounts reached and accounts engaged segmented by followers vs non-followers",
+        "Second-by-second Reels drop-off and average percentage watched graphs",
+        "Native integration into Meta Business Suite and Ads Manager"
+      ],
+      "mainLimitation": "Completely restricted to accounts you own. It provides zero visibility into competitor profile metrics, cannot sort public creator feeds, and cannot discover market-wide content outliers.",
+      "pricing": {
+        "summary": "100% Free native feature for all Instagram Creator and Business accounts.",
+        "model": "Completely Free",
+        "startingPrice": "$0",
+        "checkedAt": "October 5, 2026",
+        "sourceUrl": "https://business.instagram.com"
+      },
+      "bestSuitedTo": "Account owners and brand managers evaluating their own audience demographics and verifying sponsor reach metrics.",
+      "officialUrl": "https://business.instagram.com"
+    },
+    "youtube-studio": {
+      "slug": "youtube-studio",
+      "name": "YouTube Studio Analytics",
+      "category": "Native First-Party Channel Analytics",
+      "platforms": ["YouTube"],
+      "bestFor": "Own-channel retention, click-through rates, and monetization",
+      "badge": "Best for Own-Channel Retention & Revenue",
+      "description": "YouTube Studio Analytics is Google's native analytics platform for creators and channel managers. It provides ground-truth telemetry regarding audience retention, impressions click-through rate (CTR), traffic sources, and AdSense revenue.",
+      "keyCapabilities": [
+        "Exact second-by-second audience retention curves with intro, spike, and dip indicators",
+        "Impression Click-Through Rate (CTR) and thumbnail impression funnels",
+        "Traffic source attribution (YouTube Search, Suggested Videos, Browse Features, External)",
+        "Detailed revenue metrics including estimated earnings, RPM, and playback-based CPM",
+        "Advanced Mode multidimensional filtering, side-by-side date comparisons, and CSV export"
+      ],
+      "mainLimitation": "Cannot analyze competitor channels or public video catalogs. It provides zero competitor research tools or external outlier discovery.",
+      "pricing": {
+        "summary": "100% Free native platform for all authenticated YouTube channel owners.",
+        "model": "Completely Free",
+        "startingPrice": "$0",
+        "checkedAt": "October 5, 2026",
+        "sourceUrl": "https://studio.youtube.com"
+      },
+      "bestSuitedTo": "YouTube creators and editors optimizing their own video retention, thumbnail CTR, and channel revenue.",
+      "officialUrl": "https://studio.youtube.com",
+      "internalLinks": {
+        "comparison": "/compare/rank-kiwi-vs-youtube-studio/",
+        "alternative": "/alternatives/youtube-studio/"
+      }
+    },
+    "socialinsider": {
+      "slug": "socialinsider",
+      "name": "Socialinsider",
+      "category": "Cross-Network Analytics & Benchmarking",
+      "platforms": ["Instagram", "YouTube", "Facebook", "TikTok", "LinkedIn", "Twitter/X"],
+      "bestFor": "Multi-brand competitive benchmarking and executive reporting",
+      "badge": "Best for Multi-Brand Competitor Benchmarking",
+      "description": "Socialinsider is a cloud social media analytics and competitive benchmarking platform designed for digital marketing agencies and enterprise brands. It monitors competitor profiles and generates automated cross-network performance reports.",
+      "keyCapabilities": [
+        "Head-to-head competitor brand benchmarking across 6 major social networks",
+        "Automated white-label client PDF and PowerPoint executive presentation exports",
+        "Industry engagement rate benchmark indices based on thousands of analyzed brands",
+        "Historical content performance tracking and campaign hashtag monitoring",
+        "Team collaboration workspaces with multi-client project organization"
+      ],
+      "mainLimitation": "High starting price ($82+/month) with no permanent free tier. Lacks client-side on-page browser feed sorting and is not designed for fast video editing hook research.",
+      "pricing": {
+        "summary": "Paid subscription starting from $82/month (annual Adapt tier) or $99/month monthly, with a 14-day free trial.",
+        "model": "Paid (Free Trial)",
+        "startingPrice": "$82/mo",
+        "checkedAt": "October 5, 2026",
+        "sourceUrl": "https://www.socialinsider.io/pricing"
+      },
+      "bestSuitedTo": "Agencies and corporate marketing teams requiring multi-brand competitor benchmarking and automated executive reporting decks.",
+      "officialUrl": "https://www.socialinsider.io",
+      "internalLinks": {
+        "comparison": "/compare/rank-kiwi-vs-socialinsider/",
+        "alternative": "/alternatives/socialinsider/"
+      }
+    },
+    "metricool": {
+      "slug": "metricool",
+      "name": "Metricool",
+      "category": "Social Media Management & Publishing",
+      "platforms": ["Instagram", "YouTube", "TikTok", "Facebook", "LinkedIn", "Pinterest", "Twitter/X", "Google Business"],
+      "bestFor": "All-in-one social scheduling, unified inbox, and competitor tracking",
+      "badge": "Best for Social Scheduling + Competitor Tracking",
+      "description": "Metricool is a comprehensive social media management platform that combines a visual content scheduling calendar, auto-publishing, unified social inbox, and multi-network competitor monitoring into an affordable suite.",
+      "keyCapabilities": [
+        "Visual drag-and-drop social scheduling calendar with multi-network auto-publishing",
+        "Public competitor tracking for up to 5 profiles on the free plan and 100+ on paid plans",
+        "Unified social inbox for responding to comments and direct messages across networks",
+        "Basic first-party account analytics and automated monthly PDF report downloads",
+        "Paid advertising campaign tracking across Google Ads, Meta Ads, and TikTok Ads"
+      ],
+      "mainLimitation": "Analytics focus on profile-level aggregates and posting schedules rather than video-level outlier detection or creator-relative performance ratios.",
+      "pricing": {
+        "summary": "Permanent Free plan (1 brand, 20 posts/mo, 5 competitors). Paid plans start from $20/month (annual Starter) or $22/month monthly.",
+        "model": "Freemium",
+        "startingPrice": "$0 / $20/mo",
+        "checkedAt": "October 5, 2026",
+        "sourceUrl": "https://metricool.com/pricing/"
+      },
+      "bestSuitedTo": "Social media managers and small businesses wanting an all-in-one publishing calendar with integrated competitor benchmarking.",
+      "officialUrl": "https://metricool.com",
+      "internalLinks": {
+        "comparison": "/compare/rank-kiwi-vs-metricool/",
+        "alternative": "/alternatives/metricool/"
+      }
+    },
+    "viewstats": {
+      "slug": "viewstats",
+      "name": "Viewstats",
+      "category": "Dedicated YouTube Intelligence Platform",
+      "platforms": ["YouTube"],
+      "bestFor": "YouTube historical databases, visual thumbnail search, and channel tracking",
+      "badge": "Best for YouTube Historical Intelligence",
+      "description": "Viewstats is an advanced YouTube analytics platform co-founded by MrBeast. It maintains a multi-year historical video database, tracks subscriber and view milestones, provides visual thumbnail search, and monitors thumbnail A/B tests.",
+      "keyCapabilities": [
+        "Massive multi-year database of historical YouTube video uploads and channel metrics",
+        "Visual thumbnail search engine allowing creators to explore successful cover designs",
+        "Thumbnail A/B test tracking showing which thumbnails top creators swapped and when",
+        "Outlier video alert notifications when monitored channels publish breakout videos",
+        "Advanced channel projection modeling and subscriber milestone forecasts"
+      ],
+      "mainLimitation": "Restricted exclusively to YouTube (no Instagram or short-form cross-network coverage), and Pro/Business plans require substantial monthly investments.",
+      "pricing": {
+        "summary": "Free basic channel lookup. Pro tier with dynamic pricing; Business starting at $249/month.",
+        "model": "Freemium",
+        "startingPrice": "$0 / $249/mo",
+        "checkedAt": "October 5, 2026",
+        "sourceUrl": "https://www.viewstats.com/pricing"
+      },
+      "bestSuitedTo": "Dedicated YouTube creators, video strategists, and thumbnail designers analyzing long-term platform trends and packaging.",
+      "officialUrl": "https://www.viewstats.com",
+      "internalLinks": {
+        "comparison": "/compare/rank-kiwi-vs-viewstats/",
+        "alternative": "/alternatives/viewstats/"
+      }
+    },
+    "vidiq": {
+      "slug": "vidiq",
+      "name": "vidIQ",
+      "category": "YouTube SEO & Channel Growth Platform",
+      "platforms": ["YouTube"],
+      "bestFor": "YouTube search keyword research, tag optimization, and competitor tracking",
+      "badge": "Best for YouTube SEO & Keyword Research",
+      "description": "vidIQ is a YouTube creator growth tool and browser extension focusing on search engine optimization, keyword volume discovery, tag suggestions, and daily AI-assisted video topic ideas.",
+      "keyCapabilities": [
+        "In-depth YouTube search keyword tool showing monthly search volume and competition scores",
+        "Browser extension inspecting tags, metadata, and VPH (Views Per Hour) on any YouTube video",
+        "Daily personalized video topic recommendations based on channel niche and historical data",
+        "Competitor channel tracking and real-time email alerts for breakout competitor uploads",
+        "AI-assisted title generators, description builders, and thumbnail view predictors"
+      ],
+      "mainLimitation": "YouTube only (no Instagram or TikTok coverage), and is heavily tuned toward search keyword discovery rather than short-form outlier hook analysis.",
+      "pricing": {
+        "summary": "Free basic browser extension. Paid Pro starts from $10/month; Boost from $49/month.",
+        "model": "Freemium",
+        "startingPrice": "$0 / $10/mo",
+        "checkedAt": "October 5, 2026",
+        "sourceUrl": "https://vidiq.com/plans/"
+      },
+      "bestSuitedTo": "YouTube creators producing search-focused content, tutorials, and evergreen videos needing tag and keyword guidance.",
+      "officialUrl": "https://vidiq.com"
+    },
+    "sort-feed": {
+      "slug": "sort-feed",
+      "name": "Sort Feed",
+      "category": "In-Browser Social Feed Sorter",
+      "platforms": ["Instagram", "YouTube", "TikTok", "Facebook"],
+      "bestFor": "Multi-platform short-form feed sorting and speech-to-text audio transcription",
+      "badge": "Best for Multi-Platform + Transcription",
+      "description": "Sort Feed is a browser extension that allows users to sort feeds across Instagram, YouTube, TikTok, and Facebook. It includes outlier detection and cloud-based speech-to-text transcription for video dialogue.",
+      "keyCapabilities": [
+        "Cross-network sorting across TikTok, Instagram, YouTube, and Facebook feeds",
+        "Automated speech-to-text audio transcription on Pro (500 minutes/month)",
+        "Outlier Score calculations on visible creator post feeds",
+        "Custom date filtering and post sample depth up to 1,000 posts on Pro",
+        "Data export and media download functionality"
+      ],
+      "mainLimitation": "Free tier is capped at the latest 25 posts or 1 week of content. Accessing 1,000 posts and audio transcription requires a paid Pro subscription ($10–$15/mo).",
+      "pricing": {
+        "summary": "Free plan capped at 25 posts / 1 week. Pro costs $10/month billed annually ($120/yr) or $15/month monthly.",
+        "model": "Freemium",
+        "startingPrice": "$0 / $10/mo",
+        "checkedAt": "October 5, 2026",
+        "sourceUrl": "https://sortfeed.com/pricing"
+      },
+      "bestSuitedTo": "Marketers who require short-form research across TikTok and Facebook alongside automated video speech-to-text transcription.",
+      "officialUrl": "https://sortfeed.com",
+      "internalLinks": {
+        "comparison": "/compare/rank-kiwi-vs-sort-feed/",
+        "alternative": "/alternatives/sort-feed/"
+      }
+    },
+    "social-blade": {
+      "slug": "social-blade",
+      "name": "Social Blade",
+      "category": "Macro Public Statistical Tracking",
+      "platforms": ["YouTube", "Instagram", "Twitch", "Twitter/X", "TikTok", "Facebook"],
+      "bestFor": "High-level historical follower and subscriber growth tracking",
+      "badge": "Best for Macro Follower Milestones",
+      "description": "Social Blade is a public statistical database tracking channel and profile milestones across major digital networks. It provides historical subscriber charts, estimated earnings ranges, and account rank classifications.",
+      "keyCapabilities": [
+        "Historical day-by-day follower and subscriber growth charts dating back years",
+        "Global rank classifications by total subscribers, views, and country",
+        "Estimated YouTube AdSense revenue ranges based on broad platform CPM models",
+        "Multi-network profile lookup across Twitch, YouTube, Instagram, and TikTok",
+        "Future growth projection models based on recent 30-day velocity"
+      ],
+      "mainLimitation": "Provides macro account-level metrics only; zero individual post/Reels sorting, no video hook analysis, and no normalized outlier detection.",
+      "pricing": {
+        "summary": "Free public search (ad-supported). Paid premium memberships start from $3.99/month (Bronze) to $39.99/month (Gold).",
+        "model": "Freemium",
+        "startingPrice": "$0 / $3.99/mo",
+        "checkedAt": "October 5, 2026",
+        "sourceUrl": "https://socialblade.com"
+      },
+      "bestSuitedTo": "Researchers, journalists, and brand sponsors checking macro account legitimacy, follower trajectories, and channel size milestones.",
+      "officialUrl": "https://socialblade.com"
+    },
+    "buzzsumo": {
+      "slug": "buzzsumo",
+      "name": "BuzzSumo",
+      "category": "Content Discovery & Viral PR Monitoring",
+      "platforms": ["Web Articles", "YouTube", "Facebook", "Twitter/X", "Pinterest"],
+      "bestFor": "Web article sharing research, journalist outreach, and PR monitoring",
+      "badge": "Best for Cross-Web Viral Content Discovery",
+      "description": "BuzzSumo is a content marketing intelligence and PR monitoring platform that indexes web articles and social shares to identify viral news topics, trending articles, and top social publishers.",
+      "keyCapabilities": [
+        "Cross-web search engine for top-shared articles, blog posts, and news stories",
+        "Author and journalist search with media outreach contact details",
+        "Brand and topic monitoring with real-time PR alert notifications",
+        "Historical content trend analysis spanning up to 5 years of web data",
+        "Facebook and YouTube viral content topic discovery"
+      ],
+      "mainLimitation": "Enterprise PR and journalism focus with a high starting price ($199+/mo). Lacks Instagram Reels extraction and creator-relative video outlier detection.",
+      "pricing": {
+        "summary": "Starting from $199/month (Basic plan, billed annually) with a 30-day free trial available.",
+        "model": "Paid (Free Trial)",
+        "startingPrice": "$199/mo",
+        "checkedAt": "October 5, 2026",
+        "sourceUrl": "https://buzzsumo.com/pricing/"
+      },
+      "bestSuitedTo": "PR agencies, content marketers, and media publications researching cross-web viral trends and pitch angles.",
+      "officialUrl": "https://buzzsumo.com"
+    },
+    "sprout-social": {
+      "slug": "sprout-social",
+      "name": "Sprout Social",
+      "category": "Enterprise Social Media Management & Listening",
+      "platforms": ["Instagram", "YouTube", "Facebook", "TikTok", "LinkedIn", "Twitter/X", "Pinterest"],
+      "bestFor": "Enterprise social listening, CRM customer care, and corporate team workflows",
+      "badge": "Best for Enterprise Social Listening & Care",
+      "description": "Sprout Social is an enterprise-grade social media management, social listening, and customer care platform. It provides large corporate marketing organizations with unified customer support inboxes, listening streams, and compliance tools.",
+      "keyCapabilities": [
+        "Enterprise social listening streams tracking brand mentions, sentiment, and share of voice",
+        "Unified Smart Inbox with CRM ticketing integration and customer history",
+        "Multi-tier approval workflows and team collaboration permission controls",
+        "Comprehensive cross-network publishing calendar with asset library management",
+        "Audit-ready executive reporting and paid social advertising attribution"
+      ],
+      "mainLimitation": "Prohibitive pricing for individual creators and video editors ($199 to $399 per user per month). Not built for fast creator ideation or video hook discovery.",
+      "pricing": {
+        "summary": "Standard plan starts at $199/seat/month; Professional at $299/seat/month; Advanced at $399/seat/month, with a 30-day trial.",
+        "model": "Paid (Free Trial)",
+        "startingPrice": "$199/seat/mo",
+        "checkedAt": "October 5, 2026",
+        "sourceUrl": "https://sproutsocial.com/pricing/"
+      },
+      "bestSuitedTo": "Mid-market and enterprise marketing departments needing social listening, corporate compliance, and team customer service inboxes.",
+      "officialUrl": "https://sproutsocial.com"
+    },
+    "buffer": {
+      "slug": "buffer",
+      "name": "Buffer",
+      "category": "Social Publishing & Scheduling Toolkit",
+      "platforms": ["Instagram", "YouTube Shorts", "TikTok", "Facebook", "LinkedIn", "Pinterest", "Twitter/X", "Threads"],
+      "bestFor": "Clean, focused social media scheduling and queue management",
+      "badge": "Best for Affordable Multi-Channel Scheduling",
+      "description": "Buffer is an intuitive social media publishing and scheduling tool that helps creators, solopreneurs, and small teams draft, schedule, and queue posts across modern social networks.",
+      "keyCapabilities": [
+        "Clean, distraction-free visual publishing calendar and automated queue",
+        "Support for Instagram Reels, carousels, stories, and YouTube Shorts auto-publishing",
+        "Start Page feature providing customizable link-in-bio mobile landing pages",
+        "Basic post-publishing engagement analytics and best-time-to-post recommendations",
+        "Affordable per-channel pricing with an accessible permanent free tier"
+      ],
+      "mainLimitation": "Strictly a publishing and scheduling tool; does not analyze competitor feeds, compute creator-relative benchmarks, or detect viral outliers.",
+      "pricing": {
+        "summary": "Permanent Free plan for up to 3 channels (10 scheduled posts/channel). Essentials plan starts from $6/month per channel.",
+        "model": "Freemium",
+        "startingPrice": "$0 / $6/ch/mo",
+        "checkedAt": "October 5, 2026",
+        "sourceUrl": "https://buffer.com/pricing"
+      },
+      "bestSuitedTo": "Creators, freelancers, and small businesses looking for an easy, affordable way to plan and automate their social posting schedule.",
+      "officialUrl": "https://buffer.com"
+    }
+  }
+}

@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2V6BK8R00"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-Y2V6BK8R00");
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "yt23g8xi6k");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Channel &amp; Shorts Outlier Analytics Extension — Rank Kiwi</title>
+    <meta name="description" content="Analyze YouTube channels, benchmark long-form videos and Shorts against median channel views, discover viral anomalies, and download HD thumbnails." />
+    <link rel="canonical" href="https://rankkiwi.com/youtube-analytics/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <meta name="author" content="Bhavishya Singla" />
+    <meta name="date" content="2026-10-05" scheme="YYYY-MM-DD" />
+    <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
+    <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
+    <meta name="theme-color" content="#cbf990" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rankkiwi.com/youtube-analytics/" />
+    <meta property="og:title" content="YouTube Channel &amp; Shorts Outlier Analytics Extension — Rank Kiwi" />
+    <meta property="og:description" content="Analyze YouTube channels, benchmark long-form videos and Shorts against median channel views, discover viral anomalies, and download HD thumbnails." />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/youtube-outliers.png" />
+    <meta property="og:site_name" content="Rank Kiwi" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="YouTube Channel &amp; Shorts Outlier Analytics Extension — Rank Kiwi" />
+    <meta name="twitter:description" content="Analyze YouTube channels, benchmark long-form videos and Shorts against median channel views, discover viral anomalies, and download HD thumbnails." />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/youtube-outliers.png" />
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.min.css" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "name": "Rank Kiwi YouTube Channel & Shorts Analytics",
+          "url": "https://rankkiwi.com/youtube-analytics/",
+          "description": "Free Chrome extension to analyze YouTube channels, benchmark video and Shorts views against median performance, and find breakout viral outliers.",
+          "applicationCategory": "SocialNetworkingApplication, DeveloperApplication",
+          "operatingSystem": "Google Chrome, Chromium",
+          "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Rank Kiwi",
+            "url": "https://rankkiwi.com/"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rankkiwi.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "YouTube Analytics",
+              "item": "https://rankkiwi.com/youtube-analytics/"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does Rank Kiwi analyze YouTube channels?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Rank Kiwi detects when you are on a YouTube channel's Videos or Shorts tab. It extracts upload view counts, calculates the channel's non-skewed median benchmark, and ranks videos by Outlier Score so you can see which uploads genuinely outperformed the creator's typical reach."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I analyze YouTube Shorts separately from long-form videos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. YouTube maintains separate tabs for long-form videos (/videos) and vertical Shorts (/shorts). Rank Kiwi calculates distinct median baselines for each format, ensuring your Shorts metrics are never distorted by long-form view numbers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I download full-resolution YouTube thumbnails?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rank Kiwi includes an automatic thumbnail fetcher that downloads maximum available resolution images (1080p maxresdefault.jpg) directly from YouTube's CDN."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why is sorting by Outlier Score better than sorting by Popular on YouTube?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "YouTube's native Popular sort surfaces videos published 5 or 8 years ago that accumulated views over long time horizons. Rank Kiwi's Outlier Score analyzes recent sample batches (e.g. last 50 uploads) to reveal what is resonating right now relative to current audience size."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need YouTube API keys or an account?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No API keys or YouTube login credentials are required. Rank Kiwi reads the publicly visible DOM elements in your active tab locally in Chrome."
+              }
+            }
+          ]
+        }
+      ]
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+                <!-- SITE HEADER -->
+    <header class="site-header" data-header>
+      <div class="wrap nav">
+        <a class="brand" href="/" aria-label="Rank Kiwi home">
+          <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" fetchpriority="high" />
+          <span>Rank Kiwi</span>
+        </a>
+
+        <div class="nav-links" id="nav-links" data-nav-links>
+          <a href="/#how-it-works">How it works</a>
+          <a href="/#features">Features</a>
+          <a href="/research/">Research</a>
+          <a href="/docs/">Docs</a>
+          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="content-page">
+      <!-- HERO SECTION -->
+      <section class="pillar-hero wrap">
+        <div class="pillar-hero-grid">
+          <div class="pillar-hero-content">
+            <p class="eyebrow"><span class="status-dot"></span> YOUTUBE CHANNEL &amp; SHORTS RESEARCH EXTENSION</p>
+            <h1>Find the YouTube videos that actually outperformed the channel.</h1>
+            <p class="hero-lead">
+              Rank Kiwi analyzes long-form video catalogs and YouTube Shorts, computes channel median views, surfaces high-performing outlier uploads, and lets you download maximum-resolution thumbnails with one click.
+            </p>
+            <div class="pillar-hero-actions">
+              <a data-chrome-link data-cta-name="research_youtube_hero" data-cta-position="hero" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" class="button" target="_blank" rel="noopener">
+                Add to Chrome &mdash; It's Free
+              </a>
+              <a href="/docs/youtube/" data-cta-name="read_youtube_docs" data-cta-position="hero" class="button button-quiet">
+                Read Documentation &rarr;
+              </a>
+            </div>
+            <div class="pillar-trust-strip">
+              <span class="pillar-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Long-Form &amp; Shorts Separated
+              </span>
+              <span class="pillar-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                1080p HD Thumbnails
+              </span>
+              <span class="pillar-trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                No API Keys Needed
+              </span>
+            </div>
+          </div>
+
+          <!-- HERO VISUAL STAGE: YOUTUBE OUTLIER SCANNER -->
+          <div class="pillar-hero-stage">
+            <div class="pillar-visual-card pillar-visual-dark">
+              <div class="pvc-header">
+                <div class="pvc-dots">
+                  <span class="pvc-dot"></span>
+                  <span class="pvc-dot"></span>
+                  <span class="pvc-dot"></span>
+                </div>
+                <span class="pvc-tag">YouTube Outliers &bull; @channel</span>
+              </div>
+              <div class="pvc-body">
+                <div class="score-sim-row">
+                  <div class="sim-info">
+                    <span class="sim-title">Weekly productive habits vlog &amp; workspace tour</span>
+                    <span class="sim-views">82,400 views &bull; Long-form</span>
+                  </div>
+                  <span class="sim-badge typical">1.0&times; Typical</span>
+                </div>
+
+                <div class="score-sim-row">
+                  <div class="sim-info">
+                    <span class="sim-title">iPad setup for deep work &amp; high focus</span>
+                    <span class="sim-views">264,000 views &bull; Long-form</span>
+                  </div>
+                  <span class="sim-badge strong">3.2&times; Strong</span>
+                </div>
+
+                <div class="score-sim-row highlight">
+                  <div class="sim-info">
+                    <span class="sim-title">How I organize my entire life in 2026</span>
+                    <span class="sim-views">895,000 views &bull; Viral Hit</span>
+                  </div>
+                  <span class="sim-badge viral">10.8&times; Breakout Hit</span>
+                </div>
+
+                <div style="padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; color: #a4cca6;">
+                  <span>Channel Median: 82,500 Views</span>
+                  <strong style="color: #cbf990; font-family: var(--font-mono);">1080p HD Thumbnail Saved</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ANSWER FIRST CALLOUT -->
+      <section class="wrap">
+        <div class="pillar-answer-box">
+          <div class="pillar-answer-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            What is Rank Kiwi's YouTube Analysis?
+          </div>
+          <p class="pillar-answer-text">
+            Rank Kiwi is an in-browser creator research workspace that evaluates a YouTube channel's recent uploads against its own median performance baseline. Instead of judging videos by raw subscriber counts, it calculates an <strong>Outlier Score</strong> (e.g. 4.2&times; channel median). This immediately reveals which packaging concepts, titles, and thumbnails generated breakthrough reach, and allows you to download uncompressed 1080p thumbnail images and export clean CSV datasets in seconds.
+          </p>
+        </div>
+      </section>
+
+      <!-- WHY RESEARCH CREATORS -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>Why raw subscribers and views mislead</h2>
+          <p>
+            When researching YouTube competitors, looking only at raw view counts produces severe false positives and false negatives.
+          </p>
+        </div>
+
+        <div class="pillar-card-grid">
+          <div class="pillar-card">
+            <div class="pillar-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3>Channel A: Large Authority</h3>
+            <p>
+              <strong>1,500,000 Subscribers</strong> &bull; Typical video: 120,000 views. A video with 150,000 views here is merely typical baseline distribution (1.2&times;). It does not represent an exceptional packaging breakthrough.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+            </div>
+            <h3>Channel B: Emergent Creator</h3>
+            <p>
+              <strong>25,000 Subscribers</strong> &bull; Typical video: 8,000 views. A video with 85,000 views here is an explosive <strong>10.6&times; Outlier</strong>. That title and thumbnail packaging reached 10&times; beyond their subscriber core.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Recent vs Historical Outliers</h3>
+            <p>
+              YouTube's native "Most Popular" tab surfaces videos uploaded years ago. Rank Kiwi analyzes a recent sample (e.g. last 50 uploads) to show what packaging works in today's algorithmic environment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEPARATE VIDEOS & SHORTS -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>Dedicated Analysis for Long-Form Videos &amp; YouTube Shorts</h2>
+          <p>
+            Long-form and vertical formats have completely different distribution curves. Rank Kiwi treats them as distinct datasets.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px;">
+          <div class="pillar-card" style="padding: 28px;">
+            <span class="pillar-step-badge" style="background: #01370b; color: #cbf990; margin-bottom: 14px;">Long-Form Videos</span>
+            <h3 style="font-size: 17px; margin-bottom: 8px;"><code>youtube.com/@[channel]/videos</code></h3>
+            <p style="margin-bottom: 14px;">
+              Scan the creator's dedicated long-form catalog. Evaluate titles, video duration, published dates, and view counts against channel median.
+            </p>
+            <ul style="color: var(--muted); font-size: 13.5px; line-height: 1.6; padding-left: 20px; margin: 0;">
+              <li>Isolate thumbnail title combinations that drove 3&times;+ outliers</li>
+              <li>Filter by minimum view thresholds (e.g. &gt; 50,000 views)</li>
+              <li>Download full 1920&times;1080 HD thumbnail images</li>
+            </ul>
+          </div>
+
+          <div class="pillar-card" style="padding: 28px;">
+            <span class="pillar-step-badge" style="background: var(--brand-soft); color: var(--kiwi-dark); margin-bottom: 14px;">YouTube Shorts</span>
+            <h3 style="font-size: 17px; margin-bottom: 8px;"><code>youtube.com/@[channel]/shorts</code></h3>
+            <p style="margin-bottom: 14px;">
+              Shorts have high viral velocity but volatile baselines. Rank Kiwi scans the vertical catalog and benchmarks Shorts strictly against other Shorts.
+            </p>
+            <ul style="color: var(--muted); font-size: 13.5px; line-height: 1.6; padding-left: 20px; margin: 0;">
+              <li>Zero distortion from long-form video metrics</li>
+              <li>Rank by view multipliers (e.g. 5&times; or 12&times; baseline)</li>
+              <li>Export hook titles and URLs directly to Google Sheets</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- VISUAL WORKFLOW WITH REAL SHOTS -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>How to Research a YouTube Channel</h2>
+          <p>
+            Real screenshots from the Rank Kiwi YouTube research workspace.
+          </p>
+        </div>
+
+        <div class="pillar-workflow">
+          <div class="pillar-workflow-step">
+            <div>
+              <span class="pillar-step-badge">Step 1 &bull; Open Channel</span>
+              <h3>Open Channel &amp; Launch Scan</h3>
+              <p>
+                Open any YouTube channel Videos or Shorts tab. Click Rank Kiwi to select your sample size (25, 50, or 100 uploads) and launch analysis.
+              </p>
+              <ul>
+                <li>Detects channel handle and tab type automatically</li>
+                <li>Zero login credentials or API keys needed</li>
+              </ul>
+            </div>
+            <div class="annotated-shot-wrap">
+              <span class="shot-badge">Channel Detected</span>
+              <img src="/assets/shots/youtube-detected.webp" alt="Rank Kiwi detected on YouTube channel page" class="annotated-shot-img" width="1280" height="800" loading="lazy" />
+              <p class="shot-caption">Rank Kiwi detects the active channel and prompts for sample depth.</p>
+            </div>
+          </div>
+
+          <div class="pillar-workflow-step">
+            <div>
+              <span class="pillar-step-badge">Step 2 &bull; Benchmark &amp; Save</span>
+              <h3>Sort by Outlier Score &amp; Save Thumbnails</h3>
+              <p>
+                View videos sorted by performance multiple. Click any video to inspect title packaging or download the highest-resolution thumbnail asset.
+              </p>
+              <div style="display: flex; gap: 12px; margin-top: 14px;">
+                <a href="/docs/understanding/outlier-score/" class="button button-small">Learn Outlier Math</a>
+                <a href="/docs/exports/" class="button button-small button-quiet">Export Options</a>
+              </div>
+            </div>
+            <div class="annotated-shot-wrap">
+              <span class="shot-badge">Ranked Outliers Grid</span>
+              <img src="/assets/shots/youtube-outliers.webp" alt="Rank Kiwi YouTube video outliers sorted by score" class="annotated-shot-img" width="1280" height="800" loading="lazy" />
+              <p class="shot-caption">Ranked grid displaying green Outlier Score multiplier pills and view comparisons.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- THUMBNAIL DOWNLOAD FEATURE CALLOUT -->
+      <section class="pillar-section wrap">
+        <div class="pillar-card" style="padding: 28px; border-left: 4px solid var(--kiwi-dark);">
+          <h3 style="font-size: 18px; margin-bottom: 8px;">Save High-Resolution Thumbnail Swipe Files</h3>
+          <p style="margin-bottom: 14px;">
+            Thumbnails represent 50% of YouTube CTR. When you spot an outlier, you can immediately save the creator's upload at maximum resolution via Rank Kiwi's CDN resolution fallback:
+          </p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px;">
+            <div style="background: var(--wash); padding: 10px 14px; border-radius: 8px; font-size: 13px; color: var(--kiwi-dark); font-family: var(--font-mono); border: 1px solid var(--border);">
+              1. maxresdefault.jpg (1920&times;1080)
+            </div>
+            <div style="background: var(--wash); padding: 10px 14px; border-radius: 8px; font-size: 13px; color: var(--kiwi-dark); font-family: var(--font-mono); border: 1px solid var(--border);">
+              2. sddefault.jpg (640&times;480)
+            </div>
+            <div style="background: var(--wash); padding: 10px 14px; border-radius: 8px; font-size: 13px; color: var(--kiwi-dark); font-family: var(--font-mono); border: 1px solid var(--border);">
+              3. hqdefault.jpg (480&times;360)
+            </div>
+          </div>
+          <p style="font-size: 12px; color: var(--caption); margin: 0;">
+            *Saved thumbnails are for analytical, educational, and swipe-file research under fair use. Never re-upload another creator's artwork.
+          </p>
+        </div>
+      </section>
+
+      <!-- TRANSPARENT LIMITATIONS -->
+      <section class="pillar-section wrap">
+        <div class="callout callout-warning" style="background: #ffffff; border-left: 4px solid #b45309; padding: 24px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border: 1px solid var(--border); border-left-width: 4px; border-left-color: #b45309;">
+          <h3 style="margin-top: 0; color: #9a3412;">Transparent YouTube Limitations</h3>
+          <p style="color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">
+            Rank Kiwi parses data publicly accessible from YouTube's desktop web interface:
+          </p>
+          <ul style="color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin: 0 0 16px 20px;">
+            <li><strong>Live Streams:</strong> The <code>/streams</code> tab uses different DOM metadata schemas; Rank Kiwi is designed specifically for <code>/videos</code> and <code>/shorts</code>.</li>
+            <li><strong>Watch Pages:</strong> Analysis must be triggered on channel catalog tabs, not while watching a single video on <code>/watch?v=...</code>.</li>
+            <li><strong>Shorts Comments:</strong> YouTube's channel Shorts grid exposes views and likes in DOM hover states, but comments require opening individual Shorts.</li>
+          </ul>
+          <p style="margin: 0; font-size: 0.9rem;">
+            Read more in our <a href="/docs/youtube/#limitations">YouTube Limitations Reference &rarr;</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section class="pillar-section wrap">
+        <div class="pillar-section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions about researching YouTube channels with Rank Kiwi.</p>
+        </div>
+
+        <div class="pillar-faq-grid">
+          <div class="pillar-faq-card">
+            <h3>How does Rank Kiwi calculate a YouTube channel's median?</h3>
+            <p>
+              Rank Kiwi extracts the view counts of the sampled videos (e.g. 50 videos), sorts them numerically, and selects the exact middle value. This median represents typical performance without being distorted by one viral runaway hit.
+            </p>
+          </div>
+
+          <div class="pillar-faq-card">
+            <h3>Can I analyze YouTube Shorts separately from long-form videos?</h3>
+            <p>
+              Yes. When you open the channel's <code>/shorts</code> tab, Rank Kiwi computes a Shorts-specific median. Your Shorts metrics are never combined with or distorted by long-form video views.
+            </p>
+          </div>
+
+          <div class="pillar-faq-card">
+            <h3>Can I download full-resolution YouTube thumbnails?</h3>
+            <p>
+              Yes. Rank Kiwi includes a direct thumbnail fetcher that retrieves the maximum resolution upload (1080p <code>maxresdefault.jpg</code>) directly from YouTube's media servers.
+            </p>
+          </div>
+
+          <div class="pillar-faq-card">
+            <h3>Why is Outlier Score better than sorting by "Most Popular" on YouTube?</h3>
+            <p>
+              YouTube's native "Most Popular" tab surfaces videos from 6 years ago that accumulated views over half a decade. Rank Kiwi analyzes recent sample batches (e.g. the last 50 uploads) to show what packaging works in today's algorithm.
+            </p>
+          </div>
+
+          <div class="pillar-faq-card">
+            <h3>Do I need YouTube API keys or an account?</h3>
+            <p>
+              No API keys or YouTube account permissions are required. Rank Kiwi reads only the publicly visible DOM elements in your active tab locally in Chrome.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RELATED TOPICS CLUSTER -->
+      <section class="wrap" style="margin-bottom: 48px;">
+        <div class="related-box" style="background: var(--wash); padding: 28px 32px; border-radius: 14px; border: 1px solid var(--border);">
+          <h3 style="margin-top: 0; font-size: 16px; font-weight: 750;">Explore Related Creator Research Guides</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 14px;">
+            <a href="/outlier-score/" style="color: var(--kiwi-dark); text-decoration: none; font-weight: 600; font-size: 14px;">
+              &rarr; Outlier Score Explained
+            </a>
+            <a href="/creator-content-research/" style="color: var(--kiwi-dark); text-decoration: none; font-weight: 600; font-size: 14px;">
+              &rarr; Creator Content Research Framework
+            </a>
+            <a href="/instagram-analytics/" style="color: var(--kiwi-dark); text-decoration: none; font-weight: 600; font-size: 14px;">
+              &rarr; Instagram Creator &amp; Reels Analytics
+            </a>
+            <a href="/docs/youtube/" style="color: var(--kiwi-dark); text-decoration: none; font-weight: 600; font-size: 14px;">
+              &rarr; Full YouTube Documentation
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section class="wrap" style="margin-bottom: 72px;">
+        <div class="cta-box" style="background: #01370b; color: #ffffff; padding: 48px 36px; border-radius: 16px; text-align: center; border: 1px solid rgba(203, 249, 144, 0.25); box-shadow: 0 16px 36px -10px rgba(1, 55, 11, 0.2);">
+          <h2 style="color: #ffffff; margin-top: 0; font-size: clamp(22px, 2.5vw, 30px);">
+            Start researching YouTube channels in seconds.
+          </h2>
+          <p style="color: #cbf990; font-size: 15.5px; max-width: 600px; margin: 0 auto 28px auto; line-height: 1.6;">
+            Install Rank Kiwi for free. Open any YouTube channel and instantly find their breakout videos and viral Shorts.
+          </p>
+          <a data-chrome-link data-cta-name="research_youtube_final" data-cta-position="final" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" class="button" target="_blank" rel="noopener" style="font-size: 1.05rem; padding: 14px 32px;">
+            Add to Chrome &mdash; It's Free
+          </a>
+        </div>
+      </section>
+    </main>
+
+                <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="/" aria-label="Rank Kiwi home">
+            <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" loading="lazy" decoding="async" />
+            <span>Rank Kiwi</span>
+          </a>
+          <p>Research creator profiles and spot viral outlier content on Instagram and YouTube.</p>
+          <div class="footer-socials">
+            <a class="social-icon-link" href="https://www.instagram.com/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://www.linkedin.com/in/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://www.youtube.com/@bhavishyasingla1" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener" aria-label="Bhavishya Singla Website">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <b>Product</b>
+          <a href="/">Home</a>
+          <a href="/instagram-analytics/">Instagram Analytics</a>
+          <a href="/youtube-analytics/">YouTube Analytics</a>
+          <a href="/outlier-score/">Outlier Score</a>
+          <a href="/creator-content-research/">Creator Research</a>
+        </div>
+
+        <div>
+          <b>Learn &amp; Docs</b>
+          <a href="/docs/">Documentation</a>
+          <a href="/docs/getting-started/">Getting Started</a>
+          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
+          <a href="/docs/troubleshooting/">Troubleshooting</a>
+          <a href="/docs/exports/">Exports Guide</a>
+        </div>
+
+        <div>
+          <b>Research &amp; Compare</b>
+          <a href="/research/">Research Hub</a>
+          <a href="/research/methodology/">Methodology</a>
+          <a href="/compare/">Tool Comparisons</a>
+          <a href="/alternatives/">Alternatives Hub</a>
+          <a href="/best/">Best Software Guides</a>
+        </div>
+
+        <div>
+          <b>Legal &amp; Support</b>
+          <a href="/support/">Help &amp; Support</a>
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>&copy; 2026 Rank Kiwi. Not affiliated with Meta, Instagram, Google, or YouTube.</p>
+        <p>Made with <span class="footer-heart">&#10084;&#65039;</span> by <a class="author-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener">Bhavishya Singla</a></p>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

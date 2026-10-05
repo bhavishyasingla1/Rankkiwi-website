@@ -1,0 +1,212 @@
+{
+  "$schema": "https://rankkiwi.com/schemas/cro-experiments-v1.json",
+  "version": "1.0.0",
+  "framework": {
+    "prioritisation": "ICE (Impact 1-10, Confidence 1-10, Ease 1-10, Score = (I + C + E) / 3)",
+    "rules": [
+      "Test one major lever at a time (positioning, hero clarity, benefit-led CTA copy).",
+      "Do not A/B test critical crawlable SEO elements (H1, canonicals, robots, schema markup).",
+      "Assign variants client-side with zero layout shift and preserve variant across session in localStorage.",
+      "Track experiment assignment via 'experiment_assigned' event and include experiment_id and variant in all conversion events.",
+      "Require adequate sample size before declaring winners; label low-volume results as directional signals."
+    ]
+  },
+  "experiments": [
+    {
+      "id": "exp_hp_hero_cta_v1",
+      "name": "Homepage Hero CTA Benefit-First Copy",
+      "priority": "P2",
+      "status": "running",
+      "ice": {
+        "impact": 8,
+        "confidence": 8,
+        "ease": 9,
+        "score": 8.33
+      },
+      "page": "/",
+      "element": ".hero-actions [data-chrome-link]",
+      "hypothesis": "Changing the homepage hero primary CTA from generic 'Add to Chrome' to 'Try Rank Kiwi — Free' or 'Research Outliers Free' communicates immediate zero-friction value, increasing outbound webstore click-through rates.",
+      "variants": {
+        "control": {
+          "label": "Add to Chrome",
+          "ariaLabel": "Add Rank Kiwi to Chrome"
+        },
+        "treatment": {
+          "label": "Try Rank Kiwi — Free",
+          "ariaLabel": "Try Rank Kiwi Free on the Chrome Web Store"
+        }
+      },
+      "primaryMetric": "webstore_click_rate",
+      "secondaryMetrics": [
+        "website_cta_click_rate",
+        "scroll_depth_50_pct"
+      ],
+      "guardrailMetrics": [
+        "bounce_rate",
+        "time_on_page"
+      ],
+      "startDate": "2026-10-05",
+      "trafficSplit": "50/50"
+    },
+    {
+      "id": "exp_ig_hero_cta_v1",
+      "name": "Instagram Landing Page Intent-Matched Hero CTA",
+      "priority": "P2",
+      "status": "planned",
+      "ice": {
+        "impact": 9,
+        "confidence": 8,
+        "ease": 9,
+        "score": 8.67
+      },
+      "page": "/instagram-analytics/",
+      "element": ".hero-actions [data-chrome-link]",
+      "hypothesis": "Visitors landing on /instagram-analytics/ are specifically seeking Instagram Reels and profile performance tools. Changing CTA copy to 'Research Instagram Outliers' will outperform generic copy by directly confirming search-intent match.",
+      "variants": {
+        "control": {
+          "label": "Add to Chrome",
+          "ariaLabel": "Add Rank Kiwi to Chrome"
+        },
+        "treatment": {
+          "label": "Research Instagram Outliers",
+          "ariaLabel": "Install Rank Kiwi to Research Instagram Outliers"
+        }
+      },
+      "primaryMetric": "webstore_click_rate",
+      "secondaryMetrics": [
+        "docs_click_rate",
+        "outlier_score_view_rate"
+      ],
+      "guardrailMetrics": [
+        "bounce_rate"
+      ],
+      "startDate": "2026-10-12",
+      "trafficSplit": "50/50"
+    },
+    {
+      "id": "exp_yt_hero_cta_v1",
+      "name": "YouTube Landing Page Intent-Matched Hero CTA",
+      "priority": "P2",
+      "status": "planned",
+      "ice": {
+        "impact": 8,
+        "confidence": 8,
+        "ease": 9,
+        "score": 8.33
+      },
+      "page": "/youtube-analytics/",
+      "element": ".hero-actions [data-chrome-link]",
+      "hypothesis": "Framing the primary action as 'Research YouTube Outliers' rather than generic installation will increase conversion from channel managers and creators seeking breakout Shorts/video ideas.",
+      "variants": {
+        "control": {
+          "label": "Add to Chrome",
+          "ariaLabel": "Add Rank Kiwi to Chrome"
+        },
+        "treatment": {
+          "label": "Research YouTube Outliers",
+          "ariaLabel": "Install Rank Kiwi to Research YouTube Outliers"
+        }
+      },
+      "primaryMetric": "webstore_click_rate",
+      "secondaryMetrics": [
+        "docs_click_rate"
+      ],
+      "guardrailMetrics": [
+        "page_engagement"
+      ],
+      "startDate": "2026-10-12",
+      "trafficSplit": "50/50"
+    },
+    {
+      "id": "exp_compare_decision_cta_v1",
+      "name": "Comparison Pages Decision-Stage Value Proposition",
+      "priority": "P2",
+      "status": "planned",
+      "ice": {
+        "impact": 8,
+        "confidence": 7,
+        "ease": 8,
+        "score": 7.67
+      },
+      "page": "/compare/*",
+      "element": ".final-cta [data-chrome-link]",
+      "hypothesis": "Visitors reading comparison matrices are in an active evaluation state. Emphasizing 'Try Free Without Account' in the comparison decision CTA reduces perceived trial friction compared to standard copy.",
+      "variants": {
+        "control": {
+          "label": "Add to Chrome",
+          "ariaLabel": "Add Rank Kiwi to Chrome"
+        },
+        "treatment": {
+          "label": "Try Free — No Account Needed",
+          "ariaLabel": "Try Rank Kiwi Free without an account on Chrome Web Store"
+        }
+      },
+      "primaryMetric": "webstore_click_rate",
+      "secondaryMetrics": [
+        "faq_expand_rate"
+      ],
+      "guardrailMetrics": [
+        "bounce_rate"
+      ],
+      "startDate": "2026-10-19",
+      "trafficSplit": "50/50"
+    },
+    {
+      "id": "exp_best_of_mid_cta_v1",
+      "name": "Best-of Editorial Pages Contextual Decision Placement",
+      "priority": "P3",
+      "status": "planned",
+      "ice": {
+        "impact": 7,
+        "confidence": 7,
+        "ease": 7,
+        "score": 7.00
+      },
+      "page": "/best-*",
+      "element": ".best-mid-action",
+      "hypothesis": "Adding a lightweight contextual action block immediately following the evaluation criteria table (before the full tool reviews) allows high-intent visitors who already know their requirement to convert without scrolling past 6 lengthy reviews.",
+      "variants": {
+        "control": {
+          "presence": "hidden"
+        },
+        "treatment": {
+          "presence": "visible"
+        }
+      },
+      "primaryMetric": "webstore_click_rate",
+      "secondaryMetrics": [
+        "scroll_depth_75_pct"
+      ],
+      "guardrailMetrics": [
+        "average_session_duration"
+      ],
+      "startDate": "2026-10-26",
+      "trafficSplit": "50/50"
+    }
+  ],
+  "changelog": [
+    {
+      "date": "2026-10-05",
+      "type": "system_initialisation",
+      "description": "Established Phase 9 continuous CRO architecture, telemetry dispatcher, taxonomy, objection matrix, and initial ICE-prioritised experiment backlog.",
+      "author": "Bhavishya Singla"
+    }
+  ],
+  "doNotTestAgain": [
+    {
+      "concept": "Aggressive modal popups upon page load",
+      "reason": "Destroys user trust, degrades Core Web Vitals (CLS/INP), causes search crawler penalties, and violates Rank Kiwi's privacy-first brand principle.",
+      "status": "prohibited"
+    },
+    {
+      "concept": "Fake countdown timers or artificial scarcity claims",
+      "reason": "Rank Kiwi is genuinely $0/mo free software; deceptive scarcity undermines credibility with creator and developer audiences.",
+      "status": "prohibited"
+    },
+    {
+      "concept": "A/B testing indexable H1s or canonical tags",
+      "reason": "Causes search engine crawler churn, duplicate title flags, and ranking instability across organic search queries.",
+      "status": "prohibited"
+    }
+  ]
+}

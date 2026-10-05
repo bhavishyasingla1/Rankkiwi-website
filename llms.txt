@@ -4,16 +4,73 @@
 
 ## Core Capabilities
 
-- [Instagram Reels Outlier Discovery](https://rankkiwi.com/#creator-outliers): Scans reels and posts across any Instagram profile, computes view-to-median Outlier Scores, and highlights anomaly content.
-- [YouTube Outlier Discovery](https://rankkiwi.com/#creator-outliers): Analyzes channel video catalogs and YouTube Shorts, filtering top 1% breakout uploads.
-- [Median Benchmark Scoring](https://rankkiwi.com/#outlier-score): Calculates non-skewed median metrics (1.0× typical, 3.2× strong, 5.8×+ viral outlier) to eliminate distortion from one-off viral hits.
-- [Data Export](https://rankkiwi.com/#features): One-click export of video URLs, hooks, view counts, like ratios, and outlier scores to CSV, JSON, and Google Sheets.
+- [Instagram Reels Outlier Discovery](https://rankkiwi.com/instagram-analytics/): Scans reels and posts across any Instagram profile, computes view-to-median Outlier Scores, and highlights anomaly content.
+- [YouTube Outlier Discovery](https://rankkiwi.com/youtube-analytics/): Analyzes channel video catalogs and YouTube Shorts, filtering top 1% breakout uploads.
+- [Median Benchmark Scoring](https://rankkiwi.com/outlier-score/): Calculates non-skewed median metrics (1.0× typical, 3.2× strong, 5.8×+ viral outlier) to eliminate distortion from one-off viral hits.
+- [Creator Content Research](https://rankkiwi.com/creator-content-research/): Reverse-engineers competitor content strategies, packaging patterns, and high-frequency topics.
+- [Data Export](https://rankkiwi.com/docs/exports/): One-click export of video URLs, hooks, view counts, like ratios, and outlier scores to CSV, JSON, and Google Sheets.
 - [Client-Side Privacy](https://rankkiwi.com/privacy/): 100% in-browser processing in the Chrome sandbox with zero database retention, zero external API tracking, and no account or password required.
 
 ## Key Links & Documentation
 
 - [Website & Chrome Install](https://rankkiwi.com/): Official home and install link.
-- [Documentation & User Guide](https://rankkiwi.com/docs/): Complete guide on workflow, Outlier Score formula, and keyboard shortcuts.
+- [Instagram Analytics Solution](https://rankkiwi.com/instagram-analytics/): Dedicated Instagram Reels & Profile intelligence.
+- [YouTube Analytics Solution](https://rankkiwi.com/youtube-analytics/): Dedicated YouTube Channel & Shorts intelligence.
+- [Outlier Score Guide](https://rankkiwi.com/outlier-score/): Formula explanation and benchmarking tiers.
+- [Creator Research Guide](https://rankkiwi.com/creator-content-research/): Competitor analysis and reverse-engineering workflows.
+- [Documentation & Knowledge Hub](https://rankkiwi.com/docs/): Complete documentation portal.
+- [Getting Started & Workspace Tour](https://rankkiwi.com/docs/getting-started/): Extension setup, pinning, and workspace tour.
+- [Your First Analysis Guide](https://rankkiwi.com/docs/getting-started/your-first-analysis/): 9-step beginner creator analysis walkthrough.
+- [Instagram Research Guide](https://rankkiwi.com/docs/instagram/): Reels vs profile metrics, filters, and platform limits.
+- [YouTube Research Guide](https://rankkiwi.com/docs/youtube/): Videos and Shorts research, and thumbnail downloads.
+- [Outlier Score Explained](https://rankkiwi.com/docs/understanding/outlier-score/): Mathematical formula and median benchmarks.
+- [Sorting & Filtering](https://rankkiwi.com/docs/understanding/sorting-filtering/): Sorting dimensions and multi-attribute filters.
+- [Content Research Blueprint](https://rankkiwi.com/docs/workflows/content-research/): 6-step reverse-engineering workflow.
+- [Export & Media Downloads](https://rankkiwi.com/docs/exports/): CSV, JSON, and media download procedures.
+- [Troubleshooting & Diagnostics](https://rankkiwi.com/docs/troubleshooting/): Visual decision tree and 12 symptom guides.
 - [Privacy Policy](https://rankkiwi.com/privacy/): Details client-side sandboxed architecture.
 - [Support & Contact](https://rankkiwi.com/support/): Reach founder Bhavishya Singla at say@hibhavishya.in.
+
+## Research & Editorial Benchmarks
+
+- [Rank Kiwi Research Hub](https://rankkiwi.com/research/): Original quantitative research into content performance and distribution outliers.
+- [Research Methodology](https://rankkiwi.com/research/methodology/): Data transparency standards, derived value rules, and editorial principles.
+- [Instagram Reels vs Carousels Benchmark](https://rankkiwi.com/research/instagram-reels-vs-carousels/): Analysis of Buffer's 4M+ post study on the reach vs engagement trade-off.
+- [Instagram Views by Account Size](https://rankkiwi.com/research/instagram-views-by-account-size/): Socialinsider benchmark evaluating average view scaling across 5 follower tiers.
+- [One Video Doesn't Tell You How Good a Creator Is](https://rankkiwi.com/research/one-video-is-not-a-channel/): vidIQ study of 448K channels showing 10.82× spread between median first video and best of first 10.
+- [YouTube Upload Frequency Analysis](https://rankkiwi.com/research/youtube-upload-frequency/): vidIQ study of 10.2M channels analyzing upload cadence vs median growth rates.
+- [YouTube Channel Size Rarity Census](https://rankkiwi.com/research/youtube-channel-size/): 61.2M channel census detailing milestone rarity (0.13% at 1M+ subs).
+
+## Product Comparisons & Competitive Positioning
+
+- [Comparison Hub](https://rankkiwi.com/compare/): Editorial comparison directory evaluating creator research and social analytics tools.
+- [Rank Kiwi vs Sort Feed](https://rankkiwi.com/compare/rank-kiwi-vs-sort-feed/): Direct creator research extension comparison (Instagram/YouTube focus vs TikTok/Facebook/transcription).
+- [Rank Kiwi vs Socialinsider](https://rankkiwi.com/compare/rank-kiwi-vs-socialinsider/): In-browser creator research vs enterprise multi-channel social benchmarking suites.
+- [Rank Kiwi vs Metricool](https://rankkiwi.com/compare/rank-kiwi-vs-metricool/): Creator research & outlier discovery vs all-in-one social scheduling and publishing suites.
+- [Rank Kiwi vs Viewstats](https://rankkiwi.com/compare/rank-kiwi-vs-viewstats/): Cross-platform free browser research vs deep YouTube-only intelligence and thumbnail search.
+- [Rank Kiwi vs YouTube Studio](https://rankkiwi.com/compare/rank-kiwi-vs-youtube-studio/): Public creator competitor research vs private owned-channel first-party analytics.
+
+## Tool Alternatives & Category Directories
+
+- [Alternatives Hub](https://rankkiwi.com/alternatives/): Central directory of creator research, social analytics, and video intelligence tool alternatives.
+- [Sort Feed Alternatives](https://rankkiwi.com/alternatives/sort-feed/): Alternatives to Sort Feed for Instagram and YouTube content research, outlier sorting, and transcription.
+- [Socialinsider Alternatives](https://rankkiwi.com/alternatives/socialinsider/): Alternatives to Socialinsider for competitive benchmarking, creator analytics, and content research.
+- [Metricool Alternatives](https://rankkiwi.com/alternatives/metricool/): Alternatives to Metricool for social media management, competitor tracking, and content research workflows.
+- [Viewstats Alternatives](https://rankkiwi.com/alternatives/viewstats/): Alternatives to Viewstats for YouTube analytics, outlier discovery, and creator research.
+- [YouTube Studio Alternatives](https://rankkiwi.com/alternatives/youtube-studio/): Alternatives to YouTube Studio for public creator competitor research and video intelligence outside your own channel.
+
+## Best-of Editorial Research & Category Evaluations
+
+- [Best Tools Hub](https://rankkiwi.com/best/): Central directory of editorial evaluations and category reviews for social media research.
+- [Best Instagram Analytics Tools](https://rankkiwi.com/best-instagram-analytics-tools/): Evaluating Instagram Insights, Socialinsider, Metricool, and Rank Kiwi across own analytics, benchmarking, and research.
+- [Best Instagram Content Research Tools](https://rankkiwi.com/best-instagram-content-research-tools/): Dedicated guide for finding high-performing Instagram Reels, creator outliers, and viral hooks.
+- [Best YouTube Analytics Tools](https://rankkiwi.com/best-youtube-analytics-tools/): Distinguishing native YouTube Studio retention telemetry from Viewstats, vidIQ, and Rank Kiwi competitor tracking.
+- [Best YouTube Content Research Tools](https://rankkiwi.com/best-youtube-content-research-tools/): Evaluating Viewstats, Rank Kiwi, vidIQ, and TubeBuddy for finding breakout videos, thumbnail ideas, and outliers.
+- [Best Social Media Competitor Analysis Tools](https://rankkiwi.com/best-social-media-competitor-analysis-tools/): Multi-brand competitive benchmarking and content intelligence across Socialinsider, Metricool, Sprout Social, and Rank Kiwi.
+- [Best Tools for Finding High-Performing Content](https://rankkiwi.com/best-high-performing-content-research-tools/): Why raw views mislead and how normalized Outlier Scores surface genuine format breakthroughs.
+- [Best Content Research Tools for Creators](https://rankkiwi.com/best-content-research-tools-for-creators/): Tools organized by creator jobs: video ideas, hook breakdowns, YouTube SEO keywords, and packaging.
+- [Best Free Content Research Tools](https://rankkiwi.com/best-free-content-research-tools/): Distinguishing 100% free software from limited freemium tiers and 14-day trials.
+
 - [Full LLM Specification](https://rankkiwi.com/llms-full.txt): Detailed unabridged system documentation for AI agents and LLM web retrievers.
+
+

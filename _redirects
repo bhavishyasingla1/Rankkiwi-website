@@ -1,0 +1,7 @@
+# Rank Kiwi Cloudflare Pages Redirects
+# Format: <source> <destination> <status>
+
+/help /docs/ 301
+/help/* /docs/troubleshooting/ 301
+/faq /docs/troubleshooting/ 301
+/install https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb 302

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://rankkiwi.com/schemas/distribution-outreach-v1.json",
+  "version": "1.0.0",
+  "description": "Target Segments, Outreach Schema, and Digital PR Workflow for Research Citations and Backlinks.",
+  "principles": [
+    "Pitch findings, not generic product announcements ('Our analysis of 448k channels found X' vs 'We built Rank Kiwi').",
+    "Never mass-email unsolicited pitches or buy spam link packages.",
+    "Offer genuine utility: downloadable charts, clean CSV datasets, methodology notes, and expert analysis.",
+    "Respect journalist and educator time with crisp, 150-word personalized pitches."
+  ],
+  "targetSegments": [
+    {
+      "segmentId": "creator_economy_newsletters",
+      "name": "Creator Economy & Social Strategy Newsletters",
+      "description": "Weekly industry publications curating social platform changes, algorithm updates, and empirical creator studies.",
+      "recommendedAsset": "/research/one-video-is-not-a-channel/ and /research/instagram-reels-vs-carousels/",
+      "valueProposition": "Exclusive data chart and early summary of creator benchmarking studies."
+    },
+    {
+      "segmentId": "youtube_growth_educators",
+      "name": "YouTube Educators & Podcast Hosts",
+      "description": "Content creators and coaches teaching video strategy, title/thumbnail packaging, and channel growth.",
+      "recommendedAsset": "/youtube-analytics/ and /docs/understanding/outlier-score/",
+      "valueProposition": "Actionable methodology for isolating viral video concepts without enterprise software fees."
+    },
+    {
+      "segmentId": "instagram_marketing_consultants",
+      "name": "Instagram Strategists & Social Agencies",
+      "description": "Boutique agency owners and consultants auditing client profiles and producing competitive benchmarks.",
+      "recommendedAsset": "/instagram-analytics/ and /docs/exports/",
+      "valueProposition": "Instant CSV export workflow for client pitch decks and competitive audits."
+    },
+    {
+      "segmentId": "data_journalism_publications",
+      "name": "Tech & Marketing Trade Publications",
+      "description": "Reporters covering digital marketing trends, creator economy dynamics, and social media analytics.",
+      "recommendedAsset": "/research/youtube-channel-size/ and /research/methodology/",
+      "valueProposition": "Rigorous, peer-reviewed methodology and high-resolution embeddable charts."
+    }
+  ],
+  "contactsDatabase": [
+    {
+      "contactId": "lead_001",
+      "organization": "Creator Science Digest",
+      "role": "Lead Editor",
+      "topic": "Creator benchmarking and analytics methodology",
+      "relevance": "High — regularly covers quantitative studies of social platforms.",
+      "assetOfInterest": "/research/one-video-is-not-a-channel/",
+      "status": "planned",
+      "notes": "Share 10.82x multiplier chart and methodology documentation."
+    },
+    {
+      "contactId": "lead_002",
+      "organization": "Modern Social Strategist",
+      "role": "Newsletter Author",
+      "topic": "Instagram Reels vs Carousels format effectiveness",
+      "relevance": "High — audience consists of 15k agency social media managers.",
+      "assetOfInterest": "/research/instagram-reels-vs-carousels/",
+      "status": "planned",
+      "notes": "Offer embeddable save rate vs reach comparison graphic."
+    },
+    {
+      "contactId": "lead_003",
+      "organization": "Tubepreneur Weekly",
+      "role": "Founder & Editor",
+      "topic": "YouTube channel catalog auditing and outlier detection",
+      "relevance": "High — focuses on operational tools for professional creators.",
+      "assetOfInterest": "/best-youtube-content-research-tools/",
+      "status": "planned",
+      "notes": "Demonstrate in-browser feed sorting and max-res thumbnail downloads."
+    }
+  ]
+}

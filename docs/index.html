@@ -1,6 +1,24 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2V6BK8R00"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-Y2V6BK8R00");
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "yt23g8xi6k");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Docs: Rank Kiwi Extension Documentation</title>
@@ -80,18 +98,19 @@
   <body>
     <a class="skip-link" href="#docs-content">Skip to content</a>
 
+                <!-- SITE HEADER -->
     <header class="site-header" data-header>
       <div class="wrap nav">
         <a class="brand" href="/" aria-label="Rank Kiwi home">
-          <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="26" height="26" />
+          <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" fetchpriority="high" />
           <span>Rank Kiwi</span>
         </a>
 
         <div class="nav-links" id="nav-links" data-nav-links>
           <a href="/#how-it-works">How it works</a>
           <a href="/#features">Features</a>
-          <a href="/#pricing">Pricing</a>
-          <a href="/docs/" class="active" style="color: var(--kiwi-dark); font-weight: 700;">Docs</a>
+          <a href="/research/">Research</a>
+          <a href="/docs/">Docs</a>
           <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
@@ -107,10 +126,138 @@
     </header>
 
     <main class="docs-wrapper wrap">
+      
+
       <div class="docs-header-bar">
-        <p class="eyebrow">DOCUMENTATION</p>
-        <h1>Docs</h1>
-        <p>Rank Kiwi features, supported platforms, sorting, exporting, and how to use the extension.</p>
+        <p class="eyebrow"><span class="status-dot"></span> DOCUMENTATION &amp; HELP CENTER</p>
+        <h1>Rank Kiwi Documentation</h1>
+        <p>Complete guide to creator research, Outlier Score calculations, Instagram &amp; YouTube analysis, exports, and troubleshooting.</p>
+      </div>
+
+      <!-- INTERACTIVE SEARCH BAR -->
+      <div class="docs-search">
+        <div class="docs-search-input-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input 
+            type="search" 
+            class="docs-search-input" 
+            placeholder="Search documentation (e.g. 'Reels', 'Outlier Score', 'CSV', 'not working')..." 
+            aria-label="Search documentation"
+            data-docs-search-input
+            autocomplete="off"
+          />
+        </div>
+        <div class="docs-search-results" data-docs-search-results aria-live="polite"></div>
+      </div>
+
+      <!-- 5-MINUTE QUICK START -->
+      <div class="quickstart-box">
+        <p class="eyebrow" style="margin-bottom: 6px;"><span class="status-dot"></span> 5-MINUTE QUICK START</p>
+        <h2>How to use Rank Kiwi in 5 steps</h2>
+        <p style="margin: 0; font-size: 13px; color: var(--muted);">Follow this simple research loop to spot high-performing creator outliers in minutes.</p>
+        <div class="quickstart-steps">
+          <div class="quickstart-step">
+            <strong>01. Install</strong>
+            Add to Chrome and pin the extension in your browser bar.
+          </div>
+          <div class="quickstart-step">
+            <strong>02. Open Creator</strong>
+            Navigate to an Instagram creator or YouTube channel.
+          </div>
+          <div class="quickstart-step">
+            <strong>03. Analyze</strong>
+            Select your sample size (25, 50, or 100) and click Analyze.
+          </div>
+          <div class="quickstart-step">
+            <strong>04. Sort</strong>
+            Sort by Outlier Score to surface posts that beat typical median views.
+          </div>
+          <div class="quickstart-step">
+            <strong>05. Export</strong>
+            Export video links, metrics, and captions to CSV or clipboard.
+          </div>
+        </div>
+      </div>
+
+      <!-- DOCUMENTATION CATEGORIES -->
+      <div class="docs-category-grid">
+        <div class="docs-category-card">
+          <div class="docs-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <h3>Getting Started</h3>
+          <p>Install the extension, tour the workspace UI, and follow your first complete creator analysis.</p>
+          <ul class="docs-cat-links">
+            <li><a href="/docs/getting-started/">Quickstart &amp; Installation</a></li>
+            <li><a href="/docs/getting-started/your-first-analysis/">Your First Analysis Walkthrough</a></li>
+            <li><a href="/docs/getting-started/#workspace">Workspace UI Tour</a></li>
+          </ul>
+        </div>
+
+        <div class="docs-category-card">
+          <div class="docs-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </div>
+          <h3>Instagram Research</h3>
+          <p>Learn how to analyze Instagram profiles, Reels tabs, metrics availability, and platform DOM limits.</p>
+          <ul class="docs-cat-links">
+            <li><a href="/docs/instagram/">Instagram Research Overview</a></li>
+            <li><a href="/docs/instagram/#reels">Reels vs Profile Grid Analysis</a></li>
+            <li><a href="/docs/instagram/#metrics">Metrics Reference Table</a></li>
+          </ul>
+        </div>
+
+        <div class="docs-category-card">
+          <div class="docs-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+          </div>
+          <h3>YouTube Research</h3>
+          <p>Analyze YouTube channels, benchmark long-form uploads, examine Shorts, and download thumbnails.</p>
+          <ul class="docs-cat-links">
+            <li><a href="/docs/youtube/">YouTube Research Overview</a></li>
+            <li><a href="/docs/youtube/#shorts">Analyzing YouTube Shorts</a></li>
+            <li><a href="/docs/youtube/#metrics">Metrics &amp; Thumbnail Downloads</a></li>
+          </ul>
+        </div>
+
+        <div class="docs-category-card">
+          <div class="docs-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Outlier Score &amp; Math</h3>
+          <p>Deep dive into creator-relative median baselines, statistical formulas, and interpretation rules.</p>
+          <ul class="docs-cat-links">
+            <li><a href="/docs/understanding/outlier-score/">Outlier Score Formula &amp; Median</a></li>
+            <li><a href="/docs/understanding/sorting-filtering/">Sorting &amp; Custom Filters</a></li>
+            <li><a href="/docs/understanding/outlier-score/#what-it-does-not-mean">What Outlier Score Does NOT Mean</a></li>
+          </ul>
+        </div>
+
+        <div class="docs-category-card">
+          <div class="docs-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <h3>Exports &amp; Workflows</h3>
+          <p>Export clean data to Google Sheets, CSV, or JSON, and study practical creator research workflows.</p>
+          <ul class="docs-cat-links">
+            <li><a href="/docs/exports/">CSV, JSON &amp; Clipboard Export</a></li>
+            <li><a href="/docs/workflows/content-research/">Content Research Blueprint</a></li>
+            <li><a href="/docs/exports/#downloads">Reel &amp; Thumbnail Downloads</a></li>
+          </ul>
+        </div>
+
+        <div class="docs-category-card">
+          <div class="docs-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>Troubleshooting Center</h3>
+          <p>Interactive diagnostics and symptom-specific fixes for missing buttons, stuck scans, and metrics.</p>
+          <ul class="docs-cat-links">
+            <li><a href="/docs/troubleshooting/">Troubleshooting Decision Tree</a></li>
+            <li><a href="/docs/troubleshooting/#not-appearing">Rank Kiwi Not Appearing</a></li>
+            <li><a href="/docs/troubleshooting/#missing-metrics">Missing Metrics &amp; Views Showing 0</a></li>
+          </ul>
+        </div>
       </div>
 
       <div class="docs-container">
@@ -185,6 +332,15 @@
             <div class="docs-nav-title">Privacy</div>
             <ul class="docs-nav-list">
               <li><a href="#privacy-handling" class="docs-nav-link">How Rank Kiwi handles data</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Troubleshooting</div>
+            <ul class="docs-nav-list">
+              <li><a href="#troubleshooting" class="docs-nav-link">Overview &amp; Diagnostics</a></li>
+              <li><a href="#troubleshoot-missing-button" class="docs-nav-link">Button not appearing</a></li>
+              <li><a href="#troubleshoot-zero-metrics" class="docs-nav-link">Missing metrics</a></li>
             </ul>
           </div>
 
@@ -499,6 +655,71 @@
             <p>Read the complete <a href="/privacy/" style="color: var(--green); text-decoration: underline;">Privacy Policy</a> for full disclosures.</p>
           </article>
 
+          <!-- TROUBLESHOOTING -->
+          <article class="docs-article" id="troubleshooting">
+            <p class="eyebrow">TROUBLESHOOTING</p>
+            <h2>Troubleshooting &amp; Diagnostics</h2>
+            <p class="docs-lead">Step-by-step guidance for resolving common extension issues on Instagram and YouTube.</p>
+
+            <div class="troubleshoot-block" id="troubleshoot-missing-button">
+              <div class="troubleshoot-header">
+                <span class="troubleshoot-tag">Issue 01</span>
+                <h3 style="margin: 0; font-size: var(--text-base);">Rank Kiwi overlay or panel does not appear on profile</h3>
+              </div>
+              <div class="troubleshoot-section">
+                <h4>Problem &amp; Symptoms</h4>
+                <p>Navigating to an Instagram profile or YouTube channel shows no Rank Kiwi analysis overlay or sidebar trigger.</p>
+              </div>
+              <div class="troubleshoot-section">
+                <h4>Why It Happens</h4>
+                <p>Chrome may have restricted extension access, the page may still be loading dynamic scripts, or the URL might not match supported surfaces (e.g. an Instagram feed post modal rather than a profile grid).</p>
+              </div>
+              <div class="troubleshoot-section">
+                <h4>Exact Fix</h4>
+                <ol class="troubleshoot-fix-list">
+                  <li>Confirm you are on a profile URL (e.g. <code>instagram.com/username/</code> or <code>youtube.com/@channel/videos</code>).</li>
+                  <li>Click the puzzle icon in Chrome's toolbar and ensure Rank Kiwi is pinned and enabled.</li>
+                  <li>Reload the page using <code>Cmd + Shift + R</code> (Mac) or <code>Ctrl + F5</code> (Windows).</li>
+                </ol>
+              </div>
+              <div class="troubleshoot-section">
+                <h4>If That Did Not Work</h4>
+                <p>Open <code>chrome://extensions</code>, toggle Rank Kiwi off and on again, and verify Chrome permissions are set to "On all sites" or "When you click the extension".</p>
+              </div>
+              <div class="troubleshoot-section">
+                <h4>When to Contact Support</h4>
+                <p>If platform layout updates break button rendering, email <a href="mailto:say@hibhavishya.in" style="color: var(--green); text-decoration: underline;">say@hibhavishya.in</a> with your Chrome version.</p>
+              </div>
+            </div>
+
+            <div class="troubleshoot-block" id="troubleshoot-zero-metrics">
+              <div class="troubleshoot-header">
+                <span class="troubleshoot-tag">Issue 02</span>
+                <h3 style="margin: 0; font-size: var(--text-base);">Analysis completes but shows 0 views or incomplete metrics</h3>
+              </div>
+              <div class="troubleshoot-section">
+                <h4>Problem &amp; Symptoms</h4>
+                <p>Outlier Score shows <code>1.0×</code> across all items or view counts display as empty.</p>
+              </div>
+              <div class="troubleshoot-section">
+                <h4>Why It Happens</h4>
+                <p>For Instagram feed grids, Instagram hides public view counts on non-video photos. Additionally, newly published posts with zero views distort calculations if not enough posts are sampled.</p>
+              </div>
+              <div class="troubleshoot-section">
+                <h4>Exact Fix</h4>
+                <ol class="troubleshoot-fix-list">
+                  <li>On Instagram, switch directly to the creator's <strong>/reels/</strong> tab where view counts are publicly visible.</li>
+                  <li>Increase your sample size to at least 25 or 50 posts so the median calculation has a valid statistical baseline.</li>
+                  <li>Ensure the creator profile is public; private accounts do not expose metrics to browser extensions.</li>
+                </ol>
+              </div>
+              <div class="troubleshoot-section">
+                <h4>When to Contact Support</h4>
+                <p>Visit our <a href="/support/" style="color: var(--green); text-decoration: underline;">Support Page</a> or reach out directly if platform DOM updates require a parser update.</p>
+              </div>
+            </div>
+          </article>
+
           <!-- FAQ -->
           <article class="docs-article" id="faq-docs">
             <p class="eyebrow">FAQ</p>
@@ -516,14 +737,15 @@
       </div>
     </main>
 
+                <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
           <a class="brand" href="/" aria-label="Rank Kiwi home">
-            <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="26" height="26" />
+            <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" loading="lazy" decoding="async" />
             <span>Rank Kiwi</span>
           </a>
-          <p>Research top creator profiles and find viral outliers on Instagram &amp; YouTube.</p>
+          <p>Research creator profiles and spot viral outlier content on Instagram and YouTube.</p>
           <div class="footer-socials">
             <a class="social-icon-link" href="https://www.instagram.com/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="Instagram">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
@@ -539,28 +761,46 @@
             </a>
           </div>
         </div>
+
         <div>
           <b>Product</b>
-          <a href="/#how-it-works">How it works</a>
-          <a href="/#features">Features</a>
-          <a href="/#pricing">Pricing</a>
-          <a href="/docs/">Docs</a>
+          <a href="/">Home</a>
+          <a href="/instagram-analytics/">Instagram Analytics</a>
+          <a href="/youtube-analytics/">YouTube Analytics</a>
+          <a href="/outlier-score/">Outlier Score</a>
+          <a href="/creator-content-research/">Creator Research</a>
         </div>
+
         <div>
-          <b>Legal</b>
+          <b>Learn &amp; Docs</b>
+          <a href="/docs/">Documentation</a>
+          <a href="/docs/getting-started/">Getting Started</a>
+          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
+          <a href="/docs/troubleshooting/">Troubleshooting</a>
+          <a href="/docs/exports/">Exports Guide</a>
+        </div>
+
+        <div>
+          <b>Research &amp; Compare</b>
+          <a href="/research/">Research Hub</a>
+          <a href="/research/methodology/">Methodology</a>
+          <a href="/compare/">Tool Comparisons</a>
+          <a href="/alternatives/">Alternatives Hub</a>
+          <a href="/best/">Best Software Guides</a>
+        </div>
+
+        <div>
+          <b>Legal &amp; Support</b>
+          <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
           <a href="/disclaimer/">Disclaimer</a>
-        </div>
-        <div>
-          <b>Contact</b>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
-          <a href="/support/">Help &amp; Support</a>
         </div>
       </div>
       <div class="wrap footer-bottom">
-        <p>© 2026 Rank Kiwi · Not affiliated with Meta, Instagram, Google, or YouTube.</p>
-        <p>Made with <span class="footer-heart">❤️</span> by <a class="author-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener">Bhavishya Singla</a></p>
+        <p>&copy; 2026 Rank Kiwi. Not affiliated with Meta, Instagram, Google, or YouTube.</p>
+        <p>Made with <span class="footer-heart">&#10084;&#65039;</span> by <a class="author-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener">Bhavishya Singla</a></p>
       </div>
     </footer>
 

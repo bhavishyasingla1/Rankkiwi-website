@@ -1,0 +1,64 @@
+{
+  "datasetId": "youtube-subscriber-distribution-vidiq",
+  "title": "YouTube Subscriber Distribution & Channel Rarity Census",
+  "publisher": "vidIQ",
+  "sourceTitle": "How Many YouTube Channels Exist by Subscriber Milestone",
+  "sourceUrl": "https://vidiq.com/blog/post/how-many-youtube-channels-exist/",
+  "datasetSnapshot": "July 20, 2026",
+  "sampleSize": 61186246,
+  "sampleDescription": "61,186,246 public YouTube channels with at least 1 subscriber indexed in vidIQ's global database on July 20, 2026",
+  "milestones": [
+    {
+      "milestone": ">=100",
+      "channelsCount": 41748268,
+      "sharePercent": 68.20
+    },
+    {
+      "milestone": ">=500",
+      "channelsCount": 29649907,
+      "sharePercent": 48.50
+    },
+    {
+      "milestone": ">=1,000",
+      "channelsCount": 24813187,
+      "sharePercent": 40.60
+    },
+    {
+      "milestone": ">=10,000",
+      "channelsCount": 4836743,
+      "sharePercent": 7.90
+    },
+    {
+      "milestone": ">=100,000",
+      "channelsCount": 792376,
+      "sharePercent": 1.30
+    },
+    {
+      "milestone": ">=1,000,000",
+      "channelsCount": 79570,
+      "sharePercent": 0.13
+    },
+    {
+      "milestone": ">=10,000,000",
+      "channelsCount": 3082,
+      "sharePercent": 0.005
+    },
+    {
+      "milestone": ">=100,000,000",
+      "channelsCount": 17,
+      "sharePercent": 0.000028
+    }
+  ],
+  "rankKiwiCalculations": {
+    "percentAheadAt1k": 59.40,
+    "percentAheadAt10k": 92.10,
+    "percentAheadAt100k": 98.70,
+    "percentAheadAt1m": 99.87,
+    "oneInXChannelsAt1m": 769
+  },
+  "limitations": [
+    "Represents vidIQ's indexed sample of channels with >= 1 public subscriber (excludes channels with hidden counts or 0 subscribers)",
+    "Not an official Google/Alphabet census of all registered Google accounts",
+    "Subscriber counts do not reflect viewer active engagement or revenue generation"
+  ]
+}

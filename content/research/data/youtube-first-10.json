@@ -1,0 +1,33 @@
+{
+  "datasetId": "youtube-first-10-vidiq",
+  "title": "YouTube First 10 Videos Growth & View Distribution Study",
+  "publisher": "vidIQ",
+  "sourceTitle": "What Happens When You Post Your First 10 Videos on YouTube",
+  "sourceUrl": "https://vidiq.com/blog/post/first-10-videos-youtube/",
+  "datasetPeriod": "Early 2025 (first 90-day tracking window)",
+  "sampleSize": 448413,
+  "sampleDescription": "448,413 YouTube channels created in early 2025 that published at least 10 long-form videos or 10 Shorts during their initial 90 days",
+  "metrics": {
+    "longForm": {
+      "medianFirstVideoViews": 180,
+      "medianTenthVideoViews": 272,
+      "medianBestOfFirst10Views": 1948
+    },
+    "shorts": {
+      "medianFirstShortViews": 1362,
+      "medianTenthShortViews": 1344,
+      "medianBestOfFirst10Views": 8832
+    }
+  },
+  "rankKiwiCalculations": {
+    "longFormBestVsFirstRatio": 10.82,
+    "longFormTenthVsFirstRatio": 1.51,
+    "shortsBestVsFirstRatio": 6.48,
+    "shortsTenthVsFirstRatio": 0.99
+  },
+  "limitations": [
+    "Tracks only channels that persisted to upload at least 10 videos (excludes channels abandoned after 1–3 uploads)",
+    "Views recorded after 30 days of publication",
+    "Does not isolate creator prior experience or off-platform traffic drivers"
+  ]
+}

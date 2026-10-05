@@ -1,0 +1,281 @@
+{
+  "lastGlobalReview": "2026-10-05",
+  "editorialDisclosure": "We build Rank Kiwi, so we have a natural perspective on how these tools compare. We aim to distinguish product facts from our editorial judgment and recommend different tools when they better fit a user's needs.",
+  "alternatives": [
+    {
+      "slug": "sort-feed",
+      "targetTool": "Sort Feed",
+      "targetCategory": "Browser-based Creator Research Extension",
+      "targetOfficialUrl": "https://sortfeed.com",
+      "targetPricingUrl": "https://sortfeed.com/pricing",
+      "checkedDate": "2026-10-05",
+      "whyLookForAlternatives": [
+        "Need an entirely free tool without the 25-post or 1-week scan limit on visible feeds",
+        "Focus primarily on Instagram and YouTube without needing TikTok or Facebook coverage",
+        "Prefer 100% client-side privacy without audio files sent to external transcription servers",
+        "Want seamless CSV/JSON exports and Outlier Scores without signing up for an account"
+      ],
+      "whatToolDoesWell": [
+        "Multi-platform versatility: supports TikTok, Facebook, Instagram, and YouTube",
+        "Pro plan allows deep historical batch scanning up to 1,000 posts",
+        "Integrated AI audio transcription (500 min/mo on Pro) for analyzing video dialogue scripts",
+        "Direct one-click video and image downloads on supported platforms"
+      ],
+      "marketAlternatives": [
+        {
+          "name": "Rank Kiwi",
+          "category": "In-Browser Creator Research Extension",
+          "isRankKiwi": true,
+          "bestFor": "Creators wanting 100% free, unlimited outlier analysis on Instagram and YouTube",
+          "platforms": ["Instagram", "YouTube"],
+          "pricingSummary": "100% Free",
+          "majorStrength": "Unlimited visible feed scanning, creator-relative Outlier Scores, zero paywalls, local browser execution",
+          "majorLimitation": "Does not support TikTok or Facebook; does not provide audio transcription",
+          "url": "/"
+        },
+        {
+          "name": "Viewstats",
+          "category": "Dedicated YouTube Intelligence Platform",
+          "isRankKiwi": false,
+          "bestFor": "Creators needing deep historical YouTube data, visual thumbnail searches, and channel alerts",
+          "platforms": ["YouTube"],
+          "pricingSummary": "Free tier / Pro $20–$49/mo / Business $249/mo",
+          "majorStrength": "Massive multi-year YouTube database, packaging thumbnail search, proactive outlier notifications",
+          "majorLimitation": "Strictly limited to YouTube; zero support for Instagram Reels or posts",
+          "url": "https://www.viewstats.com"
+        },
+        {
+          "name": "Socialinsider",
+          "category": "Cross-Network Social Analytics Suite",
+          "isRankKiwi": false,
+          "bestFor": "Marketing teams needing cross-channel competitor benchmarking and automated client PDF decks",
+          "platforms": ["Instagram", "YouTube", "TikTok", "Facebook", "LinkedIn", "X"],
+          "pricingSummary": "From $82/mo (billed annually) / 14-day trial",
+          "majorStrength": "Automated white-label client reporting, multi-year historical tracking across 6 networks",
+          "majorLimitation": "High monthly subscription cost; requires setting up cloud tracking projects",
+          "url": "https://www.socialinsider.io"
+        }
+      ]
+    },
+    {
+      "slug": "socialinsider",
+      "targetTool": "Socialinsider",
+      "targetCategory": "Social Media Analytics & Competitive Benchmarking Platform",
+      "targetOfficialUrl": "https://www.socialinsider.io",
+      "targetPricingUrl": "https://www.socialinsider.io/pricing",
+      "checkedDate": "2026-10-05",
+      "whyLookForAlternatives": [
+        "Subscription cost ($82–$199/month) is prohibitive for solo creators, editors, and boutique creators",
+        "Only offers a 14-day free trial with no permanent free tier",
+        "Need rapid, on-page creator hook discovery while browsing feeds rather than maintaining cloud dashboards",
+        "Want to inspect dozens of competitor profiles without being capped by tracked profile quotas"
+      ],
+      "whatToolDoesWell": [
+        "Comprehensive multi-brand competitive benchmarking across 6 networks",
+        "Presentation-ready, automated white-label PDF and PPT reports for agency clients",
+        "Multi-year historical data storage and cross-industry benchmark ratios",
+        "Aggregated engagement and follower growth rate tracking"
+      ],
+      "marketAlternatives": [
+        {
+          "name": "Rank Kiwi",
+          "category": "In-Browser Creator Research Extension",
+          "isRankKiwi": true,
+          "bestFor": "Creators & strategists wanting instant, free, on-page outlier discovery on Instagram & YouTube",
+          "platforms": ["Instagram", "YouTube"],
+          "pricingSummary": "100% Free",
+          "majorStrength": "Zero subscription cost, instant on-page Outlier Scores, unlimited profile lookups, one-click CSV export",
+          "majorLimitation": "Does not generate agency client PDF reports; does not track LinkedIn or X",
+          "url": "/"
+        },
+        {
+          "name": "Metricool",
+          "category": "All-in-One Social Management & Analytics",
+          "isRankKiwi": false,
+          "bestFor": "Social media managers needing publishing, scheduling, and affordable analytics",
+          "platforms": ["Instagram", "YouTube", "TikTok", "Facebook", "LinkedIn", "Pinterest", "Twitch"],
+          "pricingSummary": "Free plan / Paid from $18–$45/mo",
+          "majorStrength": "Visual post calendar, multi-platform publishing, unified inbox, and competitor tracking",
+          "majorLimitation": "Free plan limits competitor profiles to 5; lacks creator-relative outlier multipliers",
+          "url": "https://metricool.com"
+        },
+        {
+          "name": "Meta Business Suite & YouTube Studio",
+          "category": "Native First-Party Analytics",
+          "isRankKiwi": false,
+          "bestFor": "Creators needing private, accurate first-party telemetry for their own channels",
+          "platforms": ["Instagram", "Facebook", "YouTube"],
+          "pricingSummary": "100% Free (Native)",
+          "majorStrength": "Direct ground-truth data: exact revenue, retention curves, conversion data",
+          "majorLimitation": "Cannot be used to analyze competitor profiles or external creator feeds",
+          "url": "https://studio.youtube.com"
+        }
+      ]
+    },
+    {
+      "slug": "metricool",
+      "targetTool": "Metricool",
+      "targetCategory": "All-in-One Social Media Management & Publishing Suite",
+      "targetOfficialUrl": "https://metricool.com",
+      "targetPricingUrl": "https://metricool.com/pricing/",
+      "checkedDate": "2026-10-05",
+      "whyLookForAlternatives": [
+        "Free tier limits competitor tracking to 5 profiles, restricting broad niche research",
+        "Competitor analysis requires manual dashboard configuration rather than live on-page browsing",
+        "Metricool ranks posts by absolute numbers rather than computing creator-relative Outlier Scores",
+        "Users only need creator research and do not need post scheduling or social inbox features"
+      ],
+      "whatToolDoesWell": [
+        "Complete publishing workflow: visual calendar, post scheduling, and multi-network auto-publishing",
+        "Best times to post recommendations based on active audience habits",
+        "Unified inbox for responding to comments and direct messages across channels",
+        "Ad campaign spend and conversion tracking across Meta, Google, and TikTok"
+      ],
+      "marketAlternatives": [
+        {
+          "name": "Rank Kiwi",
+          "category": "In-Browser Creator Research Extension",
+          "isRankKiwi": true,
+          "bestFor": "Creators seeking dedicated on-page competitor content research and outlier discovery",
+          "platforms": ["Instagram", "YouTube"],
+          "pricingSummary": "100% Free",
+          "majorStrength": "Zero profile tracking limits, instant Outlier Scores, on-page feed sorting, CSV exports",
+          "majorLimitation": "Does not schedule, queue, or auto-publish content; no social inbox",
+          "url": "/"
+        },
+        {
+          "name": "Buffer",
+          "category": "Social Media Scheduling Platform",
+          "isRankKiwi": false,
+          "bestFor": "Solo creators and small teams seeking a simple, visual social post scheduler",
+          "platforms": ["Instagram", "YouTube", "TikTok", "Facebook", "LinkedIn", "Pinterest", "Threads"],
+          "pricingSummary": "Free plan (3 channels) / Paid from $6/mo per channel",
+          "majorStrength": "Clean user interface, straightforward queue scheduling, link-in-bio tool",
+          "majorLimitation": "Limited built-in competitor benchmarking capabilities",
+          "url": "https://buffer.com"
+        },
+        {
+          "name": "Socialinsider",
+          "category": "Competitive Benchmarking Suite",
+          "isRankKiwi": false,
+          "bestFor": "Agencies needing deep multi-brand competitor analysis and client PDF reporting",
+          "platforms": ["Instagram", "YouTube", "TikTok", "Facebook", "LinkedIn", "X"],
+          "pricingSummary": "From $82/mo billed annually",
+          "majorStrength": "In-depth competitive benchmarking, automated white-label presentations",
+          "majorLimitation": "No publishing or scheduling features; high subscription pricing",
+          "url": "https://www.socialinsider.io"
+        }
+      ]
+    },
+    {
+      "slug": "viewstats",
+      "targetTool": "Viewstats",
+      "targetCategory": "Dedicated YouTube Intelligence & Creator Analytics Platform",
+      "targetOfficialUrl": "https://www.viewstats.com",
+      "targetPricingUrl": "https://www.viewstats.com/pricing",
+      "checkedDate": "2026-10-05",
+      "whyLookForAlternatives": [
+        "Need a tool that covers Instagram Reels and posts in addition to YouTube",
+        "Want completely free outlier analysis without paying $20–$49/month for Pro search depth",
+        "Prefer a lightweight extension operating directly on YouTube channel tabs instead of an external dashboard",
+        "Need straightforward CSV/JSON exports without enterprise business tiers"
+      ],
+      "whatToolDoesWell": [
+        "Massive global index of billions of historical YouTube videos and channels",
+        "Specialized visual thumbnail search engine for reverse-engineering packaging trends",
+        "Proactive outlier notifications and custom competitor channel tracking collections",
+        "Thumbnail A/B test tracking and subscriber milestone analytics"
+      ],
+      "marketAlternatives": [
+        {
+          "name": "Rank Kiwi",
+          "category": "In-Browser Creator Research Extension",
+          "isRankKiwi": true,
+          "bestFor": "Creators producing for both Instagram and YouTube needing free, on-page outlier research",
+          "platforms": ["Instagram", "YouTube"],
+          "pricingSummary": "100% Free",
+          "majorStrength": "Cross-platform coverage (Instagram Reels + YouTube Shorts/videos), instant feed sorting, 100% free",
+          "majorLimitation": "No global thumbnail search engine; no proactive automated email alerts",
+          "url": "/"
+        },
+        {
+          "name": "vidIQ",
+          "category": "YouTube SEO & Optimization Extension",
+          "isRankKiwi": false,
+          "bestFor": "YouTubers needing keyword research, tag suggestions, and upload checklists",
+          "platforms": ["YouTube"],
+          "pricingSummary": "Free plan / Pro from $10/mo / Boost from $49/mo",
+          "majorStrength": "Search volume metrics, tag recommendations, daily AI video ideas, competitor tracking",
+          "majorLimitation": "Heavy overlay UI; premium plans required for deep keyword tools; no Instagram support",
+          "url": "https://vidiq.com"
+        },
+        {
+          "name": "TubeBuddy",
+          "category": "YouTube Channel Management & Optimization",
+          "isRankKiwi": false,
+          "bestFor": "YouTubers wanting thumbnail A/B testing, bulk video processing, and search rank tracking",
+          "platforms": ["YouTube"],
+          "pricingSummary": "Free tier / Paid from $4.99/mo to $29.99/mo",
+          "majorStrength": "Built-in title/thumbnail A/B testing, bulk description updates, upload checklist",
+          "majorLimitation": "Strictly YouTube only; interface can feel cluttered inside YouTube Studio",
+          "url": "https://www.tubebuddy.com"
+        }
+      ]
+    },
+    {
+      "slug": "youtube-studio",
+      "targetTool": "YouTube Studio",
+      "targetCategory": "Native First-Party Platform Analytics",
+      "targetOfficialUrl": "https://studio.youtube.com",
+      "targetPricingUrl": "https://studio.youtube.com",
+      "checkedDate": "2026-10-05",
+      "whyLookForAlternatives": [
+        "YouTube Studio only analyzes channels you personally own or manage—zero competitor data",
+        "Cannot inspect or benchmark other creators' video catalogs or hook performance",
+        "Does not calculate creator-relative statistical Outlier Scores across competitor video libraries",
+        "Creators need external market research tools to identify viral breakout formats before filming"
+      ],
+      "whatToolDoesWell": [
+        "Ground-truth telemetry: exact ad revenue, RPM, monetized playbacks, and payout details",
+        "Second-by-second audience retention curves showing exact viewer drop-off points",
+        "Detailed traffic source breakdown (YouTube Search, Suggested Videos, Browse Features)",
+        "Comprehensive channel management: video uploads, thumbnail testing, subtitles, and playlists"
+      ],
+      "marketAlternatives": [
+        {
+          "name": "Rank Kiwi",
+          "category": "In-Browser Creator Research Extension",
+          "isRankKiwi": true,
+          "bestFor": "Researching public competitor channels on YouTube and Instagram to spot outlier videos",
+          "platforms": ["Instagram", "YouTube"],
+          "pricingSummary": "100% Free",
+          "majorStrength": "Public competitor research, creator-relative Outlier Scores, feed sorting, CSV exports",
+          "majorLimitation": "Cannot see private retention curves, exact revenue, or internal search traffic metrics",
+          "url": "/"
+        },
+        {
+          "name": "Viewstats",
+          "category": "Dedicated YouTube Intelligence Platform",
+          "isRankKiwi": false,
+          "bestFor": "Analyzing competitor channels with deep historical databases and visual thumbnail search",
+          "platforms": ["YouTube"],
+          "pricingSummary": "Free tier / Pro $20–$49/mo / Business $249/mo",
+          "majorStrength": "Massive historical video archive, thumbnail search engine, competitor channel tracking alerts",
+          "majorLimitation": "No Instagram support; advanced outlier searches require paid subscription",
+          "url": "https://www.viewstats.com"
+        },
+        {
+          "name": "Social Blade",
+          "category": "Public Channel Statistics Tracker",
+          "isRankKiwi": false,
+          "bestFor": "High-level historical subscriber tracking and creator trajectory projections",
+          "platforms": ["YouTube", "Instagram", "TikTok", "Twitch", "Twitter/X"],
+          "pricingSummary": "Free basic tracking / Subscriptions from $3.99/mo",
+          "majorStrength": "Long-term daily subscriber gains, estimated monthly views, cross-platform public tracker",
+          "majorLimitation": "High-level account metrics only; no video-level outlier multipliers or hook analysis",
+          "url": "https://socialblade.com"
+        }
+      ]
+    }
+  ]
+}

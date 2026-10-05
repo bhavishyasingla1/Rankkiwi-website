@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2V6BK8R00"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-Y2V6BK8R00");
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "yt23g8xi6k");
+    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troubleshooting Hub & Self-Service Diagnostics — Rank Kiwi Documentation</title>
+  <meta name="description" content="Diagnose and resolve any Rank Kiwi extension issue without waiting for support. Step-by-step solutions for detection, collection, metrics, and downloads.">
+  <link rel="canonical" href="https://rankkiwi.com/docs/troubleshooting/">
+  
+  <meta property="og:title" content="Troubleshooting Hub & Self-Service Diagnostics — Rank Kiwi Documentation">
+  <meta property="og:description" content="Fix Rank Kiwi detection, analysis, missing metrics, and download issues with our interactive decision tree and symptom-specific guides.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://rankkiwi.com/docs/troubleshooting/">
+  <meta property="og:image" content="https://rankkiwi.com/assets/og-image.png">
+
+  <!-- Twitter / X Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Troubleshooting Hub & Self-Service Diagnostics — Rank Kiwi Documentation">
+  <meta name="twitter:description" content="Fix Rank Kiwi detection, analysis, missing metrics, and download issues with our interactive decision tree and symptom-specific guides.">
+  <meta name="twitter:image" content="https://rankkiwi.com/assets/og-image.png">
+
+  <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
+  <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.min.css" />
+
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Rank Kiwi Troubleshooting Hub & Diagnostics",
+      "description": "Comprehensive self-service troubleshooting manual for Rank Kiwi Chrome extension on Instagram and YouTube.",
+      "url": "https://rankkiwi.com/docs/troubleshooting/",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Rank Kiwi",
+        "url": "https://rankkiwi.com/"
+      },
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-10-05"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://rankkiwi.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Docs",
+          "item": "https://rankkiwi.com/docs/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Troubleshooting",
+          "item": "https://rankkiwi.com/docs/troubleshooting/"
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+              <!-- SITE HEADER -->
+    <header class="site-header" data-header>
+      <div class="wrap nav">
+        <a class="brand" href="/" aria-label="Rank Kiwi home">
+          <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" fetchpriority="high" />
+          <span>Rank Kiwi</span>
+        </a>
+
+        <div class="nav-links" id="nav-links" data-nav-links>
+          <a href="/#how-it-works">How it works</a>
+          <a href="/#features">Features</a>
+          <a href="/research/">Research</a>
+          <a href="/docs/">Docs</a>
+          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="docs-wrapper wrap">
+      <div class="docs-header-bar">
+        <p class="eyebrow"><span class="status-dot"></span> TROUBLESHOOTING &amp; SELF-SERVICE DIAGNOSTICS</p>
+        <h1>Troubleshooting Hub</h1>
+        <p>Find your exact symptom below. Over 95% of issues with browser extensions are resolved in seconds by identifying the supported page URL or clearing a stale tab cache.</p>
+      </div>
+
+      <div class="docs-container">
+        <!-- Sidebar Navigation -->
+        <aside class="docs-sidebar" aria-label="Documentation navigation">
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Getting Started</div>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/getting-started/" class="docs-nav-link">Installation &amp; Setup</a></li>
+              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your First Analysis</a></li>
+              <li><a href="/docs/getting-started/#workspace" class="docs-nav-link">Workspace Tour</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Platform Guides</div>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Research</a></li>
+              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Research</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Understanding Results</div>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score &amp; Median</a></li>
+              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; Filters</a></li>
+              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research Workflow</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <div class="docs-nav-title">Exports &amp; Help</div>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/exports/" class="docs-nav-link">CSV &amp; JSON Export</a></li>
+              <li><a href="/docs/troubleshooting/" class="docs-nav-link active" aria-current="page">Troubleshooting Hub</a></li>
+              <li><a href="/support/" class="docs-nav-link">Support &amp; Community</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="docs-content" id="docs-content">
+
+      <!-- VISUAL DIAGNOSTIC DECISION TREE -->
+      <section class="docs-section">
+        <h2>Interactive Diagnostic Flowchart</h2>
+        <div class="decision-tree" role="region" aria-label="Troubleshooting Decision Tree">
+          <div class="tree-step">
+            <span class="tree-badge">Step 1</span>
+            <div class="tree-content">
+              <strong>Is the Rank Kiwi icon or sidebar appearing on the page?</strong>
+              <div class="tree-buttons">
+                <a href="#not-appearing" class="tree-btn tree-no">No &rarr; Rank Kiwi Isn't Appearing</a>
+                <a href="#decision-step-2" class="tree-btn tree-yes">Yes &rarr; Continue to Step 2</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree-step" id="decision-step-2">
+            <span class="tree-badge">Step 2</span>
+            <div class="tree-content">
+              <strong>Does clicking "Analyze" start scanning content?</strong>
+              <div class="tree-buttons">
+                <a href="#not-starting" class="tree-btn tree-no">No &rarr; Analysis Not Starting</a>
+                <a href="#analysis-stuck" class="tree-btn tree-warning">Stuck Halfway &rarr; Analysis Is Stuck</a>
+                <a href="#decision-step-3" class="tree-btn tree-yes">Yes &rarr; Continue to Step 3</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree-step" id="decision-step-3">
+            <span class="tree-badge">Step 3</span>
+            <div class="tree-content">
+              <strong>Are the results or metrics unexpected or incomplete?</strong>
+              <div class="tree-buttons">
+                <a href="#missing-metrics" class="tree-btn tree-warning">Missing Views/Likes &rarr; Metrics Missing</a>
+                <a href="#missing-score" class="tree-btn tree-warning">Outlier Score Blank &rarr; Outlier Score Missing</a>
+                <a href="#results-wrong" class="tree-btn tree-no">Values Look Incorrect &rarr; Results Look Wrong</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SYMPTOM JUMP DIRECTORY -->
+      <div class="table-of-contents">
+        <h4>All Symptom Guides</h4>
+        <ul>
+          <li><a href="#not-appearing">1. Rank Kiwi Isn't Appearing</a></li>
+          <li><a href="#unsupported-page">2. Page Not Supported Warning</a></li>
+          <li><a href="#not-starting">3. Analysis Isn't Starting</a></li>
+          <li><a href="#analysis-stuck">4. Analysis Is Stuck / Freezes Mid-Scan</a></li>
+          <li><a href="#missing-content">5. Some Content Is Missing From Sample</a></li>
+          <li><a href="#missing-metrics">6. Metrics Missing or Views Showing 0</a></li>
+          <li><a href="#missing-score">7. Outlier Score Is Missing</a></li>
+          <li><a href="#results-wrong">8. Results Look Wrong or Unrealistic</a></li>
+          <li><a href="#context-invalidated">9. "Extension Context Invalidated" Error</a></li>
+          <li><a href="#instagram-problems">10. Instagram Specific Problems</a></li>
+          <li><a href="#youtube-problems">11. YouTube Specific Problems</a></li>
+          <li><a href="#download-problems">12. Media Download Problems</a></li>
+          <li><a href="#support-checklist">Before Contacting Support Checklist</a></li>
+        </ul>
+      </div>
+
+      <!-- 1. NOT APPEARING -->
+      <article id="not-appearing" class="troubleshoot-article docs-section">
+        <h2>1. Rank Kiwi Isn't Appearing</h2>
+        <p class="troubleshoot-desc">The Rank Kiwi sidebar or trigger icon does not show up on your browser window.</p>
+
+        <h3>What you'll see</h3>
+        <p>You open an Instagram profile or YouTube channel, but the Rank Kiwi overlay does not appear, or clicking the extension puzzle icon does nothing.</p>
+
+        <h3>Why this happens</h3>
+        <p>The active tab was opened before the extension was installed, the tab is currently on an unsupported URL (such as the Instagram home feed), or Chrome has quarantined background scripts after a browser update.</p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li><strong>Hard refresh the tab:</strong> Press <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>F5</kbd> (Windows) to reload content scripts.</li>
+            <li><strong>Check your URL:</strong> Ensure you are on a creator profile (e.g. <code>instagram.com/[creator]/reels/</code> or <code>youtube.com/@[channel]/videos</code>).</li>
+            <li><strong>Pin the extension:</strong> Click the Chrome Puzzle icon (&equiv;) in your top toolbar, locate Rank Kiwi, and click the Pin icon.</li>
+            <li><strong>Click the pinned Kiwi icon:</strong> Explicitly trigger the workspace if auto-detection is delayed.</li>
+          </ol>
+        </div>
+
+        <h3>If that didn't work</h3>
+        <p>Open <code>chrome://extensions/</code> in your address bar. Verify Rank Kiwi toggle is <strong>ON</strong>. Click the extension's reload arrow (&circlearrowright;) to refresh its background service worker.</p>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> <a href="#support-checklist">Follow our support checklist</a> and email us with your Chrome version.
+        </div>
+        <p class="related-links">Related: <a href="#unsupported-page">Page Not Supported</a> | <a href="#context-invalidated">Extension Context Invalidated</a></p>
+      </article>
+
+      <!-- 2. UNSUPPORTED PAGE -->
+      <article id="unsupported-page" class="troubleshoot-article docs-section">
+        <h2>2. Page Not Supported Warning</h2>
+        <p class="troubleshoot-desc">The workspace displays a "Page Not Supported" badge or indicates no creator was found.</p>
+
+        <h3>What you'll see</h3>
+        <p>The Rank Kiwi sidebar opens, but displays: <em>"Please navigate to a supported creator profile or channel."</em></p>
+
+        <h3>Why this happens</h3>
+        <p>Rank Kiwi is designed exclusively for creator library surfaces. It does not run on algorithmic home feeds, search result pages, Direct Messages, or standalone single-post permalinks where creator baseline medians cannot be calculated.</p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li>If on Instagram, navigate to <code>instagram.com/[handle]/reels/</code>.</li>
+            <li>If on YouTube, navigate to <code>youtube.com/@[handle]/videos</code> or <code>/shorts</code>.</li>
+            <li>Do not run Rank Kiwi from <code>instagram.com/reels/[shortcode]</code> or <code>youtube.com/watch?v=...</code> directly.</li>
+          </ol>
+        </div>
+
+        <h3>If that didn't work</h3>
+        <p>Check if the account is private. Rank Kiwi cannot extract metrics from private accounts or age-gated profiles that require confirmation clicks.</p>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> Share the target URL with our team via <a href="/support/">Support</a>.
+        </div>
+        <p class="related-links">Related: <a href="/docs/instagram/">Supported Instagram Surfaces</a> | <a href="/docs/youtube/">Supported YouTube Surfaces</a></p>
+      </article>
+
+      <!-- 3. NOT STARTING -->
+      <article id="not-starting" class="troubleshoot-article docs-section">
+        <h2>3. Analysis Isn't Starting</h2>
+        <p class="troubleshoot-desc">Clicking "Analyze" or "Start Analysis" produces no animation or progress indicator.</p>
+
+        <h3>What you'll see</h3>
+        <p>You select a sample depth (e.g. 50 posts) and click "Analyze", but the button remains idle and no progress counter appears.</p>
+
+        <h3>Why this happens</h3>
+        <p>The page's DOM has not finished rendering creator elements, or a JavaScript popup/modal is blocking browser focus.</p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li>Scroll the webpage down slightly with your mouse so the browser initiates lazy-loading of media thumbnails.</li>
+            <li>Close any visible cookie banners, login prompts, or Instagram notification popups.</li>
+            <li>Click <strong>Analyze</strong> again.</li>
+          </ol>
+        </div>
+
+        <h3>If that didn't work</h3>
+        <p>Reload the creator page, wait 3 seconds for the grid to settle, and re-trigger analysis.</p>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> Check if another extension (such as an ad blocker) is restricting script execution on the tab.
+        </div>
+        <p class="related-links">Related: <a href="#analysis-stuck">Analysis Is Stuck</a></p>
+      </article>
+
+      <!-- 4. ANALYSIS STUCK -->
+      <article id="analysis-stuck" class="troubleshoot-article docs-section">
+        <h2>4. Analysis Is Stuck / Freezes Mid-Scan</h2>
+        <p class="troubleshoot-desc">The progress counter stops advancing before reaching your requested sample size.</p>
+
+        <h3>What you'll see</h3>
+        <p>The collector displays <em>"Analyzing 18 of 50..."</em> and stays frozen on that number for more than 15 seconds.</p>
+
+        <h3>Why this happens</h3>
+        <p>
+          Instagram or YouTube throttled feed requests due to rapid DOM scrolling, or the creator simply has fewer total posts published than your requested sample depth (e.g. you asked for 100 posts from a channel with only 22 videos).
+        </p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li><strong>Use the Abort Control:</strong> Click the <strong>Stop / View Current</strong> button in the progress header. Rank Kiwi will immediately finalize and rank the items collected so far.</li>
+            <li>Manually scroll the web page down to help trigger the platform's infinite scroll loader.</li>
+            <li>If the creator has fewer posts than 50, select a smaller sample size (e.g. 25).</li>
+          </ol>
+        </div>
+
+        <h3>If that didn't work</h3>
+        <p>Wait 30 seconds to let platform rate limits cool down, refresh the page, and select a 25-post sample.</p>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> Report recurring freezes to <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>.
+        </div>
+        <p class="related-links">Related: <a href="#missing-content">Some Content Is Missing</a></p>
+      </article>
+
+      <!-- 5. MISSING CONTENT -->
+      <article id="missing-content" class="troubleshoot-article docs-section">
+        <h2>5. Some Content Is Missing From Sample</h2>
+        <p class="troubleshoot-desc">A specific viral post you know exists does not appear in the analyzed table.</p>
+
+        <h3>What you'll see</h3>
+        <p>You asked for 50 posts, but a prominent Reel you watched yesterday is absent from the workspace.</p>
+
+        <h3>Why this happens</h3>
+        <p>
+          Rank Kiwi scans chronologically from newest to oldest. If the post was published outside your sample window (e.g. it was post #65 and you chose Sample 50), it won't be captured. Additionally, pinned posts sometimes appear at the top of the feed out of chronological order.
+        </p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li>Increase your sample size to <strong>100 posts</strong> to extend the historical scanning depth.</li>
+            <li>Ensure you are on the dedicated <strong>/reels/</strong> tab rather than the main grid if the post is a Reel.</li>
+            <li>Check if an active filter (e.g. Date Range or Minimum Views) is currently hiding the post from your view. Click <strong>Reset Filters</strong>.</li>
+          </ol>
+        </div>
+
+        <h3>If that didn't work</h3>
+        <p>If the creator collaborated with another account, ensure the post is hosted on this creator's primary profile library.</p>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> Verify whether the missing post is public without logging into Instagram.
+        </div>
+        <p class="related-links">Related: <a href="/docs/understanding/sorting-filtering/">Sorting & Filtering Guide</a></p>
+      </article>
+
+      <!-- 6. MISSING METRICS -->
+      <article id="missing-metrics" class="troubleshoot-article docs-section">
+        <h2>6. Metrics Missing or Views Showing 0</h2>
+        <p class="troubleshoot-desc">Certain cards display "—" or "0" for likes, views, or comments.</p>
+
+        <h3>What you'll see</h3>
+        <p>A post has a title and date, but the view counter says <code>0</code> or likes say <code>Hidden</code>.</p>
+
+        <h3>Why this happens</h3>
+        <p>
+          Creators can toggle <em>"Hide like and view counts on this post"</em> in their Instagram privacy settings. When this setting is enabled, Instagram omits metric numbers from public DOM nodes. Rank Kiwi only reads publicly exposed data and never fabricates estimates.
+        </p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li>Open the post directly on Instagram to verify if the creator hid like counts. If hidden on the site, Rank Kiwi cannot display them.</li>
+            <li>For YouTube, if views appear as 0, refresh the channel tab to reload YouTube's compact view string parser.</li>
+          </ol>
+        </div>
+
+        <h3>If that didn't work</h3>
+        <p>Rank Kiwi can still calculate ranking based on available metrics or place un-metered items at the bottom of the sort order.</p>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> Review our <a href="/docs/instagram/#metrics">Instagram Metrics Reference</a>.
+        </div>
+        <p class="related-links">Related: <a href="#missing-score">Outlier Score Is Missing</a></p>
+      </article>
+
+      <!-- 7. MISSING SCORE -->
+      <article id="missing-score" class="troubleshoot-article docs-section">
+        <h2>7. Outlier Score Is Missing</h2>
+        <p class="troubleshoot-desc">The Outlier Score pill displays "—" or does not render a multiplier.</p>
+
+        <h3>What you'll see</h3>
+        <p>You see raw views, but the green Outlier multiplier badge is absent from the cards.</p>
+
+        <h3>Why this happens</h3>
+        <p>
+          Calculating a reliable median requires at least <strong>5 valid, view-counted posts</strong>. If the creator has only posted 2 videos, or if all scanned posts have hidden views, the mathematical baseline denominator is zero.
+        </p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li>Ensure at least 5 posts were successfully scanned with public view counts.</li>
+            <li>Increase your sample size to 25 or 50 posts.</li>
+            <li>Switch from a static photos tab to the dedicated <strong>/reels/</strong> or <strong>/videos</strong> tab where view counts are universally published.</li>
+          </ol>
+        </div>
+
+        <h3>If that didn't work</h3>
+        <p>Check if the creator's median views evaluate to 0 due to an inactive or newly registered test profile.</p>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> Read the mathematical requirements in <a href="/docs/understanding/outlier-score/">Outlier Score Explained</a>.
+        </div>
+        <p class="related-links">Related: <a href="#missing-metrics">Metrics Missing</a></p>
+      </article>
+
+      <!-- 8. RESULTS WRONG -->
+      <article id="results-wrong" class="troubleshoot-article docs-section">
+        <h2>8. Results Look Wrong or Unrealistic</h2>
+        <p class="troubleshoot-desc">A post has a 25× Outlier Score that seems disproportionate or contradictory.</p>
+
+        <h3>What you'll see</h3>
+        <p>A post with only 5,000 views is given an Outlier Score of 15×.</p>
+
+        <h3>Why this happens</h3>
+        <p>
+          Outlier Score is strictly <strong>creator-relative</strong>, not platform-absolute. If a smaller creator typically averages 300 views per post, a post reaching 5,000 views is genuinely a 16.6× breakout for them.
+        </p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li>Check the creator's <strong>Median Views baseline</strong> shown in the workspace header stats.</li>
+            <li>Verify you did not inadvertently include pinned posts that artificially skew the sample.</li>
+            <li>If you only care about posts with significant scale, apply a filter: <em>Min Views: 50,000</em>.</li>
+          </ol>
+        </div>
+
+        <h3>If that didn't work</h3>
+        <p>Review the sample size. A sample of 10 posts creates high baseline volatility; expand the scan to 50 or 100 posts for high-confidence stability.</p>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> Learn more about relative baselines in our <a href="/docs/understanding/outlier-score/#relative-analysis">Relative Analysis Guide</a>.
+        </div>
+        <p class="related-links">Related: <a href="/docs/understanding/outlier-score/">Understanding Outlier Score</a></p>
+      </article>
+
+      <!-- 9. CONTEXT INVALIDATED -->
+      <article id="context-invalidated" class="troubleshoot-article docs-section">
+        <h2>9. "Extension Context Invalidated" Error</h2>
+        <p class="troubleshoot-desc">Chrome displays an error alert stating that the extension context was invalidated.</p>
+
+        <h3>What you'll see</h3>
+        <p>An in-page notification reads: <em>"Rank Kiwi has updated or reloaded in the background. Please refresh this tab to continue."</em></p>
+
+        <h3>Why this happens</h3>
+        <p>
+          When Chrome auto-updates an extension in the background, or when an extension is toggled on/off in <code>chrome://extensions/</code>, existing browser tabs lose connection to the old background service worker. This is standard Chromium security behavior.
+        </p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li>Press <kbd>Cmd</kbd> + <kbd>R</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>R</kbd> (Windows) to refresh the browser tab.</li>
+            <li>Re-open Rank Kiwi. The tab will bind cleanly to the updated extension instance.</li>
+          </ol>
+        </div>
+
+        <h3>If that didn't work</h3>
+        <p>Close the browser tab and open a fresh tab navigating directly to the creator URL.</p>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> Restart Google Chrome.
+        </div>
+        <p class="related-links">Related: <a href="#not-appearing">Rank Kiwi Isn't Appearing</a></p>
+      </article>
+
+      <!-- 10. INSTAGRAM PROBLEMS -->
+      <article id="instagram-problems" class="troubleshoot-article docs-section">
+        <h2>10. Instagram Specific Problems</h2>
+        <p class="troubleshoot-desc">Issues specifically arising from Instagram's dynamic React single-page architecture.</p>
+
+        <h3>What you'll see</h3>
+        <p>You navigate from one creator profile to another via in-app links, but Rank Kiwi continues displaying the previous creator's handle.</p>
+
+        <h3>Why this happens</h3>
+        <p>
+          Instagram uses client-side history transitions without full page reloads. If a DOM mutation event fails to fire, Rank Kiwi's tab observer may not immediately detect the URL change.
+        </p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li>Always refresh the browser tab (<kbd>F5</kbd>) after navigating between different creators.</li>
+            <li>Ensure you open <code>/reels/</code> directly for accurate view count parsing.</li>
+            <li>Do not switch browser tabs while an active 100-post scan is in progress.</li>
+          </ol>
+        </div>
+
+        <h3>If that didn't work</h3>
+        <p>Review our <a href="/docs/instagram/#limitations">Instagram Technical Limitations</a> reference.</p>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> Contact our engineering team at <a href="/support/">Support</a>.
+        </div>
+        <p class="related-links">Related: <a href="/docs/instagram/">Instagram Research Guide</a></p>
+      </article>
+
+      <!-- 11. YOUTUBE PROBLEMS -->
+      <article id="youtube-problems" class="troubleshoot-article docs-section">
+        <h2>11. YouTube Specific Problems</h2>
+        <p class="troubleshoot-desc">Issues specific to YouTube channel tabs, Shorts detection, and live streams.</p>
+
+        <h3>What you'll see</h3>
+        <p>Rank Kiwi scans regular videos, but you cannot analyze the creator's YouTube Shorts.</p>
+
+        <h3>Why this happens</h3>
+        <p>
+          YouTube maintains completely separate URL routes and rendering trees for long-form videos (<code>/videos</code>) and vertical Shorts (<code>/shorts</code>). Rank Kiwi analyzes the specific tab currently active.
+        </p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li>Click the creator's dedicated <strong>Shorts</strong> tab on their channel page.</li>
+            <li>The URL must read: <code>youtube.com/@[handle]/shorts</code>.</li>
+            <li>Click <strong>Analyze</strong> inside Rank Kiwi to initiate a Shorts-specific scan.</li>
+          </ol>
+        </div>
+
+        <h3>If that didn't work</h3>
+        <p>Ensure you are not attempting to scan live stream replays from the <code>/streams</code> tab, which use different DOM metadata schemas.</p>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> Review the <a href="/docs/youtube/">YouTube Channel Guide</a>.
+        </div>
+        <p class="related-links">Related: <a href="/docs/youtube/">YouTube Research Guide</a></p>
+      </article>
+
+      <!-- 12. DOWNLOAD PROBLEMS -->
+      <article id="download-problems" class="troubleshoot-article docs-section">
+        <h2>12. Media Download Problems</h2>
+        <p class="troubleshoot-desc">Clicking "Download Reel" or "Download Thumbnail" fails or opens in a new tab.</p>
+
+        <h3>What you'll see</h3>
+        <p>Clicking the download button opens a raw video player URL instead of saving the MP4 file to disk, or downloads fail with a browser permission notice.</p>
+
+        <h3>Why this happens</h3>
+        <p>
+          Chrome requires permission to trigger file downloads, and certain browser profiles are configured to preview media in the active tab rather than save locally.
+        </p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li>If the video opens in a new tab, right-click anywhere on the video player and choose <strong>"Save Video As..."</strong>.</li>
+            <li>Check Chrome's download icon in the top right toolbar to ensure downloads aren't paused by an OS storage warning.</li>
+            <li>Verify your Chrome download folder has write permissions enabled.</li>
+          </ol>
+        </div>
+
+        <h3>If that didn't work</h3>
+        <p>For thumbnails, ensure your network connection allows loading static assets from <code>i.ytimg.com</code>.</p>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> Review our <a href="/docs/exports/">Exports & Downloads Guide</a>.
+        </div>
+        <p class="related-links">Related: <a href="/docs/exports/">Export Documentation</a></p>
+      </article>
+
+      <!-- BEFORE CONTACTING SUPPORT CHECKLIST -->
+      <section id="support-checklist" class="docs-section">
+        <h2>Before Contacting Support Checklist</h2>
+        <p>
+          If your issue is unresolved after following the steps above, our human engineering team is ready to help. To help us diagnose and patch platform changes quickly, please include the following details in your email:
+        </p>
+
+        <div class="checklist-card">
+          <h3>📋 Fast Diagnostic Checklist</h3>
+          <ul class="checklist-items">
+            <li><strong>Target Platform:</strong> Instagram or YouTube?</li>
+            <li><strong>Target Page URL:</strong> The exact profile or channel link you were analyzing.</li>
+            <li><strong>Browser &amp; Version:</strong> Chrome on Mac, Windows, or Chromebook?</li>
+            <li><strong>Action Taken:</strong> What button did you click (e.g. "Analyze 50 on Reels tab")?</li>
+            <li><strong>Observed Behavior:</strong> What happened vs what did you expect?</li>
+            <li><strong>Hard Refresh:</strong> Did pressing <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> / <kbd>Ctrl</kbd> + <kbd>F5</kbd> change the behavior?</li>
+            <li><strong>Error Text / Screenshot:</strong> If an error was shown, attach a screenshot or exact message.</li>
+          </ul>
+          <p class="checklist-note">
+            <em>Privacy Notice: Never share your passwords, authentication cookies, or private account credentials with support. Rank Kiwi never requires access to your private credentials.</em>
+          </p>
+          <div class="checklist-cta">
+            <a href="mailto:say@hibhavishya.in?subject=Rank%20Kiwi%20Troubleshooting%20Help" class="button">
+              Email Support (say@hibhavishya.in)
+            </a>
+            <a href="/support/" class="button button-quiet">
+              Visit Support Portal
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <nav class="docs-pagination" aria-label="Documentation navigation">
+        <a href="/docs/exports/" class="docs-page-nav docs-page-prev">
+          <span>Previous</span>
+          <b>&larr; Export &amp; Downloads</b>
+        </a>
+        <a href="/docs/getting-started/" class="docs-page-nav docs-page-next">
+          <span>Next</span>
+          <b>Getting Started &rarr;</b>
+        </a>
+      </nav>
+        </div>
+      </div>
+    </main>
+
+              <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="/" aria-label="Rank Kiwi home">
+            <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" loading="lazy" decoding="async" />
+            <span>Rank Kiwi</span>
+          </a>
+          <p>Research creator profiles and spot viral outlier content on Instagram and YouTube.</p>
+          <div class="footer-socials">
+            <a class="social-icon-link" href="https://www.instagram.com/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://www.linkedin.com/in/bhavishyasingla1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://www.youtube.com/@bhavishyasingla1" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </a>
+            <a class="social-icon-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener" aria-label="Bhavishya Singla Website">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <b>Product</b>
+          <a href="/">Home</a>
+          <a href="/instagram-analytics/">Instagram Analytics</a>
+          <a href="/youtube-analytics/">YouTube Analytics</a>
+          <a href="/outlier-score/">Outlier Score</a>
+          <a href="/creator-content-research/">Creator Research</a>
+        </div>
+
+        <div>
+          <b>Learn &amp; Docs</b>
+          <a href="/docs/">Documentation</a>
+          <a href="/docs/getting-started/">Getting Started</a>
+          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
+          <a href="/docs/troubleshooting/">Troubleshooting</a>
+          <a href="/docs/exports/">Exports Guide</a>
+        </div>
+
+        <div>
+          <b>Research &amp; Compare</b>
+          <a href="/research/">Research Hub</a>
+          <a href="/research/methodology/">Methodology</a>
+          <a href="/compare/">Tool Comparisons</a>
+          <a href="/alternatives/">Alternatives Hub</a>
+          <a href="/best/">Best Software Guides</a>
+        </div>
+
+        <div>
+          <b>Legal &amp; Support</b>
+          <a href="/support/">Help &amp; Support</a>
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>&copy; 2026 Rank Kiwi. Not affiliated with Meta, Instagram, Google, or YouTube.</p>
+        <p>Made with <span class="footer-heart">&#10084;&#65039;</span> by <a class="author-link" href="https://bhavishyasingla.com/" target="_blank" rel="noopener">Bhavishya Singla</a></p>
+      </div>
+    </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
