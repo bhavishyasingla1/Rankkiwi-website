@@ -1,6 +1,6 @@
 /* Rank Kiwi Interactive Script */
 
-const CHROME_STORE_URL = '[CHROME WEB STORE URL PLACEHOLDER]';
+const CHROME_STORE_URL = 'https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb';
 const SUPPORT_EMAIL = 'say@hibhavishya.in';
 
 // Chrome Web Store links handler
@@ -16,6 +16,8 @@ document.querySelectorAll('[data-chrome-link]').forEach((link) => {
       }
     });
     link.setAttribute('aria-label', 'Rank Kiwi is coming soon to the Chrome Web Store');
+  } else {
+    link.setAttribute('aria-label', 'Add Rank Kiwi to Chrome');
   }
 });
 
