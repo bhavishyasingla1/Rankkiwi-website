@@ -1,0 +1,26 @@
+# Version control
+.git
+
+# Build/dev tooling
+.wrangler
+node_modules
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Agent/config directories
+.agents
+
+# Large screenshot PNGs (not part of the website)
+Screenshot *.png
+
+# Source/build files not needed in production
+src
+scripts
+docs
+
+# Large raw images (keep only optimized webp/smaller assets)
+1.png
+2.png
+3.png
