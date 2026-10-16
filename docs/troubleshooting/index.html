@@ -44,15 +44,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.min.css" />
+  <link rel="stylesheet" href="/styles.min.css?v=1.1.4" />
     <style id="docs-critical-resilience">
-      .docs-nav-chevron { width: 14px !important; height: 14px !important; min-width: 14px !important; min-height: 14px !important; flex-shrink: 0; display: block; }
-      .docs-nav-header { display: flex; align-items: center; justify-content: space-between; width: 100%; border: none; background: transparent; font-family: inherit; cursor: pointer; -webkit-appearance: none; appearance: none; }
-      .docs-drawer-header, .docs-mobile-close, .docs-drawer-close { display: none; }
+      .docs-mobile-bar, .docs-drawer-header, .docs-mobile-close, .docs-drawer-close, .docs-mobile-backdrop { display: none !important; }
       @media (max-width: 960px) {
+        .docs-mobile-bar { display: flex !important; }
         .docs-drawer-header { display: flex !important; }
         .docs-sidebar:not(.is-mobile-open) { display: none !important; }
       }
+      .docs-container { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 40px; align-items: start; }
+      .docs-card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+      .docs-card { display: flex; flex-direction: column; padding: 20px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; text-decoration: none; color: inherit; }
+      .docs-card-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+      .docs-nav-chevron { width: 14px !important; height: 14px !important; min-width: 14px !important; min-height: 14px !important; flex-shrink: 0; display: block; }
+      .docs-search-input-wrap svg { width: 18px !important; height: 18px !important; flex-shrink: 0; }
+      .docs-nav-header { display: flex; align-items: center; justify-content: space-between; width: 100%; border: none; background: transparent; font-family: inherit; cursor: pointer; -webkit-appearance: none; appearance: none; }
     </style>
 
   <script type="application/ld+json">
