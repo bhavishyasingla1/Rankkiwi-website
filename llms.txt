@@ -32,8 +32,11 @@
 - [Content Research Blueprint](https://rankkiwi.com/docs/workflows/content-research/): 6-step reverse-engineering workflow.
 - [Export & Media Downloads](https://rankkiwi.com/docs/exports/): CSV, JSON, and media download procedures.
 - [Troubleshooting & Diagnostics](https://rankkiwi.com/docs/troubleshooting/): Visual decision tree and 12 symptom guides.
-- [Privacy Policy](https://rankkiwi.com/privacy/): Details client-side sandboxed architecture.
+- [Terms of Service](https://rankkiwi.com/terms/): Extension terms of service, acceptable use, and license provisions.
+- [Disclaimer](https://rankkiwi.com/disclaimer/): Legal and trademark notice regarding Instagram, Meta, YouTube, and Google independence.
+- [Privacy Policy](https://rankkiwi.com/privacy/): Details client-side sandboxed architecture and zero data collection pledge.
 - [Support & Contact](https://rankkiwi.com/support/): Contact founder Bhavishya Singla at say@hibhavishya.in.
+- [Founder Profiles & Links](https://rankkiwi.com/about/): Built by Bhavishya Singla ([Portfolio](https://bhavishyasingla.com/) | [LinkedIn](https://www.linkedin.com/in/bhavishyasingla1/) | [Instagram](https://www.instagram.com/bhavishyasingla1/) | [YouTube](https://www.youtube.com/@bhavishyasingla1) | [GitHub](https://github.com/bhavishyasingla1)).
 
 ## Research & Editorial Benchmarks
 

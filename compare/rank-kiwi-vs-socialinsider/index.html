@@ -56,49 +56,134 @@
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
       [
-        {
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "Rank Kiwi vs Socialinsider: Creator Research vs Social Analytics Suite",
-          "description": "An honest editorial evaluation comparing Rank Kiwi's lightweight creator research with Socialinsider's cross-channel social analytics and reporting platform.",
-          "author": {
-            "@type": "Person",
-            "name": "Bhavishya Singla"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Rank Kiwi",
-            "url": "https://rankkiwi.com/"
-          },
-          "datePublished": "2026-10-05",
-          "dateModified": "2026-10-05",
-          "mainEntityOfPage": "https://rankkiwi.com/compare/rank-kiwi-vs-socialinsider/"
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://rankkiwi.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Compare",
-              "item": "https://rankkiwi.com/compare/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Rank Kiwi vs Socialinsider",
-              "item": "https://rankkiwi.com/compare/rank-kiwi-vs-socialinsider/"
-            }
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Rank Kiwi vs Socialinsider: Creator Research vs Social Analytics Suite",
+        "description": "An honest editorial evaluation comparing Rank Kiwi's lightweight creator research with Socialinsider's cross-channel social analytics and reporting platform.",
+        "author": {
+          "@type": "Person",
+          "@id": "https://bhavishyasingla.com/#person",
+          "name": "Bhavishya Singla",
+          "jobTitle": "Founder & Software Creator",
+          "url": "https://bhavishyasingla.com/",
+          "image": "https://rankkiwi.com/assets/bhavishya.webp",
+          "sameAs": [
+            "https://bhavishyasingla.com/",
+            "https://www.linkedin.com/in/bhavishyasingla1/",
+            "https://www.instagram.com/bhavishyasingla1/",
+            "https://www.youtube.com/@bhavishyasingla1",
+            "https://github.com/bhavishyasingla1"
           ]
+        },
+        "publisher": {
+          "@type": [
+            "Organization",
+            "OnlineBusiness"
+          ],
+          "@id": "https://rankkiwi.com/#organization",
+          "name": "Rank Kiwi",
+          "legalName": "Rank Kiwi",
+          "url": "https://rankkiwi.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://rankkiwi.com/#logo",
+            "url": "https://rankkiwi.com/assets/rankkiwi-icon.png",
+            "caption": "Rank Kiwi Logo"
+          },
+          "founder": {
+            "@id": "https://bhavishyasingla.com/#person"
+          }
+        },
+        "datePublished": "2026-10-05",
+        "dateModified": "2026-10-16",
+        "mainEntityOfPage": "https://rankkiwi.com/compare/rank-kiwi-vs-socialinsider/",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://rankkiwi.com/#website",
+          "name": "Rank Kiwi",
+          "url": "https://rankkiwi.com/"
         }
-      ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://rankkiwi.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Compare",
+            "item": "https://rankkiwi.com/compare/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Rank Kiwi vs Socialinsider",
+            "item": "https://rankkiwi.com/compare/rank-kiwi-vs-socialinsider/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Rank Kiwi a direct replacement for Socialinsider?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Socialinsider is an enterprise competitive benchmarking platform that tracks multiple social networks and creates client-facing PDF reports. Rank Kiwi is a focused, free browser extension for on-page creator content research and outlier discovery on Instagram and YouTube."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does Socialinsider cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "As of October 5, 2026, Socialinsider offers a 14-day free trial. Paid plans start at $82/month on an annual commitment ($99/month paid monthly) for the Adapt tier, $124/month ($149/month) for Optimize, and $199/month ($249/month) for Predict."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Rank Kiwi offer automated client PDF reports?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Rank Kiwi provides data exports to CSV and JSON formats, which you can easily import into Google Sheets, Excel, or Notion. If you require scheduled white-label PDF decks, Socialinsider is built for that workflow."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does Rank Kiwi only focus on Instagram and YouTube?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "By focusing specifically on Instagram and YouTube, Rank Kiwi provides deep DOM collectors optimized for the two most dominant visual and video creator ecosystems without requiring complicated cloud infrastructure or paid subscriptions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to create an account to use Rank Kiwi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Rank Kiwi does not require an account or login. You simply install the extension from the Chrome Web Store and immediately begin analyzing public creator content."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use both tools together?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Many agency teams use an analytics suite like Socialinsider for high-level monthly client reporting, while individual strategists and video editors use Rank Kiwi daily to research specific video hooks and creator outliers."
+            }
+          }
+        ]
+      }
+    ]
     </script>
   </head>
   <body>

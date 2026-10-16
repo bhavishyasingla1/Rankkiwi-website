@@ -56,92 +56,115 @@
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
       [
-        {
-          "@context": "https://schema.org",
-          "@type": ["SoftwareApplication", "WebApplication"],
-          "name": "Rank Kiwi YouTube Channel & Shorts Analytics",
-          "url": "https://rankkiwi.com/youtube-analytics/",
-          "description": "Free Chrome extension to analyze YouTube channels, benchmark video and Shorts views against median performance, and find breakout viral outliers.",
-          "applicationCategory": "SocialNetworkingApplication, DeveloperApplication",
-          "operatingSystem": "Google Chrome, Chromium",
-          "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "SoftwareApplication",
+          "WebApplication"
+        ],
+        "name": "Rank Kiwi YouTube Channel & Shorts Analytics",
+        "url": "https://rankkiwi.com/youtube-analytics/",
+        "description": "Free Chrome extension to analyze YouTube channels, benchmark video and Shorts views against median performance, and find breakout viral outliers.",
+        "applicationCategory": "SocialNetworkingApplication, DeveloperApplication",
+        "operatingSystem": "Google Chrome, Chromium",
+        "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "publisher": {
+          "@type": [
+            "Organization",
+            "OnlineBusiness"
+          ],
+          "@id": "https://rankkiwi.com/#organization",
+          "name": "Rank Kiwi",
+          "legalName": "Rank Kiwi",
+          "url": "https://rankkiwi.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://rankkiwi.com/#logo",
+            "url": "https://rankkiwi.com/assets/rankkiwi-icon.png",
+            "caption": "Rank Kiwi Logo"
           },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Rank Kiwi",
-            "url": "https://rankkiwi.com/"
+          "founder": {
+            "@id": "https://bhavishyasingla.com/#person"
           }
         },
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://rankkiwi.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "YouTube Analytics",
-              "item": "https://rankkiwi.com/youtube-analytics/"
-            }
-          ]
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "How does Rank Kiwi analyze YouTube channels?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Rank Kiwi detects when you are on a YouTube channel's Videos or Shorts tab. It extracts upload view counts, calculates the channel's non-skewed median benchmark, and ranks videos by Outlier Score so you can see which uploads genuinely outperformed the creator's typical reach."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can I analyze YouTube Shorts separately from long-form videos?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. YouTube maintains separate tabs for long-form videos (/videos) and vertical Shorts (/shorts). Rank Kiwi calculates distinct median baselines for each format, ensuring your Shorts metrics are never distorted by long-form view numbers."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can I download full-resolution YouTube thumbnails?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Rank Kiwi includes an automatic thumbnail fetcher that downloads maximum available resolution images (1080p maxresdefault.jpg) directly from YouTube's CDN."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Why is sorting by Outlier Score better than sorting by Popular on YouTube?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "YouTube's native Popular sort surfaces videos published 5 or 8 years ago that accumulated views over long time horizons. Rank Kiwi's Outlier Score analyzes recent sample batches (e.g. last 50 uploads) to reveal what is resonating right now relative to current audience size."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do I need YouTube API keys or an account?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No API keys or YouTube login credentials are required. Rank Kiwi reads the publicly visible DOM elements in your active tab locally in Chrome."
-              }
-            }
-          ]
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://rankkiwi.com/#website",
+          "name": "Rank Kiwi",
+          "url": "https://rankkiwi.com/"
         }
-      ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://rankkiwi.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "YouTube Analytics",
+            "item": "https://rankkiwi.com/youtube-analytics/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does Rank Kiwi analyze YouTube channels?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rank Kiwi detects when you are on a YouTube channel's Videos or Shorts tab. It extracts upload view counts, calculates the channel's non-skewed median benchmark, and ranks videos by Outlier Score so you can see which uploads genuinely outperformed the creator's typical reach."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I analyze YouTube Shorts separately from long-form videos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. YouTube maintains separate tabs for long-form videos (/videos) and vertical Shorts (/shorts). Rank Kiwi calculates distinct median baselines for each format, ensuring your Shorts metrics are never distorted by long-form view numbers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I download full-resolution YouTube thumbnails?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Rank Kiwi includes an automatic thumbnail fetcher that downloads maximum available resolution images (1080p maxresdefault.jpg) directly from YouTube's CDN."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is sorting by Outlier Score better than sorting by Popular on YouTube?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "YouTube's native Popular sort surfaces videos published 5 or 8 years ago that accumulated views over long time horizons. Rank Kiwi's Outlier Score analyzes recent sample batches (e.g. last 50 uploads) to reveal what is resonating right now relative to current audience size."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need YouTube API keys or an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No API keys or YouTube login credentials are required. Rank Kiwi reads the publicly visible DOM elements in your active tab locally in Chrome."
+            }
+          }
+        ]
+      }
+    ]
     </script>
   </head>
   <body>

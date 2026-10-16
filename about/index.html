@@ -59,19 +59,73 @@
         {
           "@context": "https://schema.org",
           "@type": "AboutPage",
+          "@id": "https://rankkiwi.com/about/#webpage",
           "name": "About Bhavishya Singla & Rank Kiwi",
           "url": "https://rankkiwi.com/about/",
           "description": "Background, mission, and origin story of Rank Kiwi and founder Bhavishya Singla.",
+          "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://rankkiwi.com/#website",
+            "name": "Rank Kiwi",
+            "url": "https://rankkiwi.com/"
+          },
+          "publisher": {
+            "@id": "https://rankkiwi.com/#organization"
+          },
           "mainEntity": {
-            "@type": "Person",
-            "name": "Bhavishya Singla",
-            "jobTitle": "Student & Software Creator",
-            "url": "https://bhavishyasingla.com/",
-            "sameAs": [
-              "https://www.linkedin.com/in/bhavishyasingla1/",
-              "https://www.instagram.com/bhavishyasingla1/",
-              "https://www.youtube.com/@bhavishyasingla1"
-            ]
+            "@id": "https://bhavishyasingla.com/#person"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "@id": "https://bhavishyasingla.com/#person",
+          "name": "Bhavishya Singla",
+          "jobTitle": "Founder & Software Creator",
+          "url": "https://bhavishyasingla.com/",
+          "image": "https://rankkiwi.com/assets/bhavishya.webp",
+          "email": "say@hibhavishya.in",
+          "sameAs": [
+            "https://bhavishyasingla.com/",
+            "https://www.linkedin.com/in/bhavishyasingla1/",
+            "https://www.instagram.com/bhavishyasingla1/",
+            "https://www.youtube.com/@bhavishyasingla1",
+            "https://github.com/bhavishyasingla1"
+          ],
+          "worksFor": {
+            "@id": "https://rankkiwi.com/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": ["Organization", "OnlineBusiness"],
+          "@id": "https://rankkiwi.com/#organization",
+          "name": "Rank Kiwi",
+          "legalName": "Rank Kiwi",
+          "url": "https://rankkiwi.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://rankkiwi.com/#logo",
+            "url": "https://rankkiwi.com/assets/rankkiwi-icon.png",
+            "caption": "Rank Kiwi Logo"
+          },
+          "founder": {
+            "@id": "https://bhavishyasingla.com/#person"
+          },
+          "sameAs": [
+            "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl",
+            "https://www.linkedin.com/in/bhavishyasingla1/",
+            "https://www.youtube.com/@bhavishyasingla1",
+            "https://www.instagram.com/bhavishyasingla1/",
+            "https://bhavishyasingla.com/",
+            "https://github.com/bhavishyasingla1"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "say@hibhavishya.in",
+            "url": "https://rankkiwi.com/support/",
+            "availableLanguage": ["English"]
           }
         },
         {

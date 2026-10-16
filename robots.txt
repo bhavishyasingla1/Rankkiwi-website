@@ -1,9 +1,49 @@
 # /robots.txt
-# Standard Compliance: RFC 9309
-# Target: https://rankkiwi.com
-# LLM Context Discovery: https://llmstxt.org/
+# Rank Kiwi — Free Instagram & YouTube Outlier Analytics
+# Standard Compliance: RFC 9309 (Robots Exclusion Protocol)
+# Target Canonical: https://rankkiwi.com/
+# Policy: Full, unrestricted crawling and indexing explicitly allowed for all search engines and AI agents.
 
-# AI Search Engines & LLM Web Retrievers (Explicitly Allowed)
+# Global Policy for All Crawlers & Bots
+User-agent: *
+Allow: /
+Disallow:
+
+# Standard Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: MSNBot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# AI Search Engines, Agents & Web Retrievers
 User-agent: GPTBot
 Allow: /
 
@@ -31,7 +71,10 @@ Allow: /
 User-agent: GoogleOther
 Allow: /
 
-User-agent: Applebot
+User-agent: GoogleOther-Image
+Allow: /
+
+User-agent: GoogleOther-Video
 Allow: /
 
 User-agent: Applebot-Extended
@@ -58,32 +101,10 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# Standard Web Search Engines
-User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-# General Policy for All Other Agents
-User-agent: *
-Allow: /
-
-# XML Sitemaps
+# XML Sitemaps (Indexed for Google, Bing, and Search Engines)
 Sitemap: https://rankkiwi.com/sitemap.xml
 
 # Machine-Readable AI Context & System Specifications
-# https://rankkiwi.com/llms.txt
-# https://rankkiwi.com/llms-full.txt
+# Discoverable via: https://llmstxt.org/
+# Full spec: https://rankkiwi.com/llms-full.txt
+# Markdown spec: https://rankkiwi.com/llms.txt

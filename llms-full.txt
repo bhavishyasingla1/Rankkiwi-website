@@ -14,8 +14,13 @@
 - **Primary Category**: Creator Research, Social Media Analytics, Competitor Intelligence
 - **Supported Browsers**: Google Chrome, Brave, Microsoft Edge, Arc, Opera, and all Chromium-based browsers.
 - **Pricing**: 100% Free forever ($0.00 USD). No subscription tiers, no paywalls, no credit cards, no freemium usage caps.
-- **Privacy Model**: 100% Client-side sandbox. Zero external database storage, zero server-side telemetry, no login or passwords required.
-- **Founder & Maintainer**: Bhavishya Singla (Website: https://bhavishyasingla.com/, Contact: say@hibhavishya.in)
+- **Founder & Creator**: Bhavishya Singla
+  - **Portfolio**: https://bhavishyasingla.com/
+  - **LinkedIn**: https://www.linkedin.com/in/bhavishyasingla1/
+  - **Instagram**: https://www.instagram.com/bhavishyasingla1/
+  - **YouTube**: https://www.youtube.com/@bhavishyasingla1
+  - **GitHub**: https://github.com/bhavishyasingla1
+  - **Direct Support**: say@hibhavishya.in
 
 ---
 

@@ -56,92 +56,115 @@
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
       [
-        {
-          "@context": "https://schema.org",
-          "@type": ["SoftwareApplication", "WebApplication"],
-          "name": "Rank Kiwi Outlier Score Benchmarking",
-          "url": "https://rankkiwi.com/outlier-score/",
-          "description": "Educational guide and browser extension feature that calculates creator-relative median performance multipliers to find content outliers on Instagram and YouTube.",
-          "applicationCategory": "SocialNetworkingApplication, DeveloperApplication",
-          "operatingSystem": "Google Chrome, Chromium",
-          "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "SoftwareApplication",
+          "WebApplication"
+        ],
+        "name": "Rank Kiwi Outlier Score Benchmarking",
+        "url": "https://rankkiwi.com/outlier-score/",
+        "description": "Educational guide and browser extension feature that calculates creator-relative median performance multipliers to find content outliers on Instagram and YouTube.",
+        "applicationCategory": "SocialNetworkingApplication, DeveloperApplication",
+        "operatingSystem": "Google Chrome, Chromium",
+        "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "publisher": {
+          "@type": [
+            "Organization",
+            "OnlineBusiness"
+          ],
+          "@id": "https://rankkiwi.com/#organization",
+          "name": "Rank Kiwi",
+          "legalName": "Rank Kiwi",
+          "url": "https://rankkiwi.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://rankkiwi.com/#logo",
+            "url": "https://rankkiwi.com/assets/rankkiwi-icon.png",
+            "caption": "Rank Kiwi Logo"
           },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Rank Kiwi",
-            "url": "https://rankkiwi.com/"
+          "founder": {
+            "@id": "https://bhavishyasingla.com/#person"
           }
         },
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://rankkiwi.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Outlier Score",
-              "item": "https://rankkiwi.com/outlier-score/"
-            }
-          ]
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is an Outlier Score?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "An Outlier Score measures how strongly an individual post or video performed relative to that creator's typical median performance in the sampled library. A 5.0× score means the post earned 5 times the creator's median view count."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Why does Rank Kiwi use median instead of average (mean)?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Arithmetic averages are heavily distorted by extreme runaway hits. For example, if a creator has five posts with 10K views and one post with 1,000,000 views, the average view count jumps to 175K, making normal posts look like failures. The median remains at 10K, accurately representing typical reach."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Does an Outlier Score change when I change the sample size?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. If you analyze 25 posts versus 100 posts, the baseline median views reflect that specific historical window. A recent 25-post scan reflects current momentum, while a 100-post scan provides longer-term historical stability."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Does a high Outlier Score guarantee that a topic will work for me?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. An Outlier Score identifies an empirical creative anomaly for that specific creator. It proves that the topic, hook, or packaging resonated strongly with their audience, serving as a hypothesis for your own original content experiments."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is considered a 'viral' Outlier Score?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Scores between 1.0× and 2.0× represent typical expected distribution. Scores between 3.0× and 5.0× indicate strong creative resonance. Scores of 5.0× and above represent major breakout outliers that broke past the creator's existing audience bubble."
-              }
-            }
-          ]
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://rankkiwi.com/#website",
+          "name": "Rank Kiwi",
+          "url": "https://rankkiwi.com/"
         }
-      ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://rankkiwi.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Outlier Score",
+            "item": "https://rankkiwi.com/outlier-score/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is an Outlier Score?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An Outlier Score measures how strongly an individual post or video performed relative to that creator's typical median performance in the sampled library. A 5.0× score means the post earned 5 times the creator's median view count."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does Rank Kiwi use median instead of average (mean)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Arithmetic averages are heavily distorted by extreme runaway hits. For example, if a creator has five posts with 10K views and one post with 1,000,000 views, the average view count jumps to 175K, making normal posts look like failures. The median remains at 10K, accurately representing typical reach."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does an Outlier Score change when I change the sample size?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. If you analyze 25 posts versus 100 posts, the baseline median views reflect that specific historical window. A recent 25-post scan reflects current momentum, while a 100-post scan provides longer-term historical stability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a high Outlier Score guarantee that a topic will work for me?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. An Outlier Score identifies an empirical creative anomaly for that specific creator. It proves that the topic, hook, or packaging resonated strongly with their audience, serving as a hypothesis for your own original content experiments."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is considered a 'viral' Outlier Score?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Scores between 1.0× and 2.0× represent typical expected distribution. Scores between 3.0× and 5.0× indicate strong creative resonance. Scores of 5.0× and above represent major breakout outliers that broke past the creator's existing audience bubble."
+            }
+          }
+        ]
+      }
+    ]
     </script>
   </head>
   <body>

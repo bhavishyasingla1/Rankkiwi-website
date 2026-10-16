@@ -73,15 +73,18 @@
         {
           "@context": "https://schema.org",
           "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://rankkiwi.com/#software",
           "name": "Rank Kiwi",
+          "alternateName": "Rank Kiwi Creator Research Extension",
           "url": "https://rankkiwi.com/",
+          "installUrl": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
           "description": "Free Chrome extension to research creator profiles, track engagement metrics, and discover viral outlier content on Instagram and YouTube.",
-          "applicationCategory": "DeveloperApplication, SocialNetworkingApplication",
-          "operatingSystem": "Google Chrome, Chromium",
+          "applicationCategory": "BusinessApplication, DeveloperApplication, SocialNetworkingApplication",
+          "operatingSystem": "Google Chrome, Chromium, Brave, Microsoft Edge, Opera",
           "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
           "softwareVersion": "1.0.1",
           "datePublished": "2025-01-01",
-          "dateModified": "2026-10-14",
+          "dateModified": "2026-10-16",
           "inLanguage": "en-US",
           "offers": {
             "@type": "Offer",
@@ -98,54 +101,75 @@
             "100% Client-Side Local Privacy Execution"
           ],
           "author": {
-            "@type": "Person",
-            "name": "Bhavishya Singla",
-            "url": "https://bhavishyasingla.com/",
-            "sameAs": [
-              "https://www.instagram.com/bhavishyasingla1/",
-              "https://www.linkedin.com/in/bhavishyasingla1/",
-              "https://www.youtube.com/@bhavishyasingla1"
-            ]
+            "@id": "https://bhavishyasingla.com/#person"
           },
           "publisher": {
-            "@type": "Organization",
-            "name": "Rank Kiwi",
-            "url": "https://rankkiwi.com/",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://rankkiwi.com/assets/rankkiwi-icon.png"
-            }
+            "@id": "https://rankkiwi.com/#organization"
           }
         },
         {
           "@context": "https://schema.org",
           "@type": "WebSite",
+          "@id": "https://rankkiwi.com/#website",
           "name": "Rank Kiwi",
           "url": "https://rankkiwi.com/",
-          "description": "Creator research and viral outlier discovery for Instagram and YouTube."
+          "description": "Creator research and viral outlier discovery for Instagram and YouTube.",
+          "publisher": {
+            "@id": "https://rankkiwi.com/#organization"
+          }
         },
         {
           "@context": "https://schema.org",
-          "@type": "Organization",
+          "@type": ["Organization", "OnlineBusiness"],
+          "@id": "https://rankkiwi.com/#organization",
           "name": "Rank Kiwi",
+          "legalName": "Rank Kiwi",
           "url": "https://rankkiwi.com/",
-          "logo": "https://rankkiwi.com/assets/rankkiwi-icon.png",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://rankkiwi.com/#logo",
+            "url": "https://rankkiwi.com/assets/rankkiwi-icon.png",
+            "caption": "Rank Kiwi Logo"
+          },
+          "image": "https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png",
+          "description": "Free, client-side social media research tool and Chrome extension for Instagram and YouTube creator outlier analysis.",
           "founder": {
-            "@type": "Person",
-            "name": "Bhavishya Singla",
-            "url": "https://bhavishyasingla.com/"
+            "@id": "https://bhavishyasingla.com/#person"
           },
           "sameAs": [
-            "https://www.instagram.com/bhavishyasingla1/",
+            "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl",
             "https://www.linkedin.com/in/bhavishyasingla1/",
             "https://www.youtube.com/@bhavishyasingla1",
-            "https://bhavishyasingla.com/"
+            "https://www.instagram.com/bhavishyasingla1/",
+            "https://bhavishyasingla.com/",
+            "https://github.com/bhavishyasingla1"
           ],
           "contactPoint": {
             "@type": "ContactPoint",
-            "contactType": "Support",
+            "contactType": "Customer Support",
             "email": "say@hibhavishya.in",
+            "url": "https://rankkiwi.com/support/",
             "availableLanguage": ["English"]
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "@id": "https://bhavishyasingla.com/#person",
+          "name": "Bhavishya Singla",
+          "jobTitle": "Founder & Software Creator",
+          "url": "https://bhavishyasingla.com/",
+          "image": "https://rankkiwi.com/assets/bhavishya.webp",
+          "email": "say@hibhavishya.in",
+          "sameAs": [
+            "https://bhavishyasingla.com/",
+            "https://www.linkedin.com/in/bhavishyasingla1/",
+            "https://www.instagram.com/bhavishyasingla1/",
+            "https://www.youtube.com/@bhavishyasingla1",
+            "https://github.com/bhavishyasingla1"
+          ],
+          "worksFor": {
+            "@id": "https://rankkiwi.com/#organization"
           }
         },
         {
@@ -157,39 +181,47 @@
               "name": "What does Rank Kiwi do?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Rank Kiwi is a research extension for Instagram and YouTube. Open any creator or channel to rank visible posts by Outlier Score and export directly to a spreadsheet."
+                "text": "Rank Kiwi is a free Chrome research extension for Instagram and YouTube. Open any creator or channel to rank visible Reels, Shorts, and videos against their own median baseline and export directly to a spreadsheet."
               }
             },
             {
               "@type": "Question",
-              "name": "How is this different from scrolling?",
+              "name": "How does the Outlier Score work?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Scrolling only shows posts chronologically. Rank Kiwi calculates Outlier Scores against the creator's median benchmark to reveal viral anomaly posts."
+                "text": "Outlier Score divides a video's view count by the creator's median view count. A 3.2× score means the video earned more than triple the creator's typical results. We use medians instead of averages so one viral hit doesn't distort the baseline."
               }
             },
             {
               "@type": "Question",
-              "name": "What is an Outlier Score?",
+              "name": "Why Instagram Reels only?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Outlier Score measures performance relative to typical results. A 3.2× score means the post earned more than triple the creator's median views or engagement."
+                "text": "Instagram does not expose view counts on static photos or carousels in public grid views. To protect your data accuracy and keep baselines pure, Rank Kiwi focuses exclusively on video Reels and Explore feed video downloads."
               }
             },
             {
               "@type": "Question",
-              "name": "Which platforms are supported?",
+              "name": "How does the Explore download feature work?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Rank Kiwi supports Instagram video Reels, plus YouTube long-form videos and Shorts."
+                "text": "When browsing Instagram's Explore feed or creator Reels grids, Rank Kiwi adds a direct download action so you can save high-performing reference videos straight to your disk for editing breakdowns."
               }
             },
             {
               "@type": "Question",
-              "name": "Do you need my password?",
+              "name": "Which YouTube formats are supported?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No. Rank Kiwi never accesses or requires passwords. Analysis runs 100% locally in your browser sandbox."
+                "text": "Rank Kiwi supports YouTube long-form videos and YouTube Shorts, allowing you to filter by duration and benchmark against channel medians."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you require my Instagram or Google password?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Never. Rank Kiwi requires no accounts, no login, and no passwords. All data processing executes 100% locally in your Chrome browser sandbox."
               }
             },
             {
@@ -197,23 +229,23 @@
               "name": "Can I export to Google Sheets?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. You can export directly to native Excel (.xlsx), standard CSV, or copy formatted rows to your clipboard for instant pasting into Google Sheets, Excel, or Notion."
+                "text": "Yes. You can export directly to native Excel (.xlsx), standard CSV, or copy formatted rows to your clipboard for instant pasting into Google Sheets, Notion, or Airtable."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Rank Kiwi free?",
+              "name": "Is Rank Kiwi really free forever?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Rank Kiwi is completely free to install and use from the Chrome Web Store."
+                "text": "Yes. There are no paid tiers, no subscription prompts, and no locked features. It is free forever."
               }
             },
             {
               "@type": "Question",
-              "name": "How do I get support?",
+              "name": "How do I get support or report a bug?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Contact Bhavishya Singla at say@hibhavishya.in or visit our Support page."
+                "text": "Contact Bhavishya Singla directly at say@hibhavishya.in or visit our Support page."
               }
             }
           ]

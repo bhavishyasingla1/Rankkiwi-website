@@ -56,49 +56,126 @@
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
       [
-        {
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "Rank Kiwi vs Viewstats: Multi-Platform Research vs YouTube Intelligence",
-          "description": "An objective editorial evaluation comparing Rank Kiwi's cross-platform Instagram and YouTube extension against Viewstats' deep YouTube intelligence platform.",
-          "author": {
-            "@type": "Person",
-            "name": "Bhavishya Singla"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Rank Kiwi",
-            "url": "https://rankkiwi.com/"
-          },
-          "datePublished": "2026-10-05",
-          "dateModified": "2026-10-05",
-          "mainEntityOfPage": "https://rankkiwi.com/compare/rank-kiwi-vs-viewstats/"
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://rankkiwi.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Compare",
-              "item": "https://rankkiwi.com/compare/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Rank Kiwi vs Viewstats",
-              "item": "https://rankkiwi.com/compare/rank-kiwi-vs-viewstats/"
-            }
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Rank Kiwi vs Viewstats: Multi-Platform Research vs YouTube Intelligence",
+        "description": "An objective editorial evaluation comparing Rank Kiwi's cross-platform Instagram and YouTube extension against Viewstats' deep YouTube intelligence platform.",
+        "author": {
+          "@type": "Person",
+          "@id": "https://bhavishyasingla.com/#person",
+          "name": "Bhavishya Singla",
+          "jobTitle": "Founder & Software Creator",
+          "url": "https://bhavishyasingla.com/",
+          "image": "https://rankkiwi.com/assets/bhavishya.webp",
+          "sameAs": [
+            "https://bhavishyasingla.com/",
+            "https://www.linkedin.com/in/bhavishyasingla1/",
+            "https://www.instagram.com/bhavishyasingla1/",
+            "https://www.youtube.com/@bhavishyasingla1",
+            "https://github.com/bhavishyasingla1"
           ]
+        },
+        "publisher": {
+          "@type": [
+            "Organization",
+            "OnlineBusiness"
+          ],
+          "@id": "https://rankkiwi.com/#organization",
+          "name": "Rank Kiwi",
+          "legalName": "Rank Kiwi",
+          "url": "https://rankkiwi.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://rankkiwi.com/#logo",
+            "url": "https://rankkiwi.com/assets/rankkiwi-icon.png",
+            "caption": "Rank Kiwi Logo"
+          },
+          "founder": {
+            "@id": "https://bhavishyasingla.com/#person"
+          }
+        },
+        "datePublished": "2026-10-05",
+        "dateModified": "2026-10-16",
+        "mainEntityOfPage": "https://rankkiwi.com/compare/rank-kiwi-vs-viewstats/",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://rankkiwi.com/#website",
+          "name": "Rank Kiwi",
+          "url": "https://rankkiwi.com/"
         }
-      ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://rankkiwi.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Compare",
+            "item": "https://rankkiwi.com/compare/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Rank Kiwi vs Viewstats",
+            "item": "https://rankkiwi.com/compare/rank-kiwi-vs-viewstats/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Viewstats support Instagram?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Viewstats is exclusively dedicated to YouTube. It does not track Instagram Reels, Carousels, or profile metrics. If you need Instagram creator research, Rank Kiwi provides full support."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Viewstats free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Viewstats offers a free tier for basic channel lookups and outlier metrics. Advanced features such as comprehensive historical outlier search, thumbnail comparison search, and custom collections require a paid Pro ($20–$49/month) or Business subscription ($249/month)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Rank Kiwi calculate YouTube Outlier Scores?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rank Kiwi calculates the median view count across the creator's loaded videos or Shorts, and then divides each video's performance by that median baseline. A 3.2x score means the video generated 3.2 times more views than that creator's typical upload."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use Rank Kiwi on YouTube Shorts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Rank Kiwi includes dedicated DOM extractors for YouTube Shorts tabs, allowing you to sort Shorts by Outlier Score, views, and comments directly in your browser."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Rank Kiwi offer thumbnail search like Viewstats?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Viewstats features a dedicated visual thumbnail search engine. Rank Kiwi focuses on in-browser performance analytics, Outlier Scores, sorting, and data exports."
+            }
+          }
+        ]
+      }
+    ]
     </script>
   </head>
   <body>

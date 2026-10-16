@@ -56,100 +56,123 @@
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
       [
-        {
-          "@context": "https://schema.org",
-          "@type": ["SoftwareApplication", "WebApplication"],
-          "name": "Rank Kiwi Instagram Creator Analytics",
-          "url": "https://rankkiwi.com/instagram-analytics/",
-          "description": "Free Chrome extension to analyze Instagram creator profiles, benchmark Reels view metrics against median performance, and find breakout viral outliers.",
-          "applicationCategory": "SocialNetworkingApplication, DeveloperApplication",
-          "operatingSystem": "Google Chrome, Chromium",
-          "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "SoftwareApplication",
+          "WebApplication"
+        ],
+        "name": "Rank Kiwi Instagram Creator Analytics",
+        "url": "https://rankkiwi.com/instagram-analytics/",
+        "description": "Free Chrome extension to analyze Instagram creator profiles, benchmark Reels view metrics against median performance, and find breakout viral outliers.",
+        "applicationCategory": "SocialNetworkingApplication, DeveloperApplication",
+        "operatingSystem": "Google Chrome, Chromium",
+        "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "publisher": {
+          "@type": [
+            "Organization",
+            "OnlineBusiness"
+          ],
+          "@id": "https://rankkiwi.com/#organization",
+          "name": "Rank Kiwi",
+          "legalName": "Rank Kiwi",
+          "url": "https://rankkiwi.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://rankkiwi.com/#logo",
+            "url": "https://rankkiwi.com/assets/rankkiwi-icon.png",
+            "caption": "Rank Kiwi Logo"
           },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Rank Kiwi",
-            "url": "https://rankkiwi.com/"
+          "founder": {
+            "@id": "https://bhavishyasingla.com/#person"
           }
         },
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://rankkiwi.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Instagram Analytics",
-              "item": "https://rankkiwi.com/instagram-analytics/"
-            }
-          ]
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What Instagram content can Rank Kiwi analyze?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Rank Kiwi analyzes publicly accessible Instagram Reels on dedicated /reels/ tabs and profile grids. It focuses exclusively on video Reels where view and play counts are publicly published, safely filtering out static photos and carousels so zero-play images never skew the creator's video median baseline."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do I need to log into Rank Kiwi with my Instagram password?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Never. Rank Kiwi requires zero login credentials, passwords, or authentication tokens. It executes locally in your browser sandbox, analyzing only the publicly visible HTML elements already rendered in your active tab."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can Rank Kiwi analyze private Instagram profiles?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. Rank Kiwi respects platform privacy settings and cannot access private, invite-only, or age-gated profiles."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the difference between sorting by Views and Outlier Score?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sorting by Views shows absolute reach, which often reflects historical follower accumulation. Sorting by Outlier Score divides each post's views by the creator's median benchmark, surfacing the creative concepts that genuinely broke out regardless of follower count."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can I export my Instagram research to a spreadsheet?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Rank Kiwi supports one-click exports to native Excel (.xlsx), CSV, structured JSON payloads, and direct clipboard copying (both TSV and formatted HTML tables) for immediate pasting into Google Sheets, Notion databases, or Microsoft Excel."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Does studying viral outliers guarantee my posts will go viral?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. Rank Kiwi is a research and benchmarking tool, not an algorithmic prediction engine. It helps you identify which hooks, pacing structures, and formats resonated unusually well so you can ethically test similar editorial frameworks."
-              }
-            }
-          ]
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://rankkiwi.com/#website",
+          "name": "Rank Kiwi",
+          "url": "https://rankkiwi.com/"
         }
-      ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://rankkiwi.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Instagram Analytics",
+            "item": "https://rankkiwi.com/instagram-analytics/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What Instagram content can Rank Kiwi analyze?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rank Kiwi analyzes publicly accessible Instagram Reels on dedicated /reels/ tabs and profile grids. It focuses exclusively on video Reels where view and play counts are publicly published, safely filtering out static photos and carousels so zero-play images never skew the creator's video median baseline."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to log into Rank Kiwi with my Instagram password?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Never. Rank Kiwi requires zero login credentials, passwords, or authentication tokens. It executes locally in your browser sandbox, analyzing only the publicly visible HTML elements already rendered in your active tab."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Rank Kiwi analyze private Instagram profiles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Rank Kiwi respects platform privacy settings and cannot access private, invite-only, or age-gated profiles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between sorting by Views and Outlier Score?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sorting by Views shows absolute reach, which often reflects historical follower accumulation. Sorting by Outlier Score divides each post's views by the creator's median benchmark, surfacing the creative concepts that genuinely broke out regardless of follower count."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I export my Instagram research to a spreadsheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Rank Kiwi supports one-click exports to native Excel (.xlsx), CSV, structured JSON payloads, and direct clipboard copying (both TSV and formatted HTML tables) for immediate pasting into Google Sheets, Notion databases, or Microsoft Excel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does studying viral outliers guarantee my posts will go viral?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Rank Kiwi is a research and benchmarking tool, not an algorithmic prediction engine. It helps you identify which hooks, pacing structures, and formats resonated unusually well so you can ethically test similar editorial frameworks."
+            }
+          }
+        ]
+      }
+    ]
     </script>
   </head>
   <body>
