@@ -27,6 +27,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Bhavishya Singla" />
     <meta name="date" content="2026-10-05" scheme="YYYY-MM-DD" />
+    <link rel="icon" type="image/webp" href="/assets/rankkiwi-icon.webp" />
     <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
     <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
     <meta name="theme-color" content="#cbf990" />
@@ -36,20 +37,29 @@
     <meta property="og:url" content="https://rankkiwi.com/docs/understanding/outlier-score/" />
     <meta property="og:title" content="Understanding Outlier Score: Creator-Relative Median Benchmarking - Rank Kiwi" />
     <meta property="og:description" content="Learn how Rank Kiwi's Outlier Score works: mathematical formula, why the median baseline prevents distortion, and how to spot breakout anomaly content." />
-    <meta property="og:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.webp" />
     <meta property="og:site_name" content="Rank Kiwi" />
 
     <!-- Twitter / X Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Understanding Outlier Score: Creator-Relative Median Benchmarking - Rank Kiwi" />
     <meta name="twitter:description" content="Learn how Rank Kiwi's Outlier Score works: mathematical formula, why the median baseline prevents distortion, and how to spot breakout anomaly content." />
-    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.webp" />
 
     <!-- Fonts & CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
     <link rel="stylesheet" href="/styles.min.css" />
+    <style id="docs-critical-resilience">
+      .docs-nav-chevron { width: 14px !important; height: 14px !important; min-width: 14px !important; min-height: 14px !important; flex-shrink: 0; display: block; }
+      .docs-nav-header { display: flex; align-items: center; justify-content: space-between; width: 100%; border: none; background: transparent; font-family: inherit; cursor: pointer; -webkit-appearance: none; appearance: none; }
+      .docs-drawer-header, .docs-mobile-close, .docs-drawer-close { display: none; }
+      @media (max-width: 960px) {
+        .docs-drawer-header { display: flex !important; }
+        .docs-sidebar:not(.is-mobile-open) { display: none !important; }
+      }
+    </style>
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -87,7 +97,7 @@
           "logo": {
             "@type": "ImageObject",
             "@id": "https://rankkiwi.com/#logo",
-            "url": "https://rankkiwi.com/assets/rankkiwi-icon.png",
+            "url": "https://rankkiwi.com/assets/rankkiwi-icon.webp",
             "caption": "Rank Kiwi Logo"
           },
           "founder": {
@@ -167,11 +177,12 @@
     <main class="docs-wrapper wrap">
       <!-- Mobile Navigation Bar -->
       <div class="docs-mobile-bar">
-        <div class="docs-breadcrumbs" style="margin: 0;">
+        <div class="docs-breadcrumbs">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--brand-primary, #2b7a1e); flex-shrink: 0;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
           <a href="/docs/">Docs</a> <span>/</span> <a href="/docs/understanding/outlier-score/">Sorting &amp; Score</a> <span>/</span> <span>Outlier Score</span>
         </div>
-        <button type="button" class="docs-mobile-toggle" data-docs-mobile-toggle aria-label="Open documentation navigation">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <button type="button" class="docs-mobile-toggle" data-docs-mobile-toggle aria-label="Open documentation navigation" aria-expanded="false">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
           <span>Menu</span>
         </button>
       </div>
@@ -179,14 +190,22 @@
       <div class="docs-container">
         <!-- Sticky Sidebar Navigation -->
         <aside class="docs-sidebar" aria-label="Documentation navigation">
-          <button type="button" class="docs-mobile-close" data-docs-mobile-close aria-label="Close navigation">
-            ✕ Close Menu
-          </button>
+                    <!-- Drawer Header (Mobile Only) -->
+          <div class="docs-drawer-header">
+            <div class="docs-drawer-brand">
+              <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="docs-drawer-logo" width="24" height="24" loading="lazy" decoding="async" />
+              <span>Rank Kiwi Docs</span>
+              <span class="docs-drawer-badge">Guides</span>
+            </div>
+            <button type="button" class="docs-drawer-close" data-docs-mobile-close aria-label="Close navigation">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
 
           <div class="docs-nav-group">
             <button type="button" class="docs-nav-header" aria-label="Toggle Getting Started group">
               <span>Getting started</span>
-              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <svg class="docs-nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
             </button>
             <ul class="docs-nav-list">
               <li><a href="/docs/getting-started/" class="docs-nav-link">Introduction &amp; Setup</a></li>
@@ -197,7 +216,7 @@
           <div class="docs-nav-group">
             <button type="button" class="docs-nav-header" aria-label="Toggle Platforms group">
               <span>Platforms</span>
-              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <svg class="docs-nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
             </button>
             <ul class="docs-nav-list">
               <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Reels</a></li>
@@ -209,7 +228,7 @@
           <div class="docs-nav-group is-open">
             <button type="button" class="docs-nav-header" aria-label="Toggle Sorting &amp; Filtering group">
               <span>Sorting &amp; Score</span>
-              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <svg class="docs-nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
             </button>
             <ul class="docs-nav-list">
               <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link active">Outlier Score math</a></li>
@@ -220,7 +239,7 @@
           <div class="docs-nav-group">
             <button type="button" class="docs-nav-header" aria-label="Toggle Exporting group">
               <span>Exporting</span>
-              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <svg class="docs-nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
             </button>
             <ul class="docs-nav-list">
               <li><a href="/docs/exports/" class="docs-nav-link">Excel, CSV &amp; Clipboard</a></li>
@@ -230,7 +249,7 @@
           <div class="docs-nav-group">
             <button type="button" class="docs-nav-header" aria-label="Toggle Workflows &amp; Help group">
               <span>Workflows &amp; Help</span>
-              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              <svg class="docs-nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
             </button>
             <ul class="docs-nav-list">
               <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research workflow</a></li>
@@ -240,9 +259,9 @@
           </div>
 
           <div class="docs-sidebar-footer">
-            <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">
+            <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener" class="docs-btn-store">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
-              <span>Chrome Store</span>
+              <span>Add to Chrome &mdash; Free</span>
             </a>
             <a href="mailto:say@hibhavishya.in">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
