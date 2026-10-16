@@ -1,0 +1,11 @@
+content_format,channel_cohort,sample_size,median_first_upload_views,median_best_of_10_views,outlier_multiplier_ratio,pct_total_views_from_top_outlier,primary_source,derived_by
+Long-Form Video,All Channels,448413,180,1948,10.82,64.2%,vidIQ Study (2025/2026),Rank Kiwi Research
+YouTube Shorts,All Channels,448413,1362,8832,6.48,58.7%,vidIQ Study (2025/2026),Rank Kiwi Research
+Long-Form Video,Channels Under 1k Subs,312000,94,1120,11.91,68.4%,vidIQ Study (2025/2026),Rank Kiwi Research
+Long-Form Video,Channels 1k-10k Subs,88400,430,3870,9.00,59.1%,vidIQ Study (2025/2026),Rank Kiwi Research
+Long-Form Video,Channels 10k-100k Subs,38000,1650,14200,8.61,54.8%,vidIQ Study (2025/2026),Rank Kiwi Research
+Long-Form Video,Channels 100k+ Subs,10013,8400,61200,7.29,49.2%,vidIQ Study (2025/2026),Rank Kiwi Research
+YouTube Shorts,Channels Under 1k Subs,312000,850,5920,6.96,62.3%,vidIQ Study (2025/2026),Rank Kiwi Research
+YouTube Shorts,Channels 1k-10k Subs,88400,2100,12800,6.10,56.5%,vidIQ Study (2025/2026),Rank Kiwi Research
+YouTube Shorts,Channels 10k-100k Subs,38000,5800,31400,5.41,51.8%,vidIQ Study (2025/2026),Rank Kiwi Research
+YouTube Shorts,Channels 100k+ Subs,10013,19500,94000,4.82,46.1%,vidIQ Study (2025/2026),Rank Kiwi Research

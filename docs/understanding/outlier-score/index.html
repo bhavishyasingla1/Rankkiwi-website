@@ -36,14 +36,14 @@
     <meta property="og:url" content="https://rankkiwi.com/docs/understanding/outlier-score/" />
     <meta property="og:title" content="Understanding Outlier Score: Creator-Relative Median Benchmarking - Rank Kiwi" />
     <meta property="og:description" content="Learn how Rank Kiwi's Outlier Score works: mathematical formula, why the median baseline prevents distortion, and how to spot breakout anomaly content." />
-    <meta property="og:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
     <meta property="og:site_name" content="Rank Kiwi" />
 
     <!-- Twitter / X Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Understanding Outlier Score: Creator-Relative Median Benchmarking - Rank Kiwi" />
     <meta name="twitter:description" content="Learn how Rank Kiwi's Outlier Score works: mathematical formula, why the median baseline prevents distortion, and how to spot breakout anomaly content." />
-    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
 
     <!-- Fonts & CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -138,43 +138,107 @@
     </header>
 
     <main class="docs-wrapper wrap">
-      
-
-      <div class="docs-header-bar">
-        <p class="eyebrow"><span class="status-dot"></span> CORE CONCEPT</p>
-        <h1>Understanding the Outlier Score</h1>
-        <p>A comprehensive explanation of creator-relative median performance benchmarking, mathematical principles, and interpretation rules.</p>
+      <!-- Mobile Navigation Bar -->
+      <div class="docs-mobile-bar">
+        <div class="docs-breadcrumbs" style="margin: 0;">
+          <a href="/docs/">Docs</a> <span>/</span> <a href="/docs/understanding/outlier-score/">Sorting &amp; Score</a> <span>/</span> <span>Outlier Score</span>
+        </div>
+        <button type="button" class="docs-mobile-toggle" data-docs-mobile-toggle aria-label="Open documentation navigation">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <span>Menu</span>
+        </button>
       </div>
 
       <div class="docs-container">
-        <!-- Sidebar Navigation -->
+        <!-- Sticky Sidebar Navigation -->
         <aside class="docs-sidebar" aria-label="Documentation navigation">
+          <button type="button" class="docs-mobile-close" data-docs-mobile-close aria-label="Close navigation">
+            ✕ Close Menu
+          </button>
+
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Outlier Score Topics</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Getting Started group">
+              <span>Getting started</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="#quick-answer" class="docs-nav-link active">Simple Answer</a></li>
-              <li><a href="#creator-relative" class="docs-nav-link">Creator-Relative Principle</a></li>
-              <li><a href="#why-median" class="docs-nav-link">Why Median Beats Average</a></li>
-              <li><a href="#formula" class="docs-nav-link">Mathematical Formula</a></li>
-              <li><a href="#tiers" class="docs-nav-link">Score Interpretation Tiers</a></li>
-              <li><a href="#sample-dependency" class="docs-nav-link">Sample Size Sensitivity</a></li>
-              <li><a href="#what-it-does-not-mean" class="docs-nav-link">What It Does NOT Mean</a></li>
+              <li><a href="/docs/getting-started/" class="docs-nav-link">Introduction &amp; Setup</a></li>
+              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your first analysis</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Related Documentation</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Platforms group">
+              <span>Platforms</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; Filtering</a></li>
-              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research Workflow</a></li>
-              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Manual</a></li>
-              <li><a href="/docs/troubleshooting/#missing-metrics" class="docs-nav-link">Metrics Troubleshooting</a></li>
+              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Reels</a></li>
+              <li><a href="/docs/instagram/explore-downloads/" class="docs-nav-link">Explore downloads <span class="docs-badge-new">New</span></a></li>
+              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Scanner</a></li>
             </ul>
+          </div>
+
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Sorting &amp; Filtering group">
+              <span>Sorting &amp; Score</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link active">Outlier Score math</a></li>
+              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; filters</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Exporting group">
+              <span>Exporting</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/exports/" class="docs-nav-link">Excel, CSV &amp; Clipboard</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Workflows &amp; Help group">
+              <span>Workflows &amp; Help</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research workflow</a></li>
+              <li><a href="/docs/troubleshooting/" class="docs-nav-link">Troubleshooting &amp; FAQ</a></li>
+              <li><a href="/support/" class="docs-nav-link">Support &amp; Community</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-sidebar-footer">
+            <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+              <span>Chrome Store</span>
+            </a>
+            <a href="mailto:say@hibhavishya.in">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>say@hibhavishya.in</span>
+            </a>
           </div>
         </aside>
 
         <!-- Main Content -->
         <div class="docs-content" id="docs-content">
+          <nav class="docs-breadcrumbs" aria-label="Breadcrumb">
+            <a href="/docs/">Docs</a> <span>/</span>
+            <a href="/docs/understanding/outlier-score/">Sorting &amp; Score</a> <span>/</span>
+            <span>Outlier Score Math</span>
+          </nav>
+
+          <div class="docs-article-header">
+            <p class="eyebrow"><span class="status-dot"></span> Core Concept</p>
+            <h1>Understanding the Outlier Score</h1>
+            <p class="docs-lead">A comprehensive explanation of creator-relative median performance benchmarking, mathematical principles, and interpretation rules.</p>
+          </div>
+
+          <article class="docs-article">
           <article class="docs-article" id="quick-answer">
             <h2>The Quick Answer</h2>
             <p class="docs-lead">Rank Kiwi's Outlier Score reveals how strongly a specific post performed compared with that creator's typical baseline in the analyzed sample.</p>
@@ -276,7 +340,7 @@
           </article>
 
           <article class="docs-article" id="what-it-does-not-mean">
-            <h2>What Outlier Score Does NOT Mean</h2>
+            <h2>What Outlier Score Isn't</h2>
             <p class="docs-lead">To maintain analytical integrity, keep these critical boundaries in mind:</p>
             <ul>
               <li><strong>Not an Algorithm Guarantee:</strong> A 10× score does not prove the algorithm will promote that topic again or that copying it guarantees views.</li>
@@ -287,7 +351,7 @@
             <div class="docs-pagination">
               <div class="docs-page-nav">
                 <span>Previous</span>
-                <b><a href="/docs/getting-started/your-first-analysis/">Your First Analysis Walkthrough</a></b>
+                <b><a href="/docs/getting-started/your-first-analysis/">&larr; Your First Analysis Walkthrough</a></b>
               </div>
               <div class="docs-page-nav docs-page-next">
                 <span>Next Guide</span>
@@ -296,10 +360,24 @@
             </div>
           </article>
         </div>
+
+        <!-- Right-Side Table of Contents -->
+        <aside class="docs-toc" aria-label="Table of contents">
+          <div class="docs-toc-title">On this page</div>
+          <ul class="docs-toc-list">
+            <li><a href="#quick-answer" class="docs-toc-link">Simple answer</a></li>
+            <li><a href="#creator-relative" class="docs-toc-link">Creator-relative baseline</a></li>
+            <li><a href="#why-median" class="docs-toc-link">Median vs. average</a></li>
+            <li><a href="#formula" class="docs-toc-link">Mathematical formula</a></li>
+            <li><a href="#tiers" class="docs-toc-link">Interpretation tiers</a></li>
+            <li><a href="#sample-dependency" class="docs-toc-link">Sample size sensitivity</a></li>
+            <li><a href="#what-it-does-not-mean" class="docs-toc-link">What it does not mean</a></li>
+          </ul>
+        </aside>
       </div>
     </main>
 
-                <!-- SITE FOOTER -->
+                    <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
@@ -326,37 +404,25 @@
 
         <div>
           <b>Product</b>
-          <a href="/">Home</a>
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="/creator-content-research/">Creator Research</a>
+          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
-          <b>Learn &amp; Docs</b>
+          <b>Resources</b>
+          <a href="/research/">Research</a>
+          <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
-          <a href="/docs/getting-started/">Getting Started</a>
-          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
-          <a href="/docs/troubleshooting/">Troubleshooting</a>
-          <a href="/docs/exports/">Exports Guide</a>
-        </div>
-
-        <div>
-          <b>Research &amp; Compare</b>
-          <a href="/research/">Research Hub</a>
-          <a href="/research/methodology/">Methodology</a>
           <a href="/compare/">Tool Comparisons</a>
-          <a href="/alternatives/">Alternatives Hub</a>
-          <a href="/best/">Best Software Guides</a>
         </div>
 
         <div>
-          <b>Legal &amp; Support</b>
+          <b>Support &amp; Legal</b>
           <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
-          <a href="/disclaimer/">Disclaimer</a>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
         </div>
       </div>

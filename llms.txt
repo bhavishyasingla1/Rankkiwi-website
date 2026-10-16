@@ -1,27 +1,31 @@
-# Rank Kiwi: Viral Outlier Research for Instagram & YouTube
+# Rank Kiwi: Free Instagram & YouTube Outlier Analytics
 
-> Rank Kiwi is a lightweight, privacy-first browser extension for creator research. It allows creators, social media managers, and editors to analyze Instagram profiles and YouTube channels, benchmark engagement against median baseline performance, and instantly surface high-performing viral outlier posts and videos.
+> Rank Kiwi (v1.0.1) is a 100% free, lightweight, privacy-first Chrome extension for creator research, viral outlier discovery, and competitive intelligence on Instagram and YouTube. It benchmarks content against each creator's median baseline to isolate genuine breakout formats from raw subscriber inertia. Client-side execution, no login required.
 
-## Core Capabilities
+## Core Capabilities & Features
 
-- [Instagram Reels Outlier Discovery](https://rankkiwi.com/instagram-analytics/): Scans reels and posts across any Instagram profile, computes view-to-median Outlier Scores, and highlights anomaly content.
-- [YouTube Outlier Discovery](https://rankkiwi.com/youtube-analytics/): Analyzes channel video catalogs and YouTube Shorts, filtering top 1% breakout uploads.
-- [Median Benchmark Scoring](https://rankkiwi.com/outlier-score/): Calculates non-skewed median metrics (1.0× typical, 3.2× strong, 5.8×+ viral outlier) to eliminate distortion from one-off viral hits.
-- [Creator Content Research](https://rankkiwi.com/creator-content-research/): Reverse-engineers competitor content strategies, packaging patterns, and high-frequency topics.
-- [Data Export](https://rankkiwi.com/docs/exports/): One-click export of video URLs, hooks, view counts, like ratios, and outlier scores to CSV, JSON, and Google Sheets.
-- [Client-Side Privacy](https://rankkiwi.com/privacy/): 100% in-browser processing in the Chrome sandbox with zero database retention, zero external API tracking, and no account or password required.
+- [Instagram Reels Outlier Discovery](https://rankkiwi.com/instagram-analytics/): Scans public Instagram creator profiles and the dedicated `/reels/` tab. Evaluates video Reels exclusively—filtering out static photos and carousels to preserve true video median benchmarks. Includes an in-modal 9:16 responsive HTML5 video player with seeking, duration countdown, dynamic audio soundwave visualization, and single or batch MP4 downloads (`rankkiwi_{creator}_{id}.mp4`).
+- [YouTube Outlier Discovery](https://rankkiwi.com/youtube-analytics/): Analyzes channel video catalogs and YouTube Shorts with creator anti-leakage validation and live stats enrichment. Supports high-resolution thumbnail downloads (1080p `maxresdefault.jpg`) while strictly complying with YouTube policies (zero video/audio stream downloading).
+- [Median Benchmark Scoring](https://rankkiwi.com/outlier-score/): Calculates non-skewed median metrics (1.0× typical, 2.0×–3.5× strong, 4.0×–10.0×+ breakout outlier) to eliminate distortion from one-off viral hits. Hidden metrics normalize to null (`—`) and sort automatically to the bottom.
+- [Creator Content Research](https://rankkiwi.com/creator-content-research/): Reverse-engineers competitor content strategies, packaging patterns, and high-frequency topics directly in-browser.
+- [Multi-Format Data Export](https://rankkiwi.com/docs/exports/): One-click export to native Excel spreadsheets (`.xlsx` Open Packaging Conventions workbooks created client-side via zero-dependency PKZIP Store archive), CSV, structured JSON, and rich dual-channel clipboard copy (TSV & HTML tables).
+- [Client-Side Privacy Architecture](https://rankkiwi.com/privacy/): 100% in-browser processing in the Chrome sandbox with zero external database retention, zero third-party telemetry, and no account or password required.
 
 ## Key Links & Documentation
 
-- [Website & Chrome Install](https://rankkiwi.com/): Official home and install link.
+- [Website & Chrome Web Store Install](https://rankkiwi.com/): Official home and extension installation link.
+- [About & Founder Story](https://rankkiwi.com/about/): Meet student founder Bhavishya Singla, the $15-$99/mo SaaS rebellion story, and privacy pledge.
+- [Interactive Sample Report](https://rankkiwi.com/sample-report/): Live interactive preview of @hubermanlab 6.2× outlier analysis with working CSV exports.
 - [Instagram Analytics Solution](https://rankkiwi.com/instagram-analytics/): Dedicated Instagram Reels & Profile intelligence.
 - [YouTube Analytics Solution](https://rankkiwi.com/youtube-analytics/): Dedicated YouTube Channel & Shorts intelligence.
-- [Outlier Score Guide](https://rankkiwi.com/outlier-score/): Formula explanation and benchmarking tiers.
+- [Outlier Score Guide](https://rankkiwi.com/outlier-score/): Mathematical formula, median benchmarks, and multiplier thresholds.
 - [Creator Research Guide](https://rankkiwi.com/creator-content-research/): Competitor analysis and reverse-engineering workflows.
+- [Competitor Reel Ideas Guide](https://rankkiwi.com/guides/how-to-find-reel-ideas-from-competitors/): Data-backed framework to find and deconstruct 3×-10× competitor Reel hooks.
 - [Documentation & Knowledge Hub](https://rankkiwi.com/docs/): Complete documentation portal.
-- [Getting Started & Workspace Tour](https://rankkiwi.com/docs/getting-started/): Extension setup, pinning, and workspace tour.
+- [Getting Started & Setup](https://rankkiwi.com/docs/getting-started/): Extension setup, browser pinning, and workspace tour.
 - [Your First Analysis Guide](https://rankkiwi.com/docs/getting-started/your-first-analysis/): 9-step beginner creator analysis walkthrough.
 - [Instagram Research Guide](https://rankkiwi.com/docs/instagram/): Reels vs profile metrics, filters, and platform limits.
+- [Explore & Reels Downloads Guide](https://rankkiwi.com/docs/instagram/explore-downloads/): Step-by-step MP4 video download guide for Instagram Explore.
 - [YouTube Research Guide](https://rankkiwi.com/docs/youtube/): Videos and Shorts research, and thumbnail downloads.
 - [Outlier Score Explained](https://rankkiwi.com/docs/understanding/outlier-score/): Mathematical formula and median benchmarks.
 - [Sorting & Filtering](https://rankkiwi.com/docs/understanding/sorting-filtering/): Sorting dimensions and multi-attribute filters.
@@ -29,21 +33,23 @@
 - [Export & Media Downloads](https://rankkiwi.com/docs/exports/): CSV, JSON, and media download procedures.
 - [Troubleshooting & Diagnostics](https://rankkiwi.com/docs/troubleshooting/): Visual decision tree and 12 symptom guides.
 - [Privacy Policy](https://rankkiwi.com/privacy/): Details client-side sandboxed architecture.
-- [Support & Contact](https://rankkiwi.com/support/): Reach founder Bhavishya Singla at say@hibhavishya.in.
+- [Support & Contact](https://rankkiwi.com/support/): Contact founder Bhavishya Singla at say@hibhavishya.in.
 
 ## Research & Editorial Benchmarks
 
-- [Rank Kiwi Research Hub](https://rankkiwi.com/research/): Original quantitative research into content performance and distribution outliers.
+- [Rank Kiwi Research Hub](https://rankkiwi.com/research/): Original quantitative research into creator economy performance and distribution outliers.
 - [Research Methodology](https://rankkiwi.com/research/methodology/): Data transparency standards, derived value rules, and editorial principles.
 - [Instagram Reels vs Carousels Benchmark](https://rankkiwi.com/research/instagram-reels-vs-carousels/): Analysis of Buffer's 4M+ post study on the reach vs engagement trade-off.
 - [Instagram Views by Account Size](https://rankkiwi.com/research/instagram-views-by-account-size/): Socialinsider benchmark evaluating average view scaling across 5 follower tiers.
 - [One Video Doesn't Tell You How Good a Creator Is](https://rankkiwi.com/research/one-video-is-not-a-channel/): vidIQ study of 448K channels showing 10.82× spread between median first video and best of first 10.
+- [448k Channel Study Dataset (CSV)](https://rankkiwi.com/research/datasets/vidiq-448k-channel-study-summary.csv): Open downloadable summary dataset covering 10 channel cohorts.
 - [YouTube Upload Frequency Analysis](https://rankkiwi.com/research/youtube-upload-frequency/): vidIQ study of 10.2M channels analyzing upload cadence vs median growth rates.
 - [YouTube Channel Size Rarity Census](https://rankkiwi.com/research/youtube-channel-size/): 61.2M channel census detailing milestone rarity (0.13% at 1M+ subs).
 
 ## Product Comparisons & Competitive Positioning
 
 - [Comparison Hub](https://rankkiwi.com/compare/): Editorial comparison directory evaluating creator research and social analytics tools.
+- [Rank Kiwi vs ViewRank](https://rankkiwi.com/compare/rank-kiwi-vs-viewrank/): Honest comparison of two free Reels extensions (ViewRank's notes/tags/favorites/player vs Rank Kiwi's YouTube/median math/downloads/Excel exports).
 - [Rank Kiwi vs Sort Feed](https://rankkiwi.com/compare/rank-kiwi-vs-sort-feed/): Direct creator research extension comparison (Instagram/YouTube focus vs TikTok/Facebook/transcription).
 - [Rank Kiwi vs Socialinsider](https://rankkiwi.com/compare/rank-kiwi-vs-socialinsider/): In-browser creator research vs enterprise multi-channel social benchmarking suites.
 - [Rank Kiwi vs Metricool](https://rankkiwi.com/compare/rank-kiwi-vs-metricool/): Creator research & outlier discovery vs all-in-one social scheduling and publishing suites.
@@ -71,6 +77,6 @@
 - [Best Content Research Tools for Creators](https://rankkiwi.com/best-content-research-tools-for-creators/): Tools organized by creator jobs: video ideas, hook breakdowns, YouTube SEO keywords, and packaging.
 - [Best Free Content Research Tools](https://rankkiwi.com/best-free-content-research-tools/): Distinguishing 100% free software from limited freemium tiers and 14-day trials.
 
-- [Full LLM Specification](https://rankkiwi.com/llms-full.txt): Detailed unabridged system documentation for AI agents and LLM web retrievers.
+## Full Technical & Operational Specification
 
-
+- [Full LLM Specification](https://rankkiwi.com/llms-full.txt): Complete, unabridged technical guide containing full mathematical formulas, anti-leakage algorithms, data schemas, empirical research tables, and competitor matrices for autonomous agents and LLMs.

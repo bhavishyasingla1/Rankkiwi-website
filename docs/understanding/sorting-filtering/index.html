@@ -26,7 +26,7 @@
     <link rel="canonical" href="https://rankkiwi.com/docs/understanding/sorting-filtering/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Bhavishya Singla" />
-    <meta name="date" content="2026-10-05" scheme="YYYY-MM-DD" />
+    <meta name="date" content="2026-10-14" scheme="YYYY-MM-DD" />
     <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
     <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
     <meta name="theme-color" content="#cbf990" />
@@ -36,14 +36,14 @@
     <meta property="og:url" content="https://rankkiwi.com/docs/understanding/sorting-filtering/" />
     <meta property="og:title" content="Sorting &amp; Filtering Creator Content - Rank Kiwi Docs" />
     <meta property="og:description" content="Master Rank Kiwi sorting and custom filtering options to isolate high-performing Reels, filter content by date windows, and eliminate noise." />
-    <meta property="og:image" content="https://rankkiwi.com/assets/shots/instagram-filters.png" />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/instagram-reels-filter-modal.png" />
     <meta property="og:site_name" content="Rank Kiwi" />
 
     <!-- Twitter / X Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Sorting &amp; Filtering Creator Content - Rank Kiwi Docs" />
     <meta name="twitter:description" content="Master Rank Kiwi sorting and custom filtering options to isolate high-performing Reels, filter content by date windows, and eliminate noise." />
-    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/instagram-filters.png" />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/instagram-reels-filter-modal.png" />
 
     <!-- Fonts & CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -72,7 +72,9 @@
               "@type": "ImageObject",
               "url": "https://rankkiwi.com/assets/rankkiwi-icon.png"
             }
-          }
+          },
+          "datePublished": "2026-03-15",
+          "dateModified": "2026-10-14"
         },
         {
           "@context": "https://schema.org",
@@ -138,39 +140,107 @@
     </header>
 
     <main class="docs-wrapper wrap">
-      
-
-      <div class="docs-header-bar">
-        <p class="eyebrow"><span class="status-dot"></span> USER MANUAL</p>
-        <h1>Sorting &amp; Custom Filters</h1>
-        <p>A reference guide to ranking creator content and using multi-attribute filters to isolate winning content hooks.</p>
+      <!-- Mobile Navigation Bar -->
+      <div class="docs-mobile-bar">
+        <div class="docs-breadcrumbs" style="margin: 0;">
+          <a href="/docs/">Docs</a> <span>/</span> <a href="/docs/understanding/sorting-filtering/">Sorting &amp; Score</a> <span>/</span> <span>Sorting &amp; Filters</span>
+        </div>
+        <button type="button" class="docs-mobile-toggle" data-docs-mobile-toggle aria-label="Open documentation navigation">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <span>Menu</span>
+        </button>
       </div>
 
       <div class="docs-container">
-        <!-- Sidebar Navigation -->
+        <!-- Sticky Sidebar Navigation -->
         <aside class="docs-sidebar" aria-label="Documentation navigation">
+          <button type="button" class="docs-mobile-close" data-docs-mobile-close aria-label="Close navigation">
+            ✕ Close Menu
+          </button>
+
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Sorting &amp; Filters</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Getting Started group">
+              <span>Getting started</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="#sorting-options" class="docs-nav-link active">Supported Sort Orders</a></li>
-              <li><a href="#custom-filters" class="docs-nav-link">Custom Filters</a></li>
-              <li><a href="#date-windows" class="docs-nav-link">Date Range Windows</a></li>
-              <li><a href="#recipes" class="docs-nav-link">Recommended Filter Recipes</a></li>
+              <li><a href="/docs/getting-started/" class="docs-nav-link">Introduction &amp; Setup</a></li>
+              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your first analysis</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Related Documentation</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Platforms group">
+              <span>Platforms</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score Explained</a></li>
-              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research Workflow</a></li>
-              <li><a href="/docs/exports/" class="docs-nav-link">Exporting to CSV</a></li>
+              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Reels</a></li>
+              <li><a href="/docs/instagram/explore-downloads/" class="docs-nav-link">Explore downloads <span class="docs-badge-new">New</span></a></li>
+              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Scanner</a></li>
             </ul>
+          </div>
+
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Sorting &amp; Filtering group">
+              <span>Sorting &amp; Score</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score math</a></li>
+              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link active">Sorting &amp; filters</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Exporting group">
+              <span>Exporting</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/exports/" class="docs-nav-link">Excel, CSV &amp; Clipboard</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Workflows &amp; Help group">
+              <span>Workflows &amp; Help</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research workflow</a></li>
+              <li><a href="/docs/troubleshooting/" class="docs-nav-link">Troubleshooting &amp; FAQ</a></li>
+              <li><a href="/support/" class="docs-nav-link">Support &amp; Community</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-sidebar-footer">
+            <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+              <span>Chrome Store</span>
+            </a>
+            <a href="mailto:say@hibhavishya.in">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>say@hibhavishya.in</span>
+            </a>
           </div>
         </aside>
 
         <!-- Main Content -->
         <div class="docs-content" id="docs-content">
+          <nav class="docs-breadcrumbs" aria-label="Breadcrumb">
+            <a href="/docs/">Docs</a> <span>/</span>
+            <a href="/docs/understanding/sorting-filtering/">Sorting &amp; Score</a> <span>/</span>
+            <span>Sorting &amp; Filters</span>
+          </nav>
+
+          <div class="docs-article-header">
+            <p class="eyebrow"><span class="status-dot"></span> User Manual</p>
+            <h1>Sorting &amp; Custom Filters</h1>
+            <p class="docs-lead">A reference guide to ranking creator content and using multi-attribute filters to isolate winning content hooks.</p>
+          </div>
+
+          <article class="docs-article">
           <article class="docs-article" id="sorting-options">
             <h2>Supported Sorting Orders</h2>
             <p class="docs-lead">Rank Kiwi supports multiple sorting dimensions to answer different research questions:</p>
@@ -218,30 +288,40 @@
                 </tbody>
               </table>
             </div>
+
+            <div class="callout callout-tip" style="margin-top: 16px;">
+              <p><strong>Handling of Hidden Metrics:</strong> When a creator hides public view counts or metrics are not yet available, Rank Kiwi normalizes the view count to <code>null</code> (displayed in the interface as <code>—</code>). To keep your analytical rankings clean and actionable, items with null views automatically sort to the very bottom of the grid rather than disrupting top performers.</p>
+            </div>
+
+            <figure class="annotated-shot-wrap">
+              <img src="/assets/shots/instagram-reels-sort-menu.webp" srcset="/assets/shots/instagram-reels-sort-menu.webp 1x, /assets/shots/instagram-reels-sort-menu@2x.webp 2x" alt="Instagram Reels sort dropdown in Rank Kiwi with Outlier Score Views Likes and Comments options" class="annotated-shot-img" width="1600" height="1041" loading="lazy" decoding="async" />
+              <figcaption>Sort menu options on Instagram Reels allowing ordering by Outlier Score, views, likes, or comments.</figcaption>
+            </figure>
           </article>
 
           <article class="docs-article" id="custom-filters">
             <h2>Custom Filters</h2>
             <p class="docs-lead">Open the filter panel to remove noise and isolate specific content formats.</p>
 
-            <div class="annotated-shot-wrap">
-              <img src="/assets/shots/instagram-filters.webp" alt="Rank Kiwi custom filter controls" class="annotated-shot-img" width="1280" height="832" loading="lazy" decoding="async" />
-            </div>
+            <figure class="annotated-shot-wrap">
+              <img src="/assets/shots/youtube-videos-filter-modal.webp" srcset="/assets/shots/youtube-videos-filter-modal.webp 1x, /assets/shots/youtube-videos-filter-modal@2x.webp 2x" alt="Rank Kiwi filter modal on YouTube channel with Outlier Score multiplier and view count range sliders" class="annotated-shot-img" width="1600" height="1041" loading="lazy" decoding="async" />
+              <figcaption>YouTube filter modal configured with minimum Outlier Score multipliers and view count sliders.</figcaption>
+            </figure>
 
             <h3>Filter by Content Type</h3>
-            <p>On mixed creator feeds, toggle between individual formats:</p>
+            <p>On supported creator surfaces, filter by dedicated video formats:</p>
             <ul>
-              <li><strong>Reels / Shorts:</strong> Isolate vertical short-form video content.</li>
-              <li><strong>Posts &amp; Carousels:</strong> Review static graphics, educational carousels, and image posts.</li>
-              <li><strong>Long-Form Videos:</strong> On YouTube, focus exclusively on full channel uploads.</li>
+              <li><strong>Reels (Instagram):</strong> Isolate vertical short-form video Reels. Rank Kiwi exclusively targets video Reels on Instagram directly from the creator's Reels tab.</li>
+              <li><strong>Videos (YouTube):</strong> Focus exclusively on full long-form channel uploads with verified creator identity matching.</li>
+              <li><strong>Shorts (YouTube):</strong> Filter to vertical short-form YouTube Shorts with live stats enrichment.</li>
             </ul>
 
             <h3>Filter by Outlier Multiplier</h3>
             <p>Set minimum performance thresholds to narrow large catalogs:</p>
             <ul>
-              <li><code>2.0×+</code> — Shows only videos that doubled typical creator performance.</li>
-              <li><code>3.0×+</code> — Concentrates on top 10% strong performers.</li>
-              <li><code>5.0×+</code> — Restricts results to true top 1% viral anomalies.</li>
+              <li><code>2.0×+</code> — Shows videos that doubled typical creator performance.</li>
+              <li><code>3.0×+</code> — Concentrates on content beating the creator's median by triple or more.</li>
+              <li><code>5.0×+</code> — Restricts results to breakout viral anomalies beating the median by 5× to 10×.</li>
             </ul>
           </article>
 
@@ -285,7 +365,7 @@
             <div class="docs-pagination">
               <div class="docs-page-nav">
                 <span>Previous</span>
-                <b><a href="/docs/understanding/outlier-score/">Understanding Outlier Score</a></b>
+                <b><a href="/docs/understanding/outlier-score/">&larr; Understanding Outlier Score</a></b>
               </div>
               <div class="docs-page-nav docs-page-next">
                 <span>Next Workflow</span>
@@ -294,10 +374,21 @@
             </div>
           </article>
         </div>
+
+        <!-- Right-Side Table of Contents -->
+        <aside class="docs-toc" aria-label="Table of contents">
+          <div class="docs-toc-title">On this page</div>
+          <ul class="docs-toc-list">
+            <li><a href="#sorting-options" class="docs-toc-link">Supported sort orders</a></li>
+            <li><a href="#custom-filters" class="docs-toc-link">Custom filters</a></li>
+            <li><a href="#date-windows" class="docs-toc-link">Date range windows</a></li>
+            <li><a href="#recipes" class="docs-toc-link">Recommended recipes</a></li>
+          </ul>
+        </aside>
       </div>
     </main>
 
-                <!-- SITE FOOTER -->
+                    <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
@@ -324,37 +415,25 @@
 
         <div>
           <b>Product</b>
-          <a href="/">Home</a>
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="/creator-content-research/">Creator Research</a>
+          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
-          <b>Learn &amp; Docs</b>
+          <b>Resources</b>
+          <a href="/research/">Research</a>
+          <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
-          <a href="/docs/getting-started/">Getting Started</a>
-          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
-          <a href="/docs/troubleshooting/">Troubleshooting</a>
-          <a href="/docs/exports/">Exports Guide</a>
-        </div>
-
-        <div>
-          <b>Research &amp; Compare</b>
-          <a href="/research/">Research Hub</a>
-          <a href="/research/methodology/">Methodology</a>
           <a href="/compare/">Tool Comparisons</a>
-          <a href="/alternatives/">Alternatives Hub</a>
-          <a href="/best/">Best Software Guides</a>
         </div>
 
         <div>
-          <b>Legal &amp; Support</b>
+          <b>Support &amp; Legal</b>
           <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
-          <a href="/disclaimer/">Disclaimer</a>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
         </div>
       </div>

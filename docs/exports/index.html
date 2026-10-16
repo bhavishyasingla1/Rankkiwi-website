@@ -21,20 +21,20 @@
     </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Export Data & Media Downloads — Rank Kiwi Documentation</title>
-  <meta name="description" content="Learn how to export Rank Kiwi creator research into CSV, JSON, and Clipboard formats, download Instagram Reels, and save high-resolution YouTube thumbnails.">
+  <title>Export Data &amp; Media Downloads — Rank Kiwi Documentation</title>
+  <meta name="description" content="Learn how to export Rank Kiwi creator research into native Excel (.xlsx), CSV, JSON, and rich Clipboard formats, download Instagram Reels (MP4), and save HD YouTube thumbnails.">
   <link rel="canonical" href="https://rankkiwi.com/docs/exports/">
   
-  <meta property="og:title" content="Export Data & Media Downloads — Rank Kiwi Documentation">
-  <meta property="og:description" content="Guide to exporting analyzed creator metrics to spreadsheets, JSON data pipelines, downloading Reels, and saving YouTube thumbnails.">
+  <meta property="og:title" content="Export Data &amp; Media Downloads — Rank Kiwi Documentation">
+  <meta property="og:description" content="Guide to exporting analyzed creator metrics to native Excel (.xlsx), CSV, JSON data pipelines, downloading Reels (MP4), and saving YouTube thumbnails.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://rankkiwi.com/docs/exports/">
   <meta property="og:image" content="https://rankkiwi.com/assets/og-image.png">
 
   <!-- Twitter / X Metadata -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Export Data & Media Downloads — Rank Kiwi Documentation">
-  <meta name="twitter:description" content="Guide to exporting analyzed creator metrics to spreadsheets, JSON data pipelines, downloading Reels, and saving YouTube thumbnails.">
+  <meta name="twitter:title" content="Export Data &amp; Media Downloads — Rank Kiwi Documentation">
+  <meta name="twitter:description" content="Guide to exporting analyzed creator metrics to native Excel (.xlsx), CSV, JSON data pipelines, downloading Reels (MP4), and saving YouTube thumbnails.">
   <meta name="twitter:image" content="https://rankkiwi.com/assets/og-image.png">
 
   <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
@@ -50,7 +50,7 @@
       "@context": "https://schema.org",
       "@type": "TechArticle",
       "headline": "Export Data & Media Downloads in Rank Kiwi",
-      "description": "How to export creator research data into CSV, JSON, and clipboard formats, and download original media safely.",
+      "description": "How to export creator research data into native Excel (.xlsx), CSV, JSON, and rich clipboard formats, and download original media safely.",
       "url": "https://rankkiwi.com/docs/exports/",
       "inLanguage": "en-US",
       "publisher": {
@@ -59,7 +59,7 @@
         "url": "https://rankkiwi.com/"
       },
       "datePublished": "2026-03-15",
-      "dateModified": "2026-10-05"
+      "dateModified": "2026-10-14"
     },
     {
       "@context": "https://schema.org",
@@ -117,96 +117,159 @@
     </header>
 
     <main class="docs-wrapper wrap">
-      <div class="docs-header-bar">
-        <p class="eyebrow"><span class="status-dot"></span> EXPORT &amp; MEDIA DOWNLOADS</p>
-        <h1>Export &amp; Media Downloads</h1>
-        <p>Keep your research organized with clean, zero-friction export actions to CSV, JSON, and clipboard, plus media downloads.</p>
+      <!-- Mobile Navigation Bar -->
+      <div class="docs-mobile-bar">
+        <div class="docs-breadcrumbs" style="margin: 0;">
+          <a href="/docs/">Docs</a> <span>/</span> <a href="/docs/exports/">Exporting</a> <span>/</span> <span>Excel, CSV &amp; Clipboard</span>
+        </div>
+        <button type="button" class="docs-mobile-toggle" data-docs-mobile-toggle aria-label="Open documentation navigation">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <span>Menu</span>
+        </button>
       </div>
 
       <div class="docs-container">
-        <!-- Sidebar Navigation -->
+        <!-- Sticky Sidebar Navigation -->
         <aside class="docs-sidebar" aria-label="Documentation navigation">
+          <button type="button" class="docs-mobile-close" data-docs-mobile-close aria-label="Close navigation">
+            ✕ Close Menu
+          </button>
+
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Getting Started</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Getting Started group">
+              <span>Getting started</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/getting-started/" class="docs-nav-link">Installation &amp; Setup</a></li>
-              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your First Analysis</a></li>
-              <li><a href="/docs/getting-started/#workspace" class="docs-nav-link">Workspace Tour</a></li>
+              <li><a href="/docs/getting-started/" class="docs-nav-link">Introduction &amp; Setup</a></li>
+              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your first analysis</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Platform Guides</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Platforms group">
+              <span>Platforms</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Research</a></li>
-              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Research</a></li>
+              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Reels</a></li>
+              <li><a href="/docs/instagram/explore-downloads/" class="docs-nav-link">Explore downloads <span class="docs-badge-new">New</span></a></li>
+              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Scanner</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Understanding Results</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Sorting &amp; Filtering group">
+              <span>Sorting &amp; Score</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score &amp; Median</a></li>
-              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; Filters</a></li>
-              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research Workflow</a></li>
+              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score math</a></li>
+              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; filters</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Exporting group">
+              <span>Exporting</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/exports/" class="docs-nav-link active">Excel, CSV &amp; Clipboard</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Exports &amp; Help</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Workflows &amp; Help group">
+              <span>Workflows &amp; Help</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/exports/" class="docs-nav-link active" aria-current="page">CSV &amp; JSON Export</a></li>
-              <li><a href="/docs/troubleshooting/" class="docs-nav-link">Troubleshooting Hub</a></li>
+              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research workflow</a></li>
+              <li><a href="/docs/troubleshooting/" class="docs-nav-link">Troubleshooting &amp; FAQ</a></li>
               <li><a href="/support/" class="docs-nav-link">Support &amp; Community</a></li>
             </ul>
+          </div>
+
+          <div class="docs-sidebar-footer">
+            <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+              <span>Chrome Store</span>
+            </a>
+            <a href="mailto:say@hibhavishya.in">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>say@hibhavishya.in</span>
+            </a>
           </div>
         </aside>
 
         <!-- Main Content -->
         <div class="docs-content" id="docs-content">
-      
+          <nav class="docs-breadcrumbs" aria-label="Breadcrumb">
+            <a href="/docs/">Docs</a> <span>/</span>
+            <a href="/docs/exports/">Exporting</a> <span>/</span>
+            <span>Excel, CSV &amp; Clipboard</span>
+          </nav>
 
-      <div class="answer-first-callout">
-        <strong>Take your research anywhere:</strong> Rank Kiwi allows you to export entire analyzed datasets to standard <strong>CSV</strong> spreadsheets, developer-friendly <strong>JSON</strong> schemas, or instant <strong>Clipboard</strong> pastes. You can also download original MP4 video streams of Instagram Reels and high-resolution thumbnail images from YouTube videos directly to your local downloads folder.
-      </div>
+          <div class="docs-article-header">
+            <p class="eyebrow"><span class="status-dot"></span> Export &amp; Downloads</p>
+            <h1>Export &amp; Media Downloads</h1>
+            <p class="docs-lead">Keep your research organized with clean, zero-friction export actions to native Excel (.xlsx), CSV, JSON, and rich clipboard tables, plus high-fidelity media downloads.</p>
+          </div>
 
-      <div class="table-of-contents">
-        <h4>Table of Contents</h4>
-        <ul>
-          <li><a href="#overview">Export Options Overview</a></li>
-          <li><a href="#csv">CSV Export (Spreadsheets)</a></li>
-          <li><a href="#json">JSON Export (Structured Data)</a></li>
-          <li><a href="#clipboard">Clipboard Export (Quick Paste)</a></li>
-          <li><a href="#reels-download">Downloading Instagram Reels</a></li>
-          <li><a href="#thumbnails-download">Downloading YouTube Thumbnails</a></li>
-          <li><a href="#ethical-guidelines">Fair Use & Responsible Usage</a></li>
-        </ul>
-      </div>
+          <article class="docs-article">
+            <div class="answer-first-callout">
+              <strong>Take your research anywhere:</strong> Rank Kiwi allows you to export entire analyzed datasets to native <strong>Excel (.xlsx)</strong> spreadsheets, standard <strong>CSV</strong> files, developer-friendly <strong>JSON</strong> schemas, or rich <strong>Clipboard</strong> pastes (TSV and formatted HTML tables). You can also download verified MP4 video streams of Instagram Reels (individually or in batch queues) and high-resolution thumbnail images from YouTube videos directly to your browser's default downloads destination.
+            </div>
 
       <section id="overview" class="docs-section">
         <h2>Export Options Overview</h2>
-        <p>All export actions are accessible directly from the <strong>Rank Kiwi header toolbar</strong> once your analysis finishes collecting posts:</p>
+        <p>All export actions are accessible directly from the <strong>Rank Kiwi header toolbar</strong> or the <strong>Export Menu dropdown</strong> once your analysis finishes collecting posts:</p>
+
+        <figure class="annotated-shot-wrap" style="margin-bottom: 24px;">
+          <img src="/assets/shots/youtube-videos-export-menu.webp" srcset="/assets/shots/youtube-videos-export-menu.webp 1x, /assets/shots/youtube-videos-export-menu@2x.webp 2x" alt="YouTube videos export dropdown in Rank Kiwi showing clipboard CSV Excel and JSON options" class="annotated-shot-img" width="1600" height="1041" loading="lazy" decoding="async" />
+          <figcaption>Export options on YouTube channel videos tab for CSV, Excel, clipboard, and JSON data formats.</figcaption>
+        </figure>
 
         <div class="comparison-grid">
           <div class="info-card">
+            <h3>📗 Native Excel (.xlsx)</h3>
+            <p>Generates genuine Open Packaging Conventions XML workbooks in-memory using a lightweight, zero-dependency PKZIP Store archive engine. Opens seamlessly in Microsoft Excel and Apple Numbers with pre-formatted number headers.</p>
+          </div>
+          <div class="info-card">
             <h3>📊 CSV File (.csv)</h3>
-            <p>Best for Google Sheets, Microsoft Excel, Apple Numbers, and Airtable. Formatted with standard comma separation and quoted text strings.</p>
+            <p>Best for Google Sheets, Airtable, and command-line data pipelines. Formatted with standard RFC 4180 comma separation and quoted text strings with formatted publish dates.</p>
           </div>
           <div class="info-card">
             <h3>📦 JSON File (.json)</h3>
-            <p>Best for automation pipelines, Python data notebooks, LLM prompt inputs, and internal research databases. Preserves raw nested objects.</p>
+            <p>Best for automated workflows, Python Pandas notebooks, LLM prompt inputs, and internal research databases. Preserves full metadata, creator baselines, and nested items.</p>
           </div>
           <div class="info-card">
-            <h3>📋 Clipboard Copy</h3>
-            <p>Best for instant pasting directly into Notion tables, Google Docs briefs, or Slack channels without downloading files.</p>
+            <h3>📋 Rich Clipboard Copy</h3>
+            <p>Simultaneously writes tab-separated text (TSV) and styled HTML tables to your clipboard for instant, frictionless pasting directly into Google Sheets, Excel, Notion, or Slack.</p>
           </div>
         </div>
       </section>
 
-      <section id="csv" class="docs-section">
-        <h2>CSV Export (Spreadsheets)</h2>
+      <section id="excel" class="docs-section">
+        <h2>Excel Export (.xlsx Spreadsheets).</h2>
         <p>
-          Clicking <strong>Export CSV</strong> in the Rank Kiwi workspace compiles all currently filtered posts into a UTF-8 encoded <code>.csv</code> file and automatically initiates a browser download named <code>rankkiwi-[creator]-[platform]-[timestamp].csv</code>.
+          Selecting <strong>Export Excel (.xlsx)</strong> from the toolbar generates a true, binary Open Packaging Conventions XML workbook directly inside your browser. Unlike extensions that simply rename a CSV file to <code>.xlsx</code> (which triggers Microsoft Excel corruption warnings), Rank Kiwi packages authentic XML spreadsheet parts (workbook, worksheet, shared strings, styles, and relationships) using an in-memory, zero-dependency PKZIP Store archive engine.
+        </p>
+
+        <h3>Why Native .xlsx Matters</h3>
+        <ul>
+          <li><strong>No Warning Prompts:</strong> Opens instantly in Microsoft Excel, Apple Numbers, LibreOffice, and Google Drive without security warnings or format mismatch errors.</li>
+          <li><strong>Preserved Numeric Types:</strong> View counts, like counts, comment counts, and Outlier Scores are stored as genuine numbers, ready for immediate formulas, pivot tables, and conditional formatting.</li>
+          <li><strong>Pre-Formatted Date Fields:</strong> Publication dates are formatted cleanly (<code>MMM D, YYYY</code>), avoiding timezone truncation or localized parsing errors.</li>
+          <li><strong>Standard File Naming:</strong> Downloaded files follow the clean convention <code>rankkiwi-[creator]-[platform]-[timestamp].xlsx</code>.</li>
+        </ul>
+      </section>
+
+      <section id="csv" class="docs-section">
+        <h2>CSV Export (Plain Spreadsheets).</h2>
+        <p>
+          Clicking <strong>Export CSV</strong> compiles all currently filtered posts into a UTF-8 encoded, RFC 4180-compliant <code>.csv</code> file and automatically initiates a browser download named <code>rankkiwi-[creator]-[platform]-[timestamp].csv</code>.
         </p>
 
         <h3>Exported Columns Reference</h3>
@@ -226,25 +289,25 @@
               <tr>
                 <td><code>rank</code></td>
                 <td>Integer</td>
-                <td>Current position in the workspace based on your chosen sort order</td>
+                <td>Current position in the workspace based on your active sort order</td>
                 <td><code>1</code></td>
               </tr>
               <tr>
                 <td><code>title_or_caption</code></td>
                 <td>String (Quoted)</td>
-                <td>Full caption text or video title with escaped linebreaks</td>
+                <td>Full caption text or video title with escaped quotes and linebreaks</td>
                 <td><code>"5 mistakes you are making with hooks..."</code></td>
               </tr>
               <tr>
                 <td><code>url</code></td>
                 <td>URL String</td>
-                <td>Permanent link to the specific post, Reel, or video</td>
+                <td>Direct URL to the public Reel, video, or Short</td>
                 <td><code>https://instagram.com/reel/C8xyz...</code></td>
               </tr>
               <tr>
                 <td><code>views</code></td>
                 <td>Integer</td>
-                <td>Total public views or plays recorded at the time of scan</td>
+                <td>Total public views or plays recorded at scan time (empty if hidden)</td>
                 <td><code>482100</code></td>
               </tr>
               <tr>
@@ -262,25 +325,25 @@
               <tr>
                 <td><code>outlier_score</code></td>
                 <td>Float</td>
-                <td>Multiplier relative to creator's median views in sample</td>
+                <td>Multiplier relative to creator's sample median views (e.g. <code>4.82x</code>)</td>
                 <td><code>4.82</code></td>
               </tr>
               <tr>
                 <td><code>engagement_rate</code></td>
                 <td>Percentage</td>
-                <td>Combined engagements divided by views (where available)</td>
+                <td>Combined engagements divided by views (where view data is public)</td>
                 <td><code>6.65%</code></td>
               </tr>
               <tr>
                 <td><code>posted_date</code></td>
-                <td>ISO-8601 Date</td>
-                <td>Date of original publication (YYYY-MM-DD)</td>
-                <td><code>2026-02-14</code></td>
+                <td>Date String</td>
+                <td>Formatted publication date (<code>MMM D, YYYY</code>)</td>
+                <td><code>Feb 14, 2026</code></td>
               </tr>
               <tr>
                 <td><code>content_type</code></td>
                 <td>String</td>
-                <td>Content taxonomy: <code>reel</code>, <code>video</code>, <code>short</code></td>
+                <td>Content taxonomy: <code>reel</code>, <code>video</code>, or <code>short</code></td>
                 <td><code>reel</code></td>
               </tr>
             </tbody>
@@ -288,20 +351,20 @@
         </div>
 
         <div class="callout callout-tip">
-          <strong>Tip for Google Sheets:</strong> To open your CSV in Google Sheets, go to <strong>File &gt; Import &gt; Upload</strong>. Select the CSV, and choose <em>"Detect automatically"</em> for separator type. The numeric view counts and Outlier Scores will format as native numbers ready for charting.
+          <strong>Tip for Google Sheets:</strong> To import your CSV into Google Sheets, navigate to <strong>File &gt; Import &gt; Upload</strong>. Choose <em>"Detect automatically"</em> for separator type. The numeric view counts and Outlier Scores will format as native numbers ready for charting.
         </div>
       </section>
 
       <section id="json" class="docs-section">
         <h2>JSON Export (Structured Data)</h2>
         <p>
-          Selecting <strong>Export JSON</strong> produces a clean JSON document containing analysis metadata alongside the item list. This format is ideal for feeding creator data directly into AI assistants (Claude, ChatGPT) to perform qualitative hook analysis.
+          Selecting <strong>Export JSON</strong> produces an indented JSON document containing analysis metadata alongside the normalized item list. This format is ideal for feeding creator data directly into AI assistants (Claude, ChatGPT), automated scripts, or internal research databases.
         </p>
 
         <h3>Example JSON Payload Schema</h3>
         <pre class="code-block"><code>{
-  "generator": "Rank Kiwi 1.0",
-  "exportedAt": "2026-10-05T13:45:00Z",
+  "generator": "Rank Kiwi 1.0.1",
+  "exportedAt": "2026-10-14T11:00:00Z",
   "creator": {
     "handle": "@hubermanlab",
     "platform": "instagram",
@@ -325,82 +388,128 @@
       </section>
 
       <section id="clipboard" class="docs-section">
-        <h2>Clipboard Export (Quick Paste)</h2>
+        <h2>Instant Clipboard Export.</h2>
         <p>
-          Don't need a file on your hard drive? Click <strong>Copy to Clipboard</strong>. Rank Kiwi writes a formatted, tab-delimited table directly into your operating system clipboard.
+          Don't need a file saved to disk? Click <strong>Copy to Clipboard</strong> from the toolbar. Rank Kiwi writes dual payloads to your operating system clipboard simultaneously:
         </p>
-        <p>You can immediately press <kbd>Cmd</kbd> + <kbd>V</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>V</kbd> (Windows) in:</p>
+        <ol>
+          <li><strong>Tab-Separated Values (text/plain):</strong> Clean, unstyled tab-delimited text for command-line tools and plain-text editors.</li>
+          <li><strong>Formatted HTML Table (text/html):</strong> Rich HTML table data containing styled headers and formatted values.</li>
+        </ol>
+        <p>When you press <kbd>Cmd</kbd> + <kbd>V</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>V</kbd> (Windows), your destination software picks the optimal format:</p>
         <ul>
-          <li><strong>Notion:</strong> Creates an instant multi-column Database with properties already set.</li>
-          <li><strong>Google Sheets & Excel:</strong> Automatically parses into cells across rows and columns without an import dialog.</li>
-          <li><strong>Airtable:</strong> Pastes directly into an existing Grid view.</li>
+          <li><strong>Google Sheets &amp; Microsoft Excel:</strong> Automatically splits into table cells across rows and columns without triggering an import wizard.</li>
+          <li><strong>Notion:</strong> Pastes directly as an editable Notion database table with pre-configured columns.</li>
+          <li><strong>Airtable:</strong> Populates columns directly inside your existing Grid views.</li>
         </ul>
       </section>
 
       <section id="reels-download" class="docs-section">
-        <h2>Downloading Instagram Reels</h2>
+        <h2>Download Instagram Reels (MP4).</h2>
         <p>
-          When you click on any Reel in your analyzed grid to open its <strong>Post Detail Inspector</strong>, you will see a <strong>Download Reel (MP4)</strong> button.
+          Rank Kiwi provides direct MP4 video downloading for analyzed Instagram Reels. You can download individual Reels from the Detail Inspector modal or trigger batch downloads from the toolbar.
         </p>
 
-        <h3>How it works</h3>
-        <ol>
-          <li>Rank Kiwi identifies the publicly accessible video element currently embedded in your browser tab's active session.</li>
-          <li>It streams the high-definition MP4 asset directly from the platform CDN using native Chrome download APIs.</li>
-          <li>The file is saved to your default Chrome Downloads folder as <code>[handle]-reel-[shortcode].mp4</code>.</li>
-        </ol>
+        <h3>1. Single Reel Download</h3>
+        <p>
+          Click any card to open the <strong>Content Detail Modal</strong>. Click the <strong>Download Reel (MP4)</strong> button. Rank Kiwi resolves the verified CDN video source and initiates a browser download via Chrome's downloads API.
+        </p>
+
+        <h3>2. Batch Reel Downloads</h3>
+        <p>
+          Use the checkboxes in the workbench grid to select multiple Reels (or click <strong>Select All</strong> in the toolbar), then click <strong>Download Selected</strong>. Rank Kiwi queues the downloads sequentially, preventing network congestion while preserving full video quality.
+        </p>
+
+        <h3>Filesystem-Safe Naming Convention</h3>
+        <p>Every downloaded Reel is saved to your default Chrome Downloads folder with sanitized naming:</p>
+        <pre class="code-block"><code>rankkiwi_{creator}_{reelId}.mp4</code></pre>
+        <p>All illegal filesystem characters, path traversal sequences (<code>../</code>), and control characters are stripped automatically before calling the browser download manager.</p>
+
+        <h3>Binary Magic-Byte Validation</h3>
+        <p>
+          Before initiating a download, Rank Kiwi checks the media response payload's magic bytes to ensure it is a genuine MP4 video file. If Instagram returns an HTML redirect or login gate, the download is safely aborted with a clear notification rather than saving a corrupt file.
+        </p>
 
         <div class="callout callout-warning">
-          <strong>Troubleshooting Downloads:</strong> If clicking download opens a video player in a new browser tab instead of saving the file, right-click the video and choose <em>"Save Video As..."</em>. This happens when Chrome settings are configured to play media in-browser rather than download automatically.
+          <strong>Chrome Download Preferences:</strong> If you have <em>"Ask where to save each file before downloading"</em> enabled in your Chrome browser settings (<code>chrome://settings/downloads</code>), Chrome will prompt you for a save directory on each item during batch downloads. To save directly to your Downloads folder without prompts, toggle that setting off in Chrome.
         </div>
       </section>
 
       <section id="thumbnails-download" class="docs-section">
-        <h2>Downloading YouTube Thumbnails</h2>
+        <h2>Download YouTube Thumbnails (HD).</h2>
         <p>
-          For YouTube video and Shorts research, thumbnails are 50% of the hook equation. Rank Kiwi allows you to save creator thumbnails at maximum available resolution.
+          Thumbnails are critical for video research. Rank Kiwi allows you to save creator thumbnails at the highest possible production resolution uploaded to YouTube's public CDN.
         </p>
 
         <h3>Resolution Hierarchy</h3>
-        <p>YouTube generates thumbnails in multiple sizes. Rank Kiwi's download action uses an automatic fallback sequence:</p>
+        <p>Rank Kiwi uses a smart fallback sequence to acquire the crispest available image:</p>
         <ol>
-          <li><strong>maxresdefault.jpg (1920×1080):</strong> The highest available production resolution uploaded by the creator.</li>
-          <li><strong>sddefault.jpg (640×480):</strong> High-standard fallback if the creator uploaded an older or smaller asset.</li>
-          <li><strong>hqdefault.jpg (480×360):</strong> Standard thumbnail fallback ensuring downloads never fail.</li>
+          <li><strong>maxresdefault.jpg (1920×1080):</strong> Full HD production thumbnail uploaded by the creator.</li>
+          <li><strong>sddefault.jpg (640×480):</strong> Standard definition fallback for older or smaller uploads.</li>
+          <li><strong>hqdefault.jpg (480×360):</strong> High-quality universal fallback ensuring downloads never fail.</li>
         </ol>
-        <p>To download, open any YouTube video card in the inspector modal and click <strong>Download HD Thumbnail</strong>.</p>
+        <p>To download, click any video card in the workbench to open the inspector, then click <strong>Download HD Thumbnail</strong>. The file is saved directly to your browser's default downloads destination.</p>
       </section>
 
-      <section id="ethical-guidelines" class="docs-section">
-        <h2>Fair Use & Responsible Usage</h2>
-        <p>
-          Rank Kiwi is built strictly for research, benchmarking, editorial analysis, and educational swipe files.
-        </p>
+      <section id="youtube-compliance" class="docs-section">
+        <h2>YouTube Terms &amp; Compliance Policy</h2>
         <div class="callout callout-important">
-          <strong>Legal & Ethical Responsibility:</strong>
+          <strong>Strict Stream Protection:</strong> Rank Kiwi is committed to platform policy compliance.
           <ul>
-            <li><strong>Respect Copyright:</strong> Downloading a Reel or thumbnail for private analytical study, pacing breakdown, or hook deconstruction is standard research practice under fair use doctrine.</li>
-            <li><strong>Never Re-upload:</strong> Never repost, republish, or commercialize another creator's intellectual property without explicit permission.</li>
-            <li><strong>Attribute Inventions:</strong> When inspired by an outlier's narrative structure, bring your original perspective, voice, and research to your audience.</li>
+            <li><strong>Zero Video/Audio Downloading on YouTube:</strong> In strict compliance with YouTube Terms of Service and Chrome Web Store Developer Policies, Rank Kiwi <strong>never</strong> downloads YouTube video streams or audio files.</li>
+            <li><strong>Public Thumbnails Only:</strong> Thumbnail downloads strictly retrieve static, publicly accessible image assets directly from YouTube's official CDN (<code>i.ytimg.com</code>).</li>
+            <li><strong>First-Party Watch Links:</strong> Video previews and playback for YouTube content are accessible via direct links to official YouTube watch pages.</li>
           </ul>
         </div>
       </section>
 
-      <nav class="docs-pagination" aria-label="Documentation navigation">
-        <a href="/docs/workflows/content-research/" class="docs-page-nav docs-page-prev">
-          <span>Previous</span>
-          <b>&larr; Content Research Blueprint</b>
-        </a>
-        <a href="/docs/troubleshooting/" class="docs-page-nav docs-page-next">
-          <span>Next</span>
-          <b>Troubleshooting Hub &rarr;</b>
-        </a>
-      </nav>
+      <section id="ethical-guidelines" class="docs-section">
+        <h2>Fair Use &amp; Responsible Usage</h2>
+        <p>
+          Rank Kiwi is built strictly for creator research, editorial benchmarking, hook analysis, and building educational swipe files.
+        </p>
+        <div class="callout callout-important">
+          <strong>Legal &amp; Ethical Responsibility:</strong>
+          <ul>
+            <li><strong>Respect Intellectual Property:</strong> Downloading a Reel or thumbnail for private analytical study, pacing breakdown, or hook deconstruction is standard research practice under fair use.</li>
+            <li><strong>Never Re-upload:</strong> Never repost, republish, or commercialize another creator's video or thumbnail without explicit written permission.</li>
+            <li><strong>Create Original Content:</strong> Use outlier insights to understand what topics and structural pacing resonate with audiences, then craft your own unique angle and perspective.</li>
+          </ul>
         </div>
+      </section>
+
+      <div class="docs-pagination">
+        <div class="docs-page-nav">
+          <span>Previous</span>
+          <b><a href="/docs/workflows/content-research/">&larr; Research Workflow</a></b>
+        </div>
+        <div class="docs-page-nav docs-page-next">
+          <span>Next Help Guide</span>
+          <b><a href="/docs/troubleshooting/">Troubleshooting &amp; FAQ →</a></b>
+        </div>
+      </div>
+          </article>
+        </div>
+
+        <!-- Right-Side Table of Contents -->
+        <aside class="docs-toc" aria-label="Table of contents">
+          <div class="docs-toc-title">On this page</div>
+          <ul class="docs-toc-list">
+            <li><a href="#overview" class="docs-toc-link">Export overview</a></li>
+            <li><a href="#excel" class="docs-toc-link">Excel spreadsheets</a></li>
+            <li><a href="#csv" class="docs-toc-link">CSV format</a></li>
+            <li><a href="#json" class="docs-toc-link">JSON schema</a></li>
+            <li><a href="#clipboard" class="docs-toc-link">Clipboard copy</a></li>
+            <li><a href="#reels-download" class="docs-toc-link">Reel MP4 downloads</a></li>
+            <li><a href="#thumbnails-download" class="docs-toc-link">YouTube thumbnails</a></li>
+            <li><a href="#youtube-compliance" class="docs-toc-link">YouTube compliance</a></li>
+            <li><a href="#ethical-guidelines" class="docs-toc-link">Fair use guidelines</a></li>
+          </ul>
+        </aside>
       </div>
     </main>
 
-              <!-- SITE FOOTER -->
+                  <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
@@ -427,37 +536,25 @@
 
         <div>
           <b>Product</b>
-          <a href="/">Home</a>
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="/creator-content-research/">Creator Research</a>
+          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
-          <b>Learn &amp; Docs</b>
+          <b>Resources</b>
+          <a href="/research/">Research</a>
+          <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
-          <a href="/docs/getting-started/">Getting Started</a>
-          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
-          <a href="/docs/troubleshooting/">Troubleshooting</a>
-          <a href="/docs/exports/">Exports Guide</a>
-        </div>
-
-        <div>
-          <b>Research &amp; Compare</b>
-          <a href="/research/">Research Hub</a>
-          <a href="/research/methodology/">Methodology</a>
           <a href="/compare/">Tool Comparisons</a>
-          <a href="/alternatives/">Alternatives Hub</a>
-          <a href="/best/">Best Software Guides</a>
         </div>
 
         <div>
-          <b>Legal &amp; Support</b>
+          <b>Support &amp; Legal</b>
           <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
-          <a href="/disclaimer/">Disclaimer</a>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
         </div>
       </div>

@@ -59,7 +59,7 @@
         "url": "https://rankkiwi.com/"
       },
       "datePublished": "2026-03-15",
-      "dateModified": "2026-10-05"
+      "dateModified": "2026-10-14"
     },
     {
       "@context": "https://schema.org",
@@ -117,56 +117,109 @@
     </header>
 
     <main class="docs-wrapper wrap">
-      <div class="docs-header-bar">
-        <p class="eyebrow"><span class="status-dot"></span> TROUBLESHOOTING &amp; SELF-SERVICE DIAGNOSTICS</p>
-        <h1>Troubleshooting Hub</h1>
-        <p>Find your exact symptom below. Over 95% of issues with browser extensions are resolved in seconds by identifying the supported page URL or clearing a stale tab cache.</p>
+      <!-- Mobile Navigation Bar -->
+      <div class="docs-mobile-bar">
+        <div class="docs-breadcrumbs" style="margin: 0;">
+          <a href="/docs/">Docs</a> <span>/</span> <a href="/docs/troubleshooting/">Workflows &amp; Help</a> <span>/</span> <span>Troubleshooting</span>
+        </div>
+        <button type="button" class="docs-mobile-toggle" data-docs-mobile-toggle aria-label="Open documentation navigation">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <span>Menu</span>
+        </button>
       </div>
 
       <div class="docs-container">
-        <!-- Sidebar Navigation -->
+        <!-- Sticky Sidebar Navigation -->
         <aside class="docs-sidebar" aria-label="Documentation navigation">
+          <button type="button" class="docs-mobile-close" data-docs-mobile-close aria-label="Close navigation">
+            ✕ Close Menu
+          </button>
+
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Getting Started</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Getting Started group">
+              <span>Getting started</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/getting-started/" class="docs-nav-link">Installation &amp; Setup</a></li>
-              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your First Analysis</a></li>
-              <li><a href="/docs/getting-started/#workspace" class="docs-nav-link">Workspace Tour</a></li>
+              <li><a href="/docs/getting-started/" class="docs-nav-link">Introduction &amp; Setup</a></li>
+              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your first analysis</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Platform Guides</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Platforms group">
+              <span>Platforms</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Research</a></li>
-              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Research</a></li>
+              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Reels</a></li>
+              <li><a href="/docs/instagram/explore-downloads/" class="docs-nav-link">Explore downloads <span class="docs-badge-new">New</span></a></li>
+              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Scanner</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Understanding Results</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Sorting &amp; Filtering group">
+              <span>Sorting &amp; Score</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score &amp; Median</a></li>
-              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; Filters</a></li>
-              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research Workflow</a></li>
+              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score math</a></li>
+              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; filters</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Exports &amp; Help</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Exporting group">
+              <span>Exporting</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/exports/" class="docs-nav-link">CSV &amp; JSON Export</a></li>
-              <li><a href="/docs/troubleshooting/" class="docs-nav-link active" aria-current="page">Troubleshooting Hub</a></li>
+              <li><a href="/docs/exports/" class="docs-nav-link">Excel, CSV &amp; Clipboard</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Workflows &amp; Help group">
+              <span>Workflows &amp; Help</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research workflow</a></li>
+              <li><a href="/docs/troubleshooting/" class="docs-nav-link active">Troubleshooting &amp; FAQ</a></li>
               <li><a href="/support/" class="docs-nav-link">Support &amp; Community</a></li>
             </ul>
+          </div>
+
+          <div class="docs-sidebar-footer">
+            <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+              <span>Chrome Store</span>
+            </a>
+            <a href="mailto:say@hibhavishya.in">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>say@hibhavishya.in</span>
+            </a>
           </div>
         </aside>
 
         <!-- Main Content -->
         <div class="docs-content" id="docs-content">
+          <nav class="docs-breadcrumbs" aria-label="Breadcrumb">
+            <a href="/docs/">Docs</a> <span>/</span>
+            <a href="/docs/troubleshooting/">Workflows &amp; Help</a> <span>/</span>
+            <span>Troubleshooting &amp; Diagnostics</span>
+          </nav>
 
-      <!-- VISUAL DIAGNOSTIC DECISION TREE -->
-      <section class="docs-section">
+          <div class="docs-article-header">
+            <p class="eyebrow"><span class="status-dot"></span> Troubleshooting &amp; Diagnostics</p>
+            <h1>Troubleshooting Hub</h1>
+            <p class="docs-lead">Find your exact symptom below. Over 95% of issues with browser extensions are resolved in seconds by identifying the supported page URL or clearing a stale tab cache.</p>
+          </div>
+
+          <article class="docs-article">
+            <!-- VISUAL DIAGNOSTIC DECISION TREE -->
+            <section id="flowchart" class="docs-section">
         <h2>Interactive Diagnostic Flowchart</h2>
         <div class="decision-tree" role="region" aria-label="Troubleshooting Decision Tree">
           <div class="tree-step">
@@ -213,11 +266,11 @@
           <li><a href="#not-appearing">1. Rank Kiwi Isn't Appearing</a></li>
           <li><a href="#unsupported-page">2. Page Not Supported Warning</a></li>
           <li><a href="#not-starting">3. Analysis Isn't Starting</a></li>
-          <li><a href="#analysis-stuck">4. Analysis Is Stuck / Freezes Mid-Scan</a></li>
-          <li><a href="#missing-content">5. Some Content Is Missing From Sample</a></li>
-          <li><a href="#missing-metrics">6. Metrics Missing or Views Showing 0</a></li>
+          <li><a href="#analysis-stuck">4. Analysis Stuck or Freezing</a></li>
+          <li><a href="#missing-content">5. Missing Content in Sample</a></li>
+          <li><a href="#missing-metrics">6. Views Showing 0</a></li>
           <li><a href="#missing-score">7. Outlier Score Is Missing</a></li>
-          <li><a href="#results-wrong">8. Results Look Wrong or Unrealistic</a></li>
+          <li><a href="#results-wrong">8. Unrealistic or Wrong Results</a></li>
           <li><a href="#context-invalidated">9. "Extension Context Invalidated" Error</a></li>
           <li><a href="#instagram-problems">10. Instagram Specific Problems</a></li>
           <li><a href="#youtube-problems">11. YouTube Specific Problems</a></li>
@@ -265,7 +318,10 @@
         <p>The Rank Kiwi sidebar opens, but displays: <em>"Please navigate to a supported creator profile or channel."</em></p>
 
         <h3>Why this happens</h3>
-        <p>Rank Kiwi is designed exclusively for creator library surfaces. It does not run on algorithmic home feeds, search result pages, Direct Messages, or standalone single-post permalinks where creator baseline medians cannot be calculated.</p>
+        <figure class="annotated-shot-wrap" style="margin: 20px 0;">
+          <img src="/assets/shots/youtube-channel-redirect-popup.webp" srcset="/assets/shots/youtube-channel-redirect-popup.webp 1x, /assets/shots/youtube-channel-redirect-popup@2x.webp 2x" alt="YouTube channel home with Rank Kiwi modal prompting navigation to the videos or shorts tab" class="annotated-shot-img" width="1600" height="1041" loading="lazy" decoding="async" />
+          <figcaption>Prompt directing users from the YouTube channel home tab to the Videos or Shorts tab.</figcaption>
+        </figure>
 
         <div class="fix-box">
           <h4>Fix (Step-by-step)</h4>
@@ -316,7 +372,7 @@
 
       <!-- 4. ANALYSIS STUCK -->
       <article id="analysis-stuck" class="troubleshoot-article docs-section">
-        <h2>4. Analysis Is Stuck / Freezes Mid-Scan</h2>
+        <h2>4. Analysis Stuck or Freezing</h2>
         <p class="troubleshoot-desc">The progress counter stops advancing before reaching your requested sample size.</p>
 
         <h3>What you'll see</h3>
@@ -326,6 +382,10 @@
         <p>
           Instagram or YouTube throttled feed requests due to rapid DOM scrolling, or the creator simply has fewer total posts published than your requested sample depth (e.g. you asked for 100 posts from a channel with only 22 videos).
         </p>
+        <figure class="annotated-shot-wrap" style="margin: 20px 0;">
+          <img src="/assets/shots/instagram-reels-finalizing-analysis.webp" srcset="/assets/shots/instagram-reels-finalizing-analysis.webp 1x, /assets/shots/instagram-reels-finalizing-analysis@2x.webp 2x" alt="Rank Kiwi status modal displaying Finalizing analysis message on Instagram Reels tab" class="annotated-shot-img" width="1600" height="1041" loading="lazy" decoding="async" />
+          <figcaption>Finalizing state showing completed reel collection before rendering the results grid.</figcaption>
+        </figure>
 
         <div class="fix-box">
           <h4>Fix (Step-by-step)</h4>
@@ -347,7 +407,7 @@
 
       <!-- 5. MISSING CONTENT -->
       <article id="missing-content" class="troubleshoot-article docs-section">
-        <h2>5. Some Content Is Missing From Sample</h2>
+        <h2>5. Missing Content in Sample</h2>
         <p class="troubleshoot-desc">A specific viral post you know exists does not appear in the analyzed table.</p>
 
         <h3>What you'll see</h3>
@@ -378,7 +438,7 @@
 
       <!-- 6. MISSING METRICS -->
       <article id="missing-metrics" class="troubleshoot-article docs-section">
-        <h2>6. Metrics Missing or Views Showing 0</h2>
+        <h2>6. Views Showing 0</h2>
         <p class="troubleshoot-desc">Certain cards display "—" or "0" for likes, views, or comments.</p>
 
         <h3>What you'll see</h3>
@@ -439,7 +499,7 @@
 
       <!-- 8. RESULTS WRONG -->
       <article id="results-wrong" class="troubleshoot-article docs-section">
-        <h2>8. Results Look Wrong or Unrealistic</h2>
+        <h2>8. Unrealistic or Wrong Results</h2>
         <p class="troubleshoot-desc">A post has a 25× Outlier Score that seems disproportionate or contradictory.</p>
 
         <h3>What you'll see</h3>
@@ -563,32 +623,33 @@
       <!-- 12. DOWNLOAD PROBLEMS -->
       <article id="download-problems" class="troubleshoot-article docs-section">
         <h2>12. Media Download Problems</h2>
-        <p class="troubleshoot-desc">Clicking "Download Reel" or "Download Thumbnail" fails or opens in a new tab.</p>
+        <p class="troubleshoot-desc">Clicking "Download Reel" or "Download HD Thumbnail" fails, prompts repeatedly, or opens in a new tab.</p>
 
         <h3>What you'll see</h3>
-        <p>Clicking the download button opens a raw video player URL instead of saving the MP4 file to disk, or downloads fail with a browser permission notice.</p>
+        <p>Clicking the download button opens a raw video URL in a new browser tab instead of saving the MP4 file to disk, batch downloading triggers multiple directory prompts, or a download is aborted due to a media verification notice.</p>
 
         <h3>Why this happens</h3>
         <p>
-          Chrome requires permission to trigger file downloads, and certain browser profiles are configured to preview media in the active tab rather than save locally.
+          Chrome requires write permissions to trigger file downloads. Certain Chrome profile settings are configured to preview media in the active tab rather than save to disk, or have "Ask where to save each file before downloading" enabled. Furthermore, Rank Kiwi conducts binary magic-byte validation on every media response before writing to disk; if Instagram returns an HTML redirect or login gate, the download is intentionally aborted to avoid saving corrupt HTML files.
         </p>
 
         <div class="fix-box">
           <h4>Fix (Step-by-step)</h4>
           <ol>
-            <li>If the video opens in a new tab, right-click anywhere on the video player and choose <strong>"Save Video As..."</strong>.</li>
-            <li>Check Chrome's download icon in the top right toolbar to ensure downloads aren't paused by an OS storage warning.</li>
-            <li>Verify your Chrome download folder has write permissions enabled.</li>
+            <li><strong>Batch Download Directory Prompts:</strong> Open Chrome Settings (<code>chrome://settings/downloads</code>) and disable <em>"Ask where to save each file before downloading"</em>. This allows batch downloads to save sequentially into your default Downloads folder without repetitive dialog boxes.</li>
+            <li><strong>Video Opens in Browser:</strong> If the MP4 stream plays in a new tab, right-click anywhere on the video player and select <strong>"Save Video As..."</strong>. Files are saved as <code>rankkiwi_{creator}_{reelId}.mp4</code>.</li>
+            <li><strong>Authentication &amp; Magic-Byte Verification:</strong> Ensure you are logged into Instagram in your browser tab. Rank Kiwi verifies that media streams contain valid MP4 magic bytes. If a session is logged out, Instagram will respond with an HTML login page which Rank Kiwi automatically blocks from downloading.</li>
+            <li><strong>YouTube Policy Compliance:</strong> In strict compliance with YouTube Terms of Service, Rank Kiwi only downloads public static thumbnails (from <code>i.ytimg.com</code>) and never downloads YouTube video streams or audio tracks.</li>
           </ol>
         </div>
 
         <h3>If that didn't work</h3>
-        <p>For thumbnails, ensure your network connection allows loading static assets from <code>i.ytimg.com</code>.</p>
+        <p>For thumbnails, ensure your network or ad-blocker allows loading static image assets from <code>i.ytimg.com</code>. For Instagram Reels, click the reel card to preview playback in the custom in-modal player before clicking download.</p>
 
         <div class="support-escalation">
-          <strong>Still stuck?</strong> Review our <a href="/docs/exports/">Exports & Downloads Guide</a>.
+          <strong>Still stuck?</strong> Review our <a href="/docs/exports/">Exports &amp; Media Downloads Guide</a>.
         </div>
-        <p class="related-links">Related: <a href="/docs/exports/">Export Documentation</a></p>
+        <p class="related-links">Related: <a href="/docs/exports/">Export &amp; Media Documentation</a></p>
       </article>
 
       <!-- BEFORE CONTACTING SUPPORT CHECKLIST -->
@@ -623,21 +684,39 @@
         </div>
       </section>
 
-      <nav class="docs-pagination" aria-label="Documentation navigation">
-        <a href="/docs/exports/" class="docs-page-nav docs-page-prev">
+      <div class="docs-pagination">
+        <div class="docs-page-nav">
           <span>Previous</span>
-          <b>&larr; Export &amp; Downloads</b>
-        </a>
-        <a href="/docs/getting-started/" class="docs-page-nav docs-page-next">
-          <span>Next</span>
-          <b>Getting Started &rarr;</b>
-        </a>
-      </nav>
+          <b><a href="/docs/exports/">&larr; Excel, CSV &amp; Clipboard</a></b>
         </div>
+        <div class="docs-page-nav docs-page-next">
+          <span>Return Home</span>
+          <b><a href="/docs/">Documentation Directory →</a></b>
+        </div>
+      </div>
+          </article>
+        </div>
+
+        <!-- Right-Side Table of Contents -->
+        <aside class="docs-toc" aria-label="Table of contents">
+          <div class="docs-toc-title">On this page</div>
+          <ul class="docs-toc-list">
+            <li><a href="#flowchart" class="docs-toc-link">Diagnostic flowchart</a></li>
+            <li><a href="#not-appearing" class="docs-toc-link">Not appearing on page</a></li>
+            <li><a href="#unsupported-page" class="docs-toc-link">Unsupported surface</a></li>
+            <li><a href="#analysis-stuck" class="docs-toc-link">Analysis stuck or slow</a></li>
+            <li><a href="#missing-metrics" class="docs-toc-link">Missing metrics</a></li>
+            <li><a href="#missing-score" class="docs-toc-link">Missing Outlier Score</a></li>
+            <li><a href="#instagram-problems" class="docs-toc-link">Instagram issues</a></li>
+            <li><a href="#youtube-problems" class="docs-toc-link">YouTube issues</a></li>
+            <li><a href="#download-problems" class="docs-toc-link">Download issues</a></li>
+            <li><a href="#support-checklist" class="docs-toc-link">Diagnostic checklist</a></li>
+          </ul>
+        </aside>
       </div>
     </main>
 
-              <!-- SITE FOOTER -->
+                  <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
@@ -664,37 +743,25 @@
 
         <div>
           <b>Product</b>
-          <a href="/">Home</a>
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="/creator-content-research/">Creator Research</a>
+          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
-          <b>Learn &amp; Docs</b>
+          <b>Resources</b>
+          <a href="/research/">Research</a>
+          <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
-          <a href="/docs/getting-started/">Getting Started</a>
-          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
-          <a href="/docs/troubleshooting/">Troubleshooting</a>
-          <a href="/docs/exports/">Exports Guide</a>
-        </div>
-
-        <div>
-          <b>Research &amp; Compare</b>
-          <a href="/research/">Research Hub</a>
-          <a href="/research/methodology/">Methodology</a>
           <a href="/compare/">Tool Comparisons</a>
-          <a href="/alternatives/">Alternatives Hub</a>
-          <a href="/best/">Best Software Guides</a>
         </div>
 
         <div>
-          <b>Legal &amp; Support</b>
+          <b>Support &amp; Legal</b>
           <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
-          <a href="/disclaimer/">Disclaimer</a>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
         </div>
       </div>

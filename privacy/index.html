@@ -36,14 +36,14 @@
     <meta property="og:url" content="https://rankkiwi.com/privacy/" />
     <meta property="og:title" content="Privacy Policy: Rank Kiwi" />
     <meta property="og:description" content="Rank Kiwi Privacy Policy: how Rank Kiwi processes information when you use the extension." />
-    <meta property="og:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
     <meta property="og:site_name" content="Rank Kiwi" />
 
     <!-- Twitter / X Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Privacy Policy: Rank Kiwi" />
     <meta name="twitter:description" content="Rank Kiwi Privacy Policy: how Rank Kiwi processes information when you use the extension." />
-    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
 
         <!-- Preconnect to Font Origins -->
     <link rel=preconnect href="https://fonts.googleapis.com" />
@@ -107,71 +107,103 @@
       
       <p class="eyebrow"><span class="status-dot"></span> LEGAL</p>
       <h1>Privacy Policy</h1>
-      <p class="legal-lead">How Rank Kiwi processes information when you use the extension.</p>
-      <p class="updated">Last updated: October 5, 2026</p>
+      <p class="legal-lead">Transparent privacy terms clearly separating our local Chrome extension from our marketing website.</p>
+      <p class="updated">Last updated: October 14, 2026</p>
+
+      <!-- Privacy Policy Scope Switcher -->
+      <nav class="privacy-scope-nav" aria-label="Privacy Policy View Scope">
+        <button type="button" class="privacy-scope-btn active" data-scope="all" aria-selected="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span>Complete Policy (All)</span>
+        </button>
+        <button type="button" class="privacy-scope-btn" data-scope="extension" aria-selected="false">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Chrome Extension Privacy</span>
+        </button>
+        <button type="button" class="privacy-scope-btn" data-scope="website" aria-selected="false">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>Marketing Website Privacy</span>
+        </button>
+      </nav>
+
+      <!-- Dynamic Scope Summary Banner -->
+      <aside class="privacy-summary-banner is-all" id="privacy-summary-banner" aria-live="polite">
+        <h2 class="privacy-banner-title" id="privacy-banner-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          Complete Privacy Policy: Chrome Extension &amp; Website
+        </h2>
+        <p class="privacy-banner-desc" id="privacy-banner-desc">
+          Rank Kiwi clearly separates <strong>Chrome Extension execution</strong> (which is 100% local, sandboxed, and collects zero personal data) from our <strong>Marketing Website</strong> (rankkiwi.com, which uses standard privacy-respecting analytics and cookie consent). Use the buttons above to filter by environment.
+        </p>
+      </aside>
 
       <div class="legal-content">
-        <section>
-          <h2>Overview</h2>
+        <section data-privacy-scope="both">
+          <h2><span class="privacy-badge badge-both">Extension &amp; Website</span> Overview</h2>
           <p>Rank Kiwi is a Google Chrome browser extension designed for researching creator content on Instagram and YouTube. This policy plainly explains what information is involved when you use the extension and when you visit our website.</p>
         </section>
 
-        <section>
-          <h2>Website Analytics, Microsoft Clarity &amp; Google Analytics</h2>
+        <section data-privacy-scope="website">
+          <h2><span class="privacy-badge badge-website">Website Only</span> Website Analytics, Microsoft Clarity &amp; Google Analytics</h2>
           <p>When you visit the Rank Kiwi marketing website (rankkiwi.com), we utilize web analytics tools to understand visitor interactions and optimize site performance:</p>
           <p><strong>Microsoft Clarity &amp; Advertising:</strong> We partner with Microsoft Clarity and Microsoft Advertising to capture how you use and interact with our website through behavioral metrics, heatmaps, and session replay to improve and market our products/services. Website usage data is captured using first and third-party cookies and other tracking technologies to determine the popularity of products/services and online activity. Additionally, we use this information for site optimization, fraud/security purposes, and advertising. For more information about how Microsoft collects and uses your data, visit the <a href="https://www.microsoft.com/privacy/privacystatement" target="_blank" rel="noopener">Microsoft Privacy Statement</a>.</p>
           <p><strong>Google Analytics (gtag.js):</strong> We use Google Analytics (measurement ID: G-Y2V6BK8R00) to collect aggregated, anonymized telemetry about page views, referral sources, device types, and site navigation paths. Google Analytics sets first-party cookies to evaluate website usage without storing personal identification.</p>
           <p><strong>Cookie Consent &amp; Control:</strong> You can accept or decline non-essential analytics tracking via our on-site cookie consent banner at any time, or configure your browser to block cookies and tracking scripts.</p>
         </section>
 
-        <section>
-          <h2>Information processed</h2>
+        <section data-privacy-scope="extension">
+          <h2><span class="privacy-badge badge-extension">Chrome Extension Only</span> Information processed</h2>
           <p>When you explicitly trigger an analysis, Rank Kiwi processes publicly available creator information displayed on the active webpage. This includes post titles, captions, publication dates, view counts, like counts, comment counts, and media URLs necessary to compute performance metrics and Outlier Scores.</p>
         </section>
 
-        <section>
-          <h2>How it is used</h2>
+        <section data-privacy-scope="extension">
+          <h2><span class="privacy-badge badge-extension">Chrome Extension Only</span> How it is used</h2>
           <p>This information is used strictly to display analysis, perform sorting, apply filters, and enable exporting or downloading at your request. Rank Kiwi does not use this information for advertising or user tracking.</p>
         </section>
 
-        <section>
-          <h2>Browser-based processing</h2>
-          <p>All analysis runs directly in your local browser sandbox. Rank Kiwi does not require a separate Rank Kiwi user account and does not maintain a server-side database of your analyzed content.</p>
+        <section data-privacy-scope="extension">
+          <h2><span class="privacy-badge badge-extension">Chrome Extension Only</span> Local Processing &amp; Direct Platform Communication</h2>
+          <p><strong>Local processing:</strong> Rank Kiwi calculates performance metrics, Outlier Scores, sorting, filtering, and export data locally in your browser.</p>
+          <p><strong>Direct platform requests:</strong> When you use Rank Kiwi to analyze supported content, your browser communicates directly with Instagram or YouTube to retrieve the information required for analysis. Instagram requests may include the CSRF verification header described above.</p>
+          <p><strong>No Rank Kiwi analytics backend:</strong> Rank Kiwi does not transmit analyzed creator content or research results to its own servers for storage or analytics. It does not sell this research data or share it with advertising networks or data brokers.</p>
+          <p><strong>Local exports:</strong> Excel (.xlsx), CSV, and JSON exports are generated at your request and saved locally through your browser's download functionality.</p>
         </section>
 
-        <section>
-          <h2>Data sharing</h2>
+        <section data-privacy-scope="both">
+          <h2><span class="privacy-badge badge-both">Extension &amp; Website</span> Data sharing</h2>
           <p>Rank Kiwi does not sell, rent, or monetize your analyzed creator content or research activity. No analyzed data is transferred to third-party data brokers or marketing networks.</p>
         </section>
 
-        <section>
-          <h2>Data retention</h2>
-          <p>Because Rank Kiwi operates locally and does not operate a central content database, it does not retain a server-side history of your research. Any research exported as CSV or JSON is saved directly to your local file system under your control.</p>
+        <section data-privacy-scope="extension">
+          <h2><span class="privacy-badge badge-extension">Chrome Extension Only</span> Data retention</h2>
+          <p>Because Rank Kiwi operates locally and does not operate a central content database, it does not retain a server-side history of your research. Any research exported as Excel (.xlsx), CSV, or JSON is saved directly to your local file system under your control.</p>
         </section>
 
-        <section>
-          <h2>Authentication &amp; Session handling</h2>
-          <p>Rank Kiwi operates independently of your private credentials. It never accesses, intercepts, or transmits your Instagram or YouTube passwords, login tokens, or authentication cookies.</p>
+        <section data-privacy-scope="extension">
+          <h2><span class="privacy-badge badge-extension">Chrome Extension Only</span> Authentication, Session &amp; Platform Verification Handling</h2>
+          <p>Rank Kiwi does not access or store your Instagram or YouTube passwords, login credentials, or private account session cookies.</p>
+          <p>When retrieving creator information from Instagram, Rank Kiwi reads Instagram's <code>csrftoken</code> value from the active page and includes it in the <code>X-CSRFToken</code> request header sent directly to Instagram. This token is used for request verification with Instagram and is not sent to Rank Kiwi's servers or unrelated third parties. Rank Kiwi does not intentionally persist this token in extension storage.</p>
+          <p>Rank Kiwi processes this token only for the relevant Instagram requests. Your use of Instagram and YouTube remains subject to their respective terms and privacy policies.</p>
         </section>
 
-        <section>
-          <h2>Third-party platforms</h2>
+        <section data-privacy-scope="both">
+          <h2><span class="privacy-badge badge-both">Extension &amp; Website</span> Third-party platforms</h2>
           <p>Rank Kiwi functions on supported pages of Instagram and YouTube. Your use of those platforms is subject to their respective terms of service and privacy policies. Rank Kiwi is an independent extension and is not affiliated with Google, YouTube, Meta, or Instagram.</p>
         </section>
 
-        <section>
-          <h2>Security</h2>
+        <section data-privacy-scope="extension">
+          <h2><span class="privacy-badge badge-extension">Chrome Extension Only</span> Security</h2>
           <p>We build Rank Kiwi to adhere to modern browser extension security guidelines, using minimal browser permissions and avoiding external script injections.</p>
         </section>
 
-        <section>
-          <h2>Contact</h2>
+        <section data-privacy-scope="both">
+          <h2><span class="privacy-badge badge-both">Extension &amp; Website</span> Contact</h2>
           <p>If you have any questions regarding this Privacy Policy or Rank Kiwi data practices, please email us directly at <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a> or visit our <a href="/support/">Support</a> page.</p>
         </section>
       </div>
     </main>
 
-                <!-- SITE FOOTER -->
+                    <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
@@ -198,37 +230,25 @@
 
         <div>
           <b>Product</b>
-          <a href="/">Home</a>
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="/creator-content-research/">Creator Research</a>
+          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
-          <b>Learn &amp; Docs</b>
+          <b>Resources</b>
+          <a href="/research/">Research</a>
+          <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
-          <a href="/docs/getting-started/">Getting Started</a>
-          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
-          <a href="/docs/troubleshooting/">Troubleshooting</a>
-          <a href="/docs/exports/">Exports Guide</a>
-        </div>
-
-        <div>
-          <b>Research &amp; Compare</b>
-          <a href="/research/">Research Hub</a>
-          <a href="/research/methodology/">Methodology</a>
           <a href="/compare/">Tool Comparisons</a>
-          <a href="/alternatives/">Alternatives Hub</a>
-          <a href="/best/">Best Software Guides</a>
         </div>
 
         <div>
-          <b>Legal &amp; Support</b>
+          <b>Support &amp; Legal</b>
           <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
-          <a href="/disclaimer/">Disclaimer</a>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
         </div>
       </div>

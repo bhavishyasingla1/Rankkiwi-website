@@ -22,11 +22,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Channel Research &amp; Shorts Outliers - Rank Kiwi Docs</title>
-    <meta name="description" content="Learn how Rank Kiwi analyzes YouTube channels, evaluates long-form videos and Shorts, calculates median benchmarks, and extracts thumbnails." />
+    <meta name="description" content="Learn how Rank Kiwi analyzes YouTube channels, evaluates long-form videos and Shorts with anti-leakage validation, enriches live stats, and downloads HD thumbnails." />
     <link rel="canonical" href="https://rankkiwi.com/docs/youtube/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Bhavishya Singla" />
-    <meta name="date" content="2026-10-05" scheme="YYYY-MM-DD" />
+    <meta name="date" content="2026-10-14" scheme="YYYY-MM-DD" />
     <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
     <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
     <meta name="theme-color" content="#cbf990" />
@@ -35,15 +35,15 @@
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://rankkiwi.com/docs/youtube/" />
     <meta property="og:title" content="YouTube Channel Research &amp; Shorts Outliers - Rank Kiwi Docs" />
-    <meta property="og:description" content="Learn how Rank Kiwi analyzes YouTube channels, evaluates long-form videos and Shorts, calculates median benchmarks, and extracts thumbnails." />
-    <meta property="og:image" content="https://rankkiwi.com/assets/shots/youtube-outliers.png" />
+    <meta property="og:description" content="Learn how Rank Kiwi analyzes YouTube channels, evaluates long-form videos and Shorts with anti-leakage validation, enriches live stats, and downloads HD thumbnails." />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/youtube-videos-outlier-grid.png" />
     <meta property="og:site_name" content="Rank Kiwi" />
 
     <!-- Twitter / X Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="YouTube Channel Research &amp; Shorts Outliers - Rank Kiwi Docs" />
-    <meta name="twitter:description" content="Learn how Rank Kiwi analyzes YouTube channels, evaluates long-form videos and Shorts, calculates median benchmarks, and extracts thumbnails." />
-    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/youtube-outliers.png" />
+    <meta name="twitter:description" content="Learn how Rank Kiwi analyzes YouTube channels, evaluates long-form videos and Shorts with anti-leakage validation, enriches live stats, and downloads HD thumbnails." />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/youtube-videos-outlier-grid.png" />
 
     <!-- Fonts & CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -58,7 +58,7 @@
           "@context": "https://schema.org",
           "@type": "TechArticle",
           "headline": "YouTube Channel Research & Shorts Outliers - Rank Kiwi Docs",
-          "description": "Learn how Rank Kiwi analyzes YouTube channels, evaluates long-form videos and Shorts, calculates median benchmarks, and extracts thumbnails.",
+          "description": "Learn how Rank Kiwi analyzes YouTube channels, evaluates long-form videos and Shorts with anti-leakage validation, enriches live stats, and downloads HD thumbnails.",
           "url": "https://rankkiwi.com/docs/youtube/",
           "author": {
             "@type": "Person",
@@ -132,50 +132,116 @@
     </header>
 
     <main class="docs-wrapper wrap">
-      
-
-      <div class="docs-header-bar">
-        <p class="eyebrow"><span class="status-dot"></span> PLATFORM GUIDE</p>
-        <h1>YouTube Channel Research Manual</h1>
-        <p>Complete guide to analyzing YouTube channels, benchmarking long-form videos, studying Shorts, and extracting thumbnail hooks.</p>
+      <!-- Mobile Navigation Bar -->
+      <div class="docs-mobile-bar">
+        <div class="docs-breadcrumbs" style="margin: 0;">
+          <a href="/docs/">Docs</a> <span>/</span> <a href="/docs/youtube/">Platforms</a> <span>/</span> <span>YouTube Scanner</span>
+        </div>
+        <button type="button" class="docs-mobile-toggle" data-docs-mobile-toggle aria-label="Open documentation navigation">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <span>Menu</span>
+        </button>
       </div>
 
       <div class="docs-container">
-        <!-- Sidebar Navigation -->
+        <!-- Sticky Sidebar Navigation -->
         <aside class="docs-sidebar" aria-label="Documentation navigation">
+          <button type="button" class="docs-mobile-close" data-docs-mobile-close aria-label="Close navigation">
+            ✕ Close Menu
+          </button>
+
           <div class="docs-nav-group">
-            <div class="docs-nav-title">YouTube Topics</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Getting Started group">
+              <span>Getting started</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="#overview" class="docs-nav-link active">Platform Overview</a></li>
-              <li><a href="#channels" class="docs-nav-link">Channel Detection</a></li>
-              <li><a href="#videos-vs-shorts" class="docs-nav-link">Videos vs Shorts</a></li>
-              <li><a href="#metrics" class="docs-nav-link">Metrics Table</a></li>
-              <li><a href="#thumbnails" class="docs-nav-link">Thumbnail Downloads</a></li>
-              <li><a href="#limitations" class="docs-nav-link">Platform Limitations</a></li>
+              <li><a href="/docs/getting-started/" class="docs-nav-link">Introduction &amp; Setup</a></li>
+              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your first analysis</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Platforms group">
+              <span>Platforms</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Reels</a></li>
+              <li><a href="/docs/instagram/explore-downloads/" class="docs-nav-link">Explore downloads <span class="docs-badge-new">New</span></a></li>
+              <li><a href="/docs/youtube/" class="docs-nav-link active">YouTube Scanner</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Related Documentation</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Sorting &amp; Filtering group">
+              <span>Sorting &amp; Score</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score Formula</a></li>
-              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; Filters</a></li>
-              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research Workflow</a></li>
-              <li><a href="/docs/troubleshooting/#youtube-problems" class="docs-nav-link">YouTube Troubleshooting</a></li>
+              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score math</a></li>
+              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; filters</a></li>
             </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Exporting group">
+              <span>Exporting</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/exports/" class="docs-nav-link">Excel, CSV &amp; Clipboard</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Workflows &amp; Help group">
+              <span>Workflows &amp; Help</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research workflow</a></li>
+              <li><a href="/docs/troubleshooting/" class="docs-nav-link">Troubleshooting &amp; FAQ</a></li>
+              <li><a href="/support/" class="docs-nav-link">Support &amp; Community</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-sidebar-footer">
+            <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+              <span>Chrome Store</span>
+            </a>
+            <a href="mailto:say@hibhavishya.in">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>say@hibhavishya.in</span>
+            </a>
           </div>
         </aside>
 
         <!-- Main Content -->
         <div class="docs-content" id="docs-content">
+          <nav class="docs-breadcrumbs" aria-label="Breadcrumb">
+            <a href="/docs/">Docs</a> <span>/</span>
+            <a href="/docs/youtube/">Platforms</a> <span>/</span>
+            <span>YouTube Scanner</span>
+          </nav>
+
+          <div class="docs-article-header">
+            <p class="eyebrow"><span class="status-dot"></span> Platform Guide</p>
+            <h1>YouTube Channel Research Manual</h1>
+            <p class="docs-lead">Complete guide to analyzing YouTube channels, benchmarking long-form videos, studying Shorts, and extracting thumbnail hooks.</p>
+          </div>
+
+          <article class="docs-article">
           <article class="docs-article" id="overview">
-            <h2>Overview: YouTube Channel Research with Rank Kiwi</h2>
+            <h2>YouTube Channel Research Overview.</h2>
             <p class="docs-lead">Rank Kiwi analyzes public YouTube channels to spot breakout videos and Shorts that dramatically outperformed a channel's normal view baseline.</p>
             <p>Rather than relying on YouTube's default chronological upload order, Rank Kiwi calculates the channel's non-skewed median views and assigns an Outlier Score to every catalog item.</p>
 
-            <div class="annotated-shot-wrap">
-              <img src="/assets/shots/youtube-outliers.webp" alt="Rank Kiwi YouTube outlier results grid" class="annotated-shot-img" width="1280" height="832" loading="lazy" decoding="async" />
-            </div>
+            <figure class="annotated-shot-wrap">
+              <img src="/assets/shots/youtube-video-collection-progress.webp" srcset="/assets/shots/youtube-video-collection-progress.webp 1x, /assets/shots/youtube-video-collection-progress@2x.webp 2x" alt="Rank Kiwi collecting video data modal on YouTube channel with 50 videos progress counter" class="annotated-shot-img" width="1600" height="1041" loading="lazy" decoding="async" />
+              <figcaption>Active collection progress modal tracking video metric aggregation on YouTube.</figcaption>
+            </figure>
           </article>
 
           <article class="docs-article" id="channels">
@@ -187,9 +253,20 @@
               <li><strong>Channel Home:</strong> <code>youtube.com/@channel</code> — Detects channel metadata and prompts navigation to the dedicated videos feed.</li>
             </ul>
 
+            <figure class="annotated-shot-wrap">
+              <img src="/assets/shots/youtube-videos-sort-menu.webp" srcset="/assets/shots/youtube-videos-sort-menu.webp 1x, /assets/shots/youtube-videos-sort-menu@2x.webp 2x" alt="Rank Kiwi sorting dropdown menu on YouTube channel with Outlier Score and Views sorting" class="annotated-shot-img" width="1600" height="1041" loading="lazy" decoding="async" />
+              <figcaption>Sorting options menu on YouTube channels for ordering by Outlier Score, views, likes, or date.</figcaption>
+            </figure>
+
             <div class="callout callout-tip">
               <p><strong>Pro-Tip:</strong> YouTube maintains separate algorithms and distribution patterns for long-form videos versus Shorts. To get statistically pure median baselines, analyze the <strong>/videos</strong> tab and <strong>/shorts</strong> tab in separate research passes.</p>
             </div>
+          </article>
+
+          <article class="docs-article" id="anti-leakage">
+            <h2>Anti-Leakage Creator Validator</h2>
+            <p class="docs-lead">Guarantees that your analyzed dataset contains only the target creator's uploads.</p>
+            <p>YouTube's channel pages frequently inject unrelated videos: "For You" shelves, collaborative uploads, and recommended videos from third-party channels. Rank Kiwi incorporates an automated creator validator that inspects channel handles across every gathered DOM card. Any item belonging to an outside creator is automatically rejected before computing the median, preventing baseline distortion.</p>
           </article>
 
           <article class="docs-article" id="videos-vs-shorts">
@@ -201,6 +278,12 @@
 
             <h3>YouTube Shorts</h3>
             <p>Scans the vertical Shorts feed on the channel page, extracting public Shorts view counts and titles. Shorts often feature higher view volume than long-form, so calculating a Shorts-specific median prevents distortion.</p>
+          </article>
+
+          <article class="docs-article" id="live-enricher">
+            <h2>Live Stats Worker Queue.</h2>
+            <p class="docs-lead">Retrieves precise metric counts without relying solely on YouTube's abbreviated view text.</p>
+            <p>YouTube channel grids display compact numbers (e.g., "1.2M views" or "45K views"). To deliver exact data for spreadsheet exports, Rank Kiwi features a built-in background stats enricher. Using a bounded concurrency queue (maximum 3 concurrent requests), it fetches exact view counts, like counts, and published dates directly from video endpoints without triggering YouTube rate limits.</p>
           </article>
 
           <article class="docs-article" id="metrics">
@@ -219,7 +302,7 @@
                 <tbody>
                   <tr>
                     <td><strong>View Count</strong></td>
-                    <td>Video metadata snippet</td>
+                    <td>Video metadata / Live enricher</td>
                     <td>Numerator for Outlier Score calculation</td>
                   </tr>
                   <tr>
@@ -229,7 +312,7 @@
                   </tr>
                   <tr>
                     <td><strong>Publish Date</strong></td>
-                    <td>Relative metadata line</td>
+                    <td>Relative metadata line / Live enricher</td>
                     <td>Chronological sorting and recency filtering</td>
                   </tr>
                   <tr>
@@ -248,11 +331,21 @@
           </article>
 
           <article class="docs-article" id="thumbnails">
-            <h2>High-Resolution Thumbnail Downloads</h2>
-            <p class="docs-lead">Study packaging, typography, and visual hooks by downloading clean thumbnail imagery.</p>
-            <p>From the video detail view, click <strong>Download Thumbnail</strong>. Rank Kiwi retrieves the maximum resolution image asset available (up to <code>maxresdefault.jpg</code> at 1280×720) and triggers a clean browser download.</p>
-            <div class="callout callout-warning">
-              <p><strong>Usage Policy:</strong> Thumbnails are downloaded for study, layout analysis, and research reference. Do not republish or duplicate third-party thumbnail art as your own.</p>
+            <h2>High-Resolution Thumbnail Downloads &amp; Policy</h2>
+            <p class="docs-lead">Study packaging, typography, and visual hooks by downloading clean thumbnail imagery at maximum resolution.</p>
+            <p>From the video detail view, click <strong>Download Thumbnail</strong>. Rank Kiwi queries YouTube's resolution hierarchy:</p>
+            <ol>
+              <li><code>maxresdefault.jpg</code> — Maximum 1080p production resolution uploaded by the creator.</li>
+              <li><code>sddefault.jpg</code> — Standard definition fallback asset (640×480).</li>
+              <li><code>hqdefault.jpg</code> — High-quality standard fallback ensuring thumbnail downloads never fail.</li>
+            </ol>
+            <figure class="annotated-shot-wrap">
+              <img src="/assets/shots/youtube-video-detail-modal.webp" srcset="/assets/shots/youtube-video-detail-modal.webp 1x, /assets/shots/youtube-video-detail-modal@2x.webp 2x" alt="Rank Kiwi YouTube video detail modal with thumbnail preview metrics and download button" class="annotated-shot-img" width="1600" height="1041" loading="lazy" decoding="async" />
+              <figcaption>YouTube video detail modal displaying high-res thumbnail preview and download button.</figcaption>
+            </figure>
+
+            <div class="callout callout-important">
+              <p><strong>Strict YouTube Policy Compliance:</strong> Rank Kiwi complies with YouTube Terms of Service. It <strong>never</strong> downloads YouTube video streams or audio files. Analysis is visual and metadata-driven, with file downloads strictly limited to public static thumbnail images directly from YouTube's official CDN (<code>i.ytimg.com</code>).</p>
             </div>
           </article>
 
@@ -268,7 +361,7 @@
             <div class="docs-pagination">
               <div class="docs-page-nav">
                 <span>Previous</span>
-                <b><a href="/docs/instagram/">Instagram Research Manual</a></b>
+                <b><a href="/docs/instagram/">&larr; Instagram Research Manual</a></b>
               </div>
               <div class="docs-page-nav docs-page-next">
                 <span>Next Deep Dive</span>
@@ -277,10 +370,25 @@
             </div>
           </article>
         </div>
+
+        <!-- Right-Side Table of Contents -->
+        <aside class="docs-toc" aria-label="Table of contents">
+          <div class="docs-toc-title">On this page</div>
+          <ul class="docs-toc-list">
+            <li><a href="#overview" class="docs-toc-link">Channel research</a></li>
+            <li><a href="#channels" class="docs-toc-link">Channel detection</a></li>
+            <li><a href="#anti-leakage" class="docs-toc-link">Anti-leakage validator</a></li>
+            <li><a href="#videos-vs-shorts" class="docs-toc-link">Videos vs. Shorts</a></li>
+            <li><a href="#live-enricher" class="docs-toc-link">Live stats enricher</a></li>
+            <li><a href="#metrics" class="docs-toc-link">Metrics reference</a></li>
+            <li><a href="#thumbnails" class="docs-toc-link">Thumbnail downloads</a></li>
+            <li><a href="#limitations" class="docs-toc-link">Platform boundaries</a></li>
+          </ul>
+        </aside>
       </div>
     </main>
 
-                <!-- SITE FOOTER -->
+                    <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
@@ -307,37 +415,25 @@
 
         <div>
           <b>Product</b>
-          <a href="/">Home</a>
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="/creator-content-research/">Creator Research</a>
+          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
-          <b>Learn &amp; Docs</b>
+          <b>Resources</b>
+          <a href="/research/">Research</a>
+          <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
-          <a href="/docs/getting-started/">Getting Started</a>
-          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
-          <a href="/docs/troubleshooting/">Troubleshooting</a>
-          <a href="/docs/exports/">Exports Guide</a>
-        </div>
-
-        <div>
-          <b>Research &amp; Compare</b>
-          <a href="/research/">Research Hub</a>
-          <a href="/research/methodology/">Methodology</a>
           <a href="/compare/">Tool Comparisons</a>
-          <a href="/alternatives/">Alternatives Hub</a>
-          <a href="/best/">Best Software Guides</a>
         </div>
 
         <div>
-          <b>Legal &amp; Support</b>
+          <b>Support &amp; Legal</b>
           <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
-          <a href="/disclaimer/">Disclaimer</a>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
         </div>
       </div>

@@ -21,12 +21,12 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Docs: Rank Kiwi Extension Documentation</title>
-    <meta name="description" content="Rank Kiwi features, supported platforms, sorting, exporting, and how to use the extension." />
+    <title>Docs: Rank Kiwi: Free Instagram &amp; YouTube Outlier Analytics</title>
+    <meta name="description" content="Spot the Reels, videos and Shorts that beat each creator’s typical views. Free Instagram &amp; YouTube analytics, downloads, and export." />
     <link rel="canonical" href="https://rankkiwi.com/docs/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Bhavishya Singla" />
-    <meta name="date" content="2026-10-02" scheme="YYYY-MM-DD" />
+    <meta name="date" content="2026-10-14" scheme="YYYY-MM-DD" />
     <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
     <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
     <meta name="theme-color" content="#cbf990" />
@@ -34,19 +34,19 @@
     <!-- Open Graph Metadata -->
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://rankkiwi.com/docs/" />
-    <meta property="og:title" content="Docs: Rank Kiwi Documentation" />
-    <meta property="og:description" content="Rank Kiwi features, supported platforms, sorting, exporting, and how to use the extension." />
-    <meta property="og:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta property="og:title" content="Docs: Rank Kiwi: Free Instagram &amp; YouTube Outlier Analytics" />
+    <meta property="og:description" content="Spot the Reels, videos and Shorts that beat each creator’s typical views. Free Instagram &amp; YouTube analytics, downloads, and export." />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
     <meta property="og:site_name" content="Rank Kiwi" />
 
     <!-- Twitter / X Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Docs: Rank Kiwi Documentation" />
-    <meta name="twitter:description" content="Rank Kiwi features, supported platforms, sorting, exporting, and how to use the extension." />
-    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta name="twitter:title" content="Docs: Rank Kiwi: Free Instagram &amp; YouTube Outlier Analytics" />
+    <meta name="twitter:description" content="Spot the Reels, videos and Shorts that beat each creator’s typical views. Free Instagram &amp; YouTube analytics, downloads, and export." />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
 
-        <!-- Preconnect to Font Origins -->
-    <link rel=preconnect href="https://fonts.googleapis.com" />
+    <!-- Preconnect to Font Origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
     <link rel="stylesheet" href="/styles.min.css" />
@@ -57,8 +57,8 @@
         {
           "@context": "https://schema.org",
           "@type": "TechArticle",
-          "headline": "Rank Kiwi Documentation",
-          "description": "Rank Kiwi features, supported platforms, sorting, exporting, and how to use the extension.",
+          "headline": "Rank Kiwi: Free Instagram & YouTube Outlier Analytics Documentation",
+          "description": "Spot the Reels, videos and Shorts that beat each creator’s typical views. Free Instagram & YouTube analytics, downloads, and export.",
           "url": "https://rankkiwi.com/docs/",
           "author": {
             "@type": "Person",
@@ -98,7 +98,7 @@
   <body>
     <a class="skip-link" href="#docs-content">Skip to content</a>
 
-                <!-- SITE HEADER -->
+    <!-- SITE HEADER -->
     <header class="site-header" data-header>
       <div class="wrap nav">
         <a class="brand" href="/" aria-label="Rank Kiwi home">
@@ -126,618 +126,270 @@
     </header>
 
     <main class="docs-wrapper wrap">
-      
-
-      <div class="docs-header-bar">
-        <p class="eyebrow"><span class="status-dot"></span> DOCUMENTATION &amp; HELP CENTER</p>
-        <h1>Rank Kiwi Documentation</h1>
-        <p>Complete guide to creator research, Outlier Score calculations, Instagram &amp; YouTube analysis, exports, and troubleshooting.</p>
+      <!-- Mobile Navigation Bar -->
+      <div class="docs-mobile-bar">
+        <div class="docs-breadcrumbs" style="margin: 0;">
+          <a href="/docs/">Docs</a> <span>/</span> <span>Home</span>
+        </div>
+        <button type="button" class="docs-mobile-toggle" data-docs-mobile-toggle aria-label="Open documentation navigation">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <span>Menu</span>
+        </button>
       </div>
 
-      <!-- INTERACTIVE SEARCH BAR -->
-      <div class="docs-search">
-        <div class="docs-search-input-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          <input 
-            type="search" 
-            class="docs-search-input" 
-            placeholder="Search documentation (e.g. 'Reels', 'Outlier Score', 'CSV', 'not working')..." 
-            aria-label="Search documentation"
-            data-docs-search-input
-            autocomplete="off"
-          />
-        </div>
-        <div class="docs-search-results" data-docs-search-results aria-live="polite"></div>
-      </div>
-
-      <!-- 5-MINUTE QUICK START -->
-      <div class="quickstart-box">
-        <p class="eyebrow" style="margin-bottom: 6px;"><span class="status-dot"></span> 5-MINUTE QUICK START</p>
-        <h2>How to use Rank Kiwi in 5 steps</h2>
-        <p style="margin: 0; font-size: 13px; color: var(--muted);">Follow this simple research loop to spot high-performing creator outliers in minutes.</p>
-        <div class="quickstart-steps">
-          <div class="quickstart-step">
-            <strong>01. Install</strong>
-            Add to Chrome and pin the extension in your browser bar.
-          </div>
-          <div class="quickstart-step">
-            <strong>02. Open Creator</strong>
-            Navigate to an Instagram creator or YouTube channel.
-          </div>
-          <div class="quickstart-step">
-            <strong>03. Analyze</strong>
-            Select your sample size (25, 50, or 100) and click Analyze.
-          </div>
-          <div class="quickstart-step">
-            <strong>04. Sort</strong>
-            Sort by Outlier Score to surface posts that beat typical median views.
-          </div>
-          <div class="quickstart-step">
-            <strong>05. Export</strong>
-            Export video links, metrics, and captions to CSV or clipboard.
-          </div>
-        </div>
-      </div>
-
-      <!-- DOCUMENTATION CATEGORIES -->
-      <div class="docs-category-grid">
-        <div class="docs-category-card">
-          <div class="docs-cat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          </div>
-          <h3>Getting Started</h3>
-          <p>Install the extension, tour the workspace UI, and follow your first complete creator analysis.</p>
-          <ul class="docs-cat-links">
-            <li><a href="/docs/getting-started/">Quickstart &amp; Installation</a></li>
-            <li><a href="/docs/getting-started/your-first-analysis/">Your First Analysis Walkthrough</a></li>
-            <li><a href="/docs/getting-started/#workspace">Workspace UI Tour</a></li>
-          </ul>
-        </div>
-
-        <div class="docs-category-card">
-          <div class="docs-cat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-          </div>
-          <h3>Instagram Research</h3>
-          <p>Learn how to analyze Instagram profiles, Reels tabs, metrics availability, and platform DOM limits.</p>
-          <ul class="docs-cat-links">
-            <li><a href="/docs/instagram/">Instagram Research Overview</a></li>
-            <li><a href="/docs/instagram/#reels">Reels vs Profile Grid Analysis</a></li>
-            <li><a href="/docs/instagram/#metrics">Metrics Reference Table</a></li>
-          </ul>
-        </div>
-
-        <div class="docs-category-card">
-          <div class="docs-cat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
-          </div>
-          <h3>YouTube Research</h3>
-          <p>Analyze YouTube channels, benchmark long-form uploads, examine Shorts, and download thumbnails.</p>
-          <ul class="docs-cat-links">
-            <li><a href="/docs/youtube/">YouTube Research Overview</a></li>
-            <li><a href="/docs/youtube/#shorts">Analyzing YouTube Shorts</a></li>
-            <li><a href="/docs/youtube/#metrics">Metrics &amp; Thumbnail Downloads</a></li>
-          </ul>
-        </div>
-
-        <div class="docs-category-card">
-          <div class="docs-cat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-          </div>
-          <h3>Outlier Score &amp; Math</h3>
-          <p>Deep dive into creator-relative median baselines, statistical formulas, and interpretation rules.</p>
-          <ul class="docs-cat-links">
-            <li><a href="/docs/understanding/outlier-score/">Outlier Score Formula &amp; Median</a></li>
-            <li><a href="/docs/understanding/sorting-filtering/">Sorting &amp; Custom Filters</a></li>
-            <li><a href="/docs/understanding/outlier-score/#what-it-does-not-mean">What Outlier Score Does NOT Mean</a></li>
-          </ul>
-        </div>
-
-        <div class="docs-category-card">
-          <div class="docs-cat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          </div>
-          <h3>Exports &amp; Workflows</h3>
-          <p>Export clean data to Google Sheets, CSV, or JSON, and study practical creator research workflows.</p>
-          <ul class="docs-cat-links">
-            <li><a href="/docs/exports/">CSV, JSON &amp; Clipboard Export</a></li>
-            <li><a href="/docs/workflows/content-research/">Content Research Blueprint</a></li>
-            <li><a href="/docs/exports/#downloads">Reel &amp; Thumbnail Downloads</a></li>
-          </ul>
-        </div>
-
-        <div class="docs-category-card">
-          <div class="docs-cat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          </div>
-          <h3>Troubleshooting Center</h3>
-          <p>Interactive diagnostics and symptom-specific fixes for missing buttons, stuck scans, and metrics.</p>
-          <ul class="docs-cat-links">
-            <li><a href="/docs/troubleshooting/">Troubleshooting Decision Tree</a></li>
-            <li><a href="/docs/troubleshooting/#not-appearing">Rank Kiwi Not Appearing</a></li>
-            <li><a href="/docs/troubleshooting/#missing-metrics">Missing Metrics &amp; Views Showing 0</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="docs-container">
+      <div class="docs-container docs-home-container">
         <!-- Sticky Sidebar Navigation -->
         <aside class="docs-sidebar" aria-label="Documentation navigation">
-          <div class="docs-nav-group">
-            <div class="docs-nav-title">Getting Started</div>
+          <button type="button" class="docs-mobile-close" data-docs-mobile-close aria-label="Close navigation">
+            ✕ Close Menu
+          </button>
+
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Getting Started group">
+              <span>Getting started</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="#introduction" class="docs-nav-link">Introduction</a></li>
-              <li><a href="#your-first-analysis" class="docs-nav-link">Your first analysis</a></li>
+              <li><a href="/docs/getting-started/" class="docs-nav-link">Introduction &amp; Setup</a></li>
+              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your first analysis</a></li>
             </ul>
           </div>
 
-          <div class="docs-nav-group">
-            <div class="docs-nav-title">Platforms</div>
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Platforms group">
+              <span>Platforms</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="#instagram" class="docs-nav-link">Instagram</a></li>
-              <li><a href="#instagram-reels" class="docs-nav-link">Instagram Reels</a></li>
-              <li><a href="#instagram-posts-carousels" class="docs-nav-link">Instagram Posts &amp; Carousels</a></li>
-              <li><a href="#youtube" class="docs-nav-link">YouTube</a></li>
-              <li><a href="#youtube-videos" class="docs-nav-link">YouTube Videos</a></li>
-              <li><a href="#youtube-shorts" class="docs-nav-link">YouTube Shorts</a></li>
+              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Reels</a></li>
+              <li><a href="/docs/instagram/explore-downloads/" class="docs-nav-link">Explore downloads <span class="docs-badge-new">New</span></a></li>
+              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Scanner</a></li>
             </ul>
           </div>
 
-          <div class="docs-nav-group">
-            <div class="docs-nav-title">Sorting</div>
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Sorting &amp; Filtering group">
+              <span>Sorting &amp; Score</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="#sorting-views" class="docs-nav-link">Views</a></li>
-              <li><a href="#sorting-likes" class="docs-nav-link">Likes</a></li>
-              <li><a href="#sorting-comments" class="docs-nav-link">Comments</a></li>
-              <li><a href="#sorting-outlier-score" class="docs-nav-link">Outlier Score</a></li>
-              <li><a href="#sorting-oldest" class="docs-nav-link">Oldest</a></li>
+              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score math</a></li>
+              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; filters</a></li>
             </ul>
           </div>
 
-          <div class="docs-nav-group">
-            <div class="docs-nav-title">Filtering</div>
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Exporting group">
+              <span>Exporting</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="#filtering-content-type" class="docs-nav-link">Content type</a></li>
-              <li><a href="#performance-filters" class="docs-nav-link">Performance filters</a></li>
+              <li><a href="/docs/exports/" class="docs-nav-link">Excel, CSV &amp; Clipboard</a></li>
             </ul>
           </div>
 
-          <div class="docs-nav-group">
-            <div class="docs-nav-title">Exporting</div>
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Workflows &amp; Help group">
+              <span>Workflows &amp; Help</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="#export-copy-csv" class="docs-nav-link">Copy as CSV</a></li>
-              <li><a href="#export-csv" class="docs-nav-link">Export CSV</a></li>
-              <li><a href="#export-json" class="docs-nav-link">Export JSON</a></li>
+              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research workflow</a></li>
+              <li><a href="/docs/troubleshooting/" class="docs-nav-link">Troubleshooting &amp; FAQ</a></li>
+              <li><a href="/support/" class="docs-nav-link">Support &amp; Community</a></li>
             </ul>
           </div>
 
-          <div class="docs-nav-group">
-            <div class="docs-nav-title">Downloads</div>
-            <ul class="docs-nav-list">
-              <li><a href="#downloads-reels" class="docs-nav-link">Instagram Reel downloads</a></li>
-              <li><a href="#downloads-thumbnails" class="docs-nav-link">YouTube thumbnail downloads</a></li>
-            </ul>
-          </div>
-
-          <div class="docs-nav-group">
-            <div class="docs-nav-title">Content Details</div>
-            <ul class="docs-nav-list">
-              <li><a href="#content-captions" class="docs-nav-link">Captions</a></li>
-              <li><a href="#content-metrics" class="docs-nav-link">Metrics</a></li>
-              <li><a href="#content-types" class="docs-nav-link">Content types</a></li>
-            </ul>
-          </div>
-
-          <div class="docs-nav-group">
-            <div class="docs-nav-title">Privacy</div>
-            <ul class="docs-nav-list">
-              <li><a href="#privacy-handling" class="docs-nav-link">How Rank Kiwi handles data</a></li>
-            </ul>
-          </div>
-
-          <div class="docs-nav-group">
-            <div class="docs-nav-title">Troubleshooting</div>
-            <ul class="docs-nav-list">
-              <li><a href="#troubleshooting" class="docs-nav-link">Overview &amp; Diagnostics</a></li>
-              <li><a href="#troubleshoot-missing-button" class="docs-nav-link">Button not appearing</a></li>
-              <li><a href="#troubleshoot-zero-metrics" class="docs-nav-link">Missing metrics</a></li>
-            </ul>
-          </div>
-
-          <div class="docs-nav-group">
-            <div class="docs-nav-title">FAQ</div>
-            <ul class="docs-nav-list">
-              <li><a href="#faq-docs" class="docs-nav-link">Common questions</a></li>
-            </ul>
+          <div class="docs-sidebar-footer">
+            <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+              <span>Chrome Store</span>
+            </a>
+            <a href="mailto:say@hibhavishya.in">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>say@hibhavishya.in</span>
+            </a>
           </div>
         </aside>
 
-        <!-- Documentation Content -->
+        <!-- Main Content Area -->
         <div class="docs-content" id="docs-content">
+          <div class="docs-article-header">
+            <h1 style="margin-bottom: 8px;">Rank Kiwi Documentation.</h1>
+            <p class="docs-lead">Step-by-step guides, metric formulas, and workflows for creator content research.</p>
+          </div>
 
-          <!-- GETTING STARTED -->
-          <article class="docs-article" id="introduction">
-            <p class="eyebrow">GETTING STARTED</p>
-            <h2>Introduction</h2>
-            <p class="docs-lead">Rank Kiwi is a browser extension for researching creator content performance on Instagram and YouTube.</p>
-            <h3>Overview</h3>
-            <p>Rank Kiwi calculates performance benchmarks and Outlier Scores for creator posts directly within your browser. It helps marketers, creators, and researchers find viral formats without manual scraping or data spreadsheets.</p>
-            <h3>Core Principles</h3>
-            <ul>
-              <li><strong>Client-Side:</strong> All analyses execute locally in the browser environment.</li>
-              <li><strong>Zero Authentication:</strong> No Rank Kiwi account or login credentials required.</li>
-              <li><strong>No Database Storage:</strong> Analyzed creator content is never persisted on external servers.</li>
-            </ul>
-          </article>
-
-          <article class="docs-article" id="your-first-analysis">
-            <p class="eyebrow">GETTING STARTED</p>
-            <h2>Your first analysis</h2>
-            <p class="docs-lead">Run an analysis on any supported Instagram profile or YouTube channel in three steps.</p>
-            <h3>Execution Steps</h3>
-            <ol>
-              <li><strong>Open a creator profile:</strong> Navigate to any public Instagram profile (e.g., <code>instagram.com/creator</code>) or YouTube channel in Google Chrome.</li>
-              <li><strong>Open the Rank Kiwi panel:</strong> Click the Rank Kiwi extension icon or sidebar panel.</li>
-              <li><strong>Select sample size and analyze:</strong> Choose how many items to analyze (25, 50, 100, or Custom) and click <strong>Analyze</strong>.</li>
-            </ol>
-            <div class="docs-callout">
-              <p><strong>Tip:</strong> For Instagram Reels, navigate directly to the creator's <code>/reels/</code> tab for maximum metric fidelity.</p>
+          <!-- Quick Search Bar -->
+          <div class="docs-search" style="margin: 0 0 32px 0;">
+            <div class="docs-search-input-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input 
+                type="search" 
+                class="docs-search-input" 
+                placeholder="Search documentation (e.g. 'Reels', 'Outlier Score', 'CSV', 'not working')..." 
+                aria-label="Search documentation"
+                data-docs-search-input
+                autocomplete="off"
+              />
+              <kbd class="docs-search-kbd">/</kbd>
             </div>
-          </article>
+            <div class="docs-search-results" data-docs-search-results aria-live="polite"></div>
+          </div>
 
-          <!-- PLATFORMS -->
-          <article class="docs-article" id="instagram">
-            <p class="eyebrow">PLATFORMS</p>
-            <h2>Instagram</h2>
-            <p class="docs-lead">Rank Kiwi supports creator research across public Instagram creator and business profiles.</p>
-            <h3>Supported Surfaces</h3>
-            <ul>
-              <li>Profile Main Grid (Reels, Feed Posts, Multi-image Carousels).</li>
-              <li>Reels Tab (Dedicated short-form video feed).</li>
-            </ul>
-            <h3>Supported Metrics</h3>
-            <p>Views (plays), likes, comments, caption text, publication dates, and computed Outlier Scores.</p>
-            <h3>Limitations</h3>
-            <p>Private accounts and content requiring restricted login permissions cannot be analyzed.</p>
-          </article>
+          <!-- Section: Popular -->
+          <section class="docs-home-section">
+            <h2 class="docs-home-section-title">Popular Guides</h2>
+            <div class="docs-card-grid">
+              <a href="/docs/getting-started/your-first-analysis/" class="docs-card">
+                <div class="docs-card-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2b7a1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    <h3 class="docs-card-title">Your First Sort</h3>
+                  </div>
+                  <span class="docs-card-arrow">&rarr;</span>
+                </div>
+                <p class="docs-card-desc">Sort a creator profile by Outlier Score or views in under a minute.</p>
+              </a>
 
-          <article class="docs-article" id="instagram-reels">
-            <p class="eyebrow">PLATFORMS</p>
-            <h2>Instagram Reels</h2>
-            <p class="docs-lead">Rank Kiwi analyzes creator Reels and displays available performance metrics.</p>
-            <h3>Supported Pages</h3>
-            <p>Creator profile Reels tabs (<code>instagram.com/[username]/reels/</code>) and main profile grids.</p>
-            <h3>Metrics</h3>
-            <ul>
-              <li><strong>Play Counts / Views:</strong> Total recorded views.</li>
-              <li><strong>Engagement:</strong> Like counts and total comments.</li>
-              <li><strong>Outlier Score:</strong> Relative multiplier against median Reel performance.</li>
-              <li><strong>Metadata:</strong> Caption, post date, and direct URL.</li>
-            </ul>
-            <h3>How Analysis Works</h3>
-            <p>Rank Kiwi reads the visible DOM elements, parses structured metric strings, normalizes numeric values, and calculates median benchmarks.</p>
-            <h3>How Sorting Works</h3>
-            <p>Posts can be ordered descending by Outlier Score, Views, Likes, Comments, or chronological order.</p>
-            <h3>Limitations</h3>
-            <p>Metrics reflect publicly visible page data at the moment of inspection.</p>
-          </article>
+              <a href="/docs/instagram/" class="docs-card">
+                <div class="docs-card-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e1306c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    <h3 class="docs-card-title">Instagram Reels Scanner</h3>
+                  </div>
+                  <span class="docs-card-arrow">&rarr;</span>
+                </div>
+                <p class="docs-card-desc">Analyze creator Reels and benchmark hooks against median view counts.</p>
+              </a>
 
-          <article class="docs-article" id="instagram-posts-carousels">
-            <p class="eyebrow">PLATFORMS</p>
-            <h2>Instagram Posts &amp; Carousels</h2>
-            <p class="docs-lead">Analyze single-image posts and multi-slide carousels on creator profiles.</p>
-            <h3>Supported Pages</h3>
-            <p>Creator main profile grid (<code>instagram.com/[username]/</code>).</p>
-            <h3>Metrics</h3>
-            <ul>
-              <li>Likes and comments.</li>
-              <li>Outlier Score calculated against typical post engagement.</li>
-              <li>Full caption text and slide counts where available.</li>
-            </ul>
-            <h3>Limitations</h3>
-            <p>Instagram does not expose view counts on static image posts; Outlier Score on static posts is computed from engagement metrics.</p>
-          </article>
+              <a href="/docs/understanding/outlier-score/" class="docs-card">
+                <div class="docs-card-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#01370b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    <h3 class="docs-card-title">Outlier Score Formula</h3>
+                  </div>
+                  <span class="docs-card-arrow">&rarr;</span>
+                </div>
+                <p class="docs-card-desc">How creator median benchmarks isolate true breakout creative resonance.</p>
+              </a>
 
-          <article class="docs-article" id="youtube">
-            <p class="eyebrow">PLATFORMS</p>
-            <h2>YouTube</h2>
-            <p class="docs-lead">Rank Kiwi supports channel-level performance research across YouTube Videos and Shorts.</p>
-            <h3>Supported Surfaces</h3>
-            <ul>
-              <li>Channel Videos tab (<code>youtube.com/@channel/videos</code>).</li>
-              <li>Channel Shorts tab (<code>youtube.com/@channel/shorts</code>).</li>
-            </ul>
-            <h3>Supported Metrics</h3>
-            <p>View count, publication date, title, duration, likes, comments, and Outlier Score.</p>
-          </article>
+              <a href="/docs/instagram/explore-downloads/" class="docs-card">
+                <div class="docs-card-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2b7a1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <h3 class="docs-card-title">Explore Reel Downloads</h3>
+                  </div>
+                  <span class="docs-badge-new">New</span>
+                </div>
+                <p class="docs-card-desc">Download original MP4 Reels directly from Explore or profile grids.</p>
+              </a>
 
-          <article class="docs-article" id="youtube-videos">
-            <p class="eyebrow">PLATFORMS</p>
-            <h2>YouTube Videos</h2>
-            <p class="docs-lead">Analyze long-form video uploads on creator YouTube channels.</p>
-            <h3>Supported Pages</h3>
-            <p>Channel Videos tab (<code>youtube.com/@[handle]/videos</code>).</p>
-            <h3>Metrics</h3>
-            <ul>
-              <li>Total lifetime view counts.</li>
-              <li>Relative upload age and publish timestamps.</li>
-              <li>Outlier Score against channel median long-form views.</li>
-            </ul>
-            <h3>How Analysis Works</h3>
-            <p>Rank Kiwi parses channel metadata, converts formatted view strings (e.g. "1.2M views") into discrete integers, and calculates distributional benchmarks.</p>
-          </article>
+              <a href="/docs/youtube/" class="docs-card">
+                <div class="docs-card-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+                    <h3 class="docs-card-title">YouTube Channel Scanner</h3>
+                  </div>
+                  <span class="docs-card-arrow">&rarr;</span>
+                </div>
+                <p class="docs-card-desc">Scan long-form videos and Shorts with 1080p thumbnail downloads.</p>
+              </a>
 
-          <article class="docs-article" id="youtube-shorts">
-            <p class="eyebrow">PLATFORMS</p>
-            <h2>YouTube Shorts</h2>
-            <p class="docs-lead">Analyze vertical short-form video performance on creator YouTube channels.</p>
-            <h3>Supported Pages</h3>
-            <p>Channel Shorts tab (<code>youtube.com/@[handle]/shorts</code>).</p>
-            <h3>Metrics</h3>
-            <ul>
-              <li>Short view counts.</li>
-              <li>Title and direct link.</li>
-              <li>Outlier Score comparing Shorts specifically to the creator's other Shorts.</li>
-            </ul>
-            <h3>Limitations</h3>
-            <p>Shorts benchmarks are calculated separately from long-form video uploads to maintain baseline statistical validity.</p>
-          </article>
-
-          <!-- SORTING -->
-          <article class="docs-article" id="sorting-views">
-            <p class="eyebrow">SORTING</p>
-            <h2>Views</h2>
-            <p class="docs-lead">Order analyzed content descending by highest total recorded views.</p>
-            <h3>Usage</h3>
-            <p>Select <strong>Views</strong> from the Sort dropdown to locate the most-watched content regardless of publication date or baseline follower size.</p>
-          </article>
-
-          <article class="docs-article" id="sorting-likes">
-            <p class="eyebrow">SORTING</p>
-            <h2>Likes</h2>
-            <p class="docs-lead">Order analyzed content descending by total likes.</p>
-            <h3>Usage</h3>
-            <p>Useful for evaluating direct audience appreciation and resonance across image and video formats.</p>
-          </article>
-
-          <article class="docs-article" id="sorting-comments">
-            <p class="eyebrow">SORTING</p>
-            <h2>Comments</h2>
-            <p class="docs-lead">Order analyzed content descending by total comment counts.</p>
-            <h3>Usage</h3>
-            <p>Identifies high-discussion posts, controversial topics, and community-engaging prompts.</p>
-          </article>
-
-          <article class="docs-article" id="sorting-outlier-score">
-            <p class="eyebrow">SORTING</p>
-            <h2>Outlier Score</h2>
-            <p class="docs-lead">Order content by statistical outperformance relative to the creator's typical baseline.</p>
-            <h3>Formula Concept</h3>
-            <p>Outlier Score divides a post's metric by the creator's median metric across the analyzed sample.</p>
-            <table class="docs-table">
-              <thead>
-                <tr>
-                  <th>Score Multiplier</th>
-                  <th>Classification</th>
-                  <th>Interpretation</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1.0×</td>
-                  <td>Typical</td>
-                  <td>Matches the creator's expected performance baseline.</td>
-                </tr>
-                <tr>
-                  <td>3.2×</td>
-                  <td>Strong</td>
-                  <td>Delivered more than triple the creator's normal engagement.</td>
-                </tr>
-                <tr>
-                  <td>5.8×+</td>
-                  <td>Outlier</td>
-                  <td>Exceptional performance; indicates breakout algorithm distribution.</td>
-                </tr>
-              </tbody>
-            </table>
-          </article>
-
-          <article class="docs-article" id="sorting-oldest">
-            <p class="eyebrow">SORTING</p>
-            <h2>Oldest</h2>
-            <p class="docs-lead">Order analyzed content chronologically from oldest to newest.</p>
-            <h3>Usage</h3>
-            <p>Helpful for tracking a creator's evolution, content style transitions, and historical performance changes over time.</p>
-          </article>
-
-          <!-- FILTERING -->
-          <article class="docs-article" id="filtering-content-type">
-            <p class="eyebrow">FILTERING</p>
-            <h2>Content type</h2>
-            <p class="docs-lead">Filter displayed results by specific media formats.</p>
-            <h3>Supported Filters</h3>
-            <ul>
-              <li><strong>Instagram:</strong> All, Reels only, Static Posts only, Carousels only.</li>
-              <li><strong>YouTube:</strong> All, Long-form Videos only, Shorts only.</li>
-            </ul>
-          </article>
-
-          <article class="docs-article" id="performance-filters">
-            <p class="eyebrow">FILTERING</p>
-            <h2>Performance filters</h2>
-            <p class="docs-lead">Isolate posts that exceed specific minimum performance thresholds.</p>
-            <h3>Filter Criteria</h3>
-            <ul>
-              <li>Minimum Outlier Score threshold (e.g., &ge; 2.0×).</li>
-              <li>Minimum view count threshold.</li>
-              <li>Minimum like or comment count threshold.</li>
-            </ul>
-          </article>
-
-          <!-- EXPORTING -->
-          <article class="docs-article" id="export-copy-csv">
-            <p class="eyebrow">EXPORTING</p>
-            <h2>Copy as CSV</h2>
-            <p class="docs-lead">Copy analyzed results formatted as comma-separated values directly to your clipboard.</p>
-            <h3>Action</h3>
-            <p>Click <strong>Copy</strong> in the top action bar to place formatted CSV text into the system clipboard, ready to paste into Google Sheets, Excel, or Notion.</p>
-          </article>
-
-          <article class="docs-article" id="export-csv">
-            <p class="eyebrow">EXPORTING</p>
-            <h2>Export CSV</h2>
-            <p class="docs-lead">Download a structured .csv spreadsheet file containing all analyzed records.</p>
-            <h3>Included Columns</h3>
-            <p>Post URL, Content Type, Date, Views, Likes, Comments, Outlier Score, and Caption text.</p>
-          </article>
-
-          <article class="docs-article" id="export-json">
-            <p class="eyebrow">EXPORTING</p>
-            <h2>Export JSON</h2>
-            <p class="docs-lead">Download raw structured .json data for programmatic pipelines and automated workflows.</p>
-            <h3>Format</h3>
-            <p>An array of JSON objects with typed keys: <code>url</code>, <code>type</code>, <code>date</code>, <code>views</code>, <code>likes</code>, <code>comments</code>, <code>outlierScore</code>, and <code>caption</code>.</p>
-          </article>
-
-          <!-- DOWNLOADS -->
-          <article class="docs-article" id="downloads-reels">
-            <p class="eyebrow">DOWNLOADS</p>
-            <h2>Instagram Reel downloads</h2>
-            <p class="docs-lead">Directly download public creator Reel video files for offline reference.</p>
-            <h3>How It Works</h3>
-            <p>Open the Content Details modal for any analyzed Reel and click <strong>Download Reel</strong> to save the video file locally through your browser.</p>
-          </article>
-
-          <article class="docs-article" id="downloads-thumbnails">
-            <p class="eyebrow">DOWNLOADS</p>
-            <h2>YouTube thumbnail downloads</h2>
-            <p class="docs-lead">Save high-resolution YouTube video thumbnail imagery.</p>
-            <h3>How It Works</h3>
-            <p>From the video detail view, select <strong>Download Thumbnail</strong> to retrieve the maximum resolution thumbnail image asset.</p>
-          </article>
-
-          <!-- CONTENT DETAILS -->
-          <article class="docs-article" id="content-captions">
-            <p class="eyebrow">CONTENT DETAILS</p>
-            <h2>Captions</h2>
-            <p class="docs-lead">Inspect complete creator post caption text, hashtags, and mentions.</p>
-            <h3>Features</h3>
-            <p>Full-text display without character truncation, allowing you to study copywriting hooks, calls to action, and keyword strategies.</p>
-          </article>
-
-          <article class="docs-article" id="content-metrics">
-            <p class="eyebrow">CONTENT DETAILS</p>
-            <h2>Metrics</h2>
-            <p class="docs-lead">Side-by-side performance cards displaying views, likes, comments, and Outlier Score.</p>
-            <h3>Details</h3>
-            <p>Metrics are clearly labeled and presented in numerical cards alongside the content preview and publication timestamp.</p>
-          </article>
-
-          <article class="docs-article" id="content-types">
-            <p class="eyebrow">CONTENT DETAILS</p>
-            <h2>Content types</h2>
-            <p class="docs-lead">Badges identifying the media format of each analyzed post.</p>
-            <h3>Supported Badges</h3>
-            <p><code>Reel</code>, <code>Post</code>, <code>Carousel</code>, <code>Video</code>, and <code>Short</code>.</p>
-          </article>
-
-          <!-- PRIVACY -->
-          <article class="docs-article" id="privacy-handling">
-            <p class="eyebrow">PRIVACY</p>
-            <h2>How Rank Kiwi handles data</h2>
-            <p class="docs-lead">Rank Kiwi is built with a client-first, privacy-by-design architecture.</p>
-            <h3>Architecture Principles</h3>
-            <ul>
-              <li><strong>Local Processing:</strong> Analysis algorithms execute inside the browser sandbox on your machine.</li>
-              <li><strong>No Creator Content Database:</strong> Rank Kiwi does not upload or maintain a server-side repository of posts you analyze.</li>
-              <li><strong>No Authentication Tokens:</strong> Rank Kiwi never accesses or transmits your Instagram or YouTube account credentials.</li>
-            </ul>
-            <p>Read the complete <a href="/privacy/" style="color: var(--green); text-decoration: underline;">Privacy Policy</a> for full disclosures.</p>
-          </article>
-
-          <!-- TROUBLESHOOTING -->
-          <article class="docs-article" id="troubleshooting">
-            <p class="eyebrow">TROUBLESHOOTING</p>
-            <h2>Troubleshooting &amp; Diagnostics</h2>
-            <p class="docs-lead">Step-by-step guidance for resolving common extension issues on Instagram and YouTube.</p>
-
-            <div class="troubleshoot-block" id="troubleshoot-missing-button">
-              <div class="troubleshoot-header">
-                <span class="troubleshoot-tag">Issue 01</span>
-                <h3 style="margin: 0; font-size: var(--text-base);">Rank Kiwi overlay or panel does not appear on profile</h3>
-              </div>
-              <div class="troubleshoot-section">
-                <h4>Problem &amp; Symptoms</h4>
-                <p>Navigating to an Instagram profile or YouTube channel shows no Rank Kiwi analysis overlay or sidebar trigger.</p>
-              </div>
-              <div class="troubleshoot-section">
-                <h4>Why It Happens</h4>
-                <p>Chrome may have restricted extension access, the page may still be loading dynamic scripts, or the URL might not match supported surfaces (e.g. an Instagram feed post modal rather than a profile grid).</p>
-              </div>
-              <div class="troubleshoot-section">
-                <h4>Exact Fix</h4>
-                <ol class="troubleshoot-fix-list">
-                  <li>Confirm you are on a profile URL (e.g. <code>instagram.com/username/</code> or <code>youtube.com/@channel/videos</code>).</li>
-                  <li>Click the puzzle icon in Chrome's toolbar and ensure Rank Kiwi is pinned and enabled.</li>
-                  <li>Reload the page using <code>Cmd + Shift + R</code> (Mac) or <code>Ctrl + F5</code> (Windows).</li>
-                </ol>
-              </div>
-              <div class="troubleshoot-section">
-                <h4>If That Did Not Work</h4>
-                <p>Open <code>chrome://extensions</code>, toggle Rank Kiwi off and on again, and verify Chrome permissions are set to "On all sites" or "When you click the extension".</p>
-              </div>
-              <div class="troubleshoot-section">
-                <h4>When to Contact Support</h4>
-                <p>If platform layout updates break button rendering, email <a href="mailto:say@hibhavishya.in" style="color: var(--green); text-decoration: underline;">say@hibhavishya.in</a> with your Chrome version.</p>
-              </div>
+              <a href="/docs/exports/" class="docs-card">
+                <div class="docs-card-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+                    <h3 class="docs-card-title">Spreadsheet Exports</h3>
+                  </div>
+                  <span class="docs-card-arrow">&rarr;</span>
+                </div>
+                <p class="docs-card-desc">Export to clean Excel (.xlsx), CSV, or paste formatted rows into Google Sheets.</p>
+              </a>
             </div>
+          </section>
 
-            <div class="troubleshoot-block" id="troubleshoot-zero-metrics">
-              <div class="troubleshoot-header">
-                <span class="troubleshoot-tag">Issue 02</span>
-                <h3 style="margin: 0; font-size: var(--text-base);">Analysis completes but shows 0 views or incomplete metrics</h3>
-              </div>
-              <div class="troubleshoot-section">
-                <h4>Problem &amp; Symptoms</h4>
-                <p>Outlier Score shows <code>1.0×</code> across all items or view counts display as empty.</p>
-              </div>
-              <div class="troubleshoot-section">
-                <h4>Why It Happens</h4>
-                <p>For Instagram feed grids, Instagram hides public view counts on non-video photos. Additionally, newly published posts with zero views distort calculations if not enough posts are sampled.</p>
-              </div>
-              <div class="troubleshoot-section">
-                <h4>Exact Fix</h4>
-                <ol class="troubleshoot-fix-list">
-                  <li>On Instagram, switch directly to the creator's <strong>/reels/</strong> tab where view counts are publicly visible.</li>
-                  <li>Increase your sample size to at least 25 or 50 posts so the median calculation has a valid statistical baseline.</li>
-                  <li>Ensure the creator profile is public; private accounts do not expose metrics to browser extensions.</li>
-                </ol>
-              </div>
-              <div class="troubleshoot-section">
-                <h4>When to Contact Support</h4>
-                <p>Visit our <a href="/support/" style="color: var(--green); text-decoration: underline;">Support Page</a> or reach out directly if platform DOM updates require a parser update.</p>
-              </div>
+          <!-- Section: Rank Kiwi Basics -->
+          <section class="docs-home-section">
+            <h2 class="docs-home-section-title">Core Methodology</h2>
+            <div class="docs-card-grid">
+              <a href="/docs/getting-started/" class="docs-card">
+                <div class="docs-card-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2b7a1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    <h3 class="docs-card-title">Installation &amp; Setup</h3>
+                  </div>
+                  <span class="docs-card-arrow">&rarr;</span>
+                </div>
+                <p class="docs-card-desc">Add Rank Kiwi to Chrome, pin the extension, and tour the workspace.</p>
+              </a>
+
+              <a href="/docs/understanding/sorting-filtering/" class="docs-card">
+                <div class="docs-card-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2b7a1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+                    <h3 class="docs-card-title">Sorting &amp; Filters</h3>
+                  </div>
+                  <span class="docs-card-arrow">&rarr;</span>
+                </div>
+                <p class="docs-card-desc">Scope, date range, and rank thresholds behind every content sort.</p>
+              </a>
+
+              <a href="/docs/workflows/content-research/" class="docs-card">
+                <div class="docs-card-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2b7a1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    <h3 class="docs-card-title">Research Workflow</h3>
+                  </div>
+                  <span class="docs-card-arrow">&rarr;</span>
+                </div>
+                <p class="docs-card-desc">From creator feed to outlier database: the 5-step analysis framework.</p>
+              </a>
             </div>
-          </article>
+          </section>
 
-          <!-- FAQ -->
-          <article class="docs-article" id="faq-docs">
-            <p class="eyebrow">FAQ</p>
-            <h2>Common questions</h2>
-            <p class="docs-lead">Answers to frequent technical and product questions.</p>
-            <h3>Does Rank Kiwi require API keys?</h3>
-            <p>No. Rank Kiwi inspects visible page information directly in your browser without requiring personal API keys.</p>
-            <h3>Can I analyze private profiles?</h3>
-            <p>No. Rank Kiwi only operates on publicly accessible profile grids and channels.</p>
-            <h3>Is there a limit on how many posts I can analyze?</h3>
-            <p>Rank Kiwi allows analyzing 25, 50, 100, or a custom number of posts based on how much content is loaded on the page.</p>
-          </article>
+          <!-- Section: Help & Troubleshooting -->
+          <section class="docs-home-section">
+            <h2 class="docs-home-section-title">Help &amp; Support</h2>
+            <div class="docs-card-grid">
+              <a href="/docs/troubleshooting/" class="docs-card">
+                <div class="docs-card-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    <h3 class="docs-card-title">Troubleshooting</h3>
+                  </div>
+                  <span class="docs-card-arrow">&rarr;</span>
+                </div>
+                <p class="docs-card-desc">Diagnostic decision tree for missing buttons or stalled scans.</p>
+              </a>
 
+              <a href="/docs/troubleshooting/#faq-docs" class="docs-card">
+                <div class="docs-card-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2b7a1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    <h3 class="docs-card-title">Common Questions</h3>
+                  </div>
+                  <span class="docs-card-arrow">&rarr;</span>
+                </div>
+                <p class="docs-card-desc">Privacy, permissions, account safety, and browser compatibility.</p>
+              </a>
+
+              <a href="/support/" class="docs-card">
+                <div class="docs-card-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2b7a1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <h3 class="docs-card-title">Contact Developer</h3>
+                  </div>
+                  <span class="docs-card-arrow">&rarr;</span>
+                </div>
+                <p class="docs-card-desc">Get fast direct support from developer Bhavishya Singla.</p>
+              </a>
+            </div>
+          </section>
         </div>
       </div>
     </main>
 
-                <!-- SITE FOOTER -->
+    <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
@@ -764,37 +416,25 @@
 
         <div>
           <b>Product</b>
-          <a href="/">Home</a>
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="/creator-content-research/">Creator Research</a>
+          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
-          <b>Learn &amp; Docs</b>
+          <b>Resources</b>
+          <a href="/research/">Research</a>
+          <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
-          <a href="/docs/getting-started/">Getting Started</a>
-          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
-          <a href="/docs/troubleshooting/">Troubleshooting</a>
-          <a href="/docs/exports/">Exports Guide</a>
-        </div>
-
-        <div>
-          <b>Research &amp; Compare</b>
-          <a href="/research/">Research Hub</a>
-          <a href="/research/methodology/">Methodology</a>
           <a href="/compare/">Tool Comparisons</a>
-          <a href="/alternatives/">Alternatives Hub</a>
-          <a href="/best/">Best Software Guides</a>
         </div>
 
         <div>
-          <b>Legal &amp; Support</b>
+          <b>Support &amp; Legal</b>
           <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
-          <a href="/disclaimer/">Disclaimer</a>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
         </div>
       </div>

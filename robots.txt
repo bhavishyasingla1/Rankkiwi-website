@@ -1,26 +1,89 @@
 # /robots.txt
 # Standard Compliance: RFC 9309
 # Target: https://rankkiwi.com
+# LLM Context Discovery: https://llmstxt.org/
 
-User-agent: Googlebot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
+# AI Search Engines & LLM Web Retrievers (Explicitly Allowed)
 User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
 Allow: /
 
 User-agent: Applebot
 Allow: /
 
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Standard Web Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# General Policy for All Other Agents
 User-agent: *
 Allow: /
 
+# XML Sitemaps
 Sitemap: https://rankkiwi.com/sitemap.xml
+
+# Machine-Readable AI Context & System Specifications
+# https://rankkiwi.com/llms.txt
+# https://rankkiwi.com/llms-full.txt

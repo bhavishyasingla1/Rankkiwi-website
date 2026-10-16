@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Centralized mapping of intent-matched CTAs and benefit-first copy per page type and position.",
   "defaultCTA": {
-    "primary": "Add to Chrome — Free",
+    "primary": "Add to Chrome",
     "secondary": "See how it works",
     "subtext": "Free forever • No account required • 100% private"
   },

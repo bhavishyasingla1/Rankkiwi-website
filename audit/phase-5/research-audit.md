@@ -161,7 +161,7 @@ Execution of the automated validator suite (`python3 scripts/seo-validator.py`) 
    *Title:* "What Happens When You Post Your First 10 Videos on YouTube"  
    *Publisher:* vidIQ  
    *Date:* Early 2025  
-   *URL:* [https://vidiq.com/blog/post/first-10-videos-youtube/](https://vidiq.com/blog/post/first-10-videos-youtube/)
+   *URL:* [https://vidiq.com/blog/post/youtube-first-10-videos-study-shorts-vs-long-form/](https://vidiq.com/blog/post/youtube-first-10-videos-study-shorts-vs-long-form/)
 
 4. **vidIQ Upload Frequency Study:**
    *Title:* "How Often Should You Upload to YouTube (Data Study)"  

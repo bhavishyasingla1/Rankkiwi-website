@@ -1,0 +1,10 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build & Dev tools
+.wrangler/
+node_modules/
+
+# Raw media / source screen recordings (exceeds GitHub 100MB limit; optimized webp/mp4 are in assets/)
+Detailed product videos/

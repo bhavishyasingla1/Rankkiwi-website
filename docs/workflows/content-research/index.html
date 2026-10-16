@@ -26,7 +26,7 @@
     <link rel="canonical" href="https://rankkiwi.com/docs/workflows/content-research/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Bhavishya Singla" />
-    <meta name="date" content="2026-10-05" scheme="YYYY-MM-DD" />
+    <meta name="date" content="2026-10-14" scheme="YYYY-MM-DD" />
     <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
     <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
     <meta name="theme-color" content="#cbf990" />
@@ -36,14 +36,14 @@
     <meta property="og:url" content="https://rankkiwi.com/docs/workflows/content-research/" />
     <meta property="og:title" content="Creator Content Research Workflow - Rank Kiwi Docs" />
     <meta property="og:description" content="Learn the step-by-step creator research blueprint: benchmark creator performance, deconstruct winning hooks, identify format patterns, and export research." />
-    <meta property="og:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
     <meta property="og:site_name" content="Rank Kiwi" />
 
     <!-- Twitter / X Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Creator Content Research Workflow - Rank Kiwi Docs" />
     <meta name="twitter:description" content="Learn the step-by-step creator research blueprint: benchmark creator performance, deconstruct winning hooks, identify format patterns, and export research." />
-    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
 
     <!-- Fonts & CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -138,42 +138,107 @@
     </header>
 
     <main class="docs-wrapper wrap">
-      
-
-      <div class="docs-header-bar">
-        <p class="eyebrow"><span class="status-dot"></span> RESEARCH BLUEPRINT</p>
-        <h1>Practical Creator Content Research Workflow</h1>
-        <p>A proven step-by-step methodology to turn Outlier Scores into actionable content ideas without blind imitation.</p>
+      <!-- Mobile Navigation Bar -->
+      <div class="docs-mobile-bar">
+        <div class="docs-breadcrumbs" style="margin: 0;">
+          <a href="/docs/">Docs</a> <span>/</span> <a href="/docs/workflows/content-research/">Workflows</a> <span>/</span> <span>Research Workflow</span>
+        </div>
+        <button type="button" class="docs-mobile-toggle" data-docs-mobile-toggle aria-label="Open documentation navigation">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <span>Menu</span>
+        </button>
       </div>
 
       <div class="docs-container">
-        <!-- Sidebar Navigation -->
+        <!-- Sticky Sidebar Navigation -->
         <aside class="docs-sidebar" aria-label="Documentation navigation">
+          <button type="button" class="docs-mobile-close" data-docs-mobile-close aria-label="Close navigation">
+            ✕ Close Menu
+          </button>
+
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Workflow Steps</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Getting Started group">
+              <span>Getting started</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="#mental-model" class="docs-nav-link active">The Research Loop</a></li>
-              <li><a href="#step-1-sample" class="docs-nav-link">1. Creator Selection &amp; Sample</a></li>
-              <li><a href="#step-2-sort" class="docs-nav-link">2. Surface Statistical Outliers</a></li>
-              <li><a href="#step-3-deconstruct" class="docs-nav-link">3. Deconstruct the Hook</a></li>
-              <li><a href="#step-4-compare" class="docs-nav-link">4. Outlier vs Baseline Comparison</a></li>
-              <li><a href="#step-5-database" class="docs-nav-link">5. Build a Swipe Database</a></li>
-              <li><a href="#ethics" class="docs-nav-link">Research Ethics &amp; Originality</a></li>
+              <li><a href="/docs/getting-started/" class="docs-nav-link">Introduction &amp; Setup</a></li>
+              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your first analysis</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Related Documentation</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Platforms group">
+              <span>Platforms</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score Explained</a></li>
-              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Filters &amp; Sorting</a></li>
-              <li><a href="/docs/exports/" class="docs-nav-link">Exporting to Sheets</a></li>
+              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Reels</a></li>
+              <li><a href="/docs/instagram/explore-downloads/" class="docs-nav-link">Explore downloads <span class="docs-badge-new">New</span></a></li>
+              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Scanner</a></li>
             </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Sorting &amp; Filtering group">
+              <span>Sorting &amp; Score</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score math</a></li>
+              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; filters</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Exporting group">
+              <span>Exporting</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/exports/" class="docs-nav-link">Excel, CSV &amp; Clipboard</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Workflows &amp; Help group">
+              <span>Workflows &amp; Help</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/workflows/content-research/" class="docs-nav-link active">Research workflow</a></li>
+              <li><a href="/docs/troubleshooting/" class="docs-nav-link">Troubleshooting &amp; FAQ</a></li>
+              <li><a href="/support/" class="docs-nav-link">Support &amp; Community</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-sidebar-footer">
+            <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+              <span>Chrome Store</span>
+            </a>
+            <a href="mailto:say@hibhavishya.in">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>say@hibhavishya.in</span>
+            </a>
           </div>
         </aside>
 
         <!-- Main Content -->
         <div class="docs-content" id="docs-content">
+          <nav class="docs-breadcrumbs" aria-label="Breadcrumb">
+            <a href="/docs/">Docs</a> <span>/</span>
+            <a href="/docs/workflows/content-research/">Workflows</a> <span>/</span>
+            <span>Research Workflow</span>
+          </nav>
+
+          <div class="docs-article-header">
+            <p class="eyebrow"><span class="status-dot"></span> Research Blueprint</p>
+            <h1>Practical Creator Content Research Workflow</h1>
+            <p class="docs-lead">A proven step-by-step methodology to turn Outlier Scores into actionable content ideas without blind imitation.</p>
+          </div>
+
+          <article class="docs-article">
           <article class="docs-article" id="mental-model">
             <h2>The Creator Research Loop</h2>
             <p class="docs-lead">Stop guessing what will perform. Study what has already proven resonance relative to a creator's audience baseline.</p>
@@ -187,7 +252,7 @@
           </article>
 
           <article class="docs-article" id="step-1-sample">
-            <h2>1. Creator Selection &amp; Niche Mapping</h2>
+            <h2>1. Creator &amp; Niche Selection</h2>
             <p class="docs-lead">Select 5 to 10 creators in your specific niche who publish consistently.</p>
             <p>Rather than only researching million-follower accounts, curate a balanced roster:</p>
             <ul>
@@ -206,7 +271,7 @@
           </article>
 
           <article class="docs-article" id="step-3-deconstruct">
-            <h2>3. Deconstruct the Hook &amp; Opening Structure</h2>
+            <h2>3. Deconstruct Winning Hooks</h2>
             <p class="docs-lead">Click on each outlier post to open the Content Details inspector.</p>
             <p>Study the opening 3 seconds of the video and the first line of the caption:</p>
             <ul>
@@ -217,7 +282,7 @@
           </article>
 
           <article class="docs-article" id="step-4-compare">
-            <h2>4. Compare Outliers Against Typical (1.0×) Baseline Posts</h2>
+            <h2>4. Compare Outliers to Baseline</h2>
             <p class="docs-lead">The secret to research is not just looking at the winner — it is comparing the winner against the creator's typical 1.0× posts.</p>
             <p>Ask yourself: <em>What did this creator do differently on their 5.0× post compared with their 1.0× post published two days earlier?</em></p>
             <div class="table-wrap">
@@ -251,9 +316,9 @@
           </article>
 
           <article class="docs-article" id="step-5-database">
-            <h2>5. Build an Editorial Swipe Database</h2>
+            <h2>5. Build Swipe Database</h2>
             <p class="docs-lead">Export outlier metadata directly into Google Sheets, Notion, or Airtable.</p>
-            <p>Using Rank Kiwi's <strong>Export CSV</strong> or <strong>Copy to Clipboard</strong> feature, maintain an ongoing spreadsheet tracking:</p>
+            <p>Using Rank Kiwi's <strong>Export Excel (.xlsx)</strong>, <strong>Export CSV</strong>, or <strong>Copy to Clipboard</strong> (TSV &amp; HTML tables) features, maintain an ongoing spreadsheet tracking:</p>
             <ul>
               <li>Creator Handle</li>
               <li>Post URL</li>
@@ -265,7 +330,7 @@
           </article>
 
           <article class="docs-article" id="ethics">
-            <h2>Research Ethics: Study Patterns, Never Copy Blindly</h2>
+            <h2>Study Patterns, Never Copy Blindly</h2>
             <p class="docs-lead">The goal of creator research is structural understanding, not plagiarism.</p>
             <div class="callout callout-warning">
               <p><strong>Golden Rule of Creator Research:</strong> Study the <em>format architecture</em> (e.g. contrast hook, curiosity gap, pacing speed), but populate it with your <em>original perspectives, original data, and unique brand voice</em>.</p>
@@ -275,7 +340,7 @@
             <div class="docs-pagination">
               <div class="docs-page-nav">
                 <span>Previous</span>
-                <b><a href="/docs/understanding/sorting-filtering/">Sorting &amp; Custom Filters</a></b>
+                <b><a href="/docs/understanding/sorting-filtering/">&larr; Sorting &amp; Custom Filters</a></b>
               </div>
               <div class="docs-page-nav docs-page-next">
                 <span>Next Guide</span>
@@ -284,10 +349,24 @@
             </div>
           </article>
         </div>
+
+        <!-- Right-Side Table of Contents -->
+        <aside class="docs-toc" aria-label="Table of contents">
+          <div class="docs-toc-title">On this page</div>
+          <ul class="docs-toc-list">
+            <li><a href="#mental-model" class="docs-toc-link">The research loop</a></li>
+            <li><a href="#step-1-sample" class="docs-toc-link">1. Selection &amp; sample</a></li>
+            <li><a href="#step-2-sort" class="docs-toc-link">2. Surface outliers</a></li>
+            <li><a href="#step-3-deconstruct" class="docs-toc-link">3. Deconstruct hooks</a></li>
+            <li><a href="#step-4-compare" class="docs-toc-link">4. Outlier comparison</a></li>
+            <li><a href="#step-5-database" class="docs-toc-link">5. Swipe database</a></li>
+            <li><a href="#ethics" class="docs-toc-link">Research ethics</a></li>
+          </ul>
+        </aside>
       </div>
     </main>
 
-                <!-- SITE FOOTER -->
+                    <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
@@ -314,37 +393,25 @@
 
         <div>
           <b>Product</b>
-          <a href="/">Home</a>
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="/creator-content-research/">Creator Research</a>
+          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
-          <b>Learn &amp; Docs</b>
+          <b>Resources</b>
+          <a href="/research/">Research</a>
+          <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
-          <a href="/docs/getting-started/">Getting Started</a>
-          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
-          <a href="/docs/troubleshooting/">Troubleshooting</a>
-          <a href="/docs/exports/">Exports Guide</a>
-        </div>
-
-        <div>
-          <b>Research &amp; Compare</b>
-          <a href="/research/">Research Hub</a>
-          <a href="/research/methodology/">Methodology</a>
           <a href="/compare/">Tool Comparisons</a>
-          <a href="/alternatives/">Alternatives Hub</a>
-          <a href="/best/">Best Software Guides</a>
         </div>
 
         <div>
-          <b>Legal &amp; Support</b>
+          <b>Support &amp; Legal</b>
           <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
-          <a href="/disclaimer/">Disclaimer</a>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
         </div>
       </div>

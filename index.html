@@ -25,14 +25,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Primary SEO Metadata -->
-    <title>Rank Kiwi: Find Viral Outliers on Instagram &amp; YouTube</title>
-    <meta name="description" content="Free Chrome extension to research creator profiles, track engagement metrics, and discover viral outlier content on Instagram and YouTube in seconds." />
+    <title>Rank Kiwi - Find the Videos That Beat Each Creator's Normal</title>
+    <meta name="description" content="Rank Kiwi ranks any creator's Reels, Shorts and videos against their own median, so you see what actually broke out. 100% free, client-side, no account required." />
     <link rel="canonical" href="https://rankkiwi.com/" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Context" />
+    <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Full LLM Specification" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
     <!-- Authorship, Freshness & Brand Identity -->
     <meta name="author" content="Bhavishya Singla" />
-    <meta name="date" content="2026-10-02" scheme="YYYY-MM-DD" />
+    <meta name="date" content="2026-10-14" scheme="YYYY-MM-DD" />
     <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
     <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
     <meta name="theme-color" content="#cbf990" />
@@ -40,12 +42,12 @@
     <!-- Open Graph Metadata -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rankkiwi.com/" />
-    <meta property="og:title" content="Rank Kiwi: Find Viral Outliers on Instagram &amp; YouTube" />
-    <meta property="og:description" content="Free Chrome extension to research creator profiles, track engagement metrics, and discover viral outlier content on Instagram and YouTube in seconds." />
-    <meta property="og:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="800" />
-    <meta property="og:image:alt" content="Rank Kiwi creator research extension showing Instagram Reels Outlier Scores" />
+    <meta property="og:title" content="Rank Kiwi - Find the Videos That Beat Each Creator's Normal" />
+    <meta property="og:description" content="Rank Kiwi ranks any creator's Reels, Shorts and videos against their own median, so you see what actually broke out. 100% free, client-side, no account required." />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/youtube-videos-outlier-grid.png" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="1041" />
+    <meta property="og:image:alt" content="YouTube Viral Outlier Videos grid displaying performance multipliers from 5.8x to 1.8x with view counts" />
     <meta property="og:site_name" content="Rank Kiwi" />
     <meta property="og:locale" content="en_US" />
 
@@ -53,7 +55,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Rank Kiwi: Find Viral Outliers on Instagram &amp; YouTube" />
     <meta name="twitter:description" content="Free Chrome extension to research creator profiles, track engagement metrics, and discover viral outlier content on Instagram and YouTube in seconds." />
-    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/youtube-videos-outlier-grid.png" />
 
     <!-- Preconnect to Font Origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,9 +63,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
 
     <!-- Preload Critical Above-The-Fold LCP Image -->
-    <link rel="preload" as="image" href="/hero-poster.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/assets/videos/posters/hero-instagram.webp" type="image/webp" fetchpriority="high" />
 
-    <link rel="stylesheet" href="/styles.min.css" />
+    <link rel="stylesheet" href="/styles.min.css?v=1.1.2" />
 
     <!-- Schema.org JSON-LD Structured Data (Comprehensive Knowledge Graph) -->
     <script type="application/ld+json">
@@ -77,9 +79,9 @@
           "applicationCategory": "DeveloperApplication, SocialNetworkingApplication",
           "operatingSystem": "Google Chrome, Chromium",
           "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
-          "softwareVersion": "1.0.0",
+          "softwareVersion": "1.0.1",
           "datePublished": "2025-01-01",
-          "dateModified": "2026-10-02",
+          "dateModified": "2026-10-14",
           "inLanguage": "en-US",
           "offers": {
             "@type": "Offer",
@@ -88,10 +90,11 @@
             "availability": "https://schema.org/InStock"
           },
           "featureList": [
-            "Instagram Reels and Posts Outlier Detection",
-            "YouTube Videos and Shorts Outlier Detection",
+            "Instagram Reels Outlier Detection & 9:16 In-Modal Video Player",
+            "YouTube Videos and Shorts Outlier Detection & Anti-Leakage Validation",
             "Median Benchmark Outlier Score Calculation",
-            "One-click CSV and JSON Data Export",
+            "One-click Excel (.xlsx), CSV, and JSON Data Export",
+            "Single & Batch Reel MP4 and HD Thumbnail Downloads",
             "100% Client-Side Local Privacy Execution"
           ],
           "author": {
@@ -178,7 +181,7 @@
               "name": "Which platforms are supported?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Rank Kiwi supports Instagram Reels, posts, and carousels, plus YouTube long-form videos and Shorts."
+                "text": "Rank Kiwi supports Instagram video Reels, plus YouTube long-form videos and Shorts."
               }
             },
             {
@@ -194,7 +197,7 @@
               "name": "Can I export to Google Sheets?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. You can copy results to your clipboard or download clean CSV and JSON files."
+                "text": "Yes. You can export directly to native Excel (.xlsx), standard CSV, or copy formatted rows to your clipboard for instant pasting into Google Sheets, Excel, or Notion."
               }
             },
             {
@@ -237,7 +240,7 @@
     <header class="site-header" data-header>
       <div class="wrap nav">
         <a class="brand" href="/" aria-label="Rank Kiwi home">
-          <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" fetchpriority="high" />
+          <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi — Free Instagram and YouTube Creator Outlier Analytics extension logo" class="brand-logo" width="24" height="24" fetchpriority="high" />
           <span>Rank Kiwi</span>
         </a>
 
@@ -250,7 +253,7 @@
         </div>
 
         <div class="nav-right">
-          <a class="button button-small" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+          <a class="button button-small nav-cta-btn" data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
           <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation" data-menu-toggle>
             <span></span>
             <span></span>
@@ -264,39 +267,96 @@
       <!-- HERO -->
       <section class="hero wrap">
         <div class="hero-copy">
-          <h1>Stop guessing. Find what works.</h1>
-          <p class="hero-text">Discover the Reels, Shorts, and videos that outperform the rest &mdash; all in a few clicks.</p>
+          <h1>Find Viral Outlier Content.</h1>
+          <p class="hero-text">Benchmark Instagram Reels &amp; YouTube videos against creator median views in one click.</p>
           <div class="hero-actions">
-            <a class="button" data-chrome-link data-cta-name="add_to_chrome_hero" data-cta-position="hero" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
-            <a class="text-button" data-cta-name="see_how_it_works" data-cta-position="hero" href="#how-it-works">See how it works <b aria-hidden="true">↓</b></a>
+            <a class="button" data-chrome-link data-cta-name="add_to_chrome_hero" data-cta-position="hero" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome <span class="btn-microcopy">It’s free</span></a>
+            <a class="text-button" data-cta-name="see_how_it_works" data-cta-position="hero" href="#how-it-works">See how it works <b aria-hidden="true">&darr;</b></a>
           </div>
         </div>
 
         <!-- HERO VIDEO -->
         <div class="hero-media-wrap">
-          <div class="product-visual-stage">
-            <video
-              class="hero-video"
-              autoplay
-              loop
-              muted
-              playsinline
-              preload="metadata"
-              poster="/hero-poster.webp"
-              aria-label="Rank Kiwi creator research demo"
-              width="1280"
-              height="804"
+          <!-- Interactive Platform Selector Tabs -->
+          <div class="hero-platform-tabs" role="tablist" aria-label="Select demonstration platform">
+            <button
+              type="button"
+              class="hero-tab-btn active"
+              role="tab"
+              id="hero-tab-instagram"
+              aria-selected="true"
+              aria-controls="hero-stage"
+              data-platform="instagram"
             >
-              <source src="/hero.mp4" type="video/mp4" />
-              <source src="/hero.webm" type="video/webm" />
-              <track kind="captions" src="/assets/captions.vtt" srclang="en" label="English" default />
-              Your browser does not support the video tag.
-            </video>
+              <img src="/Instagram_logo_small.webp" alt="" width="16" height="16" aria-hidden="true" />
+              <span>Instagram Reels</span>
+            </button>
+            <button
+              type="button"
+              class="hero-tab-btn"
+              role="tab"
+              id="hero-tab-youtube"
+              aria-selected="false"
+              aria-controls="hero-stage"
+              data-platform="youtube"
+            >
+              <img src="/Red-YouTube-logo.webp" alt="" width="18" height="13" aria-hidden="true" />
+              <span>YouTube Shorts &amp; Videos</span>
+            </button>
           </div>
-          <div class="hero-platforms-simple">
-            <span>Works on</span>
-            <span class="platform-item"><img src="/Instagram_logo_small.webp" alt="Instagram" width="16" height="16" /> Instagram</span>
-            <span class="platform-item"><img src="/Red-YouTube-logo.webp" alt="YouTube" width="18" height="13" /> YouTube</span>
+
+          <div class="product-visual-stage" id="hero-stage">
+            <div class="stage-control-bar" aria-label="Demo player status and controls">
+              <span class="stage-platform-badge" id="hero-platform-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text" id="hero-badge-text">Instagram Reels Demo • Live Extension</span>
+              </span>
+              <div class="stage-actions">
+                <button type="button" class="video-ctrl-btn" id="hero-play-pause-btn" aria-label="Pause demonstration" title="Pause video">
+                  <svg class="icon-pause" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+                  <svg class="icon-play" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none;"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                  <span class="ctrl-label" id="hero-ctrl-label">Pause</span>
+                </button>
+                <button type="button" class="video-ctrl-btn" id="hero-restart-btn" aria-label="Restart demonstration from beginning" title="Restart video">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                  <span class="ctrl-label">Restart</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="hero-videos-stack">
+              <video
+                id="hero-video-instagram"
+                class="hero-video active"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="metadata"
+                poster="/assets/videos/posters/hero-instagram.webp"
+                aria-label="Rank Kiwi Instagram Reels creator outlier analytics demonstration"
+                width="1920"
+                height="1256"
+              >
+                <source src="/assets/videos/hero-instagram.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <video
+                id="hero-video-youtube"
+                class="hero-video"
+                loop
+                muted
+                playsinline
+                preload="none"
+                poster="/assets/videos/posters/hero-youtube.webp"
+                aria-label="Rank Kiwi YouTube Shorts and long-form video outlier analytics demonstration"
+                width="1920"
+                height="1256"
+              >
+                <source src="/assets/videos/hero-youtube.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </section>
@@ -306,6 +366,7 @@
         <div class="section-intro centered reveal">
           <p class="eyebrow">HOW IT WORKS</p>
           <h2>Research in three steps.</h2>
+          <p>Scan creator feeds, benchmark against medians, and find breakout content in seconds.</p>
         </div>
         <div class="steps-layout">
           <ol class="steps reveal" id="workflow-steps">
@@ -314,17 +375,17 @@
                 <span class="step-num">01</span>
                 <h3>Open any creator</h3>
               </div>
-              <p>Instagram profile or YouTube channel.</p>
+              <p>Instagram Reels tab or YouTube channel library.</p>
               <div class="step-progress-track" aria-hidden="true">
                 <div class="step-progress-bar"></div>
               </div>
             </li>
-            <li class="step" data-step="2" role="button" tabindex="0" aria-label="Step 2: Scan visible creator content in seconds">
+            <li class="step" data-step="2" role="button" tabindex="0" aria-label="Step 2: Scan visible Reels and videos in seconds">
               <div class="step-header">
                 <span class="step-num">02</span>
-                <h3>Scan visible posts</h3>
+                <h3>Scan visible Reels &amp; videos</h3>
               </div>
-              <p>Collect reels, posts, and videos.</p>
+              <p>Automatically gathers view counts and benchmarks.</p>
               <div class="step-progress-track" aria-hidden="true">
                 <div class="step-progress-bar"></div>
               </div>
@@ -334,122 +395,352 @@
                 <span class="step-num">03</span>
                 <h3>Sort by outliers</h3>
               </div>
-              <p>Export winning hooks to spreadsheet.</p>
+              <p>Spot 3× to 10× spikes and export to spreadsheet.</p>
               <div class="step-progress-track" aria-hidden="true">
                 <div class="step-progress-bar"></div>
               </div>
             </li>
           </ol>
-          <div class="screenshot-container reveal" data-delay="80">
+          <div class="screenshot-container workflow-video-stage reveal" data-delay="80">
             <div class="carousel-container" id="workflow-carousel">
-              <img src="/assets/shots/step1-open-profile.webp" alt="Open an Instagram or YouTube creator profile" class="carousel-image active" data-step="1" width="1280" height="832" loading="eager" decoding="async" />
-              <img src="/assets/shots/step2-collecting.webp" alt="Scan visible creator content" class="carousel-image" data-step="2" width="1280" height="832" loading="lazy" decoding="async" />
-              <img src="/assets/shots/step3-outliers-grid.webp" alt="Sort creator content by Outlier Score" class="carousel-image" data-step="3" width="1280" height="832" loading="lazy" decoding="async" />
+              <!-- Step 1: Pinning Rank Kiwi in Chrome & opening creator -->
+              <div class="carousel-video-wrap active" data-step="1">
+                <video
+                  class="workflow-video"
+                  muted
+                  playsinline
+                  preload="metadata"
+                  poster="/assets/videos/posters/pin-extension.webp"
+                  aria-label="Step 1 tutorial: Pinning Rank Kiwi to Chrome and opening creator profile"
+                  width="1920"
+                  height="1256"
+                >
+                  <source src="/assets/videos/pin-extension.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <!-- Step 2: Automated scanning of visible Reels with live progress modal -->
+              <div class="carousel-video-wrap" data-step="2">
+                <video
+                  class="workflow-video"
+                  muted
+                  playsinline
+                  preload="none"
+                  poster="/assets/videos/posters/analyse-reels.webp"
+                  aria-label="Step 2 tutorial: Automated scanning of visible Reels and benchmark collection"
+                  width="1920"
+                  height="1256"
+                >
+                  <source src="/assets/videos/analyse-reels.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <!-- Step 3: Outlier grid, in-modal 9:16 player and hook inspection -->
+              <div class="carousel-video-wrap" data-step="3">
+                <video
+                  class="workflow-video"
+                  muted
+                  playsinline
+                  preload="none"
+                  poster="/assets/videos/posters/reel-player-modal.webp"
+                  aria-label="Step 3 tutorial: Sorting by Outlier Score and playing breakout Reels in modal"
+                  width="1920"
+                  height="1256"
+                >
+                  <source src="/assets/videos/reel-player-modal.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
-            <div class="carousel-dots-nav" role="tablist" aria-label="Workflow carousel navigation">
-              <button class="carousel-dot-btn active" data-step="1" role="tab" aria-selected="true" aria-label="View step 1"></button>
-              <button class="carousel-dot-btn" data-step="2" role="tab" aria-selected="false" aria-label="View step 2"></button>
-              <button class="carousel-dot-btn" data-step="3" role="tab" aria-selected="false" aria-label="View step 3"></button>
+
+            <!-- Workflow Controls (Dots & Auto-play on one clean row) -->
+            <div class="workflow-controls-row">
+              <div class="carousel-dots-nav" role="tablist" aria-label="Workflow carousel navigation">
+                <button class="carousel-dot-btn active" data-step="1" role="tab" aria-selected="true" aria-label="View step 1"></button>
+                <button class="carousel-dot-btn" data-step="2" role="tab" aria-selected="false" aria-label="View step 2"></button>
+                <button class="carousel-dot-btn" data-step="3" role="tab" aria-selected="false" aria-label="View step 3"></button>
+              </div>
+              <button type="button" class="video-ctrl-btn" id="workflow-play-pause-btn" aria-label="Pause step walkthrough">
+                <svg class="icon-pause" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+                <svg class="icon-play" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none;"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                <span class="ctrl-label" id="workflow-ctrl-label">Auto-play</span>
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- FEATURES -->
+      <!-- WHO IT'S FOR -->
+      <section class="section who-section wrap" id="who-its-for">
+        <div class="section-intro centered reveal">
+          <p class="eyebrow"><span class="status-dot"></span> WHO IT'S FOR</p>
+          <h2>Built For Content Creators.</h2>
+          <p>Compare every video against creator medians instead of misleading raw view counts.</p>
+        </div>
+        <div class="who-grid">
+          <article class="who-card reveal">
+            <div class="who-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 8 6 4-6 4Z"/></svg>
+            </div>
+            <h3>Short-Form Creators &amp; Editors</h3>
+            <p>Find the hooks and formats that beat a creator's median Reels by 3× to 10× to model proven ideas.</p>
+          </article>
+          <article class="who-card reveal" data-delay="80">
+            <div class="who-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </div>
+            <h3>YouTubers &amp; Channel Strategists</h3>
+            <p>Benchmark videos and Shorts against channel medians to isolate breakout topics from audience inertia.</p>
+          </article>
+          <article class="who-card reveal" data-delay="160">
+            <div class="who-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Social Media Managers &amp; Agencies</h3>
+            <p>Speed up competitor research and export clean spreadsheets with relative multipliers for client pitches.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- FEATURES: FOUR THINGS, DONE WELL -->
       <section class="section wrap" id="features">
         <div class="section-intro centered reveal">
           <p class="eyebrow">FEATURES</p>
-          <h2>Everything you need.</h2>
-          <p style="color: var(--muted); margin: 0; font-size: 14px;">Research creators and find outliers fast.</p>
+          <h2>Four tools in one.</h2>
+          <p>Everything needed to research, filter, benchmark, and export creator content.</p>
         </div>
         <div class="feature-grid" style="margin-top: 32px;">
           <article class="feature-card reveal">
             <b>01</b>
-            <h3>Outlier Score</h3>
-            <p>Compare posts to median performance.</p>
+            <h3>Median-Based Outlier Score</h3>
+            <p>Pinpoint content that outperforms typical results by 3× to 10× without viral skew.</p>
           </article>
           <article class="feature-card reveal" data-delay="80">
             <b>02</b>
-            <h3>Instagram Reels</h3>
-            <p>Track views, likes, and comments.</p>
+            <h3>Instagram Reels &amp; Explore Downloads</h3>
+            <p>Inspect engagement metrics and download high-res MP4s directly from Explore or creator profiles.</p>
           </article>
           <article class="feature-card reveal" data-delay="160">
             <b>03</b>
-            <h3>YouTube Videos</h3>
-            <p>Analyze channels, videos, and Shorts.</p>
+            <h3>YouTube Videos &amp; Shorts Scanner</h3>
+            <p>Benchmark channel uploads and sort videos by relative multiplier in two clicks.</p>
           </article>
           <article class="feature-card reveal" data-delay="240">
             <b>04</b>
-            <h3>Custom Filters</h3>
-            <p>Filter by dates, types, and views.</p>
+            <h3>Spreadsheets &amp; Clipboard Export</h3>
+            <p>Export to Excel (.xlsx), CSV, or copy formatted rows to paste directly into Google Sheets or Notion.</p>
           </article>
         </div>
       </section>
 
-      <!-- INSTAGRAM & YOUTUBE OUTLIERS SHOWCASE -->
+      <!-- INSTAGRAM & YOUTUBE OUTLIERS SHOWCASE (STACKED DECK) -->
       <section class="section showcase-section wrap" id="creator-outliers">
         <div class="section-intro centered reveal">
           <p class="eyebrow">CREATOR RESEARCH</p>
-          <h2>Find viral outliers on Instagram &amp; YouTube.</h2>
-          <p style="color: var(--muted); margin: 0; font-size: 14px;">Spot breakout Reels, Shorts, and long-form videos in seconds without manual scrolling.</p>
+          <h2>Instagram &amp; YouTube Analytics.</h2>
+          <p>Spot breakout Reels, Shorts, and videos in seconds without manual scrolling.</p>
         </div>
 
-        <div class="dual-showcase-grid">
-          <!-- Instagram Card -->
-          <article class="showcase-card reveal">
-            <div class="showcase-card-header">
-              <div class="platform-badge">
-                <img src="/Instagram_logo_small.webp" alt="Instagram logo" width="15" height="15" />
-                <span>Instagram Outliers</span>
-              </div>
-              <h3>Viral Reels &amp; Posts</h3>
-              <p>Filter creator profiles to uncover top 1% anomaly Reels with 3× to 10× view spikes.</p>
-            </div>
-            <div class="screenshot-container">
-              <img src="/assets/shots/step3-outliers-grid.webp" alt="Rank Kiwi Instagram Reels Outliers Grid" class="shot-image" width="1280" height="832" loading="lazy" decoding="async" />
-            </div>
-          </article>
+        <div class="deck-wrapper reveal" data-delay="60">
+          <button class="deck-nav-btn deck-prev deck-desktop-btn" type="button" aria-label="Previous card" id="deck-prev-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
 
-          <!-- YouTube Card -->
-          <article class="showcase-card reveal" data-delay="90">
-            <div class="showcase-card-header">
-              <div class="platform-badge">
-                <img src="/Red-YouTube-logo.webp" alt="YouTube logo" width="17" height="12" />
-                <span>YouTube Outliers</span>
+          <div class="stacked-deck-container" id="creator-deck">
+            <!-- Instagram Card (Card 1) -->
+            <article class="showcase-card deck-card card-front" data-index="0" id="card-instagram" tabindex="0" role="button" aria-label="Instagram Outliers Card">
+              <div class="showcase-card-header">
+                <div class="platform-badge">
+                  <img src="/Instagram_logo_small.webp" alt="Instagram Outliers platform badge" width="15" height="15" />
+                  <span>Instagram Outliers</span>
+                </div>
+                <h3>Breakout Instagram Reels</h3>
+                <p>Filter creator profiles to uncover Reels that beat the creator's median by 3× to 10×.</p>
               </div>
-              <h3>Viral Shorts &amp; Videos</h3>
-              <p>Scan channel uploads and rank videos by performance benchmark and Outlier Score.</p>
-            </div>
-            <div class="screenshot-container">
-              <img src="/assets/shots/youtube-outliers.webp" alt="Rank Kiwi YouTube Viral Outliers" class="shot-image" width="1280" height="832" loading="lazy" decoding="async" />
-            </div>
-          </article>
+              <div class="showcase-media-frame">
+                <img
+                  src="/assets/shots/instagram-reel-detail-modal-cropped.webp"
+                  srcset="/assets/shots/instagram-reel-detail-modal-cropped.webp 1x, /assets/shots/instagram-reel-detail-modal-cropped@2x.webp 2x"
+                  alt="Instagram Reel detail preview modal cropped to show 1.2M views, 88K likes, 1.0x Outlier Score, and 1-click download"
+                  class="showcase-preview-img"
+                  width="1040"
+                  height="860"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+
+            <!-- YouTube Card (Card 2) -->
+            <article class="showcase-card deck-card card-back" data-index="1" id="card-youtube" tabindex="0" role="button" aria-label="YouTube Outliers Card">
+              <div class="showcase-card-header">
+                <div class="platform-badge">
+                  <img src="/Red-YouTube-logo.webp" alt="YouTube Outliers platform badge" width="17" height="12" />
+                  <span>YouTube Outliers</span>
+                </div>
+                <h3>Viral Shorts &amp; Videos</h3>
+                <p>Scan channel uploads and rank videos by performance benchmark and Outlier Score.</p>
+              </div>
+              <div class="showcase-media-frame">
+                <img
+                  src="/assets/shots/youtube-video-detail-modal-cropped.webp"
+                  srcset="/assets/shots/youtube-video-detail-modal-cropped.webp 1x, /assets/shots/youtube-video-detail-modal-cropped@2x.webp 2x"
+                  alt="YouTube video detail modal cropped to display 110K views, 862 likes, 0.3x Outlier Score, and thumbnail download action"
+                  class="showcase-preview-img"
+                  width="1040"
+                  height="860"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+          </div>
+
+          <button class="deck-nav-btn deck-next deck-desktop-btn" type="button" aria-label="Next card" id="deck-next-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+
+        <div class="deck-controls-bar" aria-label="Card switcher">
+          <button class="deck-nav-btn deck-mobile-btn deck-prev-mobile" type="button" aria-label="Previous card" id="deck-prev-btn-mobile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="deck-dots-nav" role="tablist">
+            <button class="deck-dot active" data-target="0" type="button" aria-label="Show Instagram Outliers card"></button>
+            <button class="deck-dot" data-target="1" type="button" aria-label="Show YouTube Outliers card"></button>
+          </div>
+          <button class="deck-nav-btn deck-mobile-btn deck-next-mobile" type="button" aria-label="Next card" id="deck-next-btn-mobile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
         </div>
       </section>
 
-      <!-- OUTLIER SCORE -->
+      <!-- OUTLIER SCORE EXPLANATION -->
       <section class="section outlier-section wrap" id="outlier-score">
         <div class="outlier-copy reveal">
-          <p class="eyebrow">OUTLIER SCORE</p>
-          <h2>Spot what outperforms.</h2>
-          <p>Outlier Score benchmarks posts against each creator's median views. A 3.2× score means the content earned more than triple typical results.</p>
-          <p style="margin-top: 8px; font-size: 13px; color: var(--muted);">Creator-relative. Medians prevent viral spikes from skewing baselines.</p>
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> OUTLIER SCORE</p>
+          <h2>The Outlier Score Engine.</h2>
+          <p class="outlier-sub">Benchmarks each post against median views to spot true viral breakouts.</p>
         </div>
         <div class="score-card reveal" data-delay="80">
-          <div class="score-row">
-            <b>1.0×</b>
-            <div class="score-bar"><span style="width: 25%"></span></div>
-            <p><strong>Typical</strong></p>
+          <div class="score-chart-header">
+            <div class="chart-tag">
+              <span class="chart-sparkle">✦</span>
+              <span>Performance Benchmark</span>
+            </div>
+            <span class="chart-badge outlier-detected-badge">
+              <span class="badge-pulse-dot" aria-hidden="true"></span>
+              Outlier detected
+            </span>
           </div>
-          <div class="score-row strong">
-            <b>3.2×</b>
-            <div class="score-bar"><span style="width: 60%"></span></div>
-            <p><strong>Strong</strong></p>
+
+          <!-- Animated Vertical Histogram -->
+          <div class="histogram-wrap" aria-label="Content performance histogram comparison">
+            <!-- Clean Baseline Marker -->
+            <div class="histogram-legend-bar" aria-hidden="true">
+              <div class="legend-item legend-baseline">
+                <span class="legend-dash"></span>
+                <span>1.0× Median Baseline</span>
+              </div>
+            </div>
+
+            <!-- Plot Stage -->
+            <div class="histogram-stage">
+              <!-- Subtle Baseline Guideline -->
+              <div class="histogram-baseline-guide" aria-hidden="true">
+                <span class="baseline-line"></span>
+              </div>
+
+              <!-- Histogram Columns -->
+              <div class="histogram-bars">
+                <!-- Bar 1: Typical Post (0.8x) -->
+                <div class="histogram-col tier-typical" data-index="0">
+                  <div class="histogram-bar-track">
+                    <div class="histogram-bar" data-height="24%" style="height: 0%;">
+                      <span class="bar-val-badge">0.8×</span>
+                    </div>
+                  </div>
+                  <span class="bar-label">Post 1</span>
+                </div>
+
+                <!-- Bar 2: Median Baseline Post (1.0x) -->
+                <div class="histogram-col tier-typical" data-index="1">
+                  <div class="histogram-bar-track">
+                    <div class="histogram-bar" data-height="30%" style="height: 0%;">
+                      <span class="bar-val-badge">1.0×</span>
+                    </div>
+                  </div>
+                  <span class="bar-label">Post 2</span>
+                </div>
+
+                <!-- Bar 3: Typical Post (1.2x) -->
+                <div class="histogram-col tier-typical" data-index="2">
+                  <div class="histogram-bar-track">
+                    <div class="histogram-bar" data-height="36%" style="height: 0%;">
+                      <span class="bar-val-badge">1.2×</span>
+                    </div>
+                  </div>
+                  <span class="bar-label">Post 3</span>
+                </div>
+
+                <!-- Bar 4: Strong Post (2.8x) -->
+                <div class="histogram-col tier-strong" data-index="3">
+                  <div class="histogram-bar-track">
+                    <div class="histogram-bar" data-height="62%" style="height: 0%;">
+                      <span class="bar-val-badge">2.8×</span>
+                    </div>
+                  </div>
+                  <span class="bar-label">Post 4</span>
+                </div>
+
+                <!-- Bar 5: Outlier Post (5.8x) -->
+                <div class="histogram-col tier-outlier" data-index="4">
+                  <div class="histogram-bar-track">
+                    <div class="histogram-bar" data-height="94%" style="height: 0%;">
+                      <span class="bar-val-badge outlier-peak-badge">
+                        <span class="peak-icon">✦</span> 5.8× Outlier
+                      </span>
+                    </div>
+                  </div>
+                  <span class="bar-label bar-label-outlier">Post 5</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="score-row outlier">
-            <b>5.8×</b>
-            <div class="score-bar"><span style="width: 100%"></span></div>
-            <p><strong>Outlier</strong></p>
+
+          <!-- Concise Performance Levels Explanation -->
+          <div class="score-tier-grid" role="region" aria-label="Performance tiers explanation">
+            <div class="score-tier-card">
+              <span class="tier-indicator tier-typical" aria-hidden="true"></span>
+              <div class="tier-details">
+                <div class="tier-top">
+                  <span class="tier-title">Typical</span>
+                  <span class="tier-score">~1.0×</span>
+                </div>
+                <p class="tier-desc">Normal reach</p>
+              </div>
+            </div>
+
+            <div class="score-tier-card">
+              <span class="tier-indicator tier-strong" aria-hidden="true"></span>
+              <div class="tier-details">
+                <div class="tier-top">
+                  <span class="tier-title">Strong</span>
+                  <span class="tier-score">2×–3×</span>
+                </div>
+                <p class="tier-desc">Above average</p>
+              </div>
+            </div>
+
+            <div class="score-tier-card highlight">
+              <span class="tier-indicator tier-outlier" aria-hidden="true"></span>
+              <div class="tier-details">
+                <div class="tier-top">
+                  <span class="tier-title">Outlier</span>
+                  <span class="tier-score">5×+</span>
+                </div>
+                <p class="tier-desc">Viral breakout</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -458,86 +749,103 @@
       <section class="section content-details-section wrap" id="content-details">
         <div class="content-details-layout">
           <div class="content-details-media reveal">
-            <div class="screenshot-container">
-              <img src="/assets/shots/instagram-filters.webp" alt="Rank Kiwi Custom Filters" class="shot-image" width="1280" height="832" loading="lazy" decoding="async" />
+            <div class="filter-modal-interactive" id="filter-modal-interactive" role="region" aria-label="Interactive Content Filter">
+              <!-- Header -->
+              <div class="filter-panel-header">
+                <span class="filter-panel-title">Filters</span>
+                <button type="button" class="filter-panel-close" id="filter-close-btn" aria-label="Close filters" title="Close filters">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Filter Closed Dismissed Notice (Hidden by default, shown if closed) -->
+              <div class="filter-panel-dismissed" id="filter-panel-dismissed" style="display: none;" aria-live="polite">
+                <p class="filter-dismissed-text">Filter panel closed</p>
+                <button type="button" class="filter-reopen-btn" id="filter-reopen-btn">Reopen Filters</button>
+              </div>
+
+              <!-- Main Filter Panel Body -->
+              <div class="filter-panel-body" id="filter-panel-body">
+                <!-- Section Subheading -->
+                <div class="filter-metric-heading">PERFORMANCE RANGE</div>
+
+                <!-- 4 Performance Metric Selection Buttons -->
+                <div class="filter-metrics-group" role="tablist" aria-label="Performance metric filter">
+                  <button type="button" class="filter-metric-btn" data-metric="views" role="tab" aria-selected="false">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Views</span>
+                  </button>
+                  <button type="button" class="filter-metric-btn is-active" data-metric="likes" role="tab" aria-selected="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    <span>Likes</span>
+                  </button>
+                  <button type="button" class="filter-metric-btn" data-metric="comments" role="tab" aria-selected="false">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <span>Comments</span>
+                  </button>
+                  <button type="button" class="filter-metric-btn" data-metric="outlier" role="tab" aria-selected="false">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3.5z"></path></svg>
+                    <span>Outlier</span>
+                  </button>
+                </div>
+
+                <!-- 32 Dynamic Histogram Bars -->
+                <div class="filter-histogram-wrap" aria-hidden="true">
+                  <div class="filter-histogram-bars" id="filter-histogram-bars">
+                    <!-- Bars populated dynamically by JS -->
+                  </div>
+                </div>
+
+                <!-- Dual Range Slider -->
+                <div class="filter-slider-container" id="filter-slider-container">
+                  <div class="filter-slider-track"></div>
+                  <div class="filter-slider-range" id="filter-slider-range" style="left: 0%; width: 100%;"></div>
+                  <div class="filter-slider-thumb filter-thumb-min" id="filter-thumb-min" role="slider" aria-label="Minimum filter value" tabindex="0" style="left: 0%;"></div>
+                  <div class="filter-slider-thumb filter-thumb-max" id="filter-thumb-max" role="slider" aria-label="Maximum filter value" tabindex="0" style="left: 100%;"></div>
+                  <input type="range" class="filter-slider-input filter-slider-min sr-only" id="filter-slider-min" aria-label="Minimum filter value" min="10000" max="410000" step="500" value="10000" />
+                  <input type="range" class="filter-slider-input filter-slider-max sr-only" id="filter-slider-max" aria-label="Maximum filter value" min="10000" max="410000" step="500" value="410000" />
+                </div>
+
+                <!-- Min & Max Numeric Inputs -->
+                <div class="filter-inputs-row">
+                  <div class="filter-input-col">
+                    <label for="filter-input-min" class="filter-input-label">Min</label>
+                    <input type="text" inputmode="numeric" id="filter-input-min" class="filter-num-input" value="10000" aria-label="Minimum value" autocomplete="off" spellcheck="false" />
+                  </div>
+                  <div class="filter-inputs-divider" aria-hidden="true">—</div>
+                  <div class="filter-input-col">
+                    <label for="filter-input-max" class="filter-input-label">Max</label>
+                    <input type="text" inputmode="numeric" id="filter-input-max" class="filter-num-input" value="410000" aria-label="Maximum value" autocomplete="off" spellcheck="false" />
+                  </div>
+                </div>
+
+                <!-- Subtle Divider & Footer Actions -->
+                <div class="filter-panel-footer">
+                  <button type="button" class="filter-clear-btn" id="filter-clear-btn">Clear all</button>
+                  <button type="button" class="filter-submit-btn" id="filter-submit-btn">Show 25 Reels</button>
+                </div>
+              </div>
             </div>
           </div>
           <div class="content-details-copy reveal" data-delay="80">
             <p class="eyebrow">CUSTOM FILTERS</p>
-            <h2>Filter by type, views, and date.</h2>
-            <p>Isolate top 1% outliers and export to CSV or JSON.</p>
+            <h2>Instant Filters &amp; Sorting.</h2>
+            <p>Surface breakout Reels and videos that beat median performance by 3× to 10×.</p>
           </div>
-        </div>
-      </section>
-
-      <!-- PRICING -->
-      <section class="section pricing-section wrap" id="pricing">
-        <div class="pricing-intro reveal">
-          <p class="eyebrow">PRICING</p>
-          <h2>Free forever.</h2>
-          <p class="pricing-sub">No accounts, subscriptions, or paywalls.</p>
-        </div>
-        <div class="pricing-card reveal" data-delay="80">
-          <div class="pricing-badge">Free Plan</div>
-          <div class="pricing-price">
-            <span class="amount">$0</span>
-            <span class="period">/ forever</span>
-          </div>
-          <a class="button" style="width: 100%; justify-content: center;" data-chrome-link data-cta-name="add_to_chrome_pricing" data-cta-position="pricing" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
-          <ul class="pricing-features">
-            <li>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Sort Instagram Reels &amp; Posts
-            </li>
-            <li>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Sort YouTube Videos &amp; Shorts
-            </li>
-            <li>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Automatic Outlier Scores
-            </li>
-            <li>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              One-click CSV &amp; JSON Export
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- PRIVACY -->
-      <section class="section privacy-section wrap" id="privacy">
-        <div class="privacy-intro reveal">
-          <p class="eyebrow">PRIVACY</p>
-          <h2>Runs locally in your browser.</h2>
-          <p class="privacy-sub">No account. No passwords. No database of analyzed content.</p>
-        </div>
-        <div class="privacy-grid reveal" data-delay="80">
-          <article class="privacy-card">
-            <h3>NO ACCOUNT</h3>
-            <p>Start immediately without logging in or signing up.</p>
-          </article>
-          <article class="privacy-card">
-            <h3>CLIENT-SIDE</h3>
-            <p>All calculations run in your local Chrome browser.</p>
-          </article>
-          <article class="privacy-card">
-            <h3>NO DATABASE</h3>
-            <p>Analyzed creator content is never stored on servers.</p>
-          </article>
-              <div class="privacy-action reveal">
-          <a class="text-button" href="/privacy/">Read Privacy Policy <b aria-hidden="true">→</b></a>
         </div>
       </section>
 
       <!-- FROM RANK KIWI RESEARCH -->
-      <section class="section wrap reveal">
+      <section class="section wrap reveal" id="research-proof">
         <div class="card-highlight" style="display: flex; justify-content: space-between; align-items: center; gap: 28px; flex-wrap: wrap;">
           <div style="max-width: 640px;">
             <p class="eyebrow" style="margin-bottom: 6px; color: var(--brand-accent);"><span class="status-dot"></span> FROM RANK KIWI RESEARCH</p>
-            <h2 style="color: #ffffff; margin-bottom: 8px;">One Video Doesn't Tell You How Good a Creator Is</h2>
-            <p style="font-size: 14px; color: #c2d6c0; line-height: 1.5; margin-bottom: 0;">
-              In 448k channels analyzed, median best-of-10 uploads earned <strong style="color: var(--brand-accent);">10.82× initial views</strong>. Stop judging creators by a single post.
+            <h2 style="color: #ffffff; margin-bottom: 8px;">Why Medians Beat Averages.</h2>
+            <p style="font-size: 14.5px; color: #c2d6c0; line-height: 1.55; margin-bottom: 0;">
+              In <strong style="color: #ffffff;"><span class="stat-count" data-count="448000" data-format="k">448k</span> channels</strong> analyzed, median best-of-10 uploads earned <strong style="color: var(--brand-accent);"><span class="stat-count" data-count="10.82" data-decimals="2">10.82</span>× initial views</strong>. Stop judging creators by a single post.
             </p>
           </div>
           <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
@@ -547,40 +855,89 @@
         </div>
       </section>
 
+      <!-- FREE PLEDGE + FOUNDER NOTE -->
+      <section class="section founder-section wrap" id="pricing">
+        <div class="section-intro centered reveal">
+          <p class="eyebrow"><span class="status-dot"></span> WHY IT'S FREE</p>
+          <h2>Free forever. Built for creators.</h2>
+        </div>
+
+        <div class="founder-card reveal" data-delay="80">
+          <div class="founder-card-header">
+            <img src="/assets/bhavishya.webp" alt="Bhavishya Singla, Founder and Creator of Rank Kiwi" class="founder-avatar" width="68" height="68" loading="lazy" decoding="async" />
+            <div class="founder-meta">
+              <span class="founder-name">Bhavishya Singla</span>
+              <span class="founder-title">Creator of Rank Kiwi</span>
+            </div>
+          </div>
+          <div class="founder-quote">
+            <p>
+              &ldquo;Most social analytics tools charge $15 to $99 every single month for bloated SaaS dashboards filled with vanity charts and delayed reports. All creators and video editors actually need is a fast, lightweight way to open any creator, see their real median baseline, and instantly find the outlier hooks that broke out.
+            </p>
+            <p>
+              I built Rank Kiwi for myself because I refused to pay a monthly subscription just to see which videos beat a creator's normal. It runs 100% locally in your browser, requires no login or passwords, and will remain completely free forever.&rdquo;
+            </p>
+          </div>
+          <div class="founder-footer">
+            <div class="founder-trust-grid">
+              <span class="founder-trust-item">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                100% Free Forever
+              </span>
+              <span class="founder-trust-item">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                No Account or Passwords
+              </span>
+              <span class="founder-trust-item">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Client-Side Sandbox
+              </span>
+              <span class="founder-trust-item">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Chrome Web Store Verified
+              </span>
+            </div>
+            <div class="founder-cta-wrap">
+              <a class="button" data-chrome-link data-cta-name="add_to_chrome_founder" data-cta-position="founder" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome <span class="btn-microcopy">It’s free</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- COMPARISONS & TOOL DIRECTORY -->
       <section class="section wrap reveal">
         <div class="section-intro centered" style="max-width: 680px; margin: 0 auto 32px auto;">
           <p class="eyebrow" style="justify-content: center;"><span class="status-dot"></span> TOOL GUIDES &amp; COMPARISONS</p>
-          <h2>Compare &amp; Choose the Right Tool</h2>
-          <p class="hero-text" style="margin: 0 auto;">Unbiased side-by-side comparisons, alternatives, and software guides to help you pick the best workflow.</p>
+          <h2>Compare Content Research Tools.</h2>
+          <p class="hero-text" style="margin: 0 auto;">Side-by-side comparisons, verified alternatives, and creator software guides.</p>
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
           <a href="/compare/" class="card-default card-interactive" style="display: block; text-decoration: none;">
             <span class="card-tag">Side-by-Side</span>
-            <h3 style="margin-bottom: 8px;">Tool Comparisons</h3>
-            <p style="font-size: 13.5px; color: var(--muted); line-height: 1.5; margin-bottom: 16px;">
+            <h3 style="margin-bottom: 8px; font-size: 18px; font-weight: 700;">Tool Comparisons</h3>
+            <p style="font-size: 14.5px; color: var(--muted); line-height: 1.55; margin-bottom: 16px;">
               Honest trade-offs vs Sort Feed, Socialinsider, Metricool, Viewstats, and YouTube Studio.
             </p>
-            <span style="font-size: 13px; font-weight: 700; color: var(--kiwi-dark);">Explore 5 Comparisons &rarr;</span>
+            <span style="font-size: 13.5px; font-weight: 650; color: var(--kiwi-dark);">Explore 5 Comparisons &rarr;</span>
           </a>
 
           <a href="/alternatives/" class="card-default card-interactive" style="display: block; text-decoration: none;">
             <span class="card-tag">Directory</span>
-            <h3 style="margin-bottom: 8px;">Alternatives Hub</h3>
-            <p style="font-size: 13.5px; color: var(--muted); line-height: 1.5; margin-bottom: 16px;">
+            <h3 style="margin-bottom: 8px; font-size: 18px; font-weight: 700;">Alternatives Hub</h3>
+            <p style="font-size: 14.5px; color: var(--muted); line-height: 1.55; margin-bottom: 16px;">
               Evaluate replacements for heavy dashboards and single-platform extensions with verified features.
             </p>
-            <span style="font-size: 13px; font-weight: 700; color: var(--kiwi-dark);">Browse Alternatives &rarr;</span>
+            <span style="font-size: 13.5px; font-weight: 650; color: var(--kiwi-dark);">Browse Alternatives &rarr;</span>
           </a>
 
           <a href="/best/" class="card-default card-interactive" style="display: block; text-decoration: none;">
             <span class="card-tag">Curated Lists</span>
-            <h3 style="margin-bottom: 8px;">Best Software Guides</h3>
-            <p style="font-size: 13.5px; color: var(--muted); line-height: 1.5; margin-bottom: 16px;">
+            <h3 style="margin-bottom: 8px; font-size: 18px; font-weight: 700;">Best Software Guides</h3>
+            <p style="font-size: 14.5px; color: var(--muted); line-height: 1.55; margin-bottom: 16px;">
               In-depth reviews of the top Instagram and YouTube analytics, content research, and competitor tools.
             </p>
-            <span style="font-size: 13px; font-weight: 700; color: var(--kiwi-dark);">View 8 Best-of Guides &rarr;</span>
+            <span style="font-size: 13.5px; font-weight: 650; color: var(--kiwi-dark);">View 8 Best-of Guides &rarr;</span>
           </a>
         </div>
       </section>
@@ -589,63 +946,66 @@
       <section class="section faq-section wrap" id="faq" aria-labelledby="faq-heading">
         <div class="faq-intro reveal">
           <p class="eyebrow">FAQ</p>
-          <h2 id="faq-heading">Questions answered.</h2>
-          <p style="color: var(--muted); margin-top: 6px;">Quick answers about Rank Kiwi.</p>
+          <h2 id="faq-heading">Frequently Asked Questions.</h2>
+          <p style="color: var(--muted); margin-top: 6px;">Quick answers about privacy, browser support, and Outlier Scores.</p>
         </div>
         <div class="accordion reveal" data-delay="80">
           <details open>
             <summary>What does Rank Kiwi do?<span>+</span></summary>
-            <p>Rank Kiwi is a research extension for Instagram and YouTube. Open any creator or channel to rank visible posts by Outlier Score and export directly to a spreadsheet.</p>
+            <p>Rank Kiwi is a free Chrome research extension for Instagram and YouTube. Open any creator or channel to rank visible Reels, Shorts, and videos against their own median baseline and export directly to a spreadsheet.</p>
           </details>
           <details>
-            <summary>How is this different from scrolling?<span>+</span></summary>
-            <p>Scrolling only shows posts chronologically. Rank Kiwi calculates Outlier Scores against the creator's median benchmark to reveal viral anomaly posts.</p>
+            <summary>How does the Outlier Score work?<span>+</span></summary>
+            <p>Outlier Score divides a video's view count by the creator's median view count. A 3.2× score means the video earned more than triple the creator's typical results. We use medians instead of averages so one viral hit doesn't distort the baseline.</p>
           </details>
           <details>
-            <summary>What is an Outlier Score?<span>+</span></summary>
-            <p>Outlier Score measures performance relative to typical results. A 3.2× score means the post earned more than triple the creator's median views or engagement.</p>
+            <summary>Why Instagram Reels only?<span>+</span></summary>
+            <p>Instagram does not expose view counts on static photos or carousels in public grid views. To protect your data accuracy and keep baselines pure, Rank Kiwi focuses exclusively on video Reels and Explore feed video downloads.</p>
           </details>
           <details>
-            <summary>Which platforms are supported?<span>+</span></summary>
-            <p>Rank Kiwi supports Instagram Reels, posts, and carousels, plus YouTube long-form videos and Shorts.</p>
+            <summary>How does the Explore download feature work?<span>+</span></summary>
+            <p>When browsing Instagram's Explore feed or creator Reels grids, Rank Kiwi adds a direct download action so you can save high-performing reference videos straight to your disk for editing breakdowns.</p>
           </details>
           <details>
-            <summary>Do you need my password?<span>+</span></summary>
-            <p>No. Rank Kiwi never accesses or requires passwords. Analysis runs 100% locally in your browser sandbox.</p>
+            <summary>Which YouTube formats are supported?<span>+</span></summary>
+            <p>Rank Kiwi supports YouTube long-form videos and YouTube Shorts, allowing you to filter by duration and benchmark against channel medians.</p>
+          </details>
+          <details>
+            <summary>Do you require my Instagram or Google password?<span>+</span></summary>
+            <p>Never. Rank Kiwi requires no accounts, no login, and no passwords. All data processing executes 100% locally in your Chrome browser sandbox.</p>
           </details>
           <details>
             <summary>Can I export to Google Sheets?<span>+</span></summary>
-            <p>Yes. You can copy results to your clipboard or download clean CSV and JSON files.</p>
+            <p>Yes. You can export directly to native Excel (.xlsx), standard CSV, or copy formatted rows to your clipboard for instant pasting into Google Sheets, Notion, or Airtable.</p>
           </details>
           <details>
-            <summary>Is Rank Kiwi free?<span>+</span></summary>
-            <p>Yes. Rank Kiwi is completely free to install and use from the Chrome Web Store.</p>
+            <summary>Is Rank Kiwi really free forever?<span>+</span></summary>
+            <p>Yes. There are no paid tiers, no subscription prompts, and no locked features. It is free forever.</p>
           </details>
           <details>
-            <summary>How do I get support?<span>+</span></summary>
-            <p>Contact Bhavishya Singla at <a href="mailto:say@hibhavishya.in" style="color: var(--green); text-decoration: underline;">say@hibhavishya.in</a> or visit our <a href="/support/" style="color: var(--green); text-decoration: underline;">Support</a> page.</p>
+            <summary>How do I get support or report a bug?<span>+</span></summary>
+            <p>Contact Bhavishya Singla directly at <a href="mailto:say@hibhavishya.in" style="color: var(--green); text-decoration: underline;">say@hibhavishya.in</a> or visit our <a href="/support/" style="color: var(--green); text-decoration: underline;">Support</a> page.</p>
           </details>
         </div>
       </section>
 
       <!-- FINAL CTA -->
       <section class="final-cta wrap reveal">
-        <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo large" width="60" height="60" loading="lazy" decoding="async" />
-        <h2>Free to install. Works in seconds.</h2>
+        <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi Chrome extension app icon" class="brand-logo large" width="68" height="68" loading="lazy" decoding="async" />
+        <h2>Find Viral Outliers Today.</h2>
+        <p>Install Rank Kiwi free and benchmark creator performance instantly.</p>
         <div class="hero-actions">
-          <a class="button" data-chrome-link data-cta-name="add_to_chrome_final" data-cta-position="final" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
-          <a class="button button-quiet" data-cta-name="see_how_it_works_final" data-cta-position="final" href="#how-it-works">See how it works</a>
+          <a class="button" data-chrome-link data-cta-name="add_to_chrome_final" data-cta-position="final" href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome <span class="btn-microcopy">It’s free</span></a>
         </div>
-        <small>No account required.</small>
       </section>
     </main>
 
-                <!-- SITE FOOTER -->
+        <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
           <a class="brand" href="/" aria-label="Rank Kiwi home">
-            <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi logo" class="brand-logo" width="24" height="24" loading="lazy" decoding="async" />
+            <img src="/assets/rankkiwi-icon-96.webp" alt="Rank Kiwi official footer brand logo" class="brand-logo" width="24" height="24" loading="lazy" decoding="async" />
             <span>Rank Kiwi</span>
           </a>
           <p>Research creator profiles and spot viral outlier content on Instagram and YouTube.</p>
@@ -667,37 +1027,25 @@
 
         <div>
           <b>Product</b>
-          <a href="/">Home</a>
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="/creator-content-research/">Creator Research</a>
+          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
-          <b>Learn &amp; Docs</b>
+          <b>Resources</b>
+          <a href="/research/">Research</a>
+          <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
-          <a href="/docs/getting-started/">Getting Started</a>
-          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
-          <a href="/docs/troubleshooting/">Troubleshooting</a>
-          <a href="/docs/exports/">Exports Guide</a>
-        </div>
-
-        <div>
-          <b>Research &amp; Compare</b>
-          <a href="/research/">Research Hub</a>
-          <a href="/research/methodology/">Methodology</a>
           <a href="/compare/">Tool Comparisons</a>
-          <a href="/alternatives/">Alternatives Hub</a>
-          <a href="/best/">Best Software Guides</a>
         </div>
 
         <div>
-          <b>Legal &amp; Support</b>
+          <b>Support &amp; Legal</b>
           <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
-          <a href="/disclaimer/">Disclaimer</a>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
         </div>
       </div>
@@ -707,6 +1055,6 @@
       </div>
     </footer>
 
-    <script src="/script.js" defer></script>
+    <script src="/script.js?v=1.0.6" defer></script>
   </body>
 </html>

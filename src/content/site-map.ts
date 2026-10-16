@@ -190,7 +190,7 @@ export const SITE_MANIFEST: SiteRoute[] = [
       { name: 'Instagram Analytics', url: '/instagram-analytics/' }
     ],
     primaryCTA: {
-      label: 'Add to Chrome — It\'s Free',
+      label: 'Add to Chrome',
       url: CHROME_STORE_URL,
       target: '_blank'
     }
@@ -209,7 +209,7 @@ export const SITE_MANIFEST: SiteRoute[] = [
       { name: 'YouTube Analytics', url: '/youtube-analytics/' }
     ],
     primaryCTA: {
-      label: 'Add to Chrome — It\'s Free',
+      label: 'Add to Chrome',
       url: CHROME_STORE_URL,
       target: '_blank'
     }
@@ -228,7 +228,7 @@ export const SITE_MANIFEST: SiteRoute[] = [
       { name: 'Outlier Score', url: '/outlier-score/' }
     ],
     primaryCTA: {
-      label: 'Add to Chrome — It\'s Free',
+      label: 'Add to Chrome',
       url: CHROME_STORE_URL,
       target: '_blank'
     }
@@ -247,7 +247,7 @@ export const SITE_MANIFEST: SiteRoute[] = [
       { name: 'Creator Research', url: '/creator-content-research/' }
     ],
     primaryCTA: {
-      label: 'Add to Chrome — It\'s Free',
+      label: 'Add to Chrome',
       url: CHROME_STORE_URL,
       target: '_blank'
     }

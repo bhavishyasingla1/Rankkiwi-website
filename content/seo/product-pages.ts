@@ -33,7 +33,7 @@ export const PRODUCT_PAGES: ProductPageManifest[] = [
     searchIntent: 'Analyze Instagram creator content, benchmark Reels engagement, discover viral outliers.',
     audience: ['Short-form creators', 'Instagram strategists', 'Social media managers', 'Creative agencies'],
     primaryCTA: {
-      label: 'Add to Chrome — It\'s Free',
+      label: 'Add to Chrome',
       url: 'https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb',
       target: '_blank'
     },
@@ -60,7 +60,7 @@ export const PRODUCT_PAGES: ProductPageManifest[] = [
     searchIntent: 'Analyze YouTube channel videos, discover viral Shorts outliers, benchmark relative performance.',
     audience: ['YouTubers', 'Shorts creators', 'Video editors', 'Channel managers', 'Thumbnail designers'],
     primaryCTA: {
-      label: 'Add to Chrome — It\'s Free',
+      label: 'Add to Chrome',
       url: 'https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb',
       target: '_blank'
     },
@@ -87,7 +87,7 @@ export const PRODUCT_PAGES: ProductPageManifest[] = [
     searchIntent: 'What is an Outlier Score, why median beats average, creator-relative benchmarking.',
     audience: ['Data-driven creators', 'Growth strategists', 'Media buyers', 'Editorial directors'],
     primaryCTA: {
-      label: 'Add to Chrome — It\'s Free',
+      label: 'Add to Chrome',
       url: 'https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb',
       target: '_blank'
     },
@@ -114,7 +114,7 @@ export const PRODUCT_PAGES: ProductPageManifest[] = [
     searchIntent: 'Systematic creator content research workflow, competitor analysis, hook deconstruction.',
     audience: ['Content strategists', 'Creative directors', 'Solo entrepreneurs', 'Editorial teams'],
     primaryCTA: {
-      label: 'Add to Chrome — It\'s Free',
+      label: 'Add to Chrome',
       url: 'https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb',
       target: '_blank'
     },

@@ -26,7 +26,7 @@
     <link rel="canonical" href="https://rankkiwi.com/docs/getting-started/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Bhavishya Singla" />
-    <meta name="date" content="2026-10-05" scheme="YYYY-MM-DD" />
+    <meta name="date" content="2026-10-14" scheme="YYYY-MM-DD" />
     <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
     <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
     <meta name="theme-color" content="#cbf990" />
@@ -36,14 +36,14 @@
     <meta property="og:url" content="https://rankkiwi.com/docs/getting-started/" />
     <meta property="og:title" content="Getting Started with Rank Kiwi: Quickstart &amp; Installation Guide" />
     <meta property="og:description" content="Learn how to install Rank Kiwi, pin the Chrome extension, understand supported creator surfaces, and tour the workspace interface." />
-    <meta property="og:image" content="https://rankkiwi.com/assets/shots/step1-open-profile.png" />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/youtube-videos-outlier-grid.png" />
     <meta property="og:site_name" content="Rank Kiwi" />
 
     <!-- Twitter / X Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Getting Started with Rank Kiwi: Quickstart &amp; Installation Guide" />
     <meta name="twitter:description" content="Learn how to install Rank Kiwi, pin the Chrome extension, understand supported creator surfaces, and tour the workspace interface." />
-    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/step1-open-profile.png" />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/youtube-videos-outlier-grid.png" />
 
     <!-- Fonts & CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -72,7 +72,9 @@
               "@type": "ImageObject",
               "url": "https://rankkiwi.com/assets/rankkiwi-icon.png"
             }
-          }
+          },
+          "datePublished": "2026-03-15",
+          "dateModified": "2026-10-14"
         },
         {
           "@context": "https://schema.org",
@@ -132,55 +134,104 @@
     </header>
 
     <main class="docs-wrapper wrap">
-      
-
-      <div class="docs-header-bar">
-        <p class="eyebrow"><span class="status-dot"></span> GETTING STARTED</p>
-        <h1>Getting Started with Rank Kiwi</h1>
-        <p>Install the extension, understand the core mental model, and tour the workspace interface.</p>
+      <!-- Mobile Navigation Bar -->
+      <div class="docs-mobile-bar">
+        <div class="docs-breadcrumbs" style="margin: 0;">
+          <a href="/docs/">Docs</a> <span>/</span> <a href="/docs/getting-started/">Getting started</a> <span>/</span> <span>Setup</span>
+        </div>
+        <button type="button" class="docs-mobile-toggle" data-docs-mobile-toggle aria-label="Open documentation navigation">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <span>Menu</span>
+        </button>
       </div>
 
       <div class="docs-container">
-        <!-- Sidebar Navigation -->
+        <!-- Sticky Sidebar Navigation -->
         <aside class="docs-sidebar" aria-label="Documentation navigation">
-          <div class="docs-nav-group">
-            <div class="docs-nav-title">Getting Started</div>
+          <button type="button" class="docs-mobile-close" data-docs-mobile-close aria-label="Close navigation">
+            ✕ Close Menu
+          </button>
+
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Getting Started group">
+              <span>Getting started</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/getting-started/" class="docs-nav-link active">Installation &amp; Setup</a></li>
-              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your First Analysis</a></li>
-              <li><a href="/docs/getting-started/#workspace" class="docs-nav-link">Workspace Tour</a></li>
+              <li><a href="/docs/getting-started/" class="docs-nav-link active">Introduction &amp; Setup</a></li>
+              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your first analysis</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Platform Guides</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Platforms group">
+              <span>Platforms</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Research</a></li>
-              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Research</a></li>
+              <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Reels</a></li>
+              <li><a href="/docs/instagram/explore-downloads/" class="docs-nav-link">Explore downloads <span class="docs-badge-new">New</span></a></li>
+              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Scanner</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Understanding Results</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Sorting &amp; Filtering group">
+              <span>Sorting &amp; Score</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score &amp; Median</a></li>
-              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; Filters</a></li>
-              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research Workflow</a></li>
+              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score math</a></li>
+              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; filters</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Exports &amp; Help</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Exporting group">
+              <span>Exporting</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/exports/" class="docs-nav-link">CSV &amp; JSON Export</a></li>
-              <li><a href="/docs/troubleshooting/" class="docs-nav-link">Troubleshooting Hub</a></li>
+              <li><a href="/docs/exports/" class="docs-nav-link">Excel, CSV &amp; Clipboard</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Workflows &amp; Help group">
+              <span>Workflows &amp; Help</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research workflow</a></li>
+              <li><a href="/docs/troubleshooting/" class="docs-nav-link">Troubleshooting &amp; FAQ</a></li>
               <li><a href="/support/" class="docs-nav-link">Support &amp; Community</a></li>
             </ul>
+          </div>
+
+          <div class="docs-sidebar-footer">
+            <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+              <span>Chrome Store</span>
+            </a>
+            <a href="mailto:say@hibhavishya.in">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>say@hibhavishya.in</span>
+            </a>
           </div>
         </aside>
 
         <!-- Main Content -->
         <div class="docs-content" id="docs-content">
+          <nav class="docs-breadcrumbs" aria-label="Breadcrumb">
+            <a href="/docs/">Docs</a> <span>/</span>
+            <a href="/docs/getting-started/">Getting started</a> <span>/</span>
+            <span>Introduction &amp; Setup</span>
+          </nav>
+
+          <div class="docs-article-header">
+            <h1>Getting Started with Rank Kiwi</h1>
+            <p class="docs-lead">Install the extension, understand the core mental model, and tour the workspace interface.</p>
+          </div>
           <article class="docs-article" id="introduction">
             <h2>What Rank Kiwi Does</h2>
             <p class="docs-lead">Rank Kiwi is a browser extension for creator-content research on Instagram and YouTube.</p>
@@ -226,25 +277,25 @@
                     <td><strong>Instagram</strong></td>
                     <td>Reels Tab (Recommended)</td>
                     <td><code>instagram.com/creator/reels/</code></td>
-                    <td>Reel short-form videos with view counts</td>
+                    <td>Video Reels exclusively with verified view/play metrics</td>
                   </tr>
                   <tr>
                     <td><strong>Instagram</strong></td>
                     <td>Main Profile Grid</td>
                     <td><code>instagram.com/creator/</code></td>
-                    <td>Feed Posts, Carousels, and Reels</td>
+                    <td>Video Reels only (static photos and carousels are filtered out to keep video baselines accurate)</td>
                   </tr>
                   <tr>
                     <td><strong>YouTube</strong></td>
                     <td>Channel Videos Tab</td>
                     <td><code>youtube.com/@channel/videos</code></td>
-                    <td>Long-form video uploads</td>
+                    <td>Long-form video uploads with anti-leakage channel validation</td>
                   </tr>
                   <tr>
                     <td><strong>YouTube</strong></td>
                     <td>Channel Shorts Tab</td>
                     <td><code>youtube.com/@channel/shorts</code></td>
-                    <td>YouTube Shorts video feed</td>
+                    <td>YouTube Shorts video feed with live view enrichment</td>
                   </tr>
                 </tbody>
               </table>
@@ -259,8 +310,9 @@
             <h2>Understanding the Workspace &amp; UI</h2>
             <p class="docs-lead">When you trigger an analysis, Rank Kiwi renders a clean, focused research overlay with five core components:</p>
 
-            <div class="annotated-shot-wrap">
-              <img src="/assets/shots/step3-outliers-grid.webp" alt="Rank Kiwi analysis workspace showing creator outliers" class="annotated-shot-img" width="1280" height="832" loading="lazy" decoding="async" />
+            <figure class="annotated-shot-wrap">
+              <img src="/assets/shots/youtube-videos-outlier-grid.webp" srcset="/assets/shots/youtube-videos-outlier-grid.webp 1x, /assets/shots/youtube-videos-outlier-grid@2x.webp 2x" alt="Rank Kiwi results grid on YouTube channel videos tab with outlier score badges up to 5.8x and sort controls" class="annotated-shot-img" width="1600" height="1041" loading="lazy" decoding="async" />
+              <figcaption>YouTube videos results grid sorted by Outlier Score showing high-performing video outliers.</figcaption>
               <div class="shot-legend">
                 <div class="legend-item">
                   <span class="legend-num">1</span>
@@ -279,7 +331,7 @@
                   <span><strong>Content Card Grid:</strong> Visual cards showing post thumbnail, duration, view count, and hook preview.</span>
                 </div>
               </div>
-            </div>
+            </figure>
 
             <h3>Analysis Sample Controls</h3>
             <p>Rank Kiwi allows you to choose your analysis depth before scanning:</p>
@@ -293,7 +345,7 @@
             <div class="docs-pagination">
               <div class="docs-page-nav">
                 <span>Previous</span>
-                <b><a href="/docs/">Documentation Home</a></b>
+                <b><a href="/docs/">&larr; Documentation Home</a></b>
               </div>
               <div class="docs-page-nav docs-page-next">
                 <span>Next Guide</span>
@@ -302,10 +354,21 @@
             </div>
           </article>
         </div>
+
+        <!-- Right-Side Table of Contents -->
+        <aside class="docs-toc" aria-label="Table of contents">
+          <div class="docs-toc-title">On this page</div>
+          <ul class="docs-toc-list">
+            <li><a href="#introduction" class="docs-toc-link">What it does</a></li>
+            <li><a href="#installation" class="docs-toc-link">Installation &amp; setup</a></li>
+            <li><a href="#supported-platforms" class="docs-toc-link">Supported platforms</a></li>
+            <li><a href="#workspace" class="docs-toc-link">Workspace &amp; UI</a></li>
+          </ul>
+        </aside>
       </div>
     </main>
 
-                <!-- SITE FOOTER -->
+                    <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
@@ -332,37 +395,25 @@
 
         <div>
           <b>Product</b>
-          <a href="/">Home</a>
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="/creator-content-research/">Creator Research</a>
+          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
-          <b>Learn &amp; Docs</b>
+          <b>Resources</b>
+          <a href="/research/">Research</a>
+          <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
-          <a href="/docs/getting-started/">Getting Started</a>
-          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
-          <a href="/docs/troubleshooting/">Troubleshooting</a>
-          <a href="/docs/exports/">Exports Guide</a>
-        </div>
-
-        <div>
-          <b>Research &amp; Compare</b>
-          <a href="/research/">Research Hub</a>
-          <a href="/research/methodology/">Methodology</a>
           <a href="/compare/">Tool Comparisons</a>
-          <a href="/alternatives/">Alternatives Hub</a>
-          <a href="/best/">Best Software Guides</a>
         </div>
 
         <div>
-          <b>Legal &amp; Support</b>
+          <b>Support &amp; Legal</b>
           <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
-          <a href="/disclaimer/">Disclaimer</a>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
         </div>
       </div>

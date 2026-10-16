@@ -21,12 +21,12 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instagram Creator Research &amp; Reels Analysis - Rank Kiwi Docs</title>
-    <meta name="description" content="Learn how Rank Kiwi analyzes Instagram profiles, detects Reels, extracts public metrics, benchmarks typical performance, and handles platform limits." />
+    <title>Instagram Reels Research &amp; Outlier Analytics - Rank Kiwi Docs</title>
+    <meta name="description" content="Learn how Rank Kiwi's Reels-only pipeline analyzes Instagram creator profiles, extracts true Relay play counts, powers custom in-modal playback, and downloads MP4s." />
     <link rel="canonical" href="https://rankkiwi.com/docs/instagram/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Bhavishya Singla" />
-    <meta name="date" content="2026-10-05" scheme="YYYY-MM-DD" />
+    <meta name="date" content="2026-10-14" scheme="YYYY-MM-DD" />
     <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
     <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
     <meta name="theme-color" content="#cbf990" />
@@ -34,16 +34,16 @@
     <!-- Open Graph Metadata -->
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://rankkiwi.com/docs/instagram/" />
-    <meta property="og:title" content="Instagram Creator Research &amp; Reels Analysis - Rank Kiwi Docs" />
-    <meta property="og:description" content="Learn how Rank Kiwi analyzes Instagram profiles, detects Reels, extracts public metrics, benchmarks typical performance, and handles platform limits." />
-    <meta property="og:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta property="og:title" content="Instagram Reels Research &amp; Outlier Analytics - Rank Kiwi Docs" />
+    <meta property="og:description" content="Learn how Rank Kiwi's Reels-only pipeline analyzes Instagram creator profiles, extracts true Relay play counts, powers custom in-modal playback, and downloads MP4s." />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
     <meta property="og:site_name" content="Rank Kiwi" />
 
     <!-- Twitter / X Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Instagram Creator Research &amp; Reels Analysis - Rank Kiwi Docs" />
-    <meta name="twitter:description" content="Learn how Rank Kiwi analyzes Instagram profiles, detects Reels, extracts public metrics, benchmarks typical performance, and handles platform limits." />
-    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/step3-outliers-grid.png" />
+    <meta name="twitter:title" content="Instagram Reels Research &amp; Outlier Analytics - Rank Kiwi Docs" />
+    <meta name="twitter:description" content="Learn how Rank Kiwi's Reels-only pipeline analyzes Instagram creator profiles, extracts true Relay play counts, powers custom in-modal playback, and downloads MP4s." />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
 
     <!-- Fonts & CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,8 +57,8 @@
         {
           "@context": "https://schema.org",
           "@type": "TechArticle",
-          "headline": "Instagram Creator Research & Reels Analysis - Rank Kiwi Docs",
-          "description": "Learn how Rank Kiwi analyzes Instagram profiles, detects Reels, extracts public metrics, benchmarks typical performance, and handles platform limits.",
+          "headline": "Instagram Reels Research & Outlier Analytics - Rank Kiwi Docs",
+          "description": "Learn how Rank Kiwi's Reels-only pipeline analyzes Instagram creator profiles, extracts true Relay play counts, powers custom in-modal playback, and downloads MP4s.",
           "url": "https://rankkiwi.com/docs/instagram/",
           "author": {
             "@type": "Person",
@@ -134,156 +134,260 @@
     <main class="docs-wrapper wrap">
       
 
-      <div class="docs-header-bar">
-        <p class="eyebrow"><span class="status-dot"></span> PLATFORM GUIDE</p>
-        <h1>Instagram Creator Research Manual</h1>
-        <p>Comprehensive guide to analyzing Instagram creator profiles, scanning Reels, understanding public metrics, and navigating platform boundaries.</p>
+      <!-- Mobile Navigation Bar -->
+      <div class="docs-mobile-bar">
+        <div class="docs-breadcrumbs" style="margin: 0;">
+          <a href="/docs/">Docs</a> <span>/</span> <a href="/docs/instagram/">Platforms</a> <span>/</span> <span>Instagram Reels</span>
+        </div>
+        <button type="button" class="docs-mobile-toggle" data-docs-mobile-toggle aria-label="Open documentation navigation">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <span>Menu</span>
+        </button>
       </div>
 
       <div class="docs-container">
-        <!-- Sidebar Navigation -->
+        <!-- Sticky Sidebar Navigation -->
         <aside class="docs-sidebar" aria-label="Documentation navigation">
+          <button type="button" class="docs-mobile-close" data-docs-mobile-close aria-label="Close navigation">
+            ✕ Close Menu
+          </button>
+
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Instagram Topics</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Getting Started group">
+              <span>Getting started</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="#overview" class="docs-nav-link active">Platform Overview</a></li>
-              <li><a href="#reels-vs-grid" class="docs-nav-link">Reels vs Profile Grid</a></li>
-              <li><a href="#metrics" class="docs-nav-link">Metrics Reference Table</a></li>
-              <li><a href="#filtering" class="docs-nav-link">Instagram Filters</a></li>
-              <li><a href="#limitations" class="docs-nav-link">Platform Limitations</a></li>
+              <li><a href="/docs/getting-started/" class="docs-nav-link">Introduction &amp; Setup</a></li>
+              <li><a href="/docs/getting-started/your-first-analysis/" class="docs-nav-link">Your first analysis</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group is-open">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Platforms group">
+              <span>Platforms</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/instagram/" class="docs-nav-link active">Instagram Reels</a></li>
+              <li><a href="/docs/instagram/explore-downloads/" class="docs-nav-link">Explore downloads <span class="docs-badge-new">New</span></a></li>
+              <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Scanner</a></li>
             </ul>
           </div>
 
           <div class="docs-nav-group">
-            <div class="docs-nav-title">Related Documentation</div>
+            <button type="button" class="docs-nav-header" aria-label="Toggle Sorting &amp; Filtering group">
+              <span>Sorting &amp; Score</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
             <ul class="docs-nav-list">
-              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score Math</a></li>
-              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research Workflow</a></li>
-              <li><a href="/docs/exports/" class="docs-nav-link">Reel Video Downloads</a></li>
-              <li><a href="/docs/troubleshooting/#instagram-problems" class="docs-nav-link">Instagram Diagnostics</a></li>
+              <li><a href="/docs/understanding/outlier-score/" class="docs-nav-link">Outlier Score math</a></li>
+              <li><a href="/docs/understanding/sorting-filtering/" class="docs-nav-link">Sorting &amp; filters</a></li>
             </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Exporting group">
+              <span>Exporting</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/exports/" class="docs-nav-link">Excel, CSV &amp; Clipboard</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav-group">
+            <button type="button" class="docs-nav-header" aria-label="Toggle Workflows &amp; Help group">
+              <span>Workflows &amp; Help</span>
+              <svg class="docs-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <ul class="docs-nav-list">
+              <li><a href="/docs/workflows/content-research/" class="docs-nav-link">Research workflow</a></li>
+              <li><a href="/docs/troubleshooting/" class="docs-nav-link">Troubleshooting &amp; FAQ</a></li>
+              <li><a href="/support/" class="docs-nav-link">Support &amp; Community</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-sidebar-footer">
+            <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+              <span>Chrome Store</span>
+            </a>
+            <a href="mailto:say@hibhavishya.in">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>say@hibhavishya.in</span>
+            </a>
           </div>
         </aside>
 
         <!-- Main Content -->
         <div class="docs-content" id="docs-content">
-          <article class="docs-article" id="overview">
-            <h2>Overview: How Rank Kiwi Works on Instagram</h2>
-            <p class="docs-lead">Rank Kiwi analyzes public Instagram creator and business profiles directly within your Chrome browser.</p>
-            <p>When you visit an Instagram profile, Rank Kiwi identifies the creator handle, scans visible media items from the DOM, extracts public engagement data, and calculates the creator's median benchmark to surface breakout Reels.</p>
+          <nav class="docs-breadcrumbs" aria-label="Breadcrumb">
+            <a href="/docs/">Docs</a> <span>/</span>
+            <a href="/docs/instagram/">Platforms</a> <span>/</span>
+            <span>Instagram Reels</span>
+          </nav>
 
-            <div class="callout callout-tip">
-              <p><strong>Zero Account Requirements:</strong> Rank Kiwi does not ask for your Instagram password, does not connect via private user tokens, and does not perform background actions on your personal account. All scanning operates passively on public page data.</p>
-            </div>
-          </article>
+          <div class="docs-article-header">
+            <p class="eyebrow"><span class="status-dot"></span> Platform Guide</p>
+            <h1>Instagram Creator Research Manual</h1>
+            <p class="docs-lead">Comprehensive guide to analyzing Instagram creator profiles, scanning Reels, understanding public metrics, and navigating platform boundaries.</p>
+          </div>
 
-          <article class="docs-article" id="reels-vs-grid">
-            <h2>Reels Tab vs. Main Profile Grid</h2>
-            <p class="docs-lead">To get the most accurate results, it is important to understand how Instagram structures profile content across different tabs.</p>
+          <article class="docs-article">
+            <section class="docs-section" id="overview">
+              <h2>How Rank Kiwi Analyzes Instagram.</h2>
+              <p>Rank Kiwi delivers creator performance intelligence across public Instagram creator and business profiles through a dedicated, Reels-only video pipeline.</p>
+              <p>When you visit an Instagram profile or Reels tab, Rank Kiwi identifies the creator handle, inspects in-memory client-side state, extracts public video metrics, and calculates the creator's median view benchmark to surface breakout viral Reels.</p>
 
-            <h3>The Reels Tab (`/reels/`) — Strongly Recommended</h3>
-            <p>Navigating directly to <code>instagram.com/username/reels/</code> is the optimal way to research video creators. On this tab:</p>
-            <ul>
-              <li>Instagram displays public <strong>view/play counts</strong> on every Reel video thumbnail.</li>
-              <li>Rank Kiwi can calculate precise view-to-median Outlier Scores for every single item.</li>
-              <li>All items share the same video format, ensuring an apples-to-apples performance comparison.</li>
-            </ul>
+              <div class="callout callout-tip">
+                <p><strong>Zero Account Requirements:</strong> Rank Kiwi does not ask for your Instagram password, does not connect via private user tokens, and does not perform automated actions on your personal account. All operations run 100% locally in your browser sandbox on public page data.</p>
+              </div>
+            </section>
 
-            <h3>The Main Profile Grid (`/`)</h3>
-            <p>The main profile grid contains mixed media: multi-image carousels, static single photos, and Reels. However:</p>
-            <ul>
-              <li>Instagram generally does not expose view counts on static photos or carousels; it only exposes like counts and comment counts.</li>
-              <li>When analyzing mixed feeds, Rank Kiwi benchmarks video views where available and engagement counts where views are omitted by the platform.</li>
-            </ul>
-          </article>
+            <section class="docs-section" id="reels-pipeline">
+              <h2>The Reels-Only Video Architecture</h2>
+              <p>Why Rank Kiwi evaluates video Reels exclusively, discarding non-video static posts and carousels.</p>
 
-          <article class="docs-article" id="metrics">
-            <h2>Instagram Metrics Reference</h2>
-            <p class="docs-lead">The table below details all metrics Rank Kiwi extracts from public Instagram surfaces:</p>
+              <h3>The Need for Benchmark Purity</h3>
+              <p>Instagram's web architecture handles video and photo metrics fundamentally differently:</p>
+              <ul>
+                <li><strong>Video Reels Expose Play Counts:</strong> Every public Reel displays true video play/view counts. This allows calculating exact view-to-median Outlier Scores.</li>
+                <li><strong>Static Photos &amp; Carousels Omit Plays:</strong> Instagram does not publicly expose view or play counts on static images or multi-slide carousels—only likes and comments.</li>
+              </ul>
+              <p>Including static images alongside Reels would inject uncounted zero-view items, severely distorting the creator's median benchmark. To guarantee actionable creator intelligence, Rank Kiwi focuses exclusively on video Reels for an authentic, apples-to-apples comparison.</p>
 
-            <div class="table-wrap">
-              <table class="data-table">
-                <thead>
-                  <tr>
-                    <th>Metric</th>
-                    <th>Source on Page</th>
-                    <th>Availability</th>
-                    <th>How Rank Kiwi Uses It</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><strong>Views / Plays</strong></td>
-                    <td>Reel thumbnail overlay</td>
-                    <td>Public on Reels tab</td>
-                    <td>Primary numerator for Outlier Score calculation</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Like Count</strong></td>
-                    <td>Post preview / modal</td>
-                    <td>Public when not hidden by creator</td>
-                    <td>Engagement ratio analysis and sorting</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Comment Count</strong></td>
-                    <td>Post preview / modal</td>
-                    <td>Public unless comments disabled</td>
-                    <td>Discussion depth benchmark</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Publication Date</strong></td>
-                    <td>Post timestamp tag</td>
-                    <td>Public metadata</td>
-                    <td>Recency filtering and chronological sorting</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Caption &amp; Hooks</strong></td>
-                    <td>Post description text</td>
-                    <td>Public caption body</td>
-                    <td>Copywriting analysis and hook deconstruction</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Outlier Score</strong></td>
-                    <td>Calculated locally</td>
-                    <td>When views &amp; median exist</td>
-                    <td>Measures post performance vs creator median</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </article>
+              <h3>Deep Relay / XDT Store Extraction</h3>
+              <p>Rank Kiwi queries Instagram's internal client-side React/Relay store cache (<code>getRelayStoreRecords</code>, <code>clipsRec</code>, <code>mediaRec</code>) to retrieve accurate play counts (<code>play_count</code>, <code>video_play_count</code>, <code>video_view_count</code>) directly within your active session. If internal store data is incomplete, it seamlessly falls back to DOM card scrapers and background fiber probes.</p>
+            </section>
 
-          <article class="docs-article" id="filtering">
-            <h2>Instagram Custom Filters</h2>
-            <p class="docs-lead">Filter noisy feeds to isolate specific formats and viral thresholds.</p>
-            <div class="annotated-shot-wrap">
-              <img src="/assets/shots/instagram-filters.webp" alt="Rank Kiwi custom filter panel for Instagram" class="annotated-shot-img" width="1280" height="832" loading="lazy" decoding="async" />
-            </div>
-            <p>Rank Kiwi provides dedicated filters for Instagram creator catalogs:</p>
-            <ul>
-              <li><strong>Content Type:</strong> Toggle between Reels only, Photos only, or Carousels only.</li>
-              <li><strong>Outlier Threshold:</strong> Show only items with an Outlier Score of <code>2.0×</code>, <code>3.0×</code>, or <code>5.0×+</code>.</li>
-              <li><strong>Date Windows:</strong> Filter to posts published within the last 30, 60, or 90 days to avoid comparing year-old viral spikes with recent baseline shifts.</li>
-            </ul>
-          </article>
+            <section class="docs-section" id="video-player">
+              <h2>In-Modal 9:16 Video Player</h2>
+              <p>Inspect winning Reels with a responsive vertical video player built directly into the analysis workbench.</p>
+              <p>Clicking any Reel card in the results grid opens the Content Details modal featuring our custom 9:16 player:</p>
+              <ul>
+                <li><strong>Custom Playback Controls:</strong> Seamless play, pause, timeline seeking bar, and countdown duration timer.</li>
+                <li><strong>Dynamic Soundwave Animation:</strong> Animated wave bars pulse dynamically to indicate active playback and synchronize with pause/seek events.</li>
+                <li><strong>Audio Sync &amp; Mute:</strong> Inline volume controls with immediate mute/unmute toggling.</li>
+                <li><strong>Clean State Isolation:</strong> Selecting different Reels cleanly reinitializes the player with the active shortcode, revoking prior object URLs to prevent browser memory leaks.</li>
+              </ul>
+            </section>
 
-          <article class="docs-article" id="limitations">
-            <h2>Instagram Platform Boundaries &amp; Limitations</h2>
-            <p class="docs-lead">Rank Kiwi respects platform constraints and works strictly with publicly accessible data.</p>
+            <section class="docs-section" id="metrics">
+              <h2>Instagram Metrics Reference</h2>
+              <p>The table below details all metrics Rank Kiwi extracts from public Instagram Reels:</p>
 
-            <h3>Private Profiles</h3>
-            <p>Rank Kiwi cannot scan private Instagram accounts. If a creator account requires follow approval, the post DOM is protected by Instagram's authentication wall and cannot be collected.</p>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Metric</th>
+                      <th>Source on Page</th>
+                      <th>Availability</th>
+                      <th>How Rank Kiwi Uses It</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Views / Plays</strong></td>
+                      <td>Relay cache / Reel thumbnail</td>
+                      <td>Public on Reels tab &amp; profile</td>
+                      <td>Primary numerator for Outlier Score calculation</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Like Count</strong></td>
+                      <td>Relay record / post modal</td>
+                      <td>Public unless hidden by creator</td>
+                      <td>Audience resonance benchmark and sorting</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Comment Count</strong></td>
+                      <td>Relay record / post modal</td>
+                      <td>Public unless comments disabled</td>
+                      <td>Community discussion depth and debate indicator</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Publication Date</strong></td>
+                      <td>Post timestamp tag</td>
+                      <td>Public metadata</td>
+                      <td>Recency filtering and chronological sorting</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Caption &amp; Hooks</strong></td>
+                      <td>Post description text</td>
+                      <td>Public caption body</td>
+                      <td>Copywriting analysis and hook deconstruction</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Outlier Score</strong></td>
+                      <td>Calculated locally</td>
+                      <td>When views &amp; median exist</td>
+                      <td>Measures Reel performance multiplier vs. creator median</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
 
-            <h3>Hidden View or Like Counts</h3>
-            <p>If a creator has explicitly utilized Instagram's privacy setting to "Hide like and view counts" on a specific post, Instagram omits that number from the public DOM. Rank Kiwi marks that specific field as unavailable rather than inventing a number.</p>
+            <section class="docs-section" id="downloads">
+              <h2>Reel Video Downloads (MP4)</h2>
+              <p>Directly save public creator Reel video files for offline swipe files and pacing deconstruction.</p>
+              <p>Rank Kiwi supports both single-item and batch MP4 acquisition:</p>
+              <ul>
+                <li><strong>Single Reel Download:</strong> Click <strong>Download Reel (MP4)</strong> inside the Content Details modal or use the inline download button on any Reel card to save the active video stream.</li>
+                <li><strong>Toolbar Batch Downloads:</strong> Use the multi-select checkboxes on cards in the workbench grid to select multiple Reels, then click <strong>Download Selected</strong> in the top toolbar.</li>
+                <li><strong>Standardized Safe Naming:</strong> Files are saved automatically to your default Chrome downloads folder as <code>rankkiwi_[creator]_[reelId].mp4</code>, with path traversal sequences safely sanitized.</li>
+              </ul>
+              <figure class="annotated-shot-wrap">
+                <img src="/assets/shots/instagram-reels-batch-select.webp" srcset="/assets/shots/instagram-reels-batch-select.webp 1x, /assets/shots/instagram-reels-batch-select@2x.webp 2x" alt="Rank Kiwi results grid with multiple Instagram Reels selected via checkboxes for batch download" class="annotated-shot-img" width="1600" height="1041" loading="lazy" decoding="async" />
+                <figcaption>Multi-select checkboxes enabled across the results grid for batch reel downloading.</figcaption>
+              </figure>
+            </section>
 
-            <h3>Instagram Layout Updates</h3>
-            <p>Instagram periodically rolls out experimental DOM updates. If Rank Kiwi ever fails to detect a profile or encounters an updated selector, check our <a href="/docs/troubleshooting/#instagram-problems" style="color: var(--green); text-decoration: underline;">Instagram Troubleshooting Guide</a> or reload the page.</p>
+            <section class="docs-section" id="explore-downloads">
+              <h2>Download Reels from Explore</h2>
+              <p>Save inspiring Reels directly from Instagram Explore before initiating any full creator profile analysis.</p>
+              <p>While browsing Instagram's Explore surface (<code>instagram.com/explore/</code>), Rank Kiwi places a quick-action download overlay directly onto Reel cards. You don't need to run a creator scan or wait for metrics calculation—simply hover over any Reel on Explore and click the download button to grab the video MP4 immediately.</p>
+              <figure class="annotated-shot-wrap">
+                <img src="/assets/shots/instagram-explore-reel-download.webp" srcset="/assets/shots/instagram-explore-reel-download.webp 1x, /assets/shots/instagram-explore-reel-download@2x.webp 2x" alt="Instagram Explore grid with Rank Kiwi download button appearing directly on hovering a reel" class="annotated-shot-img" width="1600" height="1041" loading="lazy" decoding="async" />
+                <figcaption>Download Reels directly from the Instagram Explore feed before initiating any full analysis.</figcaption>
+              </figure>
+              <p>For in-depth step-by-step guidance on all explore downloading workflows, read our dedicated <a href="/docs/instagram/explore-downloads/">Explore Downloads Guide</a>.</p>
+            </section>
+
+            <section class="docs-section" id="filtering">
+              <h2>Instagram Custom Filters</h2>
+              <p>Filter noisy feeds to isolate specific viral performance thresholds and recent date windows.</p>
+              <figure class="annotated-shot-wrap">
+                <img src="/assets/shots/instagram-reels-filter-modal.webp" srcset="/assets/shots/instagram-reels-filter-modal.webp 1x, /assets/shots/instagram-reels-filter-modal@2x.webp 2x" alt="Rank Kiwi custom filter modal on Instagram Reels showing date range and outlier multiplier settings" class="annotated-shot-img" width="1600" height="1041" loading="lazy" decoding="async" />
+                <figcaption>Custom filter modal allowing users to set date windows and outlier multiplier thresholds.</figcaption>
+              </figure>
+              <p>Rank Kiwi provides dedicated filters for Instagram creator catalogs:</p>
+              <ul>
+                <li><strong>Outlier Multiplier Threshold:</strong> Show only items with an Outlier Score of <code>2.0×</code> (double median), <code>3.0×</code> (top tier), or <code>5.0×+</code> (breakout anomaly).</li>
+                <li><strong>Date Windows:</strong> Restrict results to Reels published within the last 30, 60, or 90 days to avoid comparing historical spikes with recent baseline shifts.</li>
+                <li><strong>Keyword Search:</strong> Instant text search across caption hooks, hashtags, and keywords.</li>
+              </ul>
+            </section>
+
+            <section class="docs-section" id="limitations">
+              <h2>Instagram Platform Boundaries &amp; Limitations</h2>
+              <p>Rank Kiwi respects platform constraints and works strictly with publicly accessible data.</p>
+
+              <h3>Private Profiles</h3>
+              <p>Rank Kiwi cannot scan private Instagram accounts. If a creator account requires follow approval, the post DOM is protected by Instagram's authentication wall and cannot be collected.</p>
+
+              <h3>Hidden View or Like Counts</h3>
+              <p>If a creator has explicitly enabled Instagram's privacy setting to "Hide like and view counts" on a specific post, Instagram omits that number from the public DOM. Rank Kiwi normalizes missing metrics to <code>null</code> and displays <code>—</code> rather than fabricating estimates, placing uncounted items safely at the bottom of sorted lists.</p>
+
+              <h3>Single-Page Navigation (SPA)</h3>
+              <p>Instagram uses client-side history transitions without full page reloads. If Rank Kiwi ever fails to refresh creator context when clicking between profiles, simply reload the browser tab (<kbd>Cmd + R</kbd> / <kbd>F5</kbd>).</p>
+            </section>
 
             <div class="docs-pagination">
               <div class="docs-page-nav">
                 <span>Previous</span>
-                <b><a href="/docs/getting-started/your-first-analysis/">Your First Analysis</a></b>
+                <b><a href="/docs/getting-started/your-first-analysis/">&larr; Your First Analysis</a></b>
               </div>
               <div class="docs-page-nav docs-page-next">
                 <span>Next Platform Guide</span>
@@ -292,10 +396,25 @@
             </div>
           </article>
         </div>
+
+        <!-- Right-Side Table of Contents -->
+        <aside class="docs-toc" aria-label="Table of contents">
+          <div class="docs-toc-title">On this page</div>
+          <ul class="docs-toc-list">
+            <li><a href="#overview" class="docs-toc-link">Platform overview</a></li>
+            <li><a href="#reels-pipeline" class="docs-toc-link">Reels-only pipeline</a></li>
+            <li><a href="#video-player" class="docs-toc-link">In-modal 9:16 player</a></li>
+            <li><a href="#metrics" class="docs-toc-link">Metrics reference</a></li>
+            <li><a href="#downloads" class="docs-toc-link">Reel downloads (MP4)</a></li>
+            <li><a href="#explore-downloads" class="docs-toc-link">Explore downloads</a></li>
+            <li><a href="#filtering" class="docs-toc-link">Custom filters</a></li>
+            <li><a href="#limitations" class="docs-toc-link">Platform limitations</a></li>
+          </ul>
+        </aside>
       </div>
     </main>
 
-                <!-- SITE FOOTER -->
+                    <!-- SITE FOOTER -->
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand-col">
@@ -322,37 +441,25 @@
 
         <div>
           <b>Product</b>
-          <a href="/">Home</a>
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="/creator-content-research/">Creator Research</a>
+          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
-          <b>Learn &amp; Docs</b>
+          <b>Resources</b>
+          <a href="/research/">Research</a>
+          <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
-          <a href="/docs/getting-started/">Getting Started</a>
-          <a href="/docs/getting-started/your-first-analysis/">First Analysis</a>
-          <a href="/docs/troubleshooting/">Troubleshooting</a>
-          <a href="/docs/exports/">Exports Guide</a>
-        </div>
-
-        <div>
-          <b>Research &amp; Compare</b>
-          <a href="/research/">Research Hub</a>
-          <a href="/research/methodology/">Methodology</a>
           <a href="/compare/">Tool Comparisons</a>
-          <a href="/alternatives/">Alternatives Hub</a>
-          <a href="/best/">Best Software Guides</a>
         </div>
 
         <div>
-          <b>Legal &amp; Support</b>
+          <b>Support &amp; Legal</b>
           <a href="/support/">Help &amp; Support</a>
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms of Service</a>
-          <a href="/disclaimer/">Disclaimer</a>
           <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>
         </div>
       </div>
