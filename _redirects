@@ -5,3 +5,7 @@
 /help/* /docs/troubleshooting/ 301
 /faq /docs/troubleshooting/ 301
 /install https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb 302
+/privacy/extension /privacy/#extension 302
+/privacy/chrome /privacy/#extension 302
+/privacy/chrome-extension /privacy/#extension 302
+/privacy/website /privacy/#website 302

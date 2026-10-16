@@ -50,15 +50,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-    <link rel="stylesheet" href="/styles.min.css?v=1.1.4" />
+    <link rel="stylesheet" href="/styles.min.css?v=1.1.5" />
     <style id="docs-critical-resilience">
       .docs-mobile-bar, .docs-drawer-header, .docs-mobile-close, .docs-drawer-close, .docs-mobile-backdrop { display: none !important; }
+      .docs-container { display: grid; grid-template-columns: 240px minmax(0, 1fr) 220px; gap: 36px; align-items: start; }
+      .docs-sidebar { grid-column: 1; }
+      .docs-content { grid-column: 2; min-width: 0; }
+      .docs-toc { grid-column: 3; }
+      @media (max-width: 1120px) {
+        .docs-container { grid-template-columns: 240px minmax(0, 1fr); gap: 32px; }
+        .docs-toc { display: none !important; }
+      }
       @media (max-width: 960px) {
         .docs-mobile-bar { display: flex !important; }
         .docs-drawer-header { display: flex !important; }
         .docs-sidebar:not(.is-mobile-open) { display: none !important; }
+        .docs-container { grid-template-columns: 1fr !important; gap: 20px; }
+        .docs-sidebar, .docs-content { grid-column: 1 !important; }
+        .docs-toc { display: none !important; }
       }
-      .docs-container { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 40px; align-items: start; }
       .docs-card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
       .docs-card { display: flex; flex-direction: column; padding: 20px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; text-decoration: none; color: inherit; }
       .docs-card-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
@@ -265,7 +275,7 @@
           </div>
 
           <div class="docs-sidebar-footer">
-            <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener" class="docs-btn-store">
+            <a data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener" class="docs-btn-store">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
               <span>Add to Chrome &mdash; Free</span>
             </a>
@@ -414,6 +424,12 @@
             <li><a href="#step-5-database" class="docs-toc-link">5. Swipe database</a></li>
             <li><a href="#ethics" class="docs-toc-link">Research ethics</a></li>
           </ul>
+          <div class="docs-toc-footer">
+            <a href="#docs-content" class="docs-toc-top-link">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+              <span>Back to top</span>
+            </a>
+          </div>
         </aside>
       </div>
     </main>
@@ -448,7 +464,7 @@
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+          <a data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
@@ -473,6 +489,6 @@
       </div>
     </footer>
 
-    <script src="/script.js" defer></script>
+    <script src="/script.js?v=1.1.5" defer></script>
   </body>
 </html>

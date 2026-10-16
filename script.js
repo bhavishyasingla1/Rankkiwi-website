@@ -1663,7 +1663,8 @@ function fallbackCopyText(text) {
 // ==========================================================================
 function initPrivacyScopeSwitcher() {
   const nav = document.querySelector('.privacy-scope-nav');
-  if (!nav) return;
+  if (!nav || nav.dataset.initialized === 'true') return;
+  nav.dataset.initialized = 'true';
 
   const buttons = nav.querySelectorAll('.privacy-scope-btn');
   const sections = document.querySelectorAll('.legal-content section[data-privacy-scope]');
@@ -1673,17 +1674,17 @@ function initPrivacyScopeSwitcher() {
 
   const configs = {
     all: {
-      title: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Complete Privacy Policy: Chrome Extension &amp; Website',
+      title: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Complete Privacy Policy: Chrome Extension &amp; Website',
       desc: 'Rank Kiwi clearly separates <strong>Chrome Extension execution</strong> (which is 100% local, sandboxed, and collects zero personal data) from our <strong>Marketing Website</strong> (rankkiwi.com, which uses standard privacy-respecting analytics and cookie consent). Use the buttons above to filter by environment.',
       bannerClass: 'is-all'
     },
     extension: {
-      title: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Chrome Extension Privacy: 100% Client-Side Local Sandbox',
+      title: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Chrome Extension Privacy: 100% Client-Side Local Sandbox',
       desc: 'The Rank Kiwi Chrome extension operates entirely in your local browser sandbox. It has no central backend database, does not store or transmit your research, does not access passwords, and requires zero account sign-up. All calculations and exports stay on your device.',
       bannerClass: 'is-extension'
     },
     website: {
-      title: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Marketing Website Privacy: Telemetry, Heatmaps &amp; Cookies',
+      title: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Marketing Website Privacy: Telemetry, Heatmaps &amp; Cookies',
       desc: 'Applies strictly to visitors browsing the rankkiwi.com marketing website. We use Google Analytics (gtag.js) for aggregate traffic counts and Microsoft Clarity for session replay to optimize page layouts. You can freely accept or decline tracking via our cookie banner.',
       bannerClass: 'is-website'
     }
@@ -1716,11 +1717,13 @@ function initPrivacyScopeSwitcher() {
     }
 
     if (updateHash) {
-      if (scope === 'all') {
-        history.replaceState(null, '', window.location.pathname + window.location.search);
-      } else {
-        history.replaceState(null, '', `#${scope}`);
-      }
+      try {
+        if (scope === 'all') {
+          history.replaceState(null, '', window.location.pathname + window.location.search);
+        } else {
+          history.replaceState(null, '', `#${scope}`);
+        }
+      } catch (e) {}
     }
   }
 
@@ -1730,21 +1733,26 @@ function initPrivacyScopeSwitcher() {
     });
   });
 
-  // Handle initial URL hash
-  const initialHash = window.location.hash.replace('#', '').toLowerCase();
-  if (initialHash === 'extension' || initialHash === 'chrome') {
-    setScope('extension', false);
-  } else if (initialHash === 'website' || initialHash === 'site' || initialHash === 'cookies') {
-    setScope('website', false);
-  } else {
-    setScope('all', false);
+  // Handle initial URL hash or query parameters
+  function getRequestedScope() {
+    const hash = window.location.hash.replace('#', '').toLowerCase();
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = (urlParams.get('scope') || urlParams.get('tab') || urlParams.get('view') || '').toLowerCase();
+    const target = hash || query;
+
+    if (target === 'extension' || target === 'chrome' || target === 'chrome-extension' || target === 'action') {
+      return 'extension';
+    }
+    if (target === 'website' || target === 'site' || target === 'cookies') {
+      return 'website';
+    }
+    return 'all';
   }
 
+  setScope(getRequestedScope(), false);
+
   window.addEventListener('hashchange', () => {
-    const hash = window.location.hash.replace('#', '').toLowerCase();
-    if (hash === 'extension' || hash === 'chrome') setScope('extension', false);
-    else if (hash === 'website' || hash === 'site') setScope('website', false);
-    else setScope('all', false);
+    setScope(getRequestedScope(), false);
   });
 }
 

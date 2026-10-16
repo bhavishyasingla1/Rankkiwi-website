@@ -27,8 +27,9 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Bhavishya Singla" />
     <meta name="date" content="2026-10-02" scheme="YYYY-MM-DD" />
+    <link rel="icon" type="image/webp" href="/assets/rankkiwi-icon-96.webp" />
     <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
-    <link rel="apple-touch-icon" href="/assets/rankkiwi-icon.png" />
+    <link rel="apple-touch-icon" href="/assets/rankkiwi-icon-96.webp" />
     <meta name="theme-color" content="#cbf990" />
 
     <!-- Open Graph Metadata -->
@@ -36,20 +37,21 @@
     <meta property="og:url" content="https://rankkiwi.com/privacy/" />
     <meta property="og:title" content="Privacy Policy: Rank Kiwi" />
     <meta property="og:description" content="Rank Kiwi Privacy Policy: how Rank Kiwi processes information when you use the extension." />
-    <meta property="og:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
+    <meta property="og:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.webp" />
+    <meta property="og:image:type" content="image/webp" />
     <meta property="og:site_name" content="Rank Kiwi" />
 
     <!-- Twitter / X Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Privacy Policy: Rank Kiwi" />
     <meta name="twitter:description" content="Rank Kiwi Privacy Policy: how Rank Kiwi processes information when you use the extension." />
-    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
+    <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.webp" />
 
         <!-- Preconnect to Font Origins -->
-    <link rel=preconnect href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-    <link rel="stylesheet" href="/styles.min.css?v=1.1.4" />
+    <link rel="stylesheet" href="/styles.min.css?v=1.1.5" />
 
     <!-- Schema.org WebPage, Organization & BreadcrumbList -->
     <script type="application/ld+json">
@@ -182,16 +184,16 @@
       <p class="updated">Last updated: October 14, 2026</p>
 
       <!-- Privacy Policy Scope Switcher -->
-      <nav class="privacy-scope-nav" aria-label="Privacy Policy View Scope">
-        <button type="button" class="privacy-scope-btn active" data-scope="all" aria-selected="true">
+      <nav class="privacy-scope-nav" aria-label="Privacy Policy View Scope" role="tablist">
+        <button type="button" class="privacy-scope-btn active" data-scope="all" id="privacy-scope-all" role="tab" aria-selected="true" aria-controls="legal-content">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
           <span>Complete Policy (All)</span>
         </button>
-        <button type="button" class="privacy-scope-btn" data-scope="extension" aria-selected="false">
+        <button type="button" class="privacy-scope-btn" data-scope="extension" id="privacy-scope-extension" role="tab" aria-selected="false" aria-controls="legal-content">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           <span>Chrome Extension Privacy</span>
         </button>
-        <button type="button" class="privacy-scope-btn" data-scope="website" aria-selected="false">
+        <button type="button" class="privacy-scope-btn" data-scope="website" id="privacy-scope-website" role="tab" aria-selected="false" aria-controls="legal-content">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           <span>Marketing Website Privacy</span>
         </button>
@@ -199,16 +201,54 @@
 
       <!-- Dynamic Scope Summary Banner -->
       <aside class="privacy-summary-banner is-all" id="privacy-summary-banner" aria-live="polite">
-        <h2 class="privacy-banner-title" id="privacy-banner-title">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-          Complete Privacy Policy: Chrome Extension &amp; Website
-        </h2>
+        <div class="privacy-banner-header">
+          <h2 class="privacy-banner-title" id="privacy-banner-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            Complete Privacy Policy: Chrome Extension &amp; Website
+          </h2>
+          <span class="privacy-banner-badge" id="privacy-banner-badge">All Scopes</span>
+        </div>
         <p class="privacy-banner-desc" id="privacy-banner-desc">
           Rank Kiwi clearly separates <strong>Chrome Extension execution</strong> (which is 100% local, sandboxed, and collects zero personal data) from our <strong>Marketing Website</strong> (rankkiwi.com, which uses standard privacy-respecting analytics and cookie consent). Use the buttons above to filter by environment.
         </p>
+
+        <!-- Dynamic feature highlights -->
+        <div class="privacy-banner-grid" id="privacy-banner-grid">
+          <div class="privacy-banner-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div>
+              <strong>100% Client-Side Sandbox:</strong> Calculations and Outlier Scores execute locally on your device.
+            </div>
+          </div>
+          <div class="privacy-banner-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+            <div>
+              <strong>Zero Remote Telemetry:</strong> No creator research history or viewed media is sent to Rank Kiwi servers.
+            </div>
+          </div>
+          <div class="privacy-banner-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <div>
+              <strong>Zero Account or Passwords:</strong> Works directly in your browser without login credentials or accounts.
+            </div>
+          </div>
+          <div class="privacy-banner-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <div>
+              <strong>Direct Local Exports:</strong> Excel (.xlsx), CSV, and JSON download straight to your local folder.
+            </div>
+          </div>
+        </div>
+
+        <div class="privacy-banner-footer" id="privacy-banner-footer">
+          <button type="button" class="privacy-copy-link" id="privacy-copy-link" title="Copy direct link to this privacy policy scope">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+            <span id="privacy-copy-text">Copy link to policy</span>
+          </button>
+        </div>
       </aside>
 
-      <div class="legal-content">
+      <div class="legal-content" id="legal-content">
         <section data-privacy-scope="both">
           <h2><span class="privacy-badge badge-both">Extension &amp; Website</span> Overview</h2>
           <p>Rank Kiwi is a Google Chrome browser extension designed for researching creator content on Instagram and YouTube. This policy plainly explains what information is involved when you use the extension and when you visit our website.</p>
@@ -255,6 +295,17 @@
           <p>Rank Kiwi does not access or store your Instagram or YouTube passwords, login credentials, or private account session cookies.</p>
           <p>When retrieving creator information from Instagram, Rank Kiwi reads Instagram's <code>csrftoken</code> value from the active page and includes it in the <code>X-CSRFToken</code> request header sent directly to Instagram. This token is used for request verification with Instagram and is not sent to Rank Kiwi's servers or unrelated third parties. Rank Kiwi does not intentionally persist this token in extension storage.</p>
           <p>Rank Kiwi processes this token only for the relevant Instagram requests. Your use of Instagram and YouTube remains subject to their respective terms and privacy policies.</p>
+        </section>
+
+        <section data-privacy-scope="extension">
+          <h2><span class="privacy-badge badge-extension">Chrome Extension Only</span> Chrome Permissions &amp; Manifest V3 Compliance</h2>
+          <p>Rank Kiwi is engineered strictly following Chrome Extension Manifest V3 security requirements with the principle of least privilege. We declare and use only the following minimal permissions:</p>
+          <ul>
+            <li><strong><code>activeTab</code>:</strong> Required exclusively when you explicitly click the "Analyze" button on an active Instagram creator profile or YouTube channel to evaluate publicly displayed posts.</li>
+            <li><strong><code>storage</code>:</strong> Used solely to preserve your local extension preferences (such as selected sample size 25/50/100, active sorting metric, and filter thresholds) within your local browser storage. No research data or personal information is synchronized to external clouds.</li>
+            <li><strong><code>downloads</code>:</strong> Used only when you explicitly trigger an export (Excel .xlsx, CSV, or JSON) or click "Download Reel" to save the file locally into your standard browser downloads folder.</li>
+          </ul>
+          <p>Rank Kiwi does <strong>not</strong> request broad host permissions (<code>&lt;all_urls&gt;</code>), does not listen to web traffic in the background, does not inject external third-party tracking scripts into web pages, and does not read browsing history outside supported public creator pages.</p>
         </section>
 
         <section data-privacy-scope="both">
@@ -304,7 +355,7 @@
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
-          <a href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
+          <a data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
         <div>
@@ -329,6 +380,184 @@
       </div>
     </footer>
 
-    <script src="/script.js" defer></script>
+    <!-- Inline Self-Contained Scope Switcher (Executes immediately without external dependencies) -->
+    <script>
+      (function () {
+        const configs = {
+          all: {
+            title: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Complete Privacy Policy: Chrome Extension &amp; Website',
+            badge: 'All Scopes',
+            desc: 'Rank Kiwi clearly separates <strong>Chrome Extension execution</strong> (which is 100% local, sandboxed, and collects zero personal data) from our <strong>Marketing Website</strong> (rankkiwi.com, which uses standard privacy-respecting analytics and cookie consent). Use the buttons above to filter by environment.',
+            bannerClass: 'is-all',
+            items: [
+              { icon: 'shield', text: '<strong>100% Client-Side Sandbox:</strong> Calculations and Outlier Scores execute locally on your device.' },
+              { icon: 'ban', text: '<strong>Zero Remote Telemetry:</strong> No creator research history or viewed media is sent to Rank Kiwi servers.' },
+              { icon: 'lock', text: '<strong>Zero Account or Passwords:</strong> Works directly in your browser without login credentials or accounts.' },
+              { icon: 'download', text: '<strong>Direct Local Exports:</strong> Excel (.xlsx), CSV, and JSON download straight to your local folder.' }
+            ]
+          },
+          extension: {
+            title: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Chrome Extension Privacy: 100% Client-Side Local Sandbox',
+            badge: 'Chrome Extension',
+            desc: 'The Rank Kiwi Chrome extension operates entirely in your local browser sandbox. It has no central backend database, does not store or transmit your research, does not access passwords, and requires zero account sign-up. All calculations and exports stay on your device.',
+            bannerClass: 'is-extension',
+            items: [
+              { icon: 'shield', text: '<strong>Local Sandbox Execution:</strong> Outlier Scores and sorting calculate 100% locally in your browser.' },
+              { icon: 'ban', text: '<strong>Zero Server Logging:</strong> No creator data, view metrics, or search history is ever transmitted to us.' },
+              { icon: 'lock', text: '<strong>Zero Credential Storage:</strong> Rank Kiwi never touches or stores your Instagram or YouTube passwords.' },
+              { icon: 'download', text: '<strong>Local File Generation:</strong> Exported Excel (.xlsx), CSV, and JSON files save directly to your computer.' }
+            ]
+          },
+          website: {
+            title: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Marketing Website Privacy: Telemetry, Heatmaps &amp; Cookies',
+            badge: 'Website Only',
+            desc: 'Applies strictly to visitors browsing the rankkiwi.com marketing website. We use Google Analytics (gtag.js) for aggregate traffic counts and Microsoft Clarity for session replay to optimize page layouts. You can freely accept or decline tracking via our cookie banner.',
+            bannerClass: 'is-website',
+            items: [
+              { icon: 'chart', text: '<strong>Google Analytics (GA4):</strong> Aggregated, anonymized page views, device categories, and referral paths.' },
+              { icon: 'eye', text: '<strong>Microsoft Clarity:</strong> Behavioral heatmaps and anonymous session replays to improve user experience.' },
+              { icon: 'toggle', text: '<strong>Cookie Consent Control:</strong> Accept or decline analytics tracking anytime via our on-site banner.' },
+              { icon: 'mail', text: '<strong>Support Inquiries:</strong> Direct email correspondence is kept strictly confidential and never sold.' }
+            ]
+          }
+        };
+
+        function getSvg(name) {
+          if (name === 'shield') return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>';
+          if (name === 'ban') return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>';
+          if (name === 'lock') return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>';
+          if (name === 'download') return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>';
+          if (name === 'chart') return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>';
+          if (name === 'eye') return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>';
+          if (name === 'toggle') return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="12" x="2" y="6" rx="6" ry="6"/><circle cx="8" cy="12" r="2"/></svg>';
+          if (name === 'mail') return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>';
+          return '';
+        }
+
+        function initScopeSwitcher() {
+          const nav = document.querySelector('.privacy-scope-nav');
+          if (!nav) return;
+
+          const buttons = nav.querySelectorAll('.privacy-scope-btn');
+          const sections = document.querySelectorAll('.legal-content section[data-privacy-scope]');
+          const banner = document.getElementById('privacy-summary-banner');
+          const bannerTitle = document.getElementById('privacy-banner-title');
+          const bannerBadge = document.getElementById('privacy-banner-badge');
+          const bannerDesc = document.getElementById('privacy-banner-desc');
+          const bannerGrid = document.getElementById('privacy-banner-grid');
+          const copyBtn = document.getElementById('privacy-copy-link');
+          const copyText = document.getElementById('privacy-copy-text');
+
+          let currentScope = 'all';
+
+          function applyScope(scope, updateHash = true) {
+            if (!configs[scope]) scope = 'all';
+            currentScope = scope;
+
+            buttons.forEach(btn => {
+              const match = btn.dataset.scope === scope;
+              btn.classList.toggle('active', match);
+              btn.setAttribute('aria-selected', match ? 'true' : 'false');
+            });
+
+            sections.forEach(sec => {
+              const secScope = sec.dataset.privacyScope;
+              if (scope === 'all') {
+                sec.classList.remove('is-hidden');
+              } else if (secScope === 'both' || secScope === scope) {
+                sec.classList.remove('is-hidden');
+              } else {
+                sec.classList.add('is-hidden');
+              }
+            });
+
+            const cfg = configs[scope];
+            if (banner && cfg) {
+              banner.className = `privacy-summary-banner ${cfg.bannerClass}`;
+              if (bannerTitle) bannerTitle.innerHTML = cfg.title;
+              if (bannerBadge) bannerBadge.textContent = cfg.badge;
+              if (bannerDesc) bannerDesc.innerHTML = cfg.desc;
+              if (bannerGrid && cfg.items) {
+                bannerGrid.innerHTML = cfg.items.map(item => `
+                  <div class="privacy-banner-item">
+                    ${getSvg(item.icon)}
+                    <div>${item.text}</div>
+                  </div>
+                `).join('');
+              }
+            }
+
+            if (copyText) {
+              copyText.textContent = scope === 'all' ? 'Copy link to policy' : `Copy link to ${cfg.badge}`;
+            }
+
+            if (updateHash) {
+              try {
+                if (scope === 'all') {
+                  history.replaceState(null, '', window.location.pathname + window.location.search);
+                } else {
+                  history.replaceState(null, '', '#' + scope);
+                }
+              } catch (e) {}
+            }
+          }
+
+          buttons.forEach(btn => {
+            btn.addEventListener('click', function () {
+              applyScope(this.dataset.scope, true);
+            });
+          });
+
+          if (copyBtn) {
+            copyBtn.addEventListener('click', function () {
+              const base = window.location.origin + window.location.pathname;
+              const shareUrl = currentScope === 'all' ? base : `${base}#${currentScope}`;
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(shareUrl).then(() => {
+                  copyBtn.classList.add('copied');
+                  if (copyText) copyText.textContent = 'Link copied!';
+                  setTimeout(() => {
+                    copyBtn.classList.remove('copied');
+                    if (copyText) copyText.textContent = currentScope === 'all' ? 'Copy link to policy' : `Copy link to ${configs[currentScope].badge}`;
+                  }, 2000);
+                }).catch(() => {
+                  prompt('Copy link to clipboard:', shareUrl);
+                });
+              } else {
+                prompt('Copy link to clipboard:', shareUrl);
+              }
+            });
+          }
+
+          function parseInitialScope() {
+            const hash = window.location.hash.replace('#', '').toLowerCase();
+            const urlParams = new URLSearchParams(window.location.search);
+            const queryScope = (urlParams.get('scope') || urlParams.get('tab') || urlParams.get('view') || '').toLowerCase();
+            const target = hash || queryScope;
+
+            if (target === 'extension' || target === 'chrome' || target === 'chrome-extension' || target === 'action') {
+              return 'extension';
+            }
+            if (target === 'website' || target === 'site' || target === 'cookies') {
+              return 'website';
+            }
+            return 'all';
+          }
+
+          applyScope(parseInitialScope(), false);
+
+          window.addEventListener('hashchange', function () {
+            applyScope(parseInitialScope(), false);
+          });
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initScopeSwitcher);
+        } else {
+          initScopeSwitcher();
+        }
+      })();
+    </script>
+    <script src="/script.js?v=1.1.5" defer></script>
   </body>
 </html>
