@@ -1073,9 +1073,9 @@ p {
 }.product-visual-stage {
   padding: 24px 28px 28px;
   border-radius: 0;
-  background: var(--kiwi-green);
-  border: 2px solid #01370b;
-  box-shadow: 0 0 0 1px rgba(1, 55, 11, 0.12), 0 20px 48px -10px rgba(1, 55, 11, 0.22);
+  background: rgba(203, 249, 144, 0.12);
+  border: 2px solid rgba(203, 249, 144, 0.3);
+  box-shadow: 0 0 0 1px rgba(203, 249, 144, 0.15), 0 20px 48px -10px rgba(1, 55, 11, 0.15);
   width: 100%;
   max-width: 1040px;
   margin: 0 auto;
@@ -1167,8 +1167,8 @@ p {
   border-radius: 0;
   overflow: hidden;
   background: #08130a;
-  border: 1.5px solid #01370b;
-  box-shadow: 0 4px 16px rgba(1, 55, 11, 0.12);
+  border: 1.5px solid rgba(1, 55, 11, 0.2);
+  box-shadow: 0 4px 16px rgba(1, 55, 11, 0.08);
 }
 
 .hero-video {
