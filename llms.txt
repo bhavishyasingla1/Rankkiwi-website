@@ -9,6 +9,7 @@
 - [Median Benchmark Scoring](https://rankkiwi.com/outlier-score/): Calculates non-skewed median metrics (1.0× typical, 2.0×–3.5× strong, 4.0×–10.0×+ breakout outlier) to eliminate distortion from one-off viral hits. Hidden metrics normalize to null (`—`) and sort automatically to the bottom.
 - [Creator Content Research](https://rankkiwi.com/creator-content-research/): Reverse-engineers competitor content strategies, packaging patterns, and high-frequency topics directly in-browser.
 - [Multi-Format Data Export](https://rankkiwi.com/docs/exports/): One-click export to native Excel spreadsheets (`.xlsx` Open Packaging Conventions workbooks created client-side via zero-dependency PKZIP Store archive), CSV, structured JSON, and rich dual-channel clipboard copy (TSV & HTML tables).
+- [Instagram Reel Speech-to-Text Transcription](https://rankkiwi.com/docs/transcription/): Converts spoken audio from public Instagram Reels into timestamped dialogue or continuous plain-text transcripts. Powered by Groq Cloud and Whisper large-v3 using a user-provided Groq API key stored locally in browser storage. Supports one-click clipboard copying and Markdown (.md) file downloads.
 - [Client-Side Privacy Architecture](https://rankkiwi.com/privacy/): 100% in-browser processing in the Chrome sandbox with zero external database retention, zero third-party telemetry, and no account or password required.
 
 ## Key Links & Documentation
@@ -25,6 +26,7 @@
 - [Getting Started & Setup](https://rankkiwi.com/docs/getting-started/): Extension setup, browser pinning, and workspace tour.
 - [Your First Analysis Guide](https://rankkiwi.com/docs/getting-started/your-first-analysis/): 9-step beginner creator analysis walkthrough.
 - [Instagram Research Guide](https://rankkiwi.com/docs/instagram/): Reels vs profile metrics, filters, and platform limits.
+- [Reel Transcription Guide](https://rankkiwi.com/docs/transcription/): Step-by-step guide to configuring Groq API keys, transcribing individual Reels or analysed profile outliers, and exporting Markdown transcripts.
 - [Explore & Reels Downloads Guide](https://rankkiwi.com/docs/instagram/explore-downloads/): Step-by-step MP4 video download guide for Instagram Explore.
 - [YouTube Research Guide](https://rankkiwi.com/docs/youtube/): Videos and Shorts research, and thumbnail downloads.
 - [Outlier Score Explained](https://rankkiwi.com/docs/understanding/outlier-score/): Mathematical formula and median benchmarks.

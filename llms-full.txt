@@ -6,7 +6,7 @@
 
 ## 1. Product Summary & Identity
 
-- **Product Name**: Rank Kiwi: Free Instagram & YouTube Outlier Analytics
+- **Product Name**: RankKiwi: Sort, Download & Transcribe. Works on Instagram & Youtube
 - **Extension Version**: 1.0.1 (Manifest V3 Compliance)
 - **Chrome Web Store Extension ID**: `igeifablgmkaiagdbkkimjcnglpdnlbl`
 - **Canonical URL**: https://rankkiwi.com/
@@ -69,6 +69,24 @@ Rank Kiwi operates entirely as a local Chrome Extension content script injected 
   - Full structured JSON array containing all normalized metrics, timestamps, URLs, captions, and outlier multipliers.
 - **Clipboard (Dual-Channel TSV & HTML Table)**:
   - Copies both plain text tab-separated values (TSV) and styled HTML tables to the system clipboard simultaneously. When pasted into Google Sheets, Excel, or Notion, columns format automatically with styled numbers and clickable links.
+
+### AI-Powered Instagram Reel Transcription Pipeline
+- **Target Surface**:
+  - Individual Instagram Reels: `https://www.instagram.com/reels/{shortcode}/`
+  - Analysed creator Outlier Reels grid
+- **Underlying AI Model**:
+  - Groq Cloud Whisper large-v3 for near-instant speech recognition.
+- **Credential Architecture**:
+  - User-provided Groq API key (`gsk_...`) stored strictly in local browser storage (`chrome.storage.local`).
+  - API requests transmit directly from the client browser to Groq's official API endpoint (`https://api.groq.com/openai/v1/audio/transcriptions`).
+  - Zero server-side routing: Rank Kiwi operates no central proxy, logging server, or database receiving user keys or audio.
+- **Output Formats**:
+  - Timestamped Dialogue: Formats dialogue into discrete segments with minute-and-second markers (`[00:00] ...`).
+  - Continuous Plain Text: Continuous readable prose for easy script reading or pasting into AI writing tools.
+  - One-Click Clipboard Copy: Instant clipboard copying in selected format.
+  - Markdown (.md) Export: Download structured notes (`rankkiwi_{creator}_{shortcode}_transcript.md`) for Obsidian, Notion, Bear, and local research archives.
+- **Platform Scope**:
+  - Available exclusively for Instagram Reels. YouTube video transcription is intentionally unsupported.
 
 ---
 

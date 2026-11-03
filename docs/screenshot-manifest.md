@@ -274,6 +274,46 @@ This manifest documents and audits all 24 raw screenshot captures in `/screensho
 | 13 | Thumbnail download | `Screenshot 2026-10-14 at 11.30.25 AM.png` | Available (YouTube) |
 | 14 | Export (copy, CSV, Excel, JSON) | `Screenshot 2026-10-14 at 11.27.59 AM.png`, `Screenshot 2026-10-14 at 11.30.32 AM.png` | Available (Instagram & YouTube) |
 | 15 | Troubleshooting states (if captured) | `Screenshot 2026-10-14 at 11.27.26 AM.png` (Flagged), `Screenshot 2026-10-14 at 11.29.44 AM.png` | Available (YouTube navigation modal) |
+| 16 | Groq API Key Setup | `groq-api-key-setup.webp` | Available (Instagram Reels) |
+| 17 | Transcribe Reel Action Overlay | `instagram-single-reel-transcribe.webp` | Available (Instagram Reels) |
+| 18 | Transcription In-Progress Modal | `instagram-reel-transcribing-progress.webp` | Available (Instagram Reels) |
+| 19 | Reel Transcription Results Modal (Timestamped & Plain Text) | `instagram-reel-transcription-modal.webp` | Available (Instagram Reels) |
+
+---
+
+## Transcription Feature Screenshot Catalog (Added Nov 2026)
+
+### 25. `groq-api-key-setup.webp`
+- **Platform**: Instagram Reels
+- **Screen Shown**: Connect your Groq API key modal dialog
+- **Visible UI Elements**: 'Transcribe Reel' header, 'Connect your Groq API key to transcribe Instagram Reels.', masked API key input field with visibility toggle, lime green 'Save API Key' button, 'How to set up your Groq API key' link.
+- **User-Flow Step**: Step 16: Groq API Key Setup
+- **Intended Pages**: docs/transcription/index.html, docs/troubleshooting/index.html
+- **Quality Audit**: Clean, cropped to modal card with dark margin. All controls and text sharp.
+
+### 26. `instagram-single-reel-transcribe.webp`
+- **Platform**: Instagram Reels
+- **Screen Shown**: Single Reel viewer with injected Transcribe Reel overlay button
+- **Visible UI Elements**: Vertical 9:16 Reel player, Brock Johnson video ('Steal these hooks'), top-right injected action buttons: download icon and pill button 'Transcribe Reel' with document icon.
+- **User-Flow Step**: Step 17: Transcribe Reel Action Overlay
+- **Intended Pages**: docs/transcription/index.html
+- **Quality Audit**: Shows exact placement of the injected transcribe button on Instagram's native video player.
+
+### 27. `instagram-reel-transcribing-progress.webp`
+- **Platform**: Instagram Reels
+- **Screen Shown**: Live speech recognition progress modal
+- **Visible UI Elements**: Centered modal: 'Transcribe Reel', green circular loading spinner, status notice: 'Transcribing your Reel... Fetching audio and generating transcription with timestamps...'.
+- **User-Flow Step**: Step 18: Transcription In-Progress Modal
+- **Intended Pages**: docs/transcription/index.html
+- **Quality Audit**: Clean state capture demonstrating live audio extraction and Whisper processing.
+
+### 28. `instagram-reel-transcription-modal.webp`
+- **Platform**: Instagram Reels
+- **Screen Shown**: Completed transcript modal with timestamped view and export controls
+- **Visible UI Elements**: Header 'Transcribe Reel', tab controls: 'Timestamped' (selected) and 'Plain Text', 'API Key' link. Timecoded speech segments: `[00:00] Start your video...`, `[00:02] Start your video...`, outline button 'Copy Transcription', green button 'Download as MD'.
+- **User-Flow Step**: Step 19: Reel Transcription Results Modal
+- **Intended Pages**: Homepage, docs/transcription/index.html, docs/index.html
+- **Quality Audit**: Primary showcase screenshot demonstrating timestamped transcript, plain text toggle, one-click copy, and Markdown download.
 
 ---
 

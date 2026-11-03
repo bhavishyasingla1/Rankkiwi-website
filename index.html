@@ -76,16 +76,16 @@
           "@type": ["SoftwareApplication", "WebApplication"],
           "@id": "https://rankkiwi.com/#software",
           "name": "Rank Kiwi",
-          "alternateName": "Rank Kiwi Creator Research Extension",
+          "alternateName": "RankKiwi: Sort, Download & Transcribe. Works on Instagram & Youtube",
           "url": "https://rankkiwi.com/",
           "installUrl": "https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb",
-          "description": "Free Chrome extension to research creator profiles, track engagement metrics, and discover viral outlier content on Instagram and YouTube.",
+          "description": "Free Chrome extension to research creator profiles, track engagement metrics, discover viral outlier content, download public Reels, and transcribe spoken Reel audio on Instagram and YouTube.",
           "applicationCategory": "BusinessApplication, DeveloperApplication, SocialNetworkingApplication",
           "operatingSystem": "Google Chrome, Chromium, Brave, Microsoft Edge, Opera",
           "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
           "softwareVersion": "1.0.1",
           "datePublished": "2025-01-01",
-          "dateModified": "2026-10-16",
+          "dateModified": "2026-11-03",
           "inLanguage": "en-US",
           "offers": {
             "@type": "Offer",
@@ -99,6 +99,7 @@
             "Median Benchmark Outlier Score Calculation",
             "One-click Excel (.xlsx), CSV, and JSON Data Export",
             "Single & Batch Reel MP4 and HD Thumbnail Downloads",
+            "AI-Powered Instagram Reel Transcription with Groq Cloud & Whisper",
             "100% Client-Side Local Privacy Execution"
           ],
           "author": {
@@ -247,6 +248,78 @@
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Contact Bhavishya Singla directly at say@hibhavishya.in or visit our Support page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can RankKiwi transcribe Instagram Reels?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. RankKiwi can extract spoken audio from supported Instagram Reels and convert it into timestamped or plain text."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does RankKiwi support YouTube transcription?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Currently, transcription is available for Instagram Reels. YouTube creator research is supported separately."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need an API key?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. RankKiwi uses your own Groq Cloud API key to provide transcription."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need to add my API key every time?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Once saved in your browser, the key can be reused for future transcription requests."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is transcription free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "RankKiwi does not charge a separate subscription fee for this feature. However, Groq's API usage is governed by its own free-tier, usage and billing policies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I download the transcript?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can copy the transcript or download it as a Markdown file."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I get timestamps?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. RankKiwi provides timestamped and plain-text transcript views."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I transcribe every Reel on a creator profile automatically?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. You choose the individual Reel you want to transcribe."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is my Groq API key stored by RankKiwi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The extension stores the key in browser storage. RankKiwi does not route it through its own backend. It is sent directly to Groq when making transcription requests."
               }
             }
           ]
@@ -534,12 +607,12 @@
         </div>
       </section>
 
-      <!-- FEATURES: FOUR THINGS, DONE WELL -->
+      <!-- FEATURES: DISCOVER. ANALYSE. TRANSCRIBE. -->
       <section class="section wrap" id="features">
         <div class="section-intro centered reveal">
           <p class="eyebrow">FEATURES</p>
-          <h2>Four tools in one.</h2>
-          <p>Everything needed to research, filter, benchmark, and export creator content.</p>
+          <h2>Discover. Analyse. Transcribe.</h2>
+          <p>Research Instagram and YouTube creators, discover their best-performing content, sort videos by performance, download public Instagram Reels, and turn spoken Reel content into text.</p>
         </div>
         <div class="feature-grid" style="margin-top: 32px;">
           <article class="feature-card reveal">
@@ -871,6 +944,40 @@
         </div>
       </section>
 
+      <!-- INSTAGRAM REEL TRANSCRIPTION -->
+      <section class="section transcription-section wrap" id="transcription">
+        <div class="content-details-layout">
+          <div class="content-details-copy reveal">
+            <p class="eyebrow"><span class="status-dot"></span> REEL TRANSCRIPTION</p>
+            <h2>Turn Instagram Reels Into Text.</h2>
+            <p>
+              Extract spoken words from any Reel in seconds. Generate timestamped transcripts or clean text, copy hooks instantly, and download as Markdown — powered by Groq and Whisper.
+            </p>
+            <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 24px;">
+              <a href="/docs/transcription/" class="button button-small">Explore Transcription &rarr;</a>
+              <a href="/docs/transcription/#groq-api-key" class="text-button" style="font-size: 13.5px; font-weight: 600;">How to Add API Key</a>
+            </div>
+          </div>
+          <div class="content-details-media reveal" data-delay="80">
+            <figure class="transcription-preview-card" style="max-width: 440px; margin: 0 auto; background: #0d1710; border: 1px solid rgba(203, 249, 144, 0.2); border-radius: 18px; box-shadow: 0 24px 56px -12px rgba(1, 55, 11, 0.35), 0 0 0 1px rgba(203, 249, 144, 0.12); overflow: hidden; padding: 12px;">
+              <img
+                src="/assets/shots/instagram-reel-transcription-modal.webp"
+                srcset="/assets/shots/instagram-reel-transcription-modal.webp 1x, /assets/shots/instagram-reel-transcription-modal@2x.webp 2x"
+                alt="RankKiwi Instagram Reel transcription interface showing timestamped speech-to-text transcript, format toggle tabs, copy action, and Markdown download"
+                width="318"
+                height="306"
+                loading="lazy"
+                decoding="async"
+                style="width: 100%; height: auto; display: block; border-radius: 12px;"
+              />
+              <figcaption style="font-size: 12px; color: #8ba888; text-align: center; margin-top: 10px; font-family: var(--font-body);">
+                Actual RankKiwi transcription interface showing timestamped segments, copy action, and Markdown export.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <!-- FROM RANK KIWI RESEARCH -->
       <section class="section wrap reveal" id="research-proof">
         <div class="card-highlight" style="display: flex; justify-content: space-between; align-items: center; gap: 28px; flex-wrap: wrap;">
@@ -1019,6 +1126,42 @@
             <summary>How do I get support or report a bug?<span>+</span></summary>
             <p>Contact Bhavishya Singla directly at <a href="mailto:say@hibhavishya.in" style="color: var(--green); text-decoration: underline;">say@hibhavishya.in</a> or visit our <a href="/support/" style="color: var(--green); text-decoration: underline;">Support</a> page.</p>
           </details>
+          <details>
+            <summary>Can RankKiwi transcribe Instagram Reels?<span>+</span></summary>
+            <p>Yes. RankKiwi can extract spoken audio from supported Instagram Reels and convert it into timestamped or plain text.</p>
+          </details>
+          <details>
+            <summary>Does RankKiwi support YouTube transcription?<span>+</span></summary>
+            <p>Currently, transcription is available for Instagram Reels. YouTube creator research is supported separately.</p>
+          </details>
+          <details>
+            <summary>Do I need an API key?<span>+</span></summary>
+            <p>Yes. RankKiwi uses your own Groq Cloud API key to provide transcription.</p>
+          </details>
+          <details>
+            <summary>Do I need to add my API key every time?<span>+</span></summary>
+            <p>No. Once saved in your browser, the key can be reused for future transcription requests.</p>
+          </details>
+          <details>
+            <summary>Is transcription free?<span>+</span></summary>
+            <p>RankKiwi does not charge a separate subscription fee for this feature. However, Groq's API usage is governed by its own free-tier, usage and billing policies.</p>
+          </details>
+          <details>
+            <summary>Can I download the transcript?<span>+</span></summary>
+            <p>Yes. You can copy the transcript or download it as a Markdown file.</p>
+          </details>
+          <details>
+            <summary>Can I get timestamps?<span>+</span></summary>
+            <p>Yes. RankKiwi provides timestamped and plain-text transcript views.</p>
+          </details>
+          <details>
+            <summary>Can I transcribe every Reel on a creator profile automatically?<span>+</span></summary>
+            <p>No. You choose the individual Reel you want to transcribe.</p>
+          </details>
+          <details>
+            <summary>Is my Groq API key stored by RankKiwi?<span>+</span></summary>
+            <p>The extension stores the key in browser storage. RankKiwi does not route it through its own backend. It is sent directly to Groq when making transcription requests.</p>
+          </details>
         </div>
       </section>
 
@@ -1063,6 +1206,7 @@
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
+          <a href="/docs/transcription/">Reel Transcription</a>
           <a data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
@@ -1071,6 +1215,7 @@
           <a href="/research/">Research</a>
           <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
+          <a href="/docs/transcription/">Transcription Guide</a>
           <a href="/compare/">Tool Comparisons</a>
         </div>
 

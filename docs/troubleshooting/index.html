@@ -224,7 +224,8 @@
             </button>
             <ul class="docs-nav-list">
               <li><a href="/docs/instagram/" class="docs-nav-link">Instagram Reels</a></li>
-              <li><a href="/docs/instagram/explore-downloads/" class="docs-nav-link">Explore downloads <span class="docs-badge-new">New</span></a></li>
+              <li><a href="/docs/transcription/" class="docs-nav-link">Reel Transcription <span class="docs-badge-new">New</span></a></li>
+              <li><a href="/docs/instagram/explore-downloads/" class="docs-nav-link">Explore downloads</a></li>
               <li><a href="/docs/youtube/" class="docs-nav-link">YouTube Scanner</a></li>
             </ul>
           </div>
@@ -346,6 +347,7 @@
           <li><a href="#instagram-problems">10. Instagram Specific Problems</a></li>
           <li><a href="#youtube-problems">11. YouTube Specific Problems</a></li>
           <li><a href="#download-problems">12. Media Download Problems</a></li>
+          <li><a href="#transcription-problems">13. Reel Transcription Issues (Groq API, Failed Transcripts)</a></li>
           <li><a href="#support-checklist">Before Contacting Support Checklist</a></li>
         </ul>
       </div>
@@ -721,6 +723,37 @@
           <strong>Still stuck?</strong> Review our <a href="/docs/exports/">Exports &amp; Media Downloads Guide</a>.
         </div>
         <p class="related-links">Related: <a href="/docs/exports/">Export &amp; Media Documentation</a></p>
+      </article>
+
+      <!-- 13. TRANSCRIPTION PROBLEMS -->
+      <article id="transcription-problems" class="troubleshoot-article docs-section">
+        <h2>13. Reel Transcription Issues (Groq API, Failed Transcripts)</h2>
+        <div class="symptom-tag-box">
+          <span class="symptom-tag">Symptom</span>
+          <span>Groq API key not accepted, transcription fails halfway, or spoken transcript is incomplete or unclear.</span>
+        </div>
+
+        <h3>What you'll see</h3>
+        <p>Clicking "Transcribe Reel" prompts for an API key repeatedly, throws a transcription failed notification, or generates partial or unclear text.</p>
+
+        <h3>Why this happens</h3>
+        <p>RankKiwi uses Groq Cloud's Whisper AI model for transcription via client-side authenticated requests. Common reasons for errors include an incomplete API key, reaching Groq's free-tier rate limits, temporary API network timeouts, or video Reels containing loud background music that obscures spoken vocals.</p>
+
+        <div class="fix-box">
+          <h4>Fix (Step-by-step)</h4>
+          <ol>
+            <li><strong>Validate Your Groq API Key:</strong> Make sure your key was copied completely from <a href="https://console.groq.com/" target="_blank" rel="noopener">console.groq.com</a> and starts with <code>gsk_</code>. Ensure no accidental whitespace precedes or follows the key.</li>
+            <li><strong>Reset Saved API Key:</strong> Click the <strong>API Key</strong> link in the top-right corner of the transcription modal, re-enter your valid Groq key, and click <strong>Save API Key</strong>.</li>
+            <li><strong>Check Groq Usage &amp; Rate Limits:</strong> Groq Cloud enforces requests-per-minute (RPM) and tokens-per-minute (TPM) limits on free accounts. If you have transcribed several Reels in quick succession, check your quota on the Groq Developer Console.</li>
+            <li><strong>Retry Transient Failures:</strong> If an intermittent network timeout occurs, simply click <strong>Transcribe Reel</strong> again to re-initiate the request.</li>
+            <li><strong>Audio Stream Availability:</strong> Ensure the Reel contains spoken dialogue. Videos with silent audio, instrumental background tracks, or restricted audio may not yield intelligible text.</li>
+          </ol>
+        </div>
+
+        <div class="support-escalation">
+          <strong>Still stuck?</strong> Read our complete <a href="/docs/transcription/">Instagram Reel Transcription Guide</a>.
+        </div>
+        <p class="related-links">Related: <a href="/docs/transcription/">Reel Transcription Manual</a> | <a href="/docs/transcription/#groq-api-key">Groq API Setup Guide</a></p>
       </article>
 
       <!-- BEFORE CONTACTING SUPPORT CHECKLIST -->

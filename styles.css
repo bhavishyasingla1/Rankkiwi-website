@@ -2776,8 +2776,28 @@ p {
    Content Details Showcase (Custom Filter)
    ========================================================================== */
 
-.content-details-section {
+.content-details-section,
+.transcription-section {
   padding: var(--section-padding);
+}
+
+.transcription-preview-card {
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+  background: #0d1710;
+  border: 1px solid rgba(203, 249, 144, 0.2);
+  border-radius: 18px;
+  box-shadow: 0 24px 56px -12px rgba(1, 55, 11, 0.35), 0 0 0 1px rgba(203, 249, 144, 0.12);
+  overflow: hidden;
+  padding: 12px;
+  box-sizing: border-box;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+}
+
+.transcription-preview-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 28px 64px -12px rgba(1, 55, 11, 0.42), 0 0 0 1px rgba(203, 249, 144, 0.28);
 }
 
 .content-details-layout {

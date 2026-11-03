@@ -280,6 +280,15 @@
           <p><strong>Local exports:</strong> Excel (.xlsx), CSV, and JSON exports are generated at your request and saved locally through your browser's download functionality.</p>
         </section>
 
+        <section data-privacy-scope="extension">
+          <h2><span class="privacy-badge badge-extension">Chrome Extension Only</span> Audio Transcription and Third-Party AI Services</h2>
+          <p>Rank Kiwi includes an optional, user-initiated audio transcription feature currently supported exclusively for public Instagram Reels. When you choose to transcribe a Reel, the extension converts the video's spoken audio into timestamped and plain-text transcripts using Groq Cloud's Whisper speech-to-text service.</p>
+          <p><strong>Distinction Between Local and Third-Party Processing:</strong> While creator metric calculations, Outlier Scores, sorting, filtering, and spreadsheet exports execute 100% locally in your browser sandbox, audio transcription inherently requires an external API request to a third-party artificial intelligence inference provider.</p>
+          <p><strong>User-Provided Groq API Key:</strong> Rank Kiwi does not issue, sell, or manage third-party API credentials. Users provide their own personal Groq Cloud API key. The API key is stored locally in your browser's extension storage (<code>chrome.storage.local</code>) and is sent directly from your browser to Groq's API endpoint (<code>https://api.groq.com/openai/v1/audio/transcriptions</code>) in standard authenticated request headers. Rank Kiwi does not route the audio or your API key through its own backend or intermediate proxies; Rank Kiwi operates no central server or database receiving this data.</p>
+          <p><strong>Third-Party Processing &amp; Provider Policies:</strong> When you initiate a transcription request, the audio file extracted from the selected public Reel is transmitted directly to Groq Cloud for speech recognition. This third-party processing is governed by Groq's applicable terms of service and the <a href="https://groq.com/privacy-policy/" target="_blank" rel="noopener">Groq Privacy Policy</a>. Data handling, temporary processing, and applicable retention policies are controlled by Groq according to their current API developer documentation. Rank Kiwi makes no independent retention guarantees on behalf of third-party infrastructure providers.</p>
+          <p><strong>Credential Control &amp; Deletion:</strong> You remain in full control of your credentials. You can update, replace, or remove your saved Groq API key at any time through the extension's transcription interface or Chrome extension settings, which immediately deletes the key from local browser storage.</p>
+        </section>
+
         <section data-privacy-scope="both">
           <h2><span class="privacy-badge badge-both">Extension &amp; Website</span> Data sharing</h2>
           <p>Rank Kiwi does not sell, rent, or monetize your analyzed creator content or research activity. No analyzed data is transferred to third-party data brokers or marketing networks.</p>
@@ -302,8 +311,8 @@
           <p>Rank Kiwi is engineered strictly following Chrome Extension Manifest V3 security requirements with the principle of least privilege. We declare and use only the following minimal permissions:</p>
           <ul>
             <li><strong><code>activeTab</code>:</strong> Required exclusively when you explicitly click the "Analyze" button on an active Instagram creator profile or YouTube channel to evaluate publicly displayed posts.</li>
-            <li><strong><code>storage</code>:</strong> Used solely to preserve your local extension preferences (such as selected sample size 25/50/100, active sorting metric, and filter thresholds) within your local browser storage. No research data or personal information is synchronized to external clouds.</li>
-            <li><strong><code>downloads</code>:</strong> Used only when you explicitly trigger an export (Excel .xlsx, CSV, or JSON) or click "Download Reel" to save the file locally into your standard browser downloads folder.</li>
+            <li><strong><code>storage</code>:</strong> Used solely to preserve your local extension preferences (such as selected sample size 25/50/100, active sorting metric, and filter thresholds) and user-configured Groq API key within your local browser storage. No research data or personal information is synchronized to external clouds.</li>
+            <li><strong><code>downloads</code>:</strong> Used only when you explicitly trigger an export (Excel .xlsx, CSV, or JSON), save a transcribed Markdown (.md) note, or click "Download Reel" to save the file locally into your standard browser downloads folder.</li>
           </ul>
           <p>Rank Kiwi does <strong>not</strong> request broad host permissions (<code>&lt;all_urls&gt;</code>), does not listen to web traffic in the background, does not inject external third-party tracking scripts into web pages, and does not read browsing history outside supported public creator pages.</p>
         </section>
@@ -355,6 +364,7 @@
           <a href="/instagram-analytics/">Instagram Analytics</a>
           <a href="/youtube-analytics/">YouTube Analytics</a>
           <a href="/outlier-score/">Outlier Score</a>
+          <a href="/docs/transcription/">Reel Transcription</a>
           <a data-chrome-link href="https://chromewebstore.google.com/detail/igeifablgmkaiagdbkkimjcnglpdnlbl?utm_source=item-share-cb" target="_blank" rel="noopener">Add to Chrome</a>
         </div>
 
@@ -363,6 +373,7 @@
           <a href="/research/">Research</a>
           <a href="/guides/how-to-find-reel-ideas-from-competitors/">Guides</a>
           <a href="/docs/">Documentation</a>
+          <a href="/docs/transcription/">Transcription Guide</a>
           <a href="/compare/">Tool Comparisons</a>
         </div>
 
