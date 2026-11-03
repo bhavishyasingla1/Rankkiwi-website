@@ -9,3 +9,12 @@
 /privacy/chrome /privacy/#extension 302
 /privacy/chrome-extension /privacy/#extension 302
 /privacy/website /privacy/#website 302
+
+# High-Intent Navigation & Product Aliases
+/transcription /docs/transcription/ 301
+/transcribe /docs/transcription/ 301
+/docs/transcription /docs/transcription/ 301
+/instagram /instagram-analytics/ 301
+/youtube /youtube-analytics/ 301
+/outliers /outlier-score/ 301
+/research-tools /best/ 301

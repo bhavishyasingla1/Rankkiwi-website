@@ -21,8 +21,8 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instagram Creator Research &amp; Reels Analytics Extension — Rank Kiwi</title>
-    <meta name="description" content="Analyze Instagram creator profiles, rank Reels by view-to-median Outlier Score, isolate viral hooks, and export structured metrics in seconds with Rank Kiwi." />
+    <title>Instagram Reels Analytics &amp; Creator Research Tool | Rank Kiwi</title>
+    <meta name="description" content="Research public Instagram creators, analyse Reels, discover outliers against creator medians, sort content and transcribe individual Reels with Rank Kiwi." />
     <link rel="canonical" href="https://rankkiwi.com/instagram-analytics/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
@@ -36,16 +36,16 @@
     <!-- Open Graph Metadata -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rankkiwi.com/instagram-analytics/" />
-    <meta property="og:title" content="Instagram Creator Research &amp; Reels Analytics Extension — Rank Kiwi" />
-    <meta property="og:description" content="Analyze Instagram creator profiles, rank Reels by view-to-median Outlier Score, isolate viral hooks, and export structured metrics in seconds with Rank Kiwi." />
+    <meta property="og:title" content="Instagram Reels Analytics &amp; Creator Research Tool | Rank Kiwi" />
+    <meta property="og:description" content="Research public Instagram creators, analyse Reels, discover outliers against creator medians, sort content and transcribe individual Reels with Rank Kiwi." />
     <meta property="og:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
     <meta property="og:site_name" content="Rank Kiwi" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter / X Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Instagram Creator Research &amp; Reels Analytics Extension — Rank Kiwi" />
-    <meta name="twitter:description" content="Analyze Instagram creator profiles, rank Reels by view-to-median Outlier Score, isolate viral hooks, and export structured metrics in seconds with Rank Kiwi." />
+    <meta name="twitter:title" content="Instagram Reels Analytics &amp; Creator Research Tool | Rank Kiwi" />
+    <meta name="twitter:description" content="Research public Instagram creators, analyse Reels, discover outliers against creator medians, sort content and transcribe individual Reels with Rank Kiwi." />
     <meta name="twitter:image" content="https://rankkiwi.com/assets/shots/instagram-reels-outlier-grid.png" />
 
     <!-- Fonts & Styles -->
@@ -65,7 +65,14 @@
         ],
         "name": "Rank Kiwi Instagram Creator Analytics",
         "url": "https://rankkiwi.com/instagram-analytics/",
-        "description": "Free Chrome extension to analyze Instagram creator profiles, benchmark Reels view metrics against median performance, and find breakout viral outliers.",
+        "description": "Free Chrome extension to analyze Instagram creator profiles, benchmark Reels view metrics against median performance, find breakout viral outliers, and transcribe Reel audio with Groq Whisper.",
+        "featureList": [
+          "Creator-Relative Outlier Score Calculation",
+          "Public Instagram Reels Metrics Extraction",
+          "One-Click Reel MP4 & Explore Video Downloads",
+          "AI-Powered Instagram Reel Transcription via Groq Whisper",
+          "Spreadsheet CSV, Excel, and JSON Data Export"
+        ],
         "applicationCategory": "SocialNetworkingApplication, DeveloperApplication",
         "operatingSystem": "Google Chrome, Chromium",
         "browserRequirements": "Requires Google Chrome or any Chromium-compatible browser.",
@@ -161,6 +168,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Yes. Rank Kiwi supports one-click exports to native Excel (.xlsx), CSV, structured JSON payloads, and direct clipboard copying (both TSV and formatted HTML tables) for immediate pasting into Google Sheets, Notion databases, or Microsoft Excel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I transcribe Instagram Reels into text with Rank Kiwi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Rank Kiwi can extract spoken audio from individual Instagram Reels and convert it into timestamped or plain text transcripts using Groq Cloud and Whisper. Enter your own Groq API key once, and you can transcribe on demand, copy the transcript, or download it as Markdown."
             }
           },
           {
@@ -455,6 +470,13 @@
                 <td style="padding: 14px 18px;"><span class="pill" style="background: var(--brand-soft); color: var(--kiwi-dark); font-weight: 750; padding: 3px 10px; border-radius: 999px; font-size: 0.8rem;">Explore Download</span></td>
                 <td style="padding: 14px 18px;">One-click direct MP4 download &amp; preview</td>
               </tr>
+              <tr style="border-bottom: 1px solid var(--line);">
+                <td style="padding: 14px 18px;"><strong>Reel Audio Transcription</strong></td>
+                <td style="padding: 14px 18px;">Individual Reels &amp; Analysis Grid</td>
+                <td style="padding: 14px 18px;">Timestamped transcript, Plain text, Hooks</td>
+                <td style="padding: 14px 18px;"><span class="pill" style="background: var(--brand-soft); color: var(--kiwi-dark); font-weight: 750; padding: 3px 10px; border-radius: 999px; font-size: 0.8rem;">Groq Whisper AI</span></td>
+                <td style="padding: 14px 18px;">1-Click Copy, Markdown (.md) Export</td>
+              </tr>
               <tr>
                 <td style="padding: 14px 18px;"><strong>Carousels &amp; Static Photos</strong></td>
                 <td style="padding: 14px 18px;">Main profile grid</td>
@@ -464,6 +486,45 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <!-- INSTAGRAM REEL TRANSCRIPTION -->
+      <section class="pillar-section wrap" id="transcription">
+        <div class="pillar-section-header">
+          <p class="eyebrow"><span class="status-dot"></span> REEL TRANSCRIPTION</p>
+          <h2>Turn Instagram Reels Into Text</h2>
+          <p>
+            Extract spoken audio from any Instagram Reel into readable text in seconds. Study viral scripts, break down hook structures, and export timestamped transcripts directly to Markdown.
+          </p>
+        </div>
+
+        <div class="pillar-workflow-step" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 36px;">
+          <div>
+            <h3>Two Ways to Access Transcription</h3>
+            <p style="font-size: 14.5px; line-height: 1.6; color: var(--muted); margin-bottom: 14px;">
+              Transcription is user-initiated for individual Reels across two familiar workflows:
+            </p>
+            <ol style="font-size: 14px; line-height: 1.6; color: var(--ink); padding-left: 20px; margin: 0 0 16px 0;">
+              <li style="margin-bottom: 10px;">
+                <strong>From an individual Reel:</strong> Open any Reel in Instagram, click RankKiwi's on-screen detail icon, and select <em>Transcribe Reel</em>.
+              </li>
+              <li>
+                <strong>From creator analysis:</strong> Run an analysis on a creator's Reels grid, browse the outlier results, and click <em>Transcribe video</em> on any specific Reel card.
+              </li>
+            </ol>
+            <p style="font-size: 13.5px; line-height: 1.55; color: var(--caption); margin-bottom: 18px;">
+              Powered by Groq Cloud and Whisper. Enter your personal Groq API key once in your browser; RankKiwi stores it locally and sends requests directly to Groq with zero intermediate logging.
+            </p>
+            <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+              <a href="/docs/transcription/" class="button button-small">Read Transcription Guide &rarr;</a>
+              <a href="/docs/transcription/#groq-api-key" class="text-button" style="font-size: 13.5px; font-weight: 600;">Groq API Setup</a>
+            </div>
+          </div>
+          <figure class="annotated-shot-wrap" style="max-width: 440px; margin: 0 auto;">
+            <img src="/assets/shots/instagram-reel-transcription-modal.webp" srcset="/assets/shots/instagram-reel-transcription-modal.webp 1x, /assets/shots/instagram-reel-transcription-modal@2x.webp 2x" alt="RankKiwi Instagram Reel transcription interface showing timestamped speech-to-text transcript, format toggle tabs, copy action, and Markdown download" class="annotated-shot-img" width="318" height="306" loading="lazy" />
+            <figcaption class="shot-caption">RankKiwi transcription modal with timestamped and plain-text views, copy action, and Markdown download.</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -525,6 +586,13 @@
             <h3>Can I export my Instagram research to a spreadsheet?</h3>
             <p>
               Yes. Rank Kiwi supports one-click exports to native Excel (.xlsx), standard CSV, structured JSON payloads, and direct clipboard copying (both TSV and formatted HTML tables) for immediate pasting into Google Sheets, Notion databases, or Microsoft Excel.
+            </p>
+          </div>
+
+          <div class="pillar-faq-card">
+            <h3>Can I transcribe Instagram Reels into text with Rank Kiwi?</h3>
+            <p>
+              Yes. Rank Kiwi can transcribe spoken audio from individual Instagram Reels into timestamped or clean plain text using Groq Cloud and Whisper. Enter your own Groq API key once, and you can transcribe Reels on demand, copy the script, or download it as Markdown (.md).
             </p>
           </div>
 

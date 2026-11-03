@@ -337,6 +337,27 @@ export const SITE_MANIFEST: SiteRoute[] = [
     }
   },
   {
+    slug: '/docs/transcription/',
+    pageType: 'docs',
+    title: 'How to Transcribe Instagram Reels to Text | Rank Kiwi',
+    description: 'Learn how to transcribe Instagram Reels with Rank Kiwi using Groq Whisper. Set up your API key, view timestamped or plain-text transcripts, copy text and download Markdown.',
+    indexable: true,
+    status: 'active',
+    canonical: `${SITE_BASE_URL}/docs/transcription/`,
+    parent: '/docs/',
+    breadcrumb: [
+      { name: 'Home', url: '/' },
+      { name: 'Docs', url: '/docs/' },
+      { name: 'Instagram', url: '/docs/instagram/' },
+      { name: 'Transcription', url: '/docs/transcription/' }
+    ],
+    primaryCTA: {
+      label: 'Add to Chrome',
+      url: CHROME_STORE_URL,
+      target: '_blank'
+    }
+  },
+  {
     slug: '/docs/youtube/',
     pageType: 'docs',
     title: 'YouTube Channel & Shorts Research Guide — Rank Kiwi Documentation',
