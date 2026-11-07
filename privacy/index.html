@@ -26,7 +26,7 @@
     <link rel="canonical" href="https://rankkiwi.com/privacy/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Bhavishya Singla" />
-    <meta name="date" content="2026-10-02" scheme="YYYY-MM-DD" />
+    <meta name="date" content="2026-11-07" scheme="YYYY-MM-DD" />
     <link rel="icon" type="image/webp" href="/assets/rankkiwi-icon-96.webp" />
     <link rel="icon" type="image/png" href="/assets/rankkiwi-icon.png" />
     <link rel="apple-touch-icon" href="/assets/rankkiwi-icon-96.webp" />
@@ -181,7 +181,7 @@
       <p class="eyebrow"><span class="status-dot"></span> LEGAL</p>
       <h1>Privacy Policy</h1>
       <p class="legal-lead">Transparent privacy terms clearly separating our local Chrome extension from our marketing website.</p>
-      <p class="updated">Last updated: October 14, 2026</p>
+      <p class="updated">Last updated: November 7, 2026</p>
 
       <!-- Privacy Policy Scope Switcher -->
       <nav class="privacy-scope-nav" aria-label="Privacy Policy View Scope" role="tablist">
@@ -209,7 +209,7 @@
           <span class="privacy-banner-badge" id="privacy-banner-badge">All Scopes</span>
         </div>
         <p class="privacy-banner-desc" id="privacy-banner-desc">
-          Rank Kiwi clearly separates <strong>Chrome Extension execution</strong> (which is 100% local, sandboxed, and collects zero personal data) from our <strong>Marketing Website</strong> (rankkiwi.com, which uses standard privacy-respecting analytics and cookie consent). Use the buttons above to filter by environment.
+          Rank Kiwi clearly separates <strong>Chrome Extension execution</strong> (which is 100% local, sandboxed, and collects zero research data or telemetry) from our <strong>Marketing Website</strong> (rankkiwi.com, which uses standard privacy-respecting analytics and cookie consent). Use the buttons above to filter by environment.
         </p>
 
         <!-- Dynamic feature highlights -->
@@ -287,6 +287,13 @@
           <p><strong>User-Provided Groq API Key:</strong> Rank Kiwi does not issue, sell, or manage third-party API credentials. Users provide their own personal Groq Cloud API key. The API key is stored locally in your browser's extension storage (<code>chrome.storage.local</code>) and is sent directly from your browser to Groq's API endpoint (<code>https://api.groq.com/openai/v1/audio/transcriptions</code>) in standard authenticated request headers. Rank Kiwi does not route the audio or your API key through its own backend or intermediate proxies; Rank Kiwi operates no central server or database receiving this data.</p>
           <p><strong>Third-Party Processing &amp; Provider Policies:</strong> When you initiate a transcription request, the audio file extracted from the selected public Reel is transmitted directly to Groq Cloud for speech recognition. This third-party processing is governed by Groq's applicable terms of service and the <a href="https://groq.com/privacy-policy/" target="_blank" rel="noopener">Groq Privacy Policy</a>. Data handling, temporary processing, and applicable retention policies are controlled by Groq according to their current API developer documentation. Rank Kiwi makes no independent retention guarantees on behalf of third-party infrastructure providers.</p>
           <p><strong>Credential Control &amp; Deletion:</strong> You remain in full control of your credentials. You can update, replace, or remove your saved Groq API key at any time through the extension's transcription interface or Chrome extension settings, which immediately deletes the key from local browser storage.</p>
+        </section>
+
+        <section data-privacy-scope="extension" id="creator-tips-email">
+          <h2><span class="privacy-badge badge-extension">Chrome Extension Only</span> Optional creator-tips email signup</h2>
+          <p>If you choose to enter your email address and click Subscribe in RankKiwi, we collect your email address to send occasional creator tips.</p>
+          <p>When you subscribe, RankKiwi sends your email address, signup date and time, signup source, the platform you were analysing (Instagram or YouTube), and the extension version to a developer-owned Google Apps Script. The script stores the signup in a private Google Sheet and may send a welcome email.</p>
+          <p>This feature is optional. RankKiwi does not sell your email address, use it for advertising, or share it with data brokers. You can unsubscribe or request deletion by emailing <a href="mailto:say@hibhavishya.in">say@hibhavishya.in</a>.</p>
         </section>
 
         <section data-privacy-scope="both">
@@ -398,7 +405,7 @@
           all: {
             title: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Complete Privacy Policy: Chrome Extension &amp; Website',
             badge: 'All Scopes',
-            desc: 'Rank Kiwi clearly separates <strong>Chrome Extension execution</strong> (which is 100% local, sandboxed, and collects zero personal data) from our <strong>Marketing Website</strong> (rankkiwi.com, which uses standard privacy-respecting analytics and cookie consent). Use the buttons above to filter by environment.',
+            desc: 'Rank Kiwi clearly separates <strong>Chrome Extension execution</strong> (which is 100% local, sandboxed, and collects zero research data or telemetry) from our <strong>Marketing Website</strong> (rankkiwi.com, which uses standard privacy-respecting analytics and cookie consent). Use the buttons above to filter by environment.',
             bannerClass: 'is-all',
             items: [
               { icon: 'shield', text: '<strong>100% Client-Side Sandbox:</strong> Calculations and Outlier Scores execute locally on your device.' },
@@ -546,7 +553,7 @@
             const queryScope = (urlParams.get('scope') || urlParams.get('tab') || urlParams.get('view') || '').toLowerCase();
             const target = hash || queryScope;
 
-            if (target === 'extension' || target === 'chrome' || target === 'chrome-extension' || target === 'action') {
+            if (target === 'extension' || target === 'chrome' || target === 'chrome-extension' || target === 'action' || target === 'creator-tips' || target === 'creator-tips-email' || target === 'email-signup' || target === 'optional-creator-tips-email-signup') {
               return 'extension';
             }
             if (target === 'website' || target === 'site' || target === 'cookies') {
@@ -555,10 +562,24 @@
             return 'all';
           }
 
+          function scrollToTargetHash() {
+            const hash = window.location.hash.replace('#', '');
+            if (hash && hash !== 'extension' && hash !== 'website' && hash !== 'all') {
+              const el = document.getElementById(hash);
+              if (el) {
+                setTimeout(() => {
+                  el.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+              }
+            }
+          }
+
           applyScope(parseInitialScope(), false);
+          scrollToTargetHash();
 
           window.addEventListener('hashchange', function () {
             applyScope(parseInitialScope(), false);
+            scrollToTargetHash();
           });
         }
 
